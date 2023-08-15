@@ -263,7 +263,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543581957}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -913,7 +913,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559431127}
-  m_Material: {fileID: 13400000, guid: b7e23a3b722df3848b0fba75501638df, type: 2}
+  m_Material: {fileID: 13400000, guid: 8ee8bc3bcebfa484eb0c805868bf3d90, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -1014,8 +1014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0b90dffac69d846a9cf4a2b0aaf0ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  _rotateSpeed: 2
+  _speed: 2
+  _rotateSpeed: 10
 --- !u!114 &1597338088 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1597338088, guid: 48b179095b8469b4b98697cad38736a3, type: 3}
@@ -1053,6 +1053,10 @@ PrefabInstance:
     - target: {fileID: 347092481776043360, guid: eebc188693339a649bdbea76bffbb972, type: 3}
       propertyPath: m_Name
       value: Box (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 347092481776043360, guid: eebc188693339a649bdbea76bffbb972, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 347092481776043364, guid: eebc188693339a649bdbea76bffbb972, type: 3}
       propertyPath: m_RootOrder
@@ -1110,6 +1114,10 @@ PrefabInstance:
     - target: {fileID: 347092481776043360, guid: eebc188693339a649bdbea76bffbb972, type: 3}
       propertyPath: m_Name
       value: Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 347092481776043360, guid: eebc188693339a649bdbea76bffbb972, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 347092481776043364, guid: eebc188693339a649bdbea76bffbb972, type: 3}
       propertyPath: m_RootOrder

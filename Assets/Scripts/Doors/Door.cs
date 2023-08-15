@@ -39,6 +39,7 @@ public abstract class Door : MonoBehaviour
             _typeDoor.transform.position = Vector3.MoveTowards(_typeDoor.transform.position, target, _speedOpenDoor * Time.deltaTime);
             yield return null;
         }
+
         StopCoroutine(MoveDoor(target));
     }
 }

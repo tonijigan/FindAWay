@@ -22,12 +22,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move(Vector3 direction)
     {
-        _rigidbody.MovePosition(_rigidbody.position + _speed * Time.fixedDeltaTime * direction);
+        _rigidbody.MovePosition(_rigidbody.position + direction * _speed * Time.deltaTime);
     }
 
     private Vector3 GetDirection()
     {
-        return new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
+        return new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
     }
 
     private void MoveRotate(Vector3 direction)
