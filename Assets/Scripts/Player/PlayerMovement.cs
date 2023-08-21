@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Animations;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
@@ -6,6 +7,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _rotateSpeed;
 
+    private const string MoveHorizontal = "Horizontal";
+    private const string MoveVertical = "Vertical";
+
+    private Vector3 _normal;
     private Rigidbody _rigidbody;
 
     private void Start()
@@ -13,7 +18,26 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 6)
+            _normal = collision.contacts[0].normal;
+    }
+
+    private void OnDrawGizmos()
+    {
+        //Gizmos.color = Color.white;
+        //Gizmos.DrawLine(transform.position, transform.position + _normal * 3);
+        //Gizmos.color = Color.red;
+        //Gizmos.DrawLine(transform.position, transform.position + Project(transform.forward));
+    }
+
+    private Vector3 Project(Vector3 direction)
+    {
+        return direction - Vector3.Dot(direction, _normal) * _normal;
+    }
+
+    private void Update()
     {
         var newDirection = GetDirection();
         Move(newDirection);
@@ -22,12 +46,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move(Vector3 direction)
     {
-        _rigidbody.MovePosition(_rigidbody.position + direction * _speed * Time.deltaTime);
+        Vector3 directionAlongSurface = Project(direction.normalized);
+        Vector3 offSet = _speed * Time.deltaTime * directionAlongSurface;
+        _rigidbody.MovePosition(_rigidbody.position + offSet);
     }
 
     private Vector3 GetDirection()
     {
-        return new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        return new Vector3(Input.GetAxis(MoveHorizontal), 0, Input.GetAxis(MoveVertical));
     }
 
     private void MoveRotate(Vector3 direction)
