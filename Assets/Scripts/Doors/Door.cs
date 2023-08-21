@@ -14,6 +14,10 @@ public abstract class Door : MonoBehaviour
 
     public bool IsOpen => _isOpen;
 
+    private void Start() => SetPosition();
+
+    protected abstract Vector3 SetPosition();
+
     public void WorkDoor()
     {
         if (_coroutine != null)

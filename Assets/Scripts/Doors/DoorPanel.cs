@@ -1,15 +1,12 @@
-using System.Collections;
 using UnityEngine;
 
 public class DoorPanel : Door
 {
-    private void Start() => SetPositions();
-
-    private void SetPositions()
+    protected override Vector3 SetPosition()
     {
         int newPositionX = 1;
         int positionZero = 0;
         _startPositionDoor = _typeDoor.transform.position;
-        _newPositionDoor = _startPositionDoor + new Vector3(newPositionX, positionZero, positionZero);
+        return _newPositionDoor = _startPositionDoor + new Vector3(newPositionX, positionZero, positionZero);
     }
 }

@@ -13,7 +13,7 @@ public class LaserSecurity : MonoBehaviour
 
     private void Trigger(Collider collider)
     {
-        if (collider.TryGetComponent(out Box box))
+        if (collider != null)
         {
             if (_doorLaserSecurity.IsOpen == false)
                 IsTrigger?.Invoke(_doorLaserSecurity.IsOpen);
