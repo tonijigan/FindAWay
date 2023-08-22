@@ -4,53 +4,61 @@ using UnityEngine.Events;
 public class InteractionWithObjects : MonoBehaviour
 {
     [SerializeField] private Transform _currentTemplate;
+    [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
-    [SerializeField] private float _beamLength;
 
-    private Box _dragableObject;
+    private GameObject _dragableObject;
+    private bool _isDragging;
 
-    private Rigidbody _rigidBodyDrag;
-    //public event UnityAction OnHit;
+    //public event UnityAction OnHitBox, OnHitButton;
 
     private void Update()
     {
-        _dragableObject = HaveObjectBoxForUse();
-        TryPickUp();
+        DragAndDropObject();
     }
 
-    private Box HaveObjectBoxForUse()
+    private bool TryGetGameCollider(out Collider currentCollider)
     {
-        var ray = new Ray(transform.position, transform.forward);
-        Debug.DrawRay(transform.position, transform.forward * _beamLength, Color.green);
+        currentCollider = null;
+        var ray = new Ray(_rayPoint.position, _rayPoint.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hitInfo) && hitInfo.distance < _hitDistance)
+            currentCollider = hitInfo.collider;
+
+        return currentCollider != null;
+    }
+
+    private void DragAndDropObject()
+    {
+        if (TryGetGameCollider(out Collider currentCollider))
         {
-            hitInfo.collider.gameObject.TryGetComponent(out Box box);
+            if (_isDragging == false && currentCollider.gameObject.TryGetComponent(out Box box))
+                TryPickUp(box); //OnHitBox?.Invoke();
 
-            return box;
+            if (_isDragging == true && currentCollider.gameObject.TryGetComponent(out Button button))
+                PutDown(button.BoxPoint); //OnHitButton?.Invoke();
         }
-        else
-            return null;
     }
 
-    public void TryPickUp()
+
+    public void TryPickUp(Box box)
     {
-        if (Input.GetMouseButtonDown(0) && _dragableObject != null)
+        if (Input.GetMouseButtonDown(1))
         {
-            PrepareForDrag();
-            Drag();
+            _dragableObject = box.gameObject;
+            _dragableObject.transform.position = default;
+            _dragableObject.transform.SetParent(_currentTemplate.transform, false);
+            _isDragging = true;
         }
     }
 
-    private void PrepareForDrag()
+    public void PutDown(Transform boxPoint)
     {
-        _rigidBodyDrag = _dragableObject.GetComponent<Rigidbody>();
-        _dragableObject.GetComponent<Box>().PrepareForDrag();
-    }
-
-    private void Drag()
-    {
-        Vector3 dragDirection = _currentTemplate.position - _dragableObject.transform.position;
-        _rigidBodyDrag.velocity = dragDirection * 5;
+        if (Input.GetMouseButtonDown(0))
+        {
+            _dragableObject.transform.parent = default;
+            _dragableObject.transform.position = boxPoint.position;
+            _isDragging = false;
+        }
     }
 }

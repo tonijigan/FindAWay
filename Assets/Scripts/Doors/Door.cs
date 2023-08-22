@@ -38,9 +38,9 @@ public abstract class Door : MonoBehaviour
     {
         _isOpen = !_isOpen;
 
-        while (_typeDoor.transform.position != target)
+        while (_typeDoor.localPosition != target)
         {
-            _typeDoor.transform.position = Vector3.MoveTowards(_typeDoor.transform.position, target, _speedOpenDoor * Time.deltaTime);
+            _typeDoor.localPosition = Vector3.MoveTowards(_typeDoor.localPosition, target, _speedOpenDoor * Time.deltaTime);
             yield return null;
         }
 
