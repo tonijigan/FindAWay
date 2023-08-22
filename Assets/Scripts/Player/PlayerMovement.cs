@@ -6,9 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private float _rotateSpeed;
-
-    private const string MoveHorizontal = "Horizontal";
-    private const string MoveVertical = "Vertical";
+    [SerializeField] private DynamicJoystick _dynamicJoystick;
 
     private Vector3 _normal;
     private Rigidbody _rigidbody;
@@ -22,14 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
             _normal = collision.contacts[0].normal;
-    }
-
-    private void OnDrawGizmos()
-    {
-        //Gizmos.color = Color.white;
-        //Gizmos.DrawLine(transform.position, transform.position + _normal * 3);
-        //Gizmos.color = Color.red;
-        //Gizmos.DrawLine(transform.position, transform.position + Project(transform.forward));
     }
 
     private Vector3 Project(Vector3 direction)
@@ -53,7 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 GetDirection()
     {
-        return new Vector3(Input.GetAxis(MoveHorizontal), 0, Input.GetAxis(MoveVertical));
+        int positionY = 0;
+        return new Vector3(_dynamicJoystick.Horizontal, positionY, _dynamicJoystick.Vertical);
     }
 
     private void MoveRotate(Vector3 direction)
