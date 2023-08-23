@@ -11,10 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _normal;
     private Rigidbody _rigidbody;
 
-    private void Start()
-    {
-        _rigidbody = GetComponent<Rigidbody>();
-    }
+    private void Start() => _rigidbody = GetComponent<Rigidbody>();
 
     private void OnCollisionEnter(Collision collision)
     {

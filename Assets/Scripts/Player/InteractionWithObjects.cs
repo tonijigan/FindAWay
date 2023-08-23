@@ -3,62 +3,75 @@ using UnityEngine.Events;
 
 public class InteractionWithObjects : MonoBehaviour
 {
+    [SerializeField] private ButtonsDynamic _buttonsDynamic;
     [SerializeField] private Transform _currentTemplate;
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
 
-    private GameObject _dragableObject;
+    public event UnityAction OnHitBox, OnHitButton;
+
+    private Box _dragableObject;
     private bool _isDragging;
 
-    //public event UnityAction OnHitBox, OnHitButton;
+    public bool IsDragging => _isDragging;
 
-    private void Update()
-    {
-        DragAndDropObject();
-    }
+    private void Awake() => _buttonsDynamic.gameObject.SetActive(false);
 
-    private bool TryGetGameCollider(out Collider currentCollider)
+    private void Update() => DragAndDropObject();
+
+    private bool TryGetGameCollider(out Transform currentTransform)
     {
-        currentCollider = null;
+        currentTransform = null;
         var ray = new Ray(_rayPoint.position, _rayPoint.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hitInfo) && hitInfo.distance < _hitDistance)
-            currentCollider = hitInfo.collider;
+            currentTransform = hitInfo.collider.transform;
 
-        return currentCollider != null;
+        return currentTransform != null;
     }
 
     private void DragAndDropObject()
     {
-        if (TryGetGameCollider(out Collider currentCollider))
+        if (TryGetGameCollider(out Transform currentTransform))
         {
-            if (_isDragging == false && currentCollider.gameObject.TryGetComponent(out Box box))
-                TryPickUp(box); //OnHitBox?.Invoke();
+            if (_isDragging == false && currentTransform.TryGetComponent(out Box box))
+                EnableButtonDynamic(currentTransform);
 
-            if (_isDragging == true && currentCollider.gameObject.TryGetComponent(out Button button))
-                PutDown(button.BoxPoint); //OnHitButton?.Invoke();
+            if (_isDragging == true && currentTransform.TryGetComponent(out ButtonObject button))
+                EnableButtonDynamic(currentTransform);
+        }
+        else
+        {
+            DisableButtonDynamic();
         }
     }
 
+    private void EnableButtonDynamic(Transform currentTransform)
+    {
+        _buttonsDynamic.gameObject.SetActive(true);
+        _buttonsDynamic.Init(currentTransform);
+
+        if (_isDragging == false)
+            OnHitBox?.Invoke();
+        else
+            OnHitButton?.Invoke();
+    }
+
+    private void DisableButtonDynamic() => _buttonsDynamic.DisableButtons();
 
     public void TryPickUp(Box box)
     {
-        if (Input.GetMouseButtonDown(1))
-        {
-            _dragableObject = box.gameObject;
-            _dragableObject.transform.position = default;
-            _dragableObject.transform.SetParent(_currentTemplate.transform, false);
-            _isDragging = true;
-        }
+        _dragableObject = box;
+        _dragableObject.transform.position = default;
+        _dragableObject.transform.SetParent(_currentTemplate.transform, false);
+        _isDragging = true;
     }
 
     public void PutDown(Transform boxPoint)
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            _dragableObject.transform.parent = default;
-            _dragableObject.transform.position = boxPoint.position;
-            _isDragging = false;
-        }
+        _dragableObject.DisableKinematic();
+        _dragableObject.transform.parent = default;
+        _dragableObject.transform.position = boxPoint.position;
+        _isDragging = false;
     }
 }

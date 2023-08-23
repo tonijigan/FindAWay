@@ -4,7 +4,7 @@ using UnityEngine;
 public class Alarm : MonoBehaviour
 {
     [SerializeField] LaserSecurity _security;
-    [SerializeField] private Button _button;
+    [SerializeField] private ButtonObject _button;
 
     private const string AlarmAnimation = "Alarm";
 
@@ -22,10 +22,7 @@ public class Alarm : MonoBehaviour
         _button.OnDoorClick -= TurnOff;
     }
 
-    private void Awake()
-    {
-        _animator = GetComponent<Animator>();
-    }
+    private void Awake() => _animator = GetComponent<Animator>();
 
     private void Toggle(bool isOpen)
     {
@@ -35,8 +32,5 @@ public class Alarm : MonoBehaviour
             _animator.SetBool(AlarmAnimation, false);
     }
 
-    private void TurnOff(bool onClick)
-    {
-        _animator.SetBool(AlarmAnimation, false);
-    }
+    private void TurnOff(bool onClick) => _animator.SetBool(AlarmAnimation, false);
 }

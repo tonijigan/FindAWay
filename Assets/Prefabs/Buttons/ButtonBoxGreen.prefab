@@ -108,8 +108,8 @@ GameObject:
   - component: {fileID: 2719662183788184775}
   - component: {fileID: 2719662183788184774}
   - component: {fileID: 2719662183788184773}
-  - component: {fileID: 1857443444}
   - component: {fileID: 635687705980000691}
+  - component: {fileID: 1979200327}
   m_Layer: 0
   m_Name: ButtonBoxGreen
   m_TagString: Untagged
@@ -184,20 +184,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1857443444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2719662183788184763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b51b41e0b082444eb1de07b67221c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: {fileID: 0}
-  _boxPoint: {fileID: 0}
 --- !u!65 &635687705980000691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -211,6 +197,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &1979200327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719662183788184763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95f88ede1ad5b94c8d3fe6f82c928b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _door: {fileID: 0}
+  _button: {fileID: 2719662183495307238}
+  _boxPoint: {fileID: 2748926770281938554}
 --- !u!1 &7608221871787947461
 GameObject:
   m_ObjectHideFlags: 0
