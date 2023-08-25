@@ -13,6 +13,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start() => _rigidbody = GetComponent<Rigidbody>();
 
+    private void FixedUpdate()
+    {
+        var newDirection = GetDirection();
+        Move(newDirection);
+        MoveRotate(newDirection);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 6)
@@ -22,13 +29,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 Project(Vector3 direction)
     {
         return direction - Vector3.Dot(direction, _normal) * _normal;
-    }
-
-    private void Update()
-    {
-        var newDirection = GetDirection();
-        Move(newDirection);
-        MoveRotate(newDirection);
     }
 
     private void Move(Vector3 direction)

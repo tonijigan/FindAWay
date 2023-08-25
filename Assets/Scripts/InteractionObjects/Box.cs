@@ -7,5 +7,6 @@ public class Box : MonoBehaviour
 
     private void Start() => _rigidbody = GetComponent<Rigidbody>();
 
+    public void EnableKinematic() => _rigidbody.isKinematic = true;
     public void DisableKinematic() => _rigidbody.isKinematic = false;
 }

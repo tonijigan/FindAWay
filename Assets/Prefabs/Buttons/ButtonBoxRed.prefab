@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2396759421386010237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.4, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 2719662183495307237}
   - component: {fileID: 2719662183495307236}
   - component: {fileID: 5997436257707004843}
+  - component: {fileID: 7759161615329743791}
+  - component: {fileID: 4019007271745136299}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -127,7 +129,34 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2.0000002, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &7759161615329743791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719662183495307226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 4, z: 1.0000002}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4019007271745136299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719662183495307226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95f88ede1ad5b94c8d3fe6f82c928b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _door: {fileID: 0}
+  _boxPoint: {fileID: 3214820754545087661}
 --- !u!1 &2719662183788184763
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +169,6 @@ GameObject:
   - component: {fileID: 2719662183788184774}
   - component: {fileID: 2719662183788184773}
   - component: {fileID: 2670195368208306760}
-  - component: {fileID: 1597338092}
   m_Layer: 0
   m_Name: ButtonBoxRed
   m_TagString: Untagged
@@ -227,19 +255,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &1597338092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2719662183788184763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e95f88ede1ad5b94c8d3fe6f82c928b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _door: {fileID: 0}
-  _button: {fileID: 2719662183495307238}
-  _boxPoint: {fileID: 3214820754545087661}
+  m_Center: {x: 0, y: 0, z: 0}

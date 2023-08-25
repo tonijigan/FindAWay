@@ -62,6 +62,8 @@ public class InteractionWithObjects : MonoBehaviour
     public void TryPickUp(Box box)
     {
         _dragableObject = box;
+        _dragableObject.EnableKinematic();
+        _dragableObject.transform.parent = default;
         _dragableObject.transform.position = default;
         _dragableObject.transform.SetParent(_currentTemplate.transform, false);
         _isDragging = true;
