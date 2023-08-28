@@ -8,7 +8,7 @@ public class InteractionWithObjects : MonoBehaviour
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
 
-    public event UnityAction OnHitBox, OnHitButton;
+    public event UnityAction HitBox, HitButton;
 
     private Box _dragableObject;
     private bool _isDragging;
@@ -18,46 +18,6 @@ public class InteractionWithObjects : MonoBehaviour
     private void Awake() => _buttonsDynamic.gameObject.SetActive(false);
 
     private void Update() => DragAndDropObject();
-
-    private bool TryGetGameCollider(out Transform currentTransform)
-    {
-        currentTransform = null;
-        var ray = new Ray(_rayPoint.position, _rayPoint.forward);
-
-        if (Physics.Raycast(ray, out RaycastHit hitInfo) && hitInfo.distance < _hitDistance)
-            currentTransform = hitInfo.collider.transform;
-
-        return currentTransform != null;
-    }
-
-    private void DragAndDropObject()
-    {
-        if (TryGetGameCollider(out Transform currentTransform))
-        {
-            if (_isDragging == false && currentTransform.TryGetComponent(out Box box))
-                EnableButtonDynamic(currentTransform);
-
-            if (_isDragging == true && currentTransform.TryGetComponent(out ButtonObject button))
-                EnableButtonDynamic(currentTransform);
-        }
-        else
-        {
-            DisableButtonDynamic();
-        }
-    }
-
-    private void EnableButtonDynamic(Transform currentTransform)
-    {
-        _buttonsDynamic.gameObject.SetActive(true);
-        _buttonsDynamic.Init(currentTransform);
-
-        if (_isDragging == false)
-            OnHitBox?.Invoke();
-        else
-            OnHitButton?.Invoke();
-    }
-
-    private void DisableButtonDynamic() => _buttonsDynamic.DisableButtons();
 
     public void TryPickUp(Box box)
     {
@@ -76,4 +36,44 @@ public class InteractionWithObjects : MonoBehaviour
         _dragableObject.transform.position = boxPoint.position;
         _isDragging = false;
     }
+
+    private bool TryGetObject(out GameObject currentObject)
+    {
+        currentObject = null;
+        var ray = new Ray(_rayPoint.position, _rayPoint.forward);
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo) && hitInfo.distance < _hitDistance)
+            currentObject = hitInfo.collider.gameObject;
+
+        return currentObject != null;
+    }
+
+    private void DragAndDropObject()
+    {
+        if (TryGetObject(out GameObject currentObject))
+        {
+            if (_isDragging == false && currentObject.TryGetComponent(out Box box))
+                EnableButtonDynamic(currentObject);
+
+            if (_isDragging == true && currentObject.TryGetComponent(out ButtonObject button))
+                EnableButtonDynamic(currentObject);
+        }
+        else
+        {
+            DisableButtonDynamic();
+        }
+    }
+
+    private void EnableButtonDynamic(GameObject currentObject)
+    {
+        _buttonsDynamic.gameObject.SetActive(true);
+        _buttonsDynamic.Init(currentObject);
+
+        if (_isDragging == false)
+            HitBox?.Invoke();
+        else
+            HitButton?.Invoke();
+    }
+
+    private void DisableButtonDynamic() => _buttonsDynamic.DisableButtons();
 }

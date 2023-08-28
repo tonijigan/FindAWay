@@ -7,7 +7,7 @@ public class ButtonObject : MonoBehaviour
     [SerializeField] private Door _door;
     [SerializeField] private Transform _boxPoint;
 
-    public event UnityAction<bool> OnDoorClick;
+    public event UnityAction<bool> ButtonClick;
 
     private Coroutine _coroutine;
     private Vector3 _startButtonPosition;
@@ -59,7 +59,7 @@ public class ButtonObject : MonoBehaviour
             yield return null;
         }
 
-        OnDoorClick?.Invoke(IsClick);
+        ButtonClick?.Invoke(IsClick);
         _door.WorkDoor();
         StopCoroutine(ChangePosition(newPosition));
     }

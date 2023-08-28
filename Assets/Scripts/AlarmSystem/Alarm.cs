@@ -13,13 +13,13 @@ public class Alarm : MonoBehaviour
     private void OnEnable()
     {
         _security.IsTrigger += Toggle;
-        _button.OnDoorClick += TurnOff;
+        _button.ButtonClick += TurnOff;
     }
 
     private void OnDisable()
     {
         _security.IsTrigger -= Toggle;
-        _button.OnDoorClick -= TurnOff;
+        _button.ButtonClick -= TurnOff;
     }
 
     private void Awake() => _animator = GetComponent<Animator>();

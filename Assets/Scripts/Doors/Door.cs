@@ -6,15 +6,13 @@ public abstract class Door : MonoBehaviour
 {
     [SerializeField] protected Transform _typeDoor;
     [SerializeField] private PlayableDirector _playableDirector;
-    [SerializeField] private float _speedOpenDoor = 1f;
-    [SerializeField] private float _waitForSecondsTime;
+    [SerializeField] private float _speedOpenDoor = 1f, _waitForSecondsTime;
 
-    protected Vector3 _startPositionDoor;
-    protected Vector3 _newPositionDoor;
-    private bool _isOpen;
+    protected Vector3 StartPositionDoor, NewPositionDoor;
 
     private WaitForSeconds _waitForSeconds;
     private Coroutine _coroutine;
+    private bool _isOpen;
 
     public bool IsOpen => _isOpen;
 
@@ -31,29 +29,29 @@ public abstract class Door : MonoBehaviour
         if (_coroutine != null)
             StopCoroutine(_coroutine);
 
-        _coroutine = StartCoroutine(MoveDoor(GetTarget()));
+        _coroutine = StartCoroutine(MoveDoor(GetNextTargetPosition()));
     }
 
-    private Vector3 GetTarget()
+    private Vector3 GetNextTargetPosition()
     {
         if (_isOpen)
-            return _startPositionDoor;
+            return StartPositionDoor;
         else
-            return _newPositionDoor;
+            return NewPositionDoor;
     }
 
-    private IEnumerator MoveDoor(Vector3 target)
+    private IEnumerator MoveDoor(Vector3 newxTarget)
     {
         _isOpen = !_isOpen;
         _playableDirector.Play();
         yield return _waitForSeconds;
 
-        while (_typeDoor.localPosition != target)
+        while (_typeDoor.localPosition != newxTarget)
         {
-            _typeDoor.localPosition = Vector3.MoveTowards(_typeDoor.localPosition, target, _speedOpenDoor * Time.deltaTime);
+            _typeDoor.localPosition = Vector3.MoveTowards(_typeDoor.localPosition, newxTarget, _speedOpenDoor * Time.deltaTime);
             yield return null;
         }
 
-        StopCoroutine(MoveDoor(target));
+        StopCoroutine(MoveDoor(newxTarget));
     }
 }
