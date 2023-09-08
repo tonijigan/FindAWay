@@ -1225,6 +1225,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!224 &772889995 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8135886327784587633, guid: 56fae09712773584fb63896d473a98ee, type: 3}
+  m_PrefabInstance: {fileID: 1642098468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &774907137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,6 +2179,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7267122080185685313, guid: eebc188693339a649bdbea76bffbb972, type: 3}
   m_PrefabInstance: {fileID: 1237625992}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1249262739 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8135886327475159579, guid: 56fae09712773584fb63896d473a98ee, type: 3}
+  m_PrefabInstance: {fileID: 1642098468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1250547978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2719662183495307238, guid: 7a691609764b793478f22a3571c47587, type: 3}
@@ -3030,6 +3040,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee, type: 3}
+      propertyPath: _handle
+      value: 
+      objectReference: {fileID: 772889995}
+    - target: {fileID: 8135886326569738823, guid: 56fae09712773584fb63896d473a98ee, type: 3}
+      propertyPath: Background
+      value: 
+      objectReference: {fileID: 1249262739}
     - target: {fileID: 8135886326569738825, guid: 56fae09712773584fb63896d473a98ee, type: 3}
       propertyPath: m_Name
       value: Dynamic Joystick

@@ -3,27 +3,27 @@ using UnityEngine.EventSystems;
 
 public class DynamicJoystick : Joystick
 {
-    public float MoveThreshold { get { return moveThreshold; } set { moveThreshold = Mathf.Abs(value); } }
-
     [SerializeField] private float moveThreshold = 1;
+
+    public float MoveThreshold { get { return moveThreshold; } set { moveThreshold = Mathf.Abs(value); } }
 
     protected override void Start()
     {
         MoveThreshold = moveThreshold;
         base.Start();
-        background.gameObject.SetActive(false);
+        Background.gameObject.SetActive(false);
     }
 
     public override void OnPointerDown(PointerEventData eventData)
     {
-        background.anchoredPosition = ScreenPointToAnchoredPosition(eventData.position);
-        background.gameObject.SetActive(true);
+        Background.anchoredPosition = ScreenPointToAnchoredPosition(eventData.position);
+        Background.gameObject.SetActive(true);
         base.OnPointerDown(eventData);
     }
 
     public override void OnPointerUp(PointerEventData eventData)
     {
-        background.gameObject.SetActive(false);
+        Background.gameObject.SetActive(false);
         base.OnPointerUp(eventData);
     }
 
@@ -32,7 +32,7 @@ public class DynamicJoystick : Joystick
         if (magnitude > moveThreshold)
         {
             Vector2 difference = normalised * (magnitude - moveThreshold) * radius;
-            background.anchoredPosition += difference;
+            Background.anchoredPosition += difference;
         }
         base.HandleInput(magnitude, normalised, radius, cam);
     }
