@@ -3,10 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Alarm : MonoBehaviour
 {
-    [SerializeField] LaserSecurity _security;
+    [SerializeField] private AnimationNames _animationNames;
+    [SerializeField] private LaserSecurity _security;
     [SerializeField] private ButtonObject _button;
-
-    private const string AlarmAnimation = "Alarm";
 
     private Animator _animator;
 
@@ -27,10 +26,10 @@ public class Alarm : MonoBehaviour
     private void Toggle(bool isOpen)
     {
         if (isOpen == false)
-            _animator.SetBool(AlarmAnimation, true);
+            _animator.SetBool(_animationNames.Alarm, true);
         else
-            _animator.SetBool(AlarmAnimation, false);
+            _animator.SetBool(_animationNames.Alarm, false);
     }
 
-    private void TurnOff(bool onClick) => _animator.SetBool(AlarmAnimation, false);
+    private void TurnOff(bool onClick) => _animator.SetBool(_animationNames.Alarm, false);
 }
