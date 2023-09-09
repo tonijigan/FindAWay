@@ -28,19 +28,19 @@ public class PlayerMovement : MonoBehaviour
             _normal = collision.contacts[0].normal;
 
         if (collision.gameObject.TryGetComponent(out Ladder ladder))
-        {
-            _rigidbody.useGravity = false;
-            RenderFall?.Invoke();
-        }
+            TriggerLadder(RenderFall, false);
     }
 
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.TryGetComponent(out Ladder ladder))
-        {
-            _rigidbody.useGravity = true;
-            NoRenderFall?.Invoke();
-        }
+            TriggerLadder(NoRenderFall, true);
+    }
+
+    private void TriggerLadder(UnityAction action, bool useGravity)
+    {
+        _rigidbody.useGravity = useGravity;
+        action?.Invoke();
     }
 
     private Vector3 Project(Vector3 direction)

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Outline), typeof(PlayerMovement))]
@@ -29,5 +27,4 @@ public class DisplayThroughWall : MonoBehaviour
     private void EnableOutline() => _outline.enabled = true;
 
     private void DisableOutline() => _outline.enabled = false;
-
 }
