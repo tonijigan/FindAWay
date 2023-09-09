@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.Animations;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private DynamicJoystick _dynamicJoystick;
+
+    public event UnityAction RenderFall, NoRenderFall;
 
     private Vector3 _normal;
     private Rigidbody _rigidbody;
@@ -24,6 +26,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
             _normal = collision.contacts[0].normal;
+
+        if (collision.gameObject.TryGetComponent(out Ladder ladder))
+        {
+            _rigidbody.useGravity = false;
+            RenderFall?.Invoke();
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent(out Ladder ladder))
+        {
+            _rigidbody.useGravity = true;
+            NoRenderFall?.Invoke();
+        }
     }
 
     private Vector3 Project(Vector3 direction)

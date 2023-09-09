@@ -1,12 +1,7 @@
-using UnityEngine;
-
-[RequireComponent(typeof(Rigidbody))]
-public class Box : MonoBehaviour
+public class Box : InteractionObject
 {
-    private Rigidbody _rigidbody;
-
-    private void Start() => _rigidbody = GetComponent<Rigidbody>();
-
-    public void EnableKinematic() => _rigidbody.isKinematic = true;
-    public void DisableKinematic() => _rigidbody.isKinematic = false;
+    public override void FollowInstructions()
+    {
+        Rigidbody.isKinematic = !Rigidbody.isKinematic;
+    }
 }

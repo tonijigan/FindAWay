@@ -12,7 +12,7 @@ public class ButtonsDynamic : MonoBehaviour
 
     private void OnEnable()
     {
-        _interactionWithObjects.HitBox += OnEnableButtons;
+        _interactionWithObjects.HitInteractionObject += OnEnableButtons;
         _interactionWithObjects.HitButton += OnEnableButtons;
         _buttonPickUp.onClick.AddListener(ClickPickUp);
         _buttonPutDown.onClick.AddListener(ClickPutDown);
@@ -20,7 +20,7 @@ public class ButtonsDynamic : MonoBehaviour
 
     private void OnDisable()
     {
-        _interactionWithObjects.HitBox -= OnEnableButtons;
+        _interactionWithObjects.HitInteractionObject -= OnEnableButtons;
         _interactionWithObjects.HitButton -= OnEnableButtons;
         _buttonPickUp.onClick.RemoveListener(ClickPickUp);
         _buttonPutDown.onClick.RemoveListener(ClickPutDown);
@@ -38,14 +38,14 @@ public class ButtonsDynamic : MonoBehaviour
     {
         if (_interactionWithObjects.IsDragging == false)
             _buttonPickUp.gameObject.SetActive(true);
-        else
+        else if (_interactionWithObjects.DragableObject.TryGetComponent(out Key key) == false)
             _buttonPutDown.gameObject.SetActive(true);
     }
 
     private void ClickPickUp()
     {
-        _currentObject.TryGetComponent(out Box box);
-        _interactionWithObjects.TryPickUp(box);
+        _currentObject.TryGetComponent(out InteractionObject interactionObject);
+        _interactionWithObjects.TryPickUp(interactionObject);
     }
 
     private void ClickPutDown()

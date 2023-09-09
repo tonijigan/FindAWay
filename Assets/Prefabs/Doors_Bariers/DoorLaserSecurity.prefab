@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1251887162}
   - component: {fileID: 1251887163}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CameraLaserDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251887161}
-  m_LocalRotation: {x: 0.27984813, y: 0.36470523, z: -0.11591689, w: 0.8804763}
-  m_LocalPosition: {x: -3.5714288, y: 3.5714288, z: -0}
+  m_LocalRotation: {x: -1e-45, y: -0.09853762, z: -0, w: 0.99513334}
+  m_LocalPosition: {x: 0.71428573, y: 0, z: -3.5714288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 1700184328}
   - component: {fileID: 1700184327}
   - component: {fileID: 1700184326}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: -5, y: 5, z: -5}
+  m_FollowOffset: {x: 1, y: 0, z: -5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 2388503281939420317}
   - component: {fileID: 6911821636994031998}
   - component: {fileID: 257275403712336910}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 1430080053797475590}
   - component: {fileID: 1985902484011422549}
   - component: {fileID: 4669945696701044644}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ Transform:
   m_GameObject: {fileID: 913707995059358761}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.2, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8924952779615488287}
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 6269633064183420342}
   - component: {fileID: 2811299565759061051}
   - component: {fileID: 2356434427521811173}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ Transform:
   m_GameObject: {fileID: 2111769060652636983}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.4, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8924952779615488287}
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 5169272675866574568}
   - component: {fileID: 2010975013939184306}
   - component: {fileID: 9080426170297899499}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Signal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,8 +455,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2372391972835540894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.083, z: 0}
-  m_LocalScale: {x: 0.26401, y: 0.267501, z: 0.1}
+  m_LocalPosition: {x: -0, y: 1.083, z: 0}
+  m_LocalScale: {x: 0.26401, y: 0.267501, z: 0.24603}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3290548491087693493}
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 1852802748366771272}
   - component: {fileID: 4798127333416061865}
   - component: {fileID: 8436682669070377550}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ Transform:
   m_GameObject: {fileID: 2788408361412095060}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8924952779615488287}
@@ -608,7 +608,7 @@ GameObject:
   - component: {fileID: 8219687994796977180}
   - component: {fileID: 4681803223302114728}
   - component: {fileID: 1321619995393659512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2523817950415041477}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DoorBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +718,7 @@ Transform:
   m_GameObject: {fileID: 4530181400962671480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 2.5803}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5958750478773852976}
@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 2070261486378913837}
   - component: {fileID: 2962408792922607837}
   - component: {fileID: 4684990907113002653}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 4837502202809497244}
   - component: {fileID: 2086042002}
   - component: {fileID: 2086042003}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DoorLaserSecurity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 5919706568728325725}
   - component: {fileID: 3384221963098206620}
   - component: {fileID: 630196224595291201}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,6 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9e9193be94c881428ac951d8d09c455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationNames: {fileID: 0}
   _security: {fileID: 433651952863466291}
   _button: {fileID: 0}
 --- !u!95 &630196224595291201
@@ -1030,7 +1031,7 @@ GameObject:
   - component: {fileID: 7036036072302855795}
   - component: {fileID: 4480673340822074832}
   - component: {fileID: 4252417445130405871}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1046,7 +1047,7 @@ Transform:
   m_GameObject: {fileID: 6269753466577225635}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.4, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8924952779615488287}
@@ -1113,7 +1114,7 @@ GameObject:
   - component: {fileID: 930499713419371831}
   - component: {fileID: 4745109679660196440}
   - component: {fileID: 3361592898070991184}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1129,7 +1130,7 @@ Transform:
   m_GameObject: {fileID: 6522702299903465503}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8924952779615488287}
@@ -1196,7 +1197,7 @@ GameObject:
   - component: {fileID: 6540153645467547858}
   - component: {fileID: 4389257628749565036}
   - component: {fileID: 2094727054184778608}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1212,7 +1213,7 @@ Transform:
   m_GameObject: {fileID: 7575467376187641712}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.2, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8924952779615488287}
@@ -1279,7 +1280,7 @@ GameObject:
   - component: {fileID: 5703179482446803335}
   - component: {fileID: 7203395148913187837}
   - component: {fileID: 7126605445383014838}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1295,7 +1296,7 @@ Transform:
   m_GameObject: {fileID: 8672754651626819485}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.6, z: 0}
-  m_LocalScale: {x: 0.10000001, y: 0.5, z: 0.1}
+  m_LocalScale: {x: 0.05, y: 0.5, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8924952779615488287}
@@ -1363,7 +1364,7 @@ GameObject:
   - component: {fileID: 6580587367540091796}
   - component: {fileID: 1194303035032037603}
   - component: {fileID: 1249056353620306263}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1459,7 +1460,7 @@ GameObject:
   - component: {fileID: 8924952779615488287}
   - component: {fileID: 3779312145094312084}
   - component: {fileID: 433651952863466291}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lasers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1474,7 +1475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9195080085878376375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

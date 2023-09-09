@@ -9,12 +9,12 @@ public abstract class Door : MonoBehaviour
     [SerializeField] private float _speedOpenDoor = 1f, _waitForSecondsTime;
 
     protected Vector3 StartPositionDoor, NewPositionDoor;
+    protected Coroutine Coroutine;
+    protected bool IsOpenDoor;
 
     private WaitForSeconds _waitForSeconds;
-    private Coroutine _coroutine;
-    private bool _isOpen;
 
-    public bool IsOpen => _isOpen;
+    public bool IsOpen => IsOpenDoor;
 
     private void Start()
     {
@@ -22,27 +22,27 @@ public abstract class Door : MonoBehaviour
         _waitForSeconds = new WaitForSeconds(_waitForSecondsTime);
     }
 
-    protected abstract Vector3 SetPosition();
+    protected abstract void SetPosition();
 
     public void WorkDoor()
     {
-        if (_coroutine != null)
-            StopCoroutine(_coroutine);
+        if (Coroutine != null)
+            StopCoroutine(Coroutine);
 
-        _coroutine = StartCoroutine(MoveDoor(GetNextTargetPosition()));
+        Coroutine = StartCoroutine(MoveDoor(GetNextTargetPosition()));
     }
 
     private Vector3 GetNextTargetPosition()
     {
-        if (_isOpen)
+        if (IsOpenDoor)
             return StartPositionDoor;
         else
             return NewPositionDoor;
     }
 
-    private IEnumerator MoveDoor(Vector3 newxTarget)
+    public virtual IEnumerator MoveDoor(Vector3 newxTarget)
     {
-        _isOpen = !_isOpen;
+        IsOpenDoor = !IsOpenDoor;
         _playableDirector.Play();
         yield return _waitForSeconds;
 

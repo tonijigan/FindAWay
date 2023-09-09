@@ -8,21 +8,24 @@ public class InteractionWithObjects : MonoBehaviour
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
 
-    public event UnityAction HitBox, HitButton;
+    public event UnityAction HitInteractionObject, HitButton;
 
-    private Box _dragableObject;
+    private InteractionObject _dragableObject;
     private bool _isDragging;
 
+    public InteractionObject DragableObject => _dragableObject;
     public bool IsDragging => _isDragging;
 
     private void Awake() => _buttonsDynamic.gameObject.SetActive(false);
 
     private void Update() => DragAndDropObject();
 
-    public void TryPickUp(Box box)
+    public void ChangeIsDragging() => _isDragging = false;
+
+    public void TryPickUp(InteractionObject interactionObject)
     {
-        _dragableObject = box;
-        _dragableObject.EnableKinematic();
+        _dragableObject = interactionObject;
+        _dragableObject.FollowInstructions();
         _dragableObject.transform.parent = default;
         _dragableObject.transform.position = default;
         _dragableObject.transform.SetParent(_currentTemplate.transform, false);
@@ -31,7 +34,7 @@ public class InteractionWithObjects : MonoBehaviour
 
     public void PutDown(Transform boxPoint)
     {
-        _dragableObject.DisableKinematic();
+        _dragableObject.FollowInstructions();
         _dragableObject.transform.parent = default;
         _dragableObject.transform.position = boxPoint.position;
         _isDragging = false;
@@ -52,9 +55,10 @@ public class InteractionWithObjects : MonoBehaviour
     {
         if (TryGetObject(out GameObject currentObject))
         {
+            if (_isDragging == false && currentObject.TryGetComponent(out Key key))
+                EnableButtonDynamic(currentObject);
             if (_isDragging == false && currentObject.TryGetComponent(out Box box))
                 EnableButtonDynamic(currentObject);
-
             if (_isDragging == true && currentObject.TryGetComponent(out ButtonObject button))
                 EnableButtonDynamic(currentObject);
         }
@@ -70,7 +74,7 @@ public class InteractionWithObjects : MonoBehaviour
         _buttonsDynamic.Init(currentObject);
 
         if (_isDragging == false)
-            HitBox?.Invoke();
+            HitInteractionObject?.Invoke();
         else
             HitButton?.Invoke();
     }
