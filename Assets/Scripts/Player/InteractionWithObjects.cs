@@ -59,7 +59,8 @@ public class InteractionWithObjects : MonoBehaviour
                 EnableButtonDynamic(currentObject);
             if (_isDragging == false && currentObject.TryGetComponent(out Box box))
                 EnableButtonDynamic(currentObject);
-            if (_isDragging == true && currentObject.TryGetComponent(out ButtonObject button))
+            if (_isDragging == true && currentObject.TryGetComponent(out ButtonObject button)
+               && button.IsClick != true)
                 EnableButtonDynamic(currentObject);
         }
         else

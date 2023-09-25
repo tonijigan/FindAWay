@@ -6,6 +6,7 @@ public class Alarm : MonoBehaviour
     [SerializeField] private AnimationNames _animationNames;
     [SerializeField] private LaserSecurity _security;
     [SerializeField] private ButtonObject _button;
+    [SerializeField] private Light _light;
 
     private Animator _animator;
 
@@ -26,10 +27,20 @@ public class Alarm : MonoBehaviour
     private void Toggle(bool isOpen)
     {
         if (isOpen == false)
-            _animator.SetBool(_animationNames.Alarm, true);
+            TurnOn();
         else
-            _animator.SetBool(_animationNames.Alarm, false);
+            TurnOff();
     }
 
-    private void TurnOff(bool onClick) => _animator.SetBool(_animationNames.Alarm, false);
+    private void TurnOn()
+    {
+        _animator.SetBool(_animationNames.Alarm, true);
+        _light.gameObject.SetActive(true);
+    }
+
+    private void TurnOff(bool isClick = false)
+    {
+        _animator.SetBool(_animationNames.Alarm, false);
+        _light.gameObject.SetActive(false);
+    }
 }

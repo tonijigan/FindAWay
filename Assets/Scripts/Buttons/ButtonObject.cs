@@ -1,6 +1,6 @@
 using System.Collections;
-using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine;
 
 public class ButtonObject : MonoBehaviour
 {
@@ -55,7 +55,8 @@ public class ButtonObject : MonoBehaviour
 
         while (transform.localPosition != newPosition)
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, newPosition, duration * Time.deltaTime);
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition,
+                                      newPosition, duration * Time.deltaTime);
             yield return null;
         }
 
