@@ -2,17 +2,25 @@ using UnityEngine;
 
 public class AnimationNames : MonoBehaviour
 {
-    private const string _alarm = "Alarm";
-    private const string _idle = "Idle";
-    private const string _walk = "Walk";
-    private const string _take = "Take";
-    private const string _put = "Put";
-    private const string _fall = "Fall";
+    private const string CAlarm = "Alarm";
+    private const string CIdle = "Idle";
+    private const string CWalk = "Walk";
+    private const string CTake = "Take";
+    private const string CPut = "Put";
+    private const string CFalling = "Falling";
+    private const string CWalkWhitBox = "WalkWhitBox";
+    private const string CWalkWhitKey = "WalkWhitKey";
+    private const string CIdleWhitBox = "IdleWhitBox";
+    private const string CIdleWhitKey = "IdleWhitKey";
 
-    public string Alarm => _alarm;
-    public string Idle => _idle;
-    public string Walk => _walk;
-    public string Take => _take;
-    public string Put => _put;
-    public string Fall => _fall;
+    public string Alarm => CAlarm;
+    public string Idle => CIdle;
+    public string Walk => CWalk;
+    public string Take => CTake;
+    public string Put => CPut;
+    public string Falling => CFalling;
+    public string WalkWhitBox => CWalkWhitBox;
+    public string WalkWhitKey => CWalkWhitKey;
+    public string IdleWhitBox => CIdleWhitBox;
+    public string IdleWhitKey => CIdleWhitKey;
 }

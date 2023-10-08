@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private DynamicJoystick _dynamicJoystick;
     [SerializeField] private PlayerWallet _playerWallet;
+    [SerializeField] private PlayerAnimations _playerAnimations;
+    [SerializeField] private LayerMask _layerMask;
 
     private Vector3 _normal;
     private Rigidbody _rigidbody;
@@ -22,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == _layerMask)
             _normal = collision.contacts[0].normal;
     }
 
@@ -48,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 directionAlongSurface = Project(direction.normalized);
         Vector3 offSet = _speed * Time.deltaTime * directionAlongSurface;
         _rigidbody.MovePosition(_rigidbody.position + offSet);
+        _playerAnimations.Move(direction);
     }
 
     private Vector3 GetDirection()

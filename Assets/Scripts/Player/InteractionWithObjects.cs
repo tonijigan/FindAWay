@@ -62,6 +62,8 @@ public class InteractionWithObjects : MonoBehaviour
             if (_isDragging == true && currentObject.TryGetComponent(out ButtonObject button)
                && button.IsClick != true)
                 EnableButtonDynamic(currentObject);
+            if (_isDragging == true && currentObject.TryGetComponent(out DoorWithLock doorWithLock))
+                _isDragging = doorWithLock.TryOpenDoor(_dragableObject);
         }
         else
         {

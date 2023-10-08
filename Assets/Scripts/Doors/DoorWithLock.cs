@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -5,20 +6,28 @@ public class DoorWithLock : Door
 {
     [SerializeField] private float _speedRotate = 1;
 
+    private bool _isClose = true;
+
     private void Start() => SetPosition();
 
-    private void OnTriggerEnter(Collider other)
+    public bool TryOpenDoor(InteractionObject interactionObject)
     {
-        if (other.TryGetComponent(out InteractionWithObjects interactionWithObjects)
-            && interactionWithObjects.DragableObject != null)
+        if (interactionObject == null)
+            return _isClose;
+        else
         {
-            if (interactionWithObjects.DragableObject.TryGetComponent(out Key key))
-            {
-                key.Destroy();
-                interactionWithObjects.ChangeIsDragging();
-                WorkDoor();
-            }
+            if (interactionObject.TryGetComponent(out Key key))
+                UseKey(key);
+
+            return _isClose;
         }
+    }
+
+    private void UseKey(Key key)
+    {
+        key.Enable();
+        WorkDoor();
+        _isClose = false;
     }
 
     public override IEnumerator MoveDoor(Vector3 newxTarget)
