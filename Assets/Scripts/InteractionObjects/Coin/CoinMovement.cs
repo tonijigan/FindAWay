@@ -11,7 +11,8 @@ public class CoinMovement : MonoBehaviour
 
         while (transform.localPosition != target.localPosition)
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, target.transform.localPosition, duration * Time.deltaTime);
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition,
+                       target.transform.localPosition, duration * Time.deltaTime);
             yield return null;
         }
 

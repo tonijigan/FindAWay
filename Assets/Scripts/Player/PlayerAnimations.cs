@@ -7,21 +7,20 @@ public class PlayerAnimations : MonoBehaviour
     [SerializeField] private InteractionWithObjects _interactionWithObjects;
 
     private Animator _animator;
-
     private InteractionObject _interactionObject;
 
     private void Awake() => _animator = GetComponent<Animator>();
 
-    private void Update()
-    {
-        _interactionObject = _interactionWithObjects.DragableObject;
-    }
+    private void Update() => _interactionObject = _interactionWithObjects.DragableObject;
 
-    public void Move(Vector3 direction)
+    public void Move(Vector3 direction, bool haveGround)
     {
         Idle();
         Walk(direction);
+        Falling(haveGround);
     }
+
+    private void Falling(bool haveGround) => _animator.SetBool(_names.Falling, haveGround);
 
     private void Idle()
     {
@@ -33,8 +32,6 @@ public class PlayerAnimations : MonoBehaviour
         if (_interactionObject.TryGetComponent(out Key key))
             _animator.SetBool(_names.IdleWhitKey, _interactionWithObjects.IsDragging);
     }
-
-    public void Falling() => _animator.SetBool(_names.Falling, true);
 
     private void Walk(Vector3 direction)
     {

@@ -12,6 +12,7 @@ public class CellForCoins : MonoBehaviour
         Initialization();
         SetCoinsTarget();
     }
+
     private void Initialization()
     {
         _coins = new Coin[_cell.childCount];

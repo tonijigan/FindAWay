@@ -13,14 +13,14 @@ public class AnimationNames : MonoBehaviour
     private const string CIdleWhitBox = "IdleWhitBox";
     private const string CIdleWhitKey = "IdleWhitKey";
 
-    public string Alarm => CAlarm;
-    public string Idle => CIdle;
-    public string Walk => CWalk;
-    public string Take => CTake;
-    public string Put => CPut;
-    public string Falling => CFalling;
-    public string WalkWhitBox => CWalkWhitBox;
-    public string WalkWhitKey => CWalkWhitKey;
-    public string IdleWhitBox => CIdleWhitBox;
-    public string IdleWhitKey => CIdleWhitKey;
+    public int Alarm => Animator.StringToHash(CAlarm);
+    public int Idle => Animator.StringToHash(CIdle);
+    public int Walk => Animator.StringToHash(CWalk);
+    public int Take => Animator.StringToHash(CTake);
+    public int Put => Animator.StringToHash(CPut);
+    public int Falling => Animator.StringToHash(CFalling);
+    public int WalkWhitBox => Animator.StringToHash(CWalkWhitBox);
+    public int WalkWhitKey => Animator.StringToHash(CWalkWhitKey);
+    public int IdleWhitBox => Animator.StringToHash(CIdleWhitBox);
+    public int IdleWhitKey => Animator.StringToHash(CIdleWhitKey);
 }

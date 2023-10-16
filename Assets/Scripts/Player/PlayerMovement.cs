@@ -3,11 +3,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private DynamicJoystick _dynamicJoystick;
+    [SerializeField] private PlayerAnimations _playerAnimations;
+    [SerializeField] private PlayerWallet _playerWallet;
+    [SerializeField] private Transform _haveGroundPoint;
+    [SerializeField] private float _radiusTriggerGround;
     [SerializeField] private float _speed;
     [SerializeField] private float _rotateSpeed;
-    [SerializeField] private DynamicJoystick _dynamicJoystick;
-    [SerializeField] private PlayerWallet _playerWallet;
-    [SerializeField] private PlayerAnimations _playerAnimations;
     [SerializeField] private LayerMask _layerMask;
 
     private Vector3 _normal;
@@ -17,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        HaveGround();
         var newDirection = GetDirection();
         Move(newDirection);
         MoveRotate(newDirection);
@@ -40,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private bool HaveGround()
+    {
+        if (Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask)) return false;
+        else return true;
+    }
+
     private Vector3 Project(Vector3 direction)
     {
         return direction - Vector3.Dot(direction, _normal) * _normal;
@@ -50,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 directionAlongSurface = Project(direction.normalized);
         Vector3 offSet = _speed * Time.deltaTime * directionAlongSurface;
         _rigidbody.MovePosition(_rigidbody.position + offSet);
-        _playerAnimations.Move(direction);
+        _playerAnimations.Move(direction, HaveGround());
     }
 
     private Vector3 GetDirection()
