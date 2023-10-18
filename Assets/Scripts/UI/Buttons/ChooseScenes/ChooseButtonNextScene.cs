@@ -1,6 +1,6 @@
 using UnityEngine.Events;
 
-public class ButtonNextScene : AbstractButton
+public class ChooseButtonNextScene : AbstractButton
 {
     public event UnityAction NextScene;
 

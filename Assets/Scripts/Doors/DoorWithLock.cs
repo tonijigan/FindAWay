@@ -1,9 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DoorWithLock : Door
 {
     [SerializeField] private float _speedRotate = 1;
+
+    public event UnityAction Opened;
 
     private bool _isClose = true;
 
@@ -26,6 +29,7 @@ public class DoorWithLock : Door
     {
         key.Enable();
         WorkDoor();
+        Opened?.Invoke();
         _isClose = false;
     }
 

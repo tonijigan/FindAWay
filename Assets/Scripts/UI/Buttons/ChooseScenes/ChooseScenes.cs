@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class ChooseScenes : MonoBehaviour
 {
-    [SerializeField] private ButtonNextScene _nextScene;
-    [SerializeField] private ButtonPreviousScene _previousScene;
+    [SerializeField] private ChooseButtonNextScene _nextScene;
+    [SerializeField] private ChooseButtonPreviousScene _previousScene;
     [SerializeField] private Transform _imagesPath;
 
     private Transform[] _count;
