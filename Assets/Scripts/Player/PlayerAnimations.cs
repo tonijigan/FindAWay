@@ -35,16 +35,11 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Walk(Vector3 direction)
     {
-        if (_interactionObject == null) _animator.SetFloat(_names.Walk, direction.magnitude);
+        _animator.SetFloat(_names.Walk, direction.magnitude);
 
-        HaveInteractionObject(direction);
-    }
-
-    private void HaveInteractionObject(Vector3 direction)
-    {
         float magnitude = direction.magnitude;
 
-        if (_interactionWithObjects.IsDragging)
+        if (_interactionObject != null && _interactionWithObjects.IsDragging)
         {
             if (_interactionObject.TryGetComponent(out Box box))
                 _animator.SetFloat(_names.WalkWhitBox, magnitude);
@@ -52,7 +47,5 @@ public class PlayerAnimations : MonoBehaviour
             if (_interactionObject.TryGetComponent(out Key key))
                 _animator.SetFloat(_names.WalkWhitKey, magnitude);
         }
-
-        _animator.SetFloat(_names.Walk, magnitude);
     }
 }
