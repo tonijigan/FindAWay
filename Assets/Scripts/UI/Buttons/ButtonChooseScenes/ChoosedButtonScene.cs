@@ -4,5 +4,5 @@ public class ChoosedButtonScene : AbstractButton
 {
     public event UnityAction OnClick;
 
-    public override void ButtonClick() => OnClick?.Invoke();
+    public override void Click() => OnClick?.Invoke();
 }

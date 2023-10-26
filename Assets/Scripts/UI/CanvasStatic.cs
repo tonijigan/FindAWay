@@ -6,13 +6,22 @@ public class CanvasStatic : MonoBehaviour
     [SerializeField] private DynamicJoystick _dynamicJoystick;
     [SerializeField] private DoorWithLock _doorWithLock;
     [SerializeField] private PanelMenu _panelMenu;
+    [SerializeField] private HaveGround _haveGround;
     [SerializeField] private float _waitForSecondsValue = 2;
 
     private WaitForSeconds _waitForSeconds;
 
-    private void OnEnable() => _doorWithLock.Opened += OpenMenu;
+    private void OnEnable()
+    {
+        _haveGround.OnFall += OpenMenu;
+        _doorWithLock.Opened += OpenMenu;
+    }
 
-    private void OnDisable() => _doorWithLock.Opened -= OpenMenu;
+    private void OnDisable()
+    {
+        _haveGround.OnFall -= OpenMenu;
+        _doorWithLock.Opened -= OpenMenu;
+    }
 
     private void Awake() => _waitForSeconds = new WaitForSeconds(_waitForSecondsValue);
 

@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimations : MonoBehaviour
 {
-    [SerializeField] private AnimationNames _names;
+    [SerializeField] private HashNames _names;
     [SerializeField] private InteractionWithObjects _interactionWithObjects;
 
     private Animator _animator;

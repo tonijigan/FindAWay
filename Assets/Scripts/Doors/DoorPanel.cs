@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoorPanel : Door
+public class DoorPanel : AbstractDoor
 {
     protected override void SetPosition()
     {

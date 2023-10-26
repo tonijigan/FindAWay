@@ -1,16 +1,20 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class InteractionWithObjects : MonoBehaviour
 {
     [SerializeField] private Transform _currentTemplate;
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
 
+    private AudioSource _audioSource;
     private InteractionObject _dragableObject;
     private bool _isDragging;
 
     public InteractionObject DragableObject => _dragableObject;
     public bool IsDragging => _isDragging;
+
+    private void Start() => _audioSource = GetComponent<AudioSource>();
 
     private void Update() => DragAndDropObject();
 
@@ -19,6 +23,7 @@ public class InteractionWithObjects : MonoBehaviour
     public void TryPickUp(InteractionObject interactionObject)
     {
         _dragableObject = interactionObject;
+        PlaySound(_dragableObject.AudioClip);
         _dragableObject.FollowInstructions();
         _dragableObject.transform.parent = default;
         _dragableObject.transform.position = default;
@@ -30,12 +35,19 @@ public class InteractionWithObjects : MonoBehaviour
     {
         if (_dragableObject.IsUse == true)
         {
+            PlaySound(_dragableObject.AudioClip);
             _dragableObject.FollowInstructions();
             _dragableObject.transform.parent = default;
             _dragableObject.transform.position = boxPoint.position;
             _isDragging = false;
             _dragableObject = null;
         }
+    }
+
+    private void PlaySound(AudioClip audioClip)
+    {
+        _audioSource.clip = audioClip;
+        _audioSource.Play();
     }
 
     private bool TryGetObject(out GameObject currentObject)

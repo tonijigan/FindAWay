@@ -5,7 +5,7 @@ public class ButtonOpenPanel : AbstractButton
     [SerializeField] private AbstrapctPanel _panel;
     [SerializeField] private DynamicJoystick _dynamicJoystick;
 
-    public override void ButtonClick() => OpenPanel();
+    public override void Click() => OpenPanel();
 
     private void OpenPanel()
     {

@@ -1,25 +1,31 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody), typeof(HaveGround))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private DynamicJoystick _dynamicJoystick;
     [SerializeField] private PlayerAnimations _playerAnimations;
     [SerializeField] private PlayerWallet _playerWallet;
-    [SerializeField] private Transform _haveGroundPoint;
-    [SerializeField] private float _radiusTriggerGround;
     [SerializeField] private float _speed;
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private LayerMask _layerMask;
 
     private Vector3 _normal;
     private Rigidbody _rigidbody;
+    private HaveGround _haveGround;
 
-    private void Start() => _rigidbody = GetComponent<Rigidbody>();
+    private bool _isGround;
+    private float _timeFall = 0;
+
+    private void Start()
+    {
+        _haveGround = GetComponent<HaveGround>();
+        _rigidbody = GetComponent<Rigidbody>();
+    }
 
     private void FixedUpdate()
     {
-        HaveGround();
+        _isGround = _haveGround.Have();
         var newDirection = GetDirection();
         Move(newDirection);
         MoveRotate(newDirection);
@@ -39,14 +45,9 @@ public class PlayerMovement : MonoBehaviour
         {
             collider.enabled = false;
             _playerWallet.AddCoin(coin);
+            coin.PlaySound();
             coin.Did();
         }
-    }
-
-    private bool HaveGround()
-    {
-        if (Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask)) return false;
-        else return true;
     }
 
     private Vector3 Project(Vector3 direction)
@@ -59,13 +60,17 @@ public class PlayerMovement : MonoBehaviour
         Vector3 directionAlongSurface = Project(direction.normalized);
         Vector3 offSet = _speed * Time.deltaTime * directionAlongSurface;
         _rigidbody.MovePosition(_rigidbody.position + offSet);
-        _playerAnimations.Move(direction, HaveGround());
+        _playerAnimations.Move(direction, _isGround);
     }
 
     private Vector3 GetDirection()
     {
         int positionY = 0;
-        return new Vector3(_dynamicJoystick.Horizontal, positionY, _dynamicJoystick.Vertical);
+
+        if (_isGround == false)
+            return new Vector3(_dynamicJoystick.Horizontal, positionY, _dynamicJoystick.Vertical);
+        else
+            return Vector3.zero;
     }
 
     private void MoveRotate(Vector3 direction)

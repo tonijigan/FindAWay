@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LaserSecurityDoor : Door
+public class LaserSecurityDoor : AbstractDoor
 {
     protected override void SetPosition()
     {

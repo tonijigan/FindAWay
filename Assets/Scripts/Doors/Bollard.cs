@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bollard : Door
+public class Bollard : AbstractDoor
 {
     protected override void SetPosition()
     {

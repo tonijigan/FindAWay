@@ -5,7 +5,7 @@ public class ButtonContinueGame : AbstractButton
     [SerializeField] private GameObject _panelMenu;
     [SerializeField] private DynamicJoystick _dynamicJoystick;
 
-    public override void ButtonClick() => Continue();
+    public override void Click() => Continue();
 
     private void Continue()
     {

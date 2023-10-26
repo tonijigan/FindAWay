@@ -2,15 +2,17 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DoorWithLock : Door
+public class DoorWithLock : AbstractDoor
 {
+    [SerializeField] private AudioClip _audioClip;
     [SerializeField] private float _speedRotate = 1;
 
     public event UnityAction Opened;
 
+    private AudioClip _oldClip;
     private bool _isClose = true;
 
-    private void Start() => SetPosition();
+    private void Awake() => SetPosition();
 
     public bool TryOpenDoor(InteractionObject interactionObject)
     {
@@ -33,13 +35,24 @@ public class DoorWithLock : Door
         _isClose = false;
     }
 
-    public override IEnumerator MoveDoor(Vector3 newxTarget)
+    private void PlayAudioClip(AudioClip audioClip)
     {
-        IsOpenDoor = !IsOpenDoor;
+        DoorAudioSource.clip = audioClip;
+        DoorAudioSource.Play();
+    }
 
-        while (_typeDoor.localRotation != Quaternion.Euler(newxTarget))
+    public override IEnumerator MoveDoor(Vector3 newTarget)
+    {
+        _oldClip = DoorAudioSource.clip;
+        IsOpenDoor = !IsOpenDoor;
+        PlayAudioClip(_audioClip);
+        yield return WaitForSeconds;
+        PlayAudioClip(_oldClip);
+        yield return WaitForSeconds;
+
+        while (_typeDoor.localRotation != Quaternion.Euler(newTarget))
         {
-            _typeDoor.localRotation = Quaternion.Lerp(_typeDoor.localRotation, Quaternion.Euler(newxTarget), _speedRotate * Time.deltaTime);
+            _typeDoor.localRotation = Quaternion.Lerp(_typeDoor.localRotation, Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
             yield return null;
         }
 

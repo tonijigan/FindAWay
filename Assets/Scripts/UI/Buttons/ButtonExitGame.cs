@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ButtonExitGame : AbstractButton
 {
-    public override void ButtonClick() => Exit();
+    public override void Click() => Exit();
 
     private void Exit() => Application.Quit();
 }

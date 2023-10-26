@@ -2,20 +2,26 @@ using System.Collections;
 using UnityEngine.Events;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class ButtonObject : MonoBehaviour
 {
-    [SerializeField] private Door _door;
+    [SerializeField] private AbstractDoor _door;
     [SerializeField] private Transform _boxPoint;
 
     public event UnityAction<bool> ButtonClick;
 
     private Coroutine _coroutine;
     private Vector3 _startButtonPosition;
+    private AudioSource _audioSource;
 
     public Transform BoxPoint => _boxPoint;
     public bool IsClick { get; private set; } = false;
 
-    private void Awake() => _startButtonPosition = transform.localPosition;
+    private void Awake()
+    {
+        _audioSource = GetComponent<AudioSource>();
+        _startButtonPosition = transform.localPosition;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -52,6 +58,7 @@ public class ButtonObject : MonoBehaviour
     private IEnumerator ChangePosition(Vector3 newPosition)
     {
         float duration = 2f;
+        _audioSource.Play();
 
         while (transform.localPosition != newPosition)
         {
