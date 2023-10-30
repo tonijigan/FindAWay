@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator), typeof(AudioSource))]
 public class Alarm : MonoBehaviour
 {
-    [SerializeField] private HashNames _animationNames;
+    [SerializeField] private HashNames _hashNames;
     [SerializeField] private LaserSecurity _security;
     [SerializeField] private ButtonObject _button;
     [SerializeField] private Light _light;
@@ -38,7 +38,7 @@ public class Alarm : MonoBehaviour
 
     private void TurnOn()
     {
-        _animator.SetBool(_animationNames.Alarm, true);
+        _animator.SetBool(_hashNames.Alarm, true);
         _light.gameObject.SetActive(true);
         _audioSource.Play();
     }
@@ -46,7 +46,7 @@ public class Alarm : MonoBehaviour
     private void TurnOff(bool isClick = false)
     {
         _audioSource.Stop();
-        _animator.SetBool(_animationNames.Alarm, false);
+        _animator.SetBool(_hashNames.Alarm, false);
         _light.gameObject.SetActive(false);
     }
 }

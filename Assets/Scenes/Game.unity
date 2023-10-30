@@ -1979,42 +1979,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1557450255}
     m_Modifications:
-    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: _source
-      value: 
-      objectReference: {fileID: 1677192432}
-    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: _audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5fee2551471895640ab2a14f3c2a019a, type: 3}
-    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: _waitForSecondsTime
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539016260997533029, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.7142859
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539016260997533029, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.5714293
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539016260997533029, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 7.3821714e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539016260997533029, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.09853764
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539016260997533029, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 7.309791e-18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3436298641468423038, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7421588523973464961, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: m_Name
       value: DoorWithLock
@@ -2063,10 +2027,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7532252174366559857, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 999b83f8314032c418671a5f28095f81, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
 --- !u!1 &551500939
@@ -4516,11 +4476,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &994310960 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6736501365627440026, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
-  m_PrefabInstance: {fileID: 2079433504}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &997773533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7051,6 +7006,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 279614198}
     - target: {fileID: 3384221963098206620, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
+      propertyPath: _hashNames
+      value: 
+      objectReference: {fileID: 1096849107}
+    - target: {fileID: 3384221963098206620, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: _animationNames
       value: 
       objectReference: {fileID: 1096849107}
@@ -8834,11 +8793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff07dbf0e8c27243929489c5be6bc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &1677192432 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7532252174366559857, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
-  m_PrefabInstance: {fileID: 546851386}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1701001475
 GameObject:
   m_ObjectHideFlags: 0
@@ -11091,7 +11045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20310323, y: 0.5}
   m_AnchorMax: {x: 0.20310323, y: 0.5}
-  m_AnchoredPosition: {x: 2.0769348, y: 0.000061035156}
+  m_AnchoredPosition: {x: 2.0769272, y: 0.000061035156}
   m_SizeDelta: {x: 73.84601, y: 68.746704}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2023485307
@@ -11186,18 +11140,6 @@ PrefabInstance:
       propertyPath: _names
       value: 
       objectReference: {fileID: 1096849107}
-    - target: {fileID: 4465445272730395721, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
-      propertyPath: _haveGroundPoint
-      value: 
-      objectReference: {fileID: 994310960}
-    - target: {fileID: 4465445272730395721, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
-      propertyPath: _layerMask.m_Bits
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4465445272730395721, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
-      propertyPath: _radiusTriggerGround
-      value: 0.45
-      objectReference: {fileID: 0}
     - target: {fileID: 6667994745014809021, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _dynamicJoystick
       value: 

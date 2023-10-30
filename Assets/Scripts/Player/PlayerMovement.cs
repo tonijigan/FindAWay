@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
     {
         int positionY = 0;
 
-        if (_isGround == false)
+        if (_isGround == true)
             return new Vector3(_dynamicJoystick.Horizontal, positionY, _dynamicJoystick.Vertical);
         else
             return Vector3.zero;

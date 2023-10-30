@@ -13,28 +13,24 @@ public class HaveGround : MonoBehaviour
 
     public bool Have()
     {
-        if (Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask))
-        {
-            return false;
-        }
+        float minTime = 0;
+        bool isGround = Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask);
+
+        if (isGround == false)
+            Falling();
         else
-        {
-            Fall();
-            return true;
-        }
+            _timeFall = minTime;
+
+        return isGround;
     }
 
-    private void Fall()
+    private void Falling()
     {
-        float waitingTime = 2f;
-        float minTime = 0;
+        float maxTime = 2;
+
+        if (_timeFall > maxTime)
+            OnFall?.Invoke();
 
         _timeFall += Time.deltaTime;
-
-        if (_timeFall > waitingTime)
-        {
-            _timeFall = minTime;
-            OnFall?.Invoke();
-        }
     }
 }
