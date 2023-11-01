@@ -13,9 +13,15 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _normal;
     private Rigidbody _rigidbody;
     private HaveGround _haveGround;
-
+    private PlayerInput _input;
     private bool _isGround;
-    private float _timeFall = 0;
+
+
+    private void Awake()
+    {
+        _input = new PlayerInput();
+        _input.Enable();
+    }
 
     private void Start()
     {
@@ -65,10 +71,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 GetDirection()
     {
-        int positionY = 0;
-
         if (_isGround == true)
-            return new Vector3(_dynamicJoystick.Horizontal, positionY, _dynamicJoystick.Vertical);
+            return _input.Player.Move.ReadValue<Vector3>();
         else
             return Vector3.zero;
     }
