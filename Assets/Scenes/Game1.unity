@@ -2019,7 +2019,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000020027, y: 0.00000037983}
+  m_AnchoredPosition: {x: 0.000020027, y: 0}
   m_SizeDelta: {x: 186.6418, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186221838
@@ -5126,10 +5126,10 @@ RectTransform:
   m_Father: {fileID: 1531932843}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000024691, y: 612.31}
-  m_SizeDelta: {x: 209.6965, y: 96.394}
+  m_AnchorMin: {x: 0.4434635, y: 0.8726323}
+  m_AnchorMax: {x: 0.55600005, y: 0.934342}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &507437936
 MonoBehaviour:
@@ -9063,10 +9063,10 @@ RectTransform:
   m_Father: {fileID: 1531932843}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.025161644, y: 0.025607783}
-  m_AnchorMax: {x: 0.975, y: 0.97439224}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1022980822
 MonoBehaviour:
@@ -11335,10 +11335,10 @@ RectTransform:
   m_Father: {fileID: 1531932843}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.056703143, y: 0.12049816}
-  m_AnchorMax: {x: 0.94079417, y: 0.8797381}
-  m_AnchoredPosition: {x: 2.482788, y: -0.000061035156}
-  m_SizeDelta: {x: -797.16, y: -757.14}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.4828144, y: -0.000051243303}
+  m_SizeDelta: {x: 850.84, y: 396.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324874445
 MonoBehaviour:
@@ -13522,10 +13522,10 @@ RectTransform:
   m_Father: {fileID: 1531932843}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.1506958, y: 0.1795044}
-  m_SizeDelta: {x: -1013.2, y: -1123}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.15065531, y: 0.17950529}
+  m_SizeDelta: {x: 850.8, y: 397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1527284664
 MonoBehaviour:
@@ -17342,7 +17342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.883461, y: 0.7602563}
   m_AnchorMax: {x: 0.94775784, y: 0.8354875}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1957818819
@@ -18666,10 +18666,10 @@ RectTransform:
   m_Father: {fileID: 1531932843}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.056703143, y: 0.12049816}
-  m_AnchorMax: {x: 0.94079417, y: 0.8797381}
-  m_AnchoredPosition: {x: 2.482788, y: -0.000061035156}
-  m_SizeDelta: {x: -797.16, y: -757.14}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.4828144, y: -0.000051243303}
+  m_SizeDelta: {x: 850.84, y: 396.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107700517
 MonoBehaviour:
@@ -23310,15 +23310,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.096821636
+      value: -0.096821696
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.018309273
+      value: 0.018309288
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.97780377
+      value: -0.9778038
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.z
