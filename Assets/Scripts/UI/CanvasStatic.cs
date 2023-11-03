@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class CanvasStatic : MonoBehaviour
 {
-    [SerializeField] private DynamicJoystick _dynamicJoystick;
     [SerializeField] private DoorWithLock _doorWithLock;
     [SerializeField] private PanelMenu _panelMenu;
     [SerializeField] private HaveGround _haveGround;
@@ -37,7 +36,6 @@ public class CanvasStatic : MonoBehaviour
     private void TurnOnPanelMenu()
     {
         int timeScale = 0;
-        _dynamicJoystick.gameObject.SetActive(false);
         _panelMenu.gameObject.SetActive(true);
         _panelMenu.SwitchButtons();
         Time.timeScale = timeScale;
