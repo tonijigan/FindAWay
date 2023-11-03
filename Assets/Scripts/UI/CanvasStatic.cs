@@ -5,30 +5,31 @@ using UnityEngine;
 public class CanvasStatic : MonoBehaviour
 {
     [SerializeField] private DoorWithLock _doorWithLock;
-    [SerializeField] private PanelMenu _panelMenu;
+    [SerializeField] private PanelWin _panelWin;
+    [SerializeField] private PanelLoss _panelLoss;
     [SerializeField] private HaveGround _haveGround;
     [SerializeField] private Joystick _joystick;
-    [SerializeField] private float _waitForSecondsValue = 2;
-
-    private WaitForSeconds _waitForSeconds;
+    [SerializeField] private Timer _timer;
 
     private void OnEnable()
     {
-        _haveGround.OnFall += OpenMenu;
-        _doorWithLock.Opened += OpenMenu;
+        _doorWithLock.Opened += OpenPanelWin;
+        _haveGround.OnFall += OpenPanelLoss;
+        _timer.TimeIsUp += OpenPanelLoss;
     }
 
     private void OnDisable()
     {
-        _haveGround.OnFall -= OpenMenu;
-        _doorWithLock.Opened -= OpenMenu;
+        _doorWithLock.Opened -= OpenPanelWin;
+        _haveGround.OnFall -= OpenPanelLoss;
+        _timer.TimeIsUp -= OpenPanelLoss;
     }
 
-    private void Awake()
-    {
-        HaveMobilePlatform();
-        _waitForSeconds = new WaitForSeconds(_waitForSecondsValue);
-    }
+    private void Awake() => HaveMobilePlatform();
+
+    private void OpenPanelWin() => TurnOnPanel(_panelWin);
+
+    private void OpenPanelLoss() => TurnOnPanel(_panelLoss);
 
     private void HaveMobilePlatform()
     {
@@ -36,21 +37,12 @@ public class CanvasStatic : MonoBehaviour
         else _joystick.gameObject.SetActive(false);
     }
 
-    private void OpenMenu() => StartCoroutine(Wait());
-
-    private IEnumerator Wait()
-    {
-        yield return _waitForSeconds;
-        TurnOnPanelMenu();
-        StopCoroutine(Wait());
-    }
-
-    private void TurnOnPanelMenu()
+    private void TurnOnPanel(AbstrapctPanel abstrapctPanel)
     {
         int timeScale = 0;
-        _panelMenu.gameObject.SetActive(true);
+        _haveGround.gameObject.SetActive(false);
+        abstrapctPanel.gameObject.SetActive(true);
         _joystick.gameObject.SetActive(false);
-        _panelMenu.SwitchButtons();
         Time.timeScale = timeScale;
     }
 }

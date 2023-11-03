@@ -26,7 +26,7 @@ public class HaveGround : MonoBehaviour
 
     private void Falling()
     {
-        float maxTime = 2;
+        float maxTime = 2f;
 
         if (_timeFall > maxTime)
             OnFall?.Invoke();
