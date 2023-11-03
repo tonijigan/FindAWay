@@ -1,3 +1,4 @@
+using SimpleInputNamespace;
 using System.Collections;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class CanvasStatic : MonoBehaviour
     [SerializeField] private DoorWithLock _doorWithLock;
     [SerializeField] private PanelMenu _panelMenu;
     [SerializeField] private HaveGround _haveGround;
+    [SerializeField] private Joystick _joystick;
     [SerializeField] private float _waitForSecondsValue = 2;
 
     private WaitForSeconds _waitForSeconds;
@@ -22,7 +24,17 @@ public class CanvasStatic : MonoBehaviour
         _doorWithLock.Opened -= OpenMenu;
     }
 
-    private void Awake() => _waitForSeconds = new WaitForSeconds(_waitForSecondsValue);
+    private void Awake()
+    {
+        HaveMobilePlatform();
+        _waitForSeconds = new WaitForSeconds(_waitForSecondsValue);
+    }
+
+    private void HaveMobilePlatform()
+    {
+        if (Application.isMobilePlatform) _joystick.gameObject.SetActive(true);
+        else _joystick.gameObject.SetActive(false);
+    }
 
     private void OpenMenu() => StartCoroutine(Wait());
 
@@ -37,6 +49,7 @@ public class CanvasStatic : MonoBehaviour
     {
         int timeScale = 0;
         _panelMenu.gameObject.SetActive(true);
+        _joystick.gameObject.SetActive(false);
         _panelMenu.SwitchButtons();
         Time.timeScale = timeScale;
     }

@@ -70,8 +70,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 GetDirection()
     {
+        int minPosition = 0;
+        var newPosition = _input.Player.Move.ReadValue<Vector2>();
+
         if (_isGround == true)
-            return _input.Player.Move.ReadValue<Vector3>();
+            return new Vector3(newPosition.x, minPosition, newPosition.y);
         else
             return Vector3.zero;
     }
