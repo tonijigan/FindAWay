@@ -13,8 +13,6 @@ public class Coin : MonoBehaviour
         _coinMovement = GetComponent<CoinMovement>();
     }
 
-    public int CoinValue { get; private set; } = 1;
-
     public void SetTarget(Transform transform) => _target = transform;
 
     public void PlaySound() => _coinSource.Play();

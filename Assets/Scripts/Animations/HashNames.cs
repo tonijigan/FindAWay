@@ -15,6 +15,7 @@ public class HashNames : MonoBehaviour
     private const string CIdleWhitBox = "IdleWhitBox";
     private const string CIdleWhitKey = "IdleWhitKey";
     private const string CLoad = "Load";
+    private const string CCoins = "Coins";
 
     public int Alarm => Animator.StringToHash(CAlarm);
     public int Idle => Animator.StringToHash(CIdle);
@@ -27,4 +28,5 @@ public class HashNames : MonoBehaviour
     public int IdleWhitBox => Animator.StringToHash(CIdleWhitBox);
     public int IdleWhitKey => Animator.StringToHash(CIdleWhitKey);
     public string Load => CLoad;
+    public string Coins => CCoins;
 }
