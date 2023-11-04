@@ -5,7 +5,6 @@ using UnityEngine.Events;
 public class DoorWithLock : AbstractDoor
 {
     [SerializeField] private PlayerWallet _wallet;
-    [SerializeField] private HashNames _hashNames;
     [SerializeField] private AudioClip _audioClip;
     [SerializeField] private float _speedRotate = 1;
 
@@ -31,7 +30,7 @@ public class DoorWithLock : AbstractDoor
 
     private void UseKey(Key key)
     {
-        PlayerPrefs.SetInt(_hashNames.Coins, _wallet.CountCoins);
+        PlayerPrefs.SetInt(HashNames.Coins, _wallet.CountCoins);
         key.Enable();
         WorkDoor();
         Opened?.Invoke();

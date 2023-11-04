@@ -5,7 +5,6 @@ public class ScoreCoins : MonoBehaviour
 {
     [SerializeField] private TMP_Text _countCoin;
     [SerializeField] private PlayerWallet _playerWallet;
-    [SerializeField] private HashNames _hashNames;
 
     private void OnEnable() => _playerWallet.AddedCoin += AddCoin;
 
@@ -13,7 +12,7 @@ public class ScoreCoins : MonoBehaviour
 
     private void Awake()
     {
-        _countCoin.text = PlayerPrefs.GetInt(_hashNames.Coins).ToString();
+        _countCoin.text = PlayerPrefs.GetInt(HashNames.Coins).ToString();
     }
 
     private void AddCoin(int coin)

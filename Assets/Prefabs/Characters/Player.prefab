@@ -1684,7 +1684,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0b90dffac69d846a9cf4a2b0aaf0ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dynamicJoystick: {fileID: 0}
   _playerAnimations: {fileID: 272578743432495331}
   _playerWallet: {fileID: 3985664116561322347}
   _speed: 4
@@ -2031,7 +2030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36fe6671498b74d4bb4865c75598d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _names: {fileID: 0}
   _interactionWithObjects: {fileID: -7849620341651181390}
 --- !u!114 &5533374482392657832
 MonoBehaviour:

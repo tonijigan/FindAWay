@@ -3,7 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimations : MonoBehaviour
 {
-    [SerializeField] private HashNames _names;
     [SerializeField] private InteractionWithObjects _interactionWithObjects;
 
     private Animator _animator;
@@ -20,32 +19,32 @@ public class PlayerAnimations : MonoBehaviour
         Falling(haveGround);
     }
 
-    private void Falling(bool haveGround) => _animator.SetBool(_names.Falling, haveGround);
+    private void Falling(bool haveGround) => _animator.SetBool(HashNames.Falling, haveGround);
 
     private void Idle()
     {
         if (_interactionObject == null) return;
 
         if (_interactionObject.TryGetComponent(out Box box))
-            _animator.SetBool(_names.IdleWhitBox, _interactionWithObjects.IsDragging);
+            _animator.SetBool(HashNames.IdleWhitBox, _interactionWithObjects.IsDragging);
 
         if (_interactionObject.TryGetComponent(out Key key))
-            _animator.SetBool(_names.IdleWhitKey, _interactionWithObjects.IsDragging);
+            _animator.SetBool(HashNames.IdleWhitKey, _interactionWithObjects.IsDragging);
     }
 
     private void Walk(Vector3 direction)
     {
-        _animator.SetFloat(_names.Walk, direction.magnitude);
+        _animator.SetFloat(HashNames.Walk, direction.magnitude);
 
         float magnitude = direction.magnitude;
 
         if (_interactionObject != null && _interactionWithObjects.IsDragging)
         {
             if (_interactionObject.TryGetComponent(out Box box))
-                _animator.SetFloat(_names.WalkWhitBox, magnitude);
+                _animator.SetFloat(HashNames.WalkWhitBox, magnitude);
 
             if (_interactionObject.TryGetComponent(out Key key))
-                _animator.SetFloat(_names.WalkWhitKey, magnitude);
+                _animator.SetFloat(HashNames.WalkWhitKey, magnitude);
         }
     }
 }

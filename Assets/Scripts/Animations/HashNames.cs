@@ -1,8 +1,6 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class HashNames : MonoBehaviour
+public static class HashNames
 {
     private const string CAlarm = "Alarm";
     private const string CIdle = "Idle";
@@ -17,16 +15,16 @@ public class HashNames : MonoBehaviour
     private const string CLoad = "Load";
     private const string CCoins = "Coins";
 
-    public int Alarm => Animator.StringToHash(CAlarm);
-    public int Idle => Animator.StringToHash(CIdle);
-    public int Walk => Animator.StringToHash(CWalk);
-    public int Take => Animator.StringToHash(CTake);
-    public int Put => Animator.StringToHash(CPut);
-    public int Falling => Animator.StringToHash(CFalling);
-    public int WalkWhitBox => Animator.StringToHash(CWalkWhitBox);
-    public int WalkWhitKey => Animator.StringToHash(CWalkWhitKey);
-    public int IdleWhitBox => Animator.StringToHash(CIdleWhitBox);
-    public int IdleWhitKey => Animator.StringToHash(CIdleWhitKey);
-    public string Load => CLoad;
-    public string Coins => CCoins;
+    public static int Alarm => Animator.StringToHash(CAlarm);
+    public static int Idle => Animator.StringToHash(CIdle);
+    public static int Walk => Animator.StringToHash(CWalk);
+    public static int Take => Animator.StringToHash(CTake);
+    public static int Put => Animator.StringToHash(CPut);
+    public static int Falling => Animator.StringToHash(CFalling);
+    public static int WalkWhitBox => Animator.StringToHash(CWalkWhitBox);
+    public static int WalkWhitKey => Animator.StringToHash(CWalkWhitKey);
+    public static int IdleWhitBox => Animator.StringToHash(CIdleWhitBox);
+    public static int IdleWhitKey => Animator.StringToHash(CIdleWhitKey);
+    public static string Load => CLoad;
+    public static string Coins => CCoins;
 }

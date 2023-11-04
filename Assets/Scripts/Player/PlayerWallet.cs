@@ -4,8 +4,6 @@ using UnityEngine.Events;
 
 public class PlayerWallet : MonoBehaviour
 {
-    [SerializeField] private HashNames _hashNames;
-
     private List<Coin> _countCoin = new List<Coin>();
 
     public event UnityAction<int> AddedCoin;
@@ -27,7 +25,7 @@ public class PlayerWallet : MonoBehaviour
 
     private void InitSaveCoin()
     {
-        for (int i = 0; i < PlayerPrefs.GetInt(_hashNames.Coins); i++)
+        for (int i = 0; i < PlayerPrefs.GetInt(HashNames.Coins); i++)
             _countCoin.Add(_coin);
     }
 }
