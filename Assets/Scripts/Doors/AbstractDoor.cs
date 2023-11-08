@@ -52,7 +52,8 @@ public abstract class AbstractDoor : MonoBehaviour
 
         while (_typeDoor.localPosition != newTarget)
         {
-            _typeDoor.localPosition = Vector3.MoveTowards(_typeDoor.localPosition, newTarget, _speedOpenDoor * Time.deltaTime);
+            _typeDoor.localPosition = Vector3.MoveTowards(_typeDoor.localPosition,
+                                      newTarget, _speedOpenDoor * Time.deltaTime);
             yield return null;
         }
 

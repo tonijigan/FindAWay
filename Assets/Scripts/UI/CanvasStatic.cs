@@ -1,5 +1,4 @@
 using SimpleInputNamespace;
-using System.Collections;
 using UnityEngine;
 
 public class CanvasStatic : MonoBehaviour

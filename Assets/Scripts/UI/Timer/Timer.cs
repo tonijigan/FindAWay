@@ -4,14 +4,20 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _textMinuts;
     [SerializeField] private float _secunds = 300;
 
     public event UnityAction TimeIsUp;
+    public event UnityAction<float, float> CurrentTime;
 
     private float newTime = 1;
 
     private void FixedUpdate() => ÑountdownTime();
+
+    public void SetNewTime()
+    {
+        float newTime = 15;
+        _secunds = newTime;
+    }
 
     private void ÑountdownTime()
     {
@@ -27,7 +33,7 @@ public class Timer : MonoBehaviour
         }
         var newTimeMinuts = (int)_secunds / secundInMonuts;
         var newTimeSecunds = _secunds - (newTimeMinuts * secundInMonuts);
-        _textMinuts.text = $"{newTimeMinuts}:{newTimeSecunds}";
+        CurrentTime?.Invoke(newTimeMinuts, newTimeSecunds);
 
         if (_secunds == 0)
         {

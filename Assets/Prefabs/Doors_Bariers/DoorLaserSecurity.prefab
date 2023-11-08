@@ -953,7 +953,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c742d2910fcbdbb42ae7e8702908215f, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -974,9 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9e9193be94c881428ac951d8d09c455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animationNames: {fileID: 0}
   _security: {fileID: 433651952863466291}
-  _button: {fileID: 0}
   _light: {fileID: 0}
 --- !u!82 &7794361415861379890
 AudioSource:
@@ -1832,3 +1830,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _doorLaserSecurity: {fileID: 2086042002}
+  _timer: {fileID: 0}
