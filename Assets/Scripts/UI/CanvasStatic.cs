@@ -8,7 +8,7 @@ public class CanvasStatic : MonoBehaviour
     [SerializeField] private PanelWin _panelWin;
     [SerializeField] private PanelLoss _panelLoss;
     [SerializeField] private HaveGround _haveGround;
-    [SerializeField] private Joystick _joystick;
+    [SerializeField] private GameObject _joystick;
     [SerializeField] private Timer _timer;
 
     private Coroutine _coroutine;

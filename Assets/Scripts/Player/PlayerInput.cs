@@ -95,7 +95,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4d9f48bd-b4a6-4835-974a-72f6e058874f"",
+                    ""id"": ""f4a4ff94-63d7-4f07-8fe6-25f3661a85bf"",
                     ""path"": ""<AndroidJoystick>/stick"",
                     ""interactions"": """",
                     ""processors"": """",
