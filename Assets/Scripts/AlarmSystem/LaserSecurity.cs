@@ -15,9 +15,12 @@ public class LaserSecurity : MonoBehaviour
         if (collider != null && _isTrigger == false)
         {
             _isTrigger = true;
-            _timer.SetNewTime();
+
             if (_doorLaserSecurity.IsOpen == false)
+            {
+                _timer.SetNewTime();
                 IsTrigger?.Invoke(_doorLaserSecurity.IsOpen);
+            }
         }
     }
 }

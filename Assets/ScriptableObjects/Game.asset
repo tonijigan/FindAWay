@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteScene: {fileID: 21300000, guid: 250dfa6c3edaec245956e1c1610f28f9, type: 3}
   _sceneIndex: 1
+  _isAccess: 1

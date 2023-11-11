@@ -5,12 +5,11 @@ using UnityEngine.Events;
 public class DoorWithLock : AbstractDoor
 {
     [SerializeField] private PlayerWallet _wallet;
-    [SerializeField] private AudioClip _audioClip;
+    [SerializeField] private AudioClip _audioOpenLook, _audioOpenDoor;
     [SerializeField] private float _speedRotate = 1;
 
     public event UnityAction Opened;
 
-    private AudioClip _oldClip;
     private bool _isClose = true;
 
     private void Awake() => SetPosition();
@@ -45,16 +44,16 @@ public class DoorWithLock : AbstractDoor
 
     public override IEnumerator MoveDoor(Vector3 newTarget)
     {
-        _oldClip = DoorAudioSource.clip;
         IsOpenDoor = !IsOpenDoor;
-        PlayAudioClip(_audioClip);
+        PlayAudioClip(_audioOpenLook);
         yield return WaitForSeconds;
-        PlayAudioClip(_oldClip);
+        PlayAudioClip(_audioOpenDoor);
         yield return WaitForSeconds;
 
         while (_typeDoor.localRotation != Quaternion.Euler(newTarget))
         {
-            _typeDoor.localRotation = Quaternion.Lerp(_typeDoor.localRotation, Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
+            _typeDoor.localRotation = Quaternion.Lerp(_typeDoor.localRotation,
+                  Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
             yield return null;
         }
 

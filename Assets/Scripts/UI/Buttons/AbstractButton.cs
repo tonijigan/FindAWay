@@ -13,6 +13,8 @@ public abstract class AbstractButton : MonoBehaviour
 
     public abstract void Click();
 
+    public void AccessButton(bool isAccess) => _button.interactable = isAccess;
+
     public void PlaySound() => _audioSource.Play();
 
     private void ButtonClick()

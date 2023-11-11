@@ -1,4 +1,5 @@
 using SimpleInputNamespace;
+using System.Collections;
 using UnityEngine;
 
 public class CanvasStatic : MonoBehaviour
@@ -9,6 +10,9 @@ public class CanvasStatic : MonoBehaviour
     [SerializeField] private HaveGround _haveGround;
     [SerializeField] private Joystick _joystick;
     [SerializeField] private Timer _timer;
+
+    private Coroutine _coroutine;
+    private float _waitForOpenPanelWin = 1.5f;
 
     private void OnEnable()
     {
@@ -26,9 +30,9 @@ public class CanvasStatic : MonoBehaviour
 
     private void Awake() => HaveMobilePlatform();
 
-    private void OpenPanelWin() => TurnOnPanel(_panelWin);
+    private void OpenPanelWin() => PlayCoroutine(_panelWin, _waitForOpenPanelWin);
 
-    private void OpenPanelLoss() => TurnOnPanel(_panelLoss);
+    private void OpenPanelLoss() => PlayCoroutine(_panelLoss);
 
     private void HaveMobilePlatform()
     {
@@ -36,12 +40,22 @@ public class CanvasStatic : MonoBehaviour
         else _joystick.gameObject.SetActive(false);
     }
 
-    private void TurnOnPanel(AbstrapctPanel abstrapctPanel)
+    private void PlayCoroutine(AbstrapctPanel abstrapctPanel, float wait = 0)
     {
+        if (_coroutine != null)
+            StopCoroutine(_coroutine);
+
+        _coroutine = StartCoroutine(TurnOnPanel(_panelWin, wait));
+    }
+
+    private IEnumerator TurnOnPanel(AbstrapctPanel abstrapctPanel, float wait)
+    {
+        yield return new WaitForSeconds(wait);
         int timeScale = 0;
         _haveGround.gameObject.SetActive(false);
         abstrapctPanel.gameObject.SetActive(true);
         _joystick.gameObject.SetActive(false);
         Time.timeScale = timeScale;
+        StopCoroutine(TurnOnPanel(abstrapctPanel, wait));
     }
 }

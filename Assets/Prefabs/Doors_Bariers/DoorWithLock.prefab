@@ -878,7 +878,9 @@ MonoBehaviour:
   _playableDirector: {fileID: 0}
   _speedOpenDoor: 1
   _waitForSecondsTime: 0.5
-  _audioClip: {fileID: 8300000, guid: 5fee2551471895640ab2a14f3c2a019a, type: 3}
+  _wallet: {fileID: 0}
+  _audioOpenLook: {fileID: 8300000, guid: dfeba2ec0d9037f46b82e3132b9c8bc7, type: 3}
+  _audioOpenDoor: {fileID: 8300000, guid: 7465589227e03c54f8a8d386a7e84bbf, type: 3}
   _speedRotate: 1
 --- !u!82 &7532252174366559857
 AudioSource:
@@ -890,7 +892,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 999b83f8314032c418671a5f28095f81, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

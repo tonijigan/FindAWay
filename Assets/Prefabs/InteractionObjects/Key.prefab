@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210574c2c4130704988af8f43d124d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: 28b01b5b0c0077a4bb5fd77431821830, type: 3}
+  _audioClip: {fileID: 8300000, guid: 366e23680e5fd8a468900d9163e0578e, type: 3}
 --- !u!136 &3090047870027468901
 CapsuleCollider:
   m_ObjectHideFlags: 0

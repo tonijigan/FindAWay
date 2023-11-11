@@ -4,38 +4,35 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private float _secunds = 300;
+    [SerializeField] private float _seconds = 300;
+    [SerializeField] private float _secondsPerViolation;
 
     public event UnityAction TimeIsUp;
     public event UnityAction<float, float> CurrentTime;
 
-    private float newTime = 1;
+    private float _newTime = 1;
 
     private void FixedUpdate() => ÑountdownTime();
 
-    public void SetNewTime()
-    {
-        float newTime = 15;
-        _secunds = newTime;
-    }
+    public void SetNewTime() => _seconds = _secondsPerViolation;
 
     private void ÑountdownTime()
     {
         int minDolySecunds = 0;
         int maxDolySecunds = 1;
         int secundInMonuts = 60;
-        newTime -= Time.deltaTime;
+        _newTime -= Time.deltaTime;
 
-        if (newTime <= minDolySecunds)
+        if (_newTime <= minDolySecunds)
         {
-            newTime = maxDolySecunds;
-            _secunds -= maxDolySecunds;
+            _newTime = maxDolySecunds;
+            _seconds -= maxDolySecunds;
         }
-        var newTimeMinuts = (int)_secunds / secundInMonuts;
-        var newTimeSecunds = _secunds - (newTimeMinuts * secundInMonuts);
+        var newTimeMinuts = (int)_seconds / secundInMonuts;
+        var newTimeSecunds = _seconds - (newTimeMinuts * secundInMonuts);
         CurrentTime?.Invoke(newTimeMinuts, newTimeSecunds);
 
-        if (_secunds == 0)
+        if (_seconds == 0)
         {
             TimeIsUp?.Invoke();
             this.enabled = false;

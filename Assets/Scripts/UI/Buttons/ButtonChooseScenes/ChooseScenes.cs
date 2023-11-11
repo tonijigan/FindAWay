@@ -51,5 +51,10 @@ public class ChooseScenes : MonoBehaviour
         ShowCurrentScene();
     }
 
-    private void ShowCurrentScene() => _currentImage.sprite = _sceneObjects[_currentImageIndex].SpriteScene;
+    private void ShowCurrentScene()
+    {
+        _currentImage.sprite = _sceneObjects[_currentImageIndex].SpriteScene;
+        _choosedButtonScene.AccessButton(_sceneObjects[_currentImageIndex].IsAccess);
+        _choosedButtonScene.ShowAccessScene(_sceneObjects[_currentImageIndex].IsAccess);
+    }
 }
