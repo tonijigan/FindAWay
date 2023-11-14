@@ -3,8 +3,8 @@ using UnityEngine;
 public class PanelWin : AbstrapctPanel
 {
     [SerializeField] private Transform _pathImageStars;
+    [SerializeField] private SceneObject _sceneObject;
     [SerializeField] private ButtonObject[] _buttons;
-    [SerializeField] private SceneObject _nextSceneObject;
 
     private Transform[] _imageStars;
     private int _countButtonIsClick = 0;
@@ -12,7 +12,7 @@ public class PanelWin : AbstrapctPanel
     private void Start()
     {
         Initialization();
-        OpenNextScene();
+        OpenAccessNextScene();
         Show();
     }
 
@@ -27,12 +27,12 @@ public class PanelWin : AbstrapctPanel
             _imageStars[i].gameObject.SetActive(false);
     }
 
-    private void OpenNextScene()
+    private void OpenAccessNextScene()
     {
-        if (_nextSceneObject == null)
-            return;
+        int _accessStatusTrue = 1;
 
-        _nextSceneObject.OpenAccess();
+        if (_sceneObject != null && PlayerPrefs.GetInt(_sceneObject.name) != _accessStatusTrue)
+            PlayerPrefs.SetInt(_sceneObject.name, _accessStatusTrue);
     }
 
     private void Show()

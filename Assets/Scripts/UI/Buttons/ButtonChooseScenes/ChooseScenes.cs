@@ -8,7 +8,7 @@ public class ChooseScenes : MonoBehaviour
     [SerializeField] private ChooseButtonPreviousScene _previousScene;
     [SerializeField] private ChoosedButtonScene _choosedButtonScene;
     [SerializeField] private Image _currentImage;
-    [SerializeField] private SceneObject[] _sceneObjects;
+    [SerializeField] private SceneView[] _scenesView;
 
     private int _currentImageIndex = 0;
 
@@ -29,14 +29,14 @@ public class ChooseScenes : MonoBehaviour
     }
 
     private void ChoosedScene() => SceneManager.LoadScene
-        (_sceneObjects[_currentImageIndex].SceneIndex);
+        (_scenesView[_currentImageIndex].SceneIndex);
 
     private void ShowNextScene()
     {
         int element = 1;
         int minCount = 0;
 
-        if (_currentImageIndex < _sceneObjects.Length - element) _currentImageIndex++;
+        if (_currentImageIndex < _scenesView.Length - element) _currentImageIndex++;
         else _currentImageIndex = minCount;
         ShowCurrentScene();
     }
@@ -47,14 +47,14 @@ public class ChooseScenes : MonoBehaviour
         int minCount = 0;
 
         if (_currentImageIndex > minCount) _currentImageIndex--;
-        else _currentImageIndex = _sceneObjects.Length - element;
+        else _currentImageIndex = _scenesView.Length - element;
         ShowCurrentScene();
     }
 
     private void ShowCurrentScene()
     {
-        _currentImage.sprite = _sceneObjects[_currentImageIndex].SpriteScene;
-        _choosedButtonScene.AccessButton(_sceneObjects[_currentImageIndex].IsAccess);
-        _choosedButtonScene.ShowAccessScene(_sceneObjects[_currentImageIndex].IsAccess);
+        _currentImage.sprite = _scenesView[_currentImageIndex].SpriteScene;
+        _choosedButtonScene.AccessButton(_scenesView[_currentImageIndex].IsAccess);
+        _choosedButtonScene.ShowAccessScene(_scenesView[_currentImageIndex].IsAccess);
     }
 }

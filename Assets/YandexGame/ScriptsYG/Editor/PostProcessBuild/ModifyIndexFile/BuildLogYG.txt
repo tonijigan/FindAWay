@@ -1,2 +1,0 @@
-Build path: C:/Repos/Build/FindAWay
-Build number: 22

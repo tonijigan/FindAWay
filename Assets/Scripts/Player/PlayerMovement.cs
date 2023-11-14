@@ -1,3 +1,4 @@
+using SimpleInputNamespace;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(HaveGround))]
@@ -5,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayerAnimations _playerAnimations;
     [SerializeField] private PlayerWallet _playerWallet;
+    [SerializeField] private Joystick _joystick;
     [SerializeField] private float _speed;
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private LayerMask _layerMask;
@@ -74,7 +76,12 @@ public class PlayerMovement : MonoBehaviour
         var newPosition = _input.Player.Move.ReadValue<Vector2>();
 
         if (_isGround == true)
-            return new Vector3(newPosition.x, minPositionY, newPosition.y);
+        {
+            if (Application.isMobilePlatform == true)
+                return new Vector3(_joystick.xAxis.value, minPositionY, _joystick.yAxis.value);
+            else
+                return new Vector3(newPosition.x, minPositionY, newPosition.y);
+        }
         else
             return Vector3.zero;
     }
