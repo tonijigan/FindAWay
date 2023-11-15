@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(CoinMovement), typeof(AudioSource))]
 public class Coin : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem _effect;
+
     private AudioSource _coinSource;
     private CoinMovement _coinMovement;
     private Transform _target;
@@ -17,5 +19,8 @@ public class Coin : MonoBehaviour
 
     public void PlaySound() => _coinSource.Play();
 
-    public void Did() => _coinMovement.Move(_target);
+    public void Did()
+    {
+        _coinMovement.Move(_target);
+    }
 }

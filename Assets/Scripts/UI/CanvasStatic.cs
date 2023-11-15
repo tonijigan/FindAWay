@@ -30,9 +30,9 @@ public class CanvasStatic : MonoBehaviour
 
     private void Awake() => HaveMobilePlatform();
 
-    private void OpenPanelWin() => PlayCoroutine(_panelWin, _waitForOpenPanelWin);
+    private void OpenPanelWin() => PlayCoroutine(_panelWin);
 
-    private void OpenPanelLoss() => PlayCoroutine(_panelLoss);
+    private void OpenPanelLoss() => PlayCoroutine(_panelLoss, true);
 
     private void HaveMobilePlatform()
     {
@@ -40,22 +40,24 @@ public class CanvasStatic : MonoBehaviour
         else _joystick.gameObject.SetActive(false);
     }
 
-    private void PlayCoroutine(AbstrapctPanel abstrapctPanel, float wait = 0)
+    private void PlayCoroutine(AbstrapctPanel abstrapctPanel, bool isLoss = false)
     {
         if (_coroutine != null)
             StopCoroutine(_coroutine);
 
-        _coroutine = StartCoroutine(TurnOnPanel(_panelWin, wait));
+        _coroutine = StartCoroutine(TurnOnPanel(abstrapctPanel, isLoss));
     }
 
-    private IEnumerator TurnOnPanel(AbstrapctPanel abstrapctPanel, float wait)
+    private IEnumerator TurnOnPanel(AbstrapctPanel abstrapctPanel, bool isLoss)
     {
-        yield return new WaitForSeconds(wait);
+        if (isLoss == false)
+            yield return new WaitForSeconds(_waitForOpenPanelWin);
+
         int timeScale = 0;
         _haveGround.gameObject.SetActive(false);
         abstrapctPanel.gameObject.SetActive(true);
         _joystick.gameObject.SetActive(false);
         Time.timeScale = timeScale;
-        StopCoroutine(TurnOnPanel(abstrapctPanel, wait));
+        StopCoroutine(TurnOnPanel(abstrapctPanel, isLoss));
     }
 }

@@ -12,11 +12,12 @@ public abstract class AbstractDoor : MonoBehaviour
     protected Vector3 StartPositionDoor, NewPositionDoor;
     protected AudioSource DoorAudioSource;
     protected Coroutine Coroutine;
-    protected bool IsOpenDoor;
     protected WaitForSeconds WaitForSeconds;
-
+    protected bool IsOpenDoor;
 
     public bool IsOpen => IsOpenDoor;
+
+    protected PlayableDirector PlayableDirector => _playableDirector;
 
     private void Start()
     {
