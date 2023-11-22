@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public abstract class AbstractButton : MonoBehaviour
 {
     [SerializeField] private Button _button;
-
     [SerializeField] private AudioSource _audioSource;
+
 
     private void OnEnable() => _button.onClick.AddListener(ButtonClick);
 

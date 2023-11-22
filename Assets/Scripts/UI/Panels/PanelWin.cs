@@ -5,6 +5,8 @@ public class PanelWin : AbstrapctPanel
     [SerializeField] private Transform _pathImageStars;
     [SerializeField] private SceneObject _sceneObject;
     [SerializeField] private ButtonObject[] _buttons;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
 
     private Transform[] _imageStars;
     private int _countButtonIsClick = 0;
@@ -14,6 +16,7 @@ public class PanelWin : AbstrapctPanel
         Initialization();
         OpenAccessNextScene();
         Show();
+        PlaySound();
     }
 
     private void Initialization()
@@ -48,5 +51,12 @@ public class PanelWin : AbstrapctPanel
             return;
 
         _imageStars[_countButtonIsClick - element].gameObject.SetActive(true);
+    }
+
+    private void PlaySound()
+    {
+        _audioSource.loop = false;
+        _audioSource.clip = _audioClip;
+        _audioSource.Play();
     }
 }

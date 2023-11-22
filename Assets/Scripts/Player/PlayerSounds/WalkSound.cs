@@ -1,11 +1,13 @@
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class WalkSound : MonoBehaviour
 {
-    private AudioSource _audioSource;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
 
-    private void Start() => _audioSource = GetComponent<AudioSource>();
-
-    public void PlayWalkSound() => _audioSource.Play();
+    public void PlayWalkSound()
+    {
+        _audioSource.clip = _audioClip;
+        _audioSource.Play();
+    }
 }

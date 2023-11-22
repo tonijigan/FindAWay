@@ -1,4 +1,3 @@
-using SimpleInputNamespace;
 using System.Collections;
 using UnityEngine;
 

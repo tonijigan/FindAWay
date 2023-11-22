@@ -2,27 +2,27 @@ using System.Collections;
 using UnityEngine.Events;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class ButtonObject : MonoBehaviour
 {
     [SerializeField] private AbstractDoor _door;
     [SerializeField] private Transform _boxPoint;
+    [SerializeField] private AudioSource _audioSource;
 
     public event UnityAction<bool> ButtonClick;
 
     private Coroutine _coroutine;
     private Vector3 _startButtonPosition;
-    private AudioSource _audioSource;
+    private WaitForSeconds _waitForSeconds;
+    private float _waitTime = 1.0f;
 
     public Transform BoxPoint => _boxPoint;
     public bool IsClick { get; private set; } = false;
 
     private void Awake()
     {
-        _audioSource = GetComponent<AudioSource>();
         _startButtonPosition = transform.localPosition;
+        _waitForSeconds = new WaitForSeconds(_waitTime);
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.TryGetComponent(out Box box))
@@ -69,6 +69,8 @@ public class ButtonObject : MonoBehaviour
 
         ButtonClick?.Invoke(IsClick);
         _door.WorkDoor();
+        yield return _waitForSeconds;
+        _audioSource.Stop();
         StopCoroutine(ChangePosition(newPosition));
     }
 }

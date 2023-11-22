@@ -12,13 +12,14 @@ public class LaserSecurityDoor : AbstractDoor
         IsOpenDoor = !IsOpenDoor;
         PlayableDirector.Play();
         yield return WaitForSeconds;
-        DoorAudioSource.Play();
+        AudioDoor.clip = AudioClip;
+        AudioDoor.Play();
 
         if (IsOpenDoor == true) _laserSecurity.gameObject.SetActive(false);
         else _laserSecurity.gameObject.SetActive(true);
 
         yield return WaitForSeconds;
-        DoorAudioSource.Stop();
+        AudioDoor.Stop();
         StopCoroutine(MoveDoor(newTarget));
     }
 }

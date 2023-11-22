@@ -1,6 +1,5 @@
 using UnityEngine.Events;
 using UnityEngine;
-using TMPro;
 
 public class Timer : MonoBehaviour
 {
@@ -12,11 +11,9 @@ public class Timer : MonoBehaviour
 
     private float _newTime = 1;
 
-    private void FixedUpdate() => ÑountdownTime();
-
     public void SetNewTime() => _seconds = _secondsPerViolation;
 
-    private void ÑountdownTime()
+    public void CountDownTime()
     {
         int minDolySecunds = 0;
         int maxDolySecunds = 1;

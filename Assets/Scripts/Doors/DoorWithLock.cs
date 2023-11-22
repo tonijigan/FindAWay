@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class DoorWithLock : AbstractDoor
 {
     [SerializeField] private PlayerWallet _wallet;
-    [SerializeField] private AudioClip _audioOpenLook, _audioOpenDoor;
+    [SerializeField] private AudioClip _audioOpenLook;
     [SerializeField] private float _speedRotate = 1;
 
     public event UnityAction Opened;
@@ -38,8 +38,8 @@ public class DoorWithLock : AbstractDoor
 
     private void PlayAudioClip(AudioClip audioClip)
     {
-        DoorAudioSource.clip = audioClip;
-        DoorAudioSource.Play();
+        AudioDoor.clip = audioClip;
+        AudioDoor.Play();
     }
 
     public override IEnumerator MoveDoor(Vector3 newTarget)
@@ -47,7 +47,7 @@ public class DoorWithLock : AbstractDoor
         IsOpenDoor = !IsOpenDoor;
         PlayAudioClip(_audioOpenLook);
         yield return WaitForSeconds;
-        PlayAudioClip(_audioOpenDoor);
+        PlayAudioClip(AudioClip);
         yield return WaitForSeconds;
 
         while (_typeDoor.localRotation != Quaternion.Euler(newTarget))
@@ -57,6 +57,7 @@ public class DoorWithLock : AbstractDoor
             yield return null;
         }
 
+        AudioDoor.Stop();
         StopCoroutine(Coroutine);
     }
 

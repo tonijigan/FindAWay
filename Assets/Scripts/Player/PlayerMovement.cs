@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayerAnimations _playerAnimations;
+    [SerializeField] private PlayerInteractionObjectSound _playerInteractionSound;
     [SerializeField] private PlayerWallet _playerWallet;
     [SerializeField] private Joystick _joystick;
     [SerializeField] private float _speed;
@@ -30,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    public void OnFixedUpdate()
     {
         _isGround = _haveGround.Have();
         var newDirection = GetDirection();
@@ -52,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         {
             collider.enabled = false;
             _playerWallet.AddCoin(coin);
-            coin.PlaySound();
+            _playerInteractionSound.PlaySound(coin.AudioClip);
             coin.Did();
         }
     }
