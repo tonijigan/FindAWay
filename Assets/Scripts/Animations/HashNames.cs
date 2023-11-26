@@ -14,6 +14,7 @@ public static class HashNames
     private const string CIdleWhitKey = "IdleWhitKey";
     private const string CLoad = "Load";
     private const string CCoins = "Coins";
+    private const string CAudioListenerState = "AudioListenerState";
 
     public static int Alarm => Animator.StringToHash(CAlarm);
     public static int Idle => Animator.StringToHash(CIdle);
@@ -27,4 +28,5 @@ public static class HashNames
     public static int IdleWhitKey => Animator.StringToHash(CIdleWhitKey);
     public static string Load => CLoad;
     public static string Coins => CCoins;
+    public static string AudioListenerState => CAudioListenerState;
 }
