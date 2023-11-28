@@ -23,8 +23,8 @@ public class ButtonAudioListener : AbstractButton
 
     private void ChangeState()
     {
-        _audioListener.enabled = _isTurnOn;
         _isTurnOn = !_isTurnOn;
+        AudioListener.pause = _isTurnOn;
 
         if (_isTurnOn == true) _image.sprite = _spriteTurnOffAudio;
         else _image.sprite = _spriteTurnOnAudio;
