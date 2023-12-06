@@ -12,7 +12,7 @@ public class ScoreCoins : MonoBehaviour
 
     private void Awake()
     {
-        _countCoin.text = PlayerPrefs.GetInt(HashNames.Coins).ToString();
+        _countCoin.text = _playerWallet.CountCoins.ToString();
     }
 
     private void AddCoin(int coin)

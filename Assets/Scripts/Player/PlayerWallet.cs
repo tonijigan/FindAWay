@@ -25,7 +25,7 @@ public class PlayerWallet : MonoBehaviour
 
     private void InitSaveCoin()
     {
-        for (int i = 0; i < PlayerPrefs.GetInt(HashNames.Coins); i++)
+        for (int i = 0; i < ProgressTest.instance.PlayerInfo.Coin; i++)
             _countCoin.Add(_coin);
     }
 }

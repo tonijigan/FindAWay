@@ -14,10 +14,8 @@ public class Yandex : MonoBehaviour
     [SerializeField] private TMP_Text _nameText;
     [SerializeField] private RawImage _image;
 
-    public void HelloButton()
-    {
-        GetPlayerInfo();
-    }
+    private void Start() => GetPlayerInfo();
+
 
     public void SetName(string name)
     {
