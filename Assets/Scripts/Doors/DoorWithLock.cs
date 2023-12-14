@@ -29,7 +29,7 @@ public class DoorWithLock : AbstractDoor
 
     private void UseKey(Key key)
     {
-        ProgressTest.instance.Save(_wallet.CountCoins);//PlayerPrefs.SetInt(HashNames.Coins, _wallet.CountCoins);
+        PlayerPrefs.SetInt(HashNames.Coins, _wallet.CountCoins);
         key.Enable();
         WorkDoor();
         Opened?.Invoke();

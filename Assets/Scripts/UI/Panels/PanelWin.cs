@@ -7,12 +7,16 @@ public class PanelWin : AbstrapctPanel
     [SerializeField] private ButtonObject[] _buttons;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
+    [SerializeField] private SDKPromotionalVideo _promotionalVideo;
 
     private Transform[] _imageStars;
     private int _countButtonIsClick = 0;
 
     private void Start()
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        _promotionalVideo.Show();
+#endif
         Initialization();
         OpenAccessNextScene();
         Show();
