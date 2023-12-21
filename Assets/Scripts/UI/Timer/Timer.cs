@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     public event UnityAction<float, float> CurrentTime;
 
     private float _newTime = 1;
+    private bool _isUpTime = false;
 
     public void SetNewTime() => _seconds = _secondsPerViolation;
 
@@ -20,7 +21,7 @@ public class Timer : MonoBehaviour
         int secundInMonuts = 60;
         _newTime -= Time.deltaTime;
 
-        if (_newTime <= minDolySecunds)
+        if (_newTime <= minDolySecunds && _isUpTime == false)
         {
             _newTime = maxDolySecunds;
             _seconds -= maxDolySecunds;
@@ -29,9 +30,10 @@ public class Timer : MonoBehaviour
         var newTimeSecunds = _seconds - (newTimeMinuts * secundInMonuts);
         CurrentTime?.Invoke(newTimeMinuts, newTimeSecunds);
 
-        if (_seconds == 0)
+        if (_seconds == 0 && _isUpTime == false)
         {
             TimeIsUp?.Invoke();
+            _isUpTime = true;
             this.enabled = false;
         }
     }

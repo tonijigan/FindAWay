@@ -1461,7 +1461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAnimations: {fileID: 272578743432495331}
-  _playerInteractionSound: {fileID: 0}
+  _playerInteractionSound: {fileID: 5756182264317034123}
   _playerWallet: {fileID: 3985664116561322347}
   _joystick: {fileID: 0}
   _speed: 4
@@ -1820,7 +1820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36fe6671498b74d4bb4865c75598d729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionWithObjects: {fileID: -7849620341651181390}
 --- !u!114 &5533374482392657832
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Repos\FindAWay" t="IncludeRecursive">
+      <e p="Agava.WebUtility.Samples.Playtesting.csproj" t="IncludeRecursive" />
+      <e p="Agava.YandexGames.Samples.Playtesting.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="NewTestAssets" t="Include">
+          <e p="kenney_onscreen-controls" t="Include">
+            <e p="license.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="SimpleInput" t="Include">
+            <e p="Credits.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="AxisInputDrawer.cs" t="Include" />
+              <e p="BaseInputDrawer.cs" t="Include" />
+              <e p="ButtonInputDrawer.cs" t="Include" />
+              <e p="KeyInputDrawer.cs" t="Include" />
+              <e p="MouseButtonInputDrawer.cs" t="Include" />
+              <e p="SimpleInput.Editor.asmdef" t="Include" />
+            </e>
+            <e p="Example" t="Include">
+              <e p="ExamplePlayerController.cs" t="Include" />
+            </e>
+            <e p="README.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AxisInputs" t="Include">
+                <e p="AxisInputKeyboard.cs" t="Include" />
+                <e p="AxisInputMouse.cs" t="Include" />
+                <e p="AxisInputMoveGesture.cs" t="Include" />
+                <e p="AxisInputPinchGesture.cs" t="Include" />
+                <e p="AxisInputRotateGesture.cs" t="Include" />
+                <e p="AxisInputSwipeGesture.cs" t="Include" />
+                <e p="AxisInputUI.cs" t="Include" />
+                <e p="AxisInputUIArrows.cs" t="Include" />
+                <e p="Dpad.cs" t="Include" />
+                <e p="Joystick.cs" t="Include" />
+                <e p="SteeringWheel.cs" t="Include" />
+                <e p="Touchpad.cs" t="Include" />
+              </e>
+              <e p="ButtonInputs" t="Include">
+                <e p="ButtonInputKeyboard.cs" t="Include" />
+                <e p="ButtonInputSwipeGesture.cs" t="Include" />
+                <e p="ButtonInputUI.cs" t="Include" />
+              </e>
+              <e p="Core" t="Include">
+                <e p="BaseInput.cs" t="Include" />
+                <e p="ISimpleInputDraggable.cs" t="Include" />
+                <e p="ISimpleInputDraggableMultiTouch.cs" t="Include" />
+                <e p="NonDrawingGraphic.cs" t="Include" />
+                <e p="SelectivePointerInput.cs" t="Include" />
+                <e p="SimpleInputDragListener.cs" t="Include" />
+                <e p="SimpleInputMultiDragListener.cs" t="Include" />
+                <e p="SimpleInputUtils.cs" t="Include" />
+                <e p="SwipeGestureBase.cs" t="Include" />
+                <e p="UnityInputProvider.cs" t="Include" />
+              </e>
+              <e p="KeyInputs" t="Include">
+                <e p="KeyInputKeyboard.cs" t="Include" />
+                <e p="KeyInputSwipeGesture.cs" t="Include" />
+                <e p="KeyInputUI.cs" t="Include" />
+              </e>
+              <e p="MouseButtonInputs" t="Include">
+                <e p="MouseButtonInputKeyboard.cs" t="Include" />
+                <e p="MouseButtonInputSwipeGesture.cs" t="Include" />
+                <e p="MouseButtonInputUI.cs" t="Include" />
+              </e>
+              <e p="SimpleInput.cs" t="Include" />
+              <e p="SimpleInputHelper.cs" t="Include" />
+            </e>
+            <e p="SimpleInput.Runtime.asmdef" t="Include" />
+          </e>
+        </e>
+        <e p="Samples" t="Include">
+          <e p="Web Utility" t="Include">
+            <e p="Agava.WebUtility.Samples.Playtesting.asmdef" t="Include" />
+            <e p="PlaytestingCanvas.cs" t="Include" />
+          </e>
+          <e p="Yandex Games" t="Include">
+            <e p="16.0.0" t="Include">
+              <e p="Playtesting Sample" t="Include">
+                <e p="Agava.YandexGames.Samples.Playtesting.asmdef" t="Include" />
+                <e p="PlaytestingCanvas.cs" t="Include" />
+                <e p="ProductCatalogPanel.cs" t="Include" />
+                <e p="ProductPanel.cs" t="Include" />
+                <e p="PurchasedProductListPanel.cs" t="Include" />
+                <e p="PurchasedProductPanel.cs" t="Include" />
+                <e p="WebEventSystem.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AlarmSystem" t="Include">
+            <e p="Alarm.cs" t="Include" />
+            <e p="LaserSecurity.cs" t="Include" />
+          </e>
+          <e p="AllUpdate.cs" t="Include" />
+          <e p="Animations" t="Include">
+            <e p="HashNames.cs" t="Include" />
+          </e>
+          <e p="Buttons" t="Include">
+            <e p="ButtonObject.cs" t="Include" />
+          </e>
+          <e p="Doors" t="Include">
+            <e p="AbstractDoor.cs" t="Include" />
+            <e p="Bollard.cs" t="Include" />
+            <e p="DoorPanel.cs" t="Include" />
+            <e p="DoorWay.cs" t="Include" />
+            <e p="DoorWithLock.cs" t="Include" />
+            <e p="LaserSecurityDoor.cs" t="Include" />
+          </e>
+          <e p="InteractionObjects" t="Include">
+            <e p="Box.cs" t="Include" />
+            <e p="Coin" t="Include">
+              <e p="CellForCoins.cs" t="Include" />
+              <e p="Coin.cs" t="Include" />
+              <e p="CoinMovement.cs" t="Include" />
+              <e p="CoinViewMenu.cs" t="Include" />
+            </e>
+            <e p="InteractionObject.cs" t="Include" />
+            <e p="Key.cs" t="Include" />
+          </e>
+          <e p="MeshCombiner" t="Include">
+            <e p="Editor" t="Include">
+              <e p="MeshCombinerEditor.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="MeshCombiner.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Player" t="Include">
+            <e p="HaveGround.cs" t="Include" />
+            <e p="PlayerAnimations.cs" t="Include" />
+            <e p="PlayerInput.cs" t="Include" />
+            <e p="PlayerInteractionObjectSound.cs" t="Include" />
+            <e p="PlayerInteractionWithObjects.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerSounds" t="Include">
+              <e p="WalkSound.cs" t="Include" />
+            </e>
+            <e p="PlayerWallet.cs" t="Include" />
+          </e>
+          <e p="ScriptableObject" t="Include">
+            <e p="SceneObjects" t="Include">
+              <e p="SceneObject.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SDK" t="Include">
+            <e p="LeaderBoard" t="Include">
+              <e p="FocusTracking.cs" t="Include" />
+              <e p="LeaderBoard.cs" t="Include" />
+              <e p="LeaderBoardElement.cs" t="Include" />
+              <e p="LeaderBoardPlayer.cs" t="Include" />
+              <e p="LeaderBoardView.cs" t="Include" />
+            </e>
+            <e p="SDKInitializator.cs" t="Include" />
+            <e p="SDKMenu.cs" t="Include" />
+            <e p="SDKPromotionalVideo.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Buttons" t="Include">
+              <e p="AbstractButton.cs" t="Include" />
+              <e p="ButtonAudioListener.cs" t="Include" />
+              <e p="ButtonChooseScenes" t="Include">
+                <e p="ChooseButtonNextScene.cs" t="Include" />
+                <e p="ChooseButtonPreviousScene.cs" t="Include" />
+                <e p="ChoosedButtonScene.cs" t="Include" />
+                <e p="ChooseScenes.cs" t="Include" />
+              </e>
+              <e p="ButtonContinueGame.cs" t="Include" />
+              <e p="ButtonPanel" t="Include">
+                <e p="ButtonClosePanel.cs" t="Include" />
+                <e p="ButtonOpenLeaderBoard.cs" t="Include" />
+                <e p="ButtonOpenPanel.cs" t="Include" />
+              </e>
+              <e p="ButtonScene" t="Include">
+                <e p="ButtonScene.cs" t="Include" />
+              </e>
+              <e p="ScoreCoins.cs" t="Include" />
+            </e>
+            <e p="CanvasStatic.cs" t="Include" />
+            <e p="Panels" t="Include">
+              <e p="AbstrapctPanel.cs" t="Include" />
+              <e p="LeaderBoardPanel.cs" t="Include" />
+              <e p="PanelLoss.cs" t="Include" />
+              <e p="PanelMenu.cs" t="Include" />
+              <e p="PanelShop.cs" t="Include" />
+              <e p="PanelWin.cs" t="Include" />
+            </e>
+            <e p="Scenes" t="Include">
+              <e p="SceneView.cs" t="Include" />
+            </e>
+            <e p="Timer" t="Include">
+              <e p="Timer.cs" t="Include" />
+              <e p="TimerView.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="FindAWay.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SimpleInput.Editor.csproj" t="IncludeRecursive" />
+      <e p="SimpleInput.Runtime.csproj" t="IncludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Антон\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Антон\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_FindAWay.-2122498858.00" t="ExcludeRecursive" />
+  </component>
+</project>

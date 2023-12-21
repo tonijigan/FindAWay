@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using Agava.YandexGames;
 
 public class CoinViewMenu : MonoBehaviour
 {
