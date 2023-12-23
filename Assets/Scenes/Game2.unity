@@ -15803,6 +15803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6667994745014809023, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
 --- !u!114 &2079433511 stripped
@@ -18936,6 +18940,10 @@ PrefabInstance:
     - target: {fileID: 4213907840115440763, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: m_Name
       value: Canvases
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213907840115440763, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4213907840228339465, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: m_SizeDelta.x

@@ -1,4 +1,7 @@
 using System.Collections;
+using Agava.YandexGames;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,7 +10,8 @@ public class DoorWithLock : AbstractDoor
     [SerializeField] private PlayerWallet _wallet;
     [SerializeField] private AudioClip _audioOpenLook;
     [SerializeField] private float _speedRotate = 1;
-
+    [SerializeField] private TMP_Text _text;
+    
     public event UnityAction Opened;
 
     private bool _isClose = true;
@@ -29,7 +33,11 @@ public class DoorWithLock : AbstractDoor
 
     private void UseKey(Key key)
     {
-        PlayerPrefs.SetInt(HashNames.Coins, _wallet.CountCoins);
+#if UNITY_WEBGL && !UNITY_EDITOR
+        string save = "Work";
+        PlayerAccount.SetCloudSaveData(save);
+        _text.text = save;
+#endif
         key.Enable();
         WorkDoor();
         Opened?.Invoke();
