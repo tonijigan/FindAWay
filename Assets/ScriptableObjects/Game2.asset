@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cca7aa3ab5247446aca34cd1696044b, type: 3}
-  m_Name: Game1
+  m_Name: Game2
   m_EditorClassIdentifier: 
-  _spriteScene: {fileID: 21300000, guid: dd4fea69007ae3b4b91c3fe3cc17533f, type: 3}
-  _sceneIndex: 3
+  _spriteScene: {fileID: 21300000, guid: 5671c62f9e04d5e48bc7fcf7d3829f56, type: 3}
+  _sceneIndex: 4

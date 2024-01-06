@@ -6,7 +6,12 @@ using Agava.YandexGames;
 public class CoinViewMenu : MonoBehaviour
 {
     [SerializeField] private TMP_Text _text;
-    
-    private void Awake() =>_text.text = _text.text = StaticCoins.Coins.ToString();
-    
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+    private void Start()
+    {
+        PlayerAccount.GetCloudSaveData(ProgressCoins.GetPlayerInfo);
+        _text.text = ProgressCoins.PlayerInfo.Coins.ToString();
+    }
+#endif
 }

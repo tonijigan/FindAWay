@@ -36,10 +36,10 @@ public class PanelWin : AbstrapctPanel
 
     private void OpenAccessNextScene()
     {
-        int _accessStatusTrue = 1;
+        //int accessStatusTrue = 1;
 
-        if (_sceneObject != null && PlayerPrefs.GetInt(_sceneObject.name) != _accessStatusTrue)
-            PlayerPrefs.SetInt(_sceneObject.name, _accessStatusTrue);
+        //if (_sceneObject != null && PlayerPrefs.GetInt(_sceneObject.name) != accessStatusTrue)
+        //    PlayerPrefs.SetInt(_sceneObject.name, accessStatusTrue);
     }
 
     private void Show()

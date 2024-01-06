@@ -17,26 +17,20 @@ public class PlayerWallet : MonoBehaviour
     private void Awake()
     {
 #if UNITY_WEBGL && !UNITY_EDITOR
-        PlayerAccount.GetCloudSaveData(OnSuccessCallback);
+        PlayerAccount.GetCloudSaveData(ProgressCoins.GetPlayerInfo);
 #endif
         InitSaveCoin();
-    }
-
-    private void OnSuccessCallback(string data)
-    {
-        StaticCoins.SetCoins(Convert.ToInt32(data));
     }
 
     public void AddCoin(Coin coin)
     {
         _countCoin.Add(coin);
-        StaticCoins.SetCoins(_countCoin.Count);
         AddedCoin?.Invoke(_countCoin.Count);
     }
 
     private void InitSaveCoin()
     {
-        for (int i = 0; i < StaticCoins.Coins; i++)
+        for (int i = 0; i < ProgressCoins.PlayerInfo.Coins; i++)
             _countCoin.Add(_coin);
     }
 }
