@@ -1,0 +1,343 @@
+Index: Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta
+===================================================================
+--- Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
+@@ -1,7 +0,0 @@
+-fileFormatVersion: 2
+-guid: 80567f9f7d07eae45b2d74587af03ecc
+-DefaultImporter:
+-  externalObjects: {}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/StreamingAssets.meta
+===================================================================
+--- Assets/StreamingAssets.meta	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ Assets/StreamingAssets.meta	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
+@@ -1,8 +0,0 @@
+-fileFormatVersion: 2
+-guid: 279d9b315e1491e42aee05731267c4b3
+-folderAsset: yes
+-DefaultImporter:
+-  externalObjects: {}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: .idea/.idea.FindAWay/.idea/codeStyles/codeStyleConfig.xml
+===================================================================
+--- .idea/.idea.FindAWay/.idea/codeStyles/codeStyleConfig.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ .idea/.idea.FindAWay/.idea/codeStyles/codeStyleConfig.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
+@@ -1,5 +0,0 @@
+-<component name="ProjectCodeStyleConfiguration">
+-  <state>
+-    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
+-  </state>
+-</component>
+\ No newline at end of file
+Index: .vscode/settings.json
+===================================================================
+--- .vscode/settings.json	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ .vscode/settings.json	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
+@@ -1,60 +0,0 @@
+-{
+-    "files.exclude": {
+-        "**/.DS_Store": true,
+-        "**/.git": true,
+-        "**/.vs": true,
+-        "**/.gitmodules": true,
+-        "**/.vsconfig": true,
+-        "**/*.booproj": true,
+-        "**/*.pidb": true,
+-        "**/*.suo": true,
+-        "**/*.user": true,
+-        "**/*.userprefs": true,
+-        "**/*.unityproj": true,
+-        "**/*.dll": true,
+-        "**/*.exe": true,
+-        "**/*.pdf": true,
+-        "**/*.mid": true,
+-        "**/*.midi": true,
+-        "**/*.wav": true,
+-        "**/*.gif": true,
+-        "**/*.ico": true,
+-        "**/*.jpg": true,
+-        "**/*.jpeg": true,
+-        "**/*.png": true,
+-        "**/*.psd": true,
+-        "**/*.tga": true,
+-        "**/*.tif": true,
+-        "**/*.tiff": true,
+-        "**/*.3ds": true,
+-        "**/*.3DS": true,
+-        "**/*.fbx": true,
+-        "**/*.FBX": true,
+-        "**/*.lxo": true,
+-        "**/*.LXO": true,
+-        "**/*.ma": true,
+-        "**/*.MA": true,
+-        "**/*.obj": true,
+-        "**/*.OBJ": true,
+-        "**/*.asset": true,
+-        "**/*.cubemap": true,
+-        "**/*.flare": true,
+-        "**/*.mat": true,
+-        "**/*.meta": true,
+-        "**/*.prefab": true,
+-        "**/*.unity": true,
+-        "build/": true,
+-        "Build/": true,
+-        "Library/": true,
+-        "library/": true,
+-        "obj/": true,
+-        "Obj/": true,
+-        "Logs/": true,
+-        "logs/": true,
+-        "ProjectSettings/": true,
+-        "UserSettings/": true,
+-        "temp/": true,
+-        "Temp/": true
+-    },
+-    "dotnet.defaultSolution": "FindAWay.sln"
+-}
+\ No newline at end of file
+Index: Assets/StreamingAssets/UnityServicesProjectConfiguration.json
+===================================================================
+--- Assets/StreamingAssets/UnityServicesProjectConfiguration.json	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ Assets/StreamingAssets/UnityServicesProjectConfiguration.json	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
+@@ -1,1 +0,0 @@
+-{"Keys":["com.unity.services.core.cloud-environment","com.unity.services.core.version"],"Values":[{"m_Value":"production","m_IsReadOnly":true},{"m_Value":"1.4.2","m_IsReadOnly":true}]}
+\ No newline at end of file
+Index: .idea/.idea.FindAWay/.idea/encodings.xml
+===================================================================
+--- .idea/.idea.FindAWay/.idea/encodings.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ .idea/.idea.FindAWay/.idea/encodings.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
+@@ -1,4 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+-</project>
+\ No newline at end of file
+Index: .idea/.idea.FindAWay/.idea/contentModel.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ContentModelStore\">\r\n    <e p=\"C:\\Repos\\FindAWay\" t=\"IncludeRecursive\">\r\n      <e p=\"Agava.WebUtility.Samples.Playtesting.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Agava.YandexGames.Samples.Playtesting.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Assembly-CSharp-Editor.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Assembly-CSharp.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Assets\" t=\"Include\">\r\n        <e p=\"NewTestAssets\" t=\"Include\">\r\n          <e p=\"kenney_onscreen-controls\" t=\"Include\">\r\n            <e p=\"license.txt\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"Plugins\" t=\"Include\">\r\n          <e p=\"SimpleInput\" t=\"Include\">\r\n            <e p=\"Credits.txt\" t=\"Include\" />\r\n            <e p=\"Editor\" t=\"Include\">\r\n              <e p=\"AxisInputDrawer.cs\" t=\"Include\" />\r\n              <e p=\"BaseInputDrawer.cs\" t=\"Include\" />\r\n              <e p=\"ButtonInputDrawer.cs\" t=\"Include\" />\r\n              <e p=\"KeyInputDrawer.cs\" t=\"Include\" />\r\n              <e p=\"MouseButtonInputDrawer.cs\" t=\"Include\" />\r\n              <e p=\"SimpleInput.Editor.asmdef\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"Example\" t=\"Include\">\r\n              <e p=\"ExamplePlayerController.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"README.txt\" t=\"Include\" />\r\n            <e p=\"Scripts\" t=\"Include\">\r\n              <e p=\"AxisInputs\" t=\"Include\">\r\n                <e p=\"AxisInputKeyboard.cs\" t=\"Include\" />\r\n                <e p=\"AxisInputMouse.cs\" t=\"Include\" />\r\n                <e p=\"AxisInputMoveGesture.cs\" t=\"Include\" />\r\n                <e p=\"AxisInputPinchGesture.cs\" t=\"Include\" />\r\n                <e p=\"AxisInputRotateGesture.cs\" t=\"Include\" />\r\n                <e p=\"AxisInputSwipeGesture.cs\" t=\"Include\" />\r\n                <e p=\"AxisInputUI.cs\" t=\"Include\" />\r\n                <e p=\"AxisInputUIArrows.cs\" t=\"Include\" />\r\n                <e p=\"Dpad.cs\" t=\"Include\" />\r\n                <e p=\"Joystick.cs\" t=\"Include\" />\r\n                <e p=\"SteeringWheel.cs\" t=\"Include\" />\r\n                <e p=\"Touchpad.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"ButtonInputs\" t=\"Include\">\r\n                <e p=\"ButtonInputKeyboard.cs\" t=\"Include\" />\r\n                <e p=\"ButtonInputSwipeGesture.cs\" t=\"Include\" />\r\n                <e p=\"ButtonInputUI.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"Core\" t=\"Include\">\r\n                <e p=\"BaseInput.cs\" t=\"Include\" />\r\n                <e p=\"ISimpleInputDraggable.cs\" t=\"Include\" />\r\n                <e p=\"ISimpleInputDraggableMultiTouch.cs\" t=\"Include\" />\r\n                <e p=\"NonDrawingGraphic.cs\" t=\"Include\" />\r\n                <e p=\"SelectivePointerInput.cs\" t=\"Include\" />\r\n                <e p=\"SimpleInputDragListener.cs\" t=\"Include\" />\r\n                <e p=\"SimpleInputMultiDragListener.cs\" t=\"Include\" />\r\n                <e p=\"SimpleInputUtils.cs\" t=\"Include\" />\r\n                <e p=\"SwipeGestureBase.cs\" t=\"Include\" />\r\n                <e p=\"UnityInputProvider.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"KeyInputs\" t=\"Include\">\r\n                <e p=\"KeyInputKeyboard.cs\" t=\"Include\" />\r\n                <e p=\"KeyInputSwipeGesture.cs\" t=\"Include\" />\r\n                <e p=\"KeyInputUI.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"MouseButtonInputs\" t=\"Include\">\r\n                <e p=\"MouseButtonInputKeyboard.cs\" t=\"Include\" />\r\n                <e p=\"MouseButtonInputSwipeGesture.cs\" t=\"Include\" />\r\n                <e p=\"MouseButtonInputUI.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"SimpleInput.cs\" t=\"Include\" />\r\n              <e p=\"SimpleInputHelper.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"SimpleInput.Runtime.asmdef\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n        <e p=\"Samples\" t=\"Include\">\r\n          <e p=\"Web Utility\" t=\"Include\">\r\n            <e p=\"Agava.WebUtility.Samples.Playtesting.asmdef\" t=\"Include\" />\r\n            <e p=\"PlaytestingCanvas.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Yandex Games\" t=\"Include\">\r\n            <e p=\"16.0.0\" t=\"Include\">\r\n              <e p=\"Playtesting Sample\" t=\"Include\">\r\n                <e p=\"Agava.YandexGames.Samples.Playtesting.asmdef\" t=\"Include\" />\r\n                <e p=\"PlaytestingCanvas.cs\" t=\"Include\" />\r\n                <e p=\"ProductCatalogPanel.cs\" t=\"Include\" />\r\n                <e p=\"ProductPanel.cs\" t=\"Include\" />\r\n                <e p=\"PurchasedProductListPanel.cs\" t=\"Include\" />\r\n                <e p=\"PurchasedProductPanel.cs\" t=\"Include\" />\r\n                <e p=\"WebEventSystem.cs\" t=\"Include\" />\r\n              </e>\r\n            </e>\r\n          </e>\r\n        </e>\r\n        <e p=\"Scripts\" t=\"Include\">\r\n          <e p=\"AlarmSystem\" t=\"Include\">\r\n            <e p=\"Alarm.cs\" t=\"Include\" />\r\n            <e p=\"LaserSecurity.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"AllUpdate.cs\" t=\"Include\" />\r\n          <e p=\"Animations\" t=\"Include\">\r\n            <e p=\"HashNames.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Buttons\" t=\"Include\">\r\n            <e p=\"ButtonObject.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Doors\" t=\"Include\">\r\n            <e p=\"AbstractDoor.cs\" t=\"Include\" />\r\n            <e p=\"Bollard.cs\" t=\"Include\" />\r\n            <e p=\"DoorPanel.cs\" t=\"Include\" />\r\n            <e p=\"DoorWay.cs\" t=\"Include\" />\r\n            <e p=\"DoorWithLock.cs\" t=\"Include\" />\r\n            <e p=\"LaserSecurityDoor.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"InteractionObjects\" t=\"Include\">\r\n            <e p=\"Box.cs\" t=\"Include\" />\r\n            <e p=\"Coin\" t=\"Include\">\r\n              <e p=\"CellForCoins.cs\" t=\"Include\" />\r\n              <e p=\"Coin.cs\" t=\"Include\" />\r\n              <e p=\"CoinMovement.cs\" t=\"Include\" />\r\n              <e p=\"CoinViewMenu.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"InteractionObject.cs\" t=\"Include\" />\r\n            <e p=\"Key.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"MeshCombiner\" t=\"Include\">\r\n            <e p=\"Editor\" t=\"Include\">\r\n              <e p=\"MeshCombinerEditor.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"Scripts\" t=\"Include\">\r\n              <e p=\"MeshCombiner.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"Player\" t=\"Include\">\r\n            <e p=\"HaveGround.cs\" t=\"Include\" />\r\n            <e p=\"PlayerAnimations.cs\" t=\"Include\" />\r\n            <e p=\"PlayerInput.cs\" t=\"Include\" />\r\n            <e p=\"PlayerInteractionObjectSound.cs\" t=\"Include\" />\r\n            <e p=\"PlayerInteractionWithObjects.cs\" t=\"Include\" />\r\n            <e p=\"PlayerMovement.cs\" t=\"Include\" />\r\n            <e p=\"PlayerSounds\" t=\"Include\">\r\n              <e p=\"WalkSound.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"PlayerWallet.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"ScriptableObject\" t=\"Include\">\r\n            <e p=\"SceneObjects\" t=\"Include\">\r\n              <e p=\"SceneObject.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n          <e p=\"SDK\" t=\"Include\">\r\n            <e p=\"LeaderBoard\" t=\"Include\">\r\n              <e p=\"FocusTracking.cs\" t=\"Include\" />\r\n              <e p=\"LeaderBoard.cs\" t=\"Include\" />\r\n              <e p=\"LeaderBoardElement.cs\" t=\"Include\" />\r\n              <e p=\"LeaderBoardPlayer.cs\" t=\"Include\" />\r\n              <e p=\"LeaderBoardView.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"SDKInitializator.cs\" t=\"Include\" />\r\n            <e p=\"SDKMenu.cs\" t=\"Include\" />\r\n            <e p=\"SDKPromotionalVideo.cs\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"UI\" t=\"Include\">\r\n            <e p=\"Buttons\" t=\"Include\">\r\n              <e p=\"AbstractButton.cs\" t=\"Include\" />\r\n              <e p=\"ButtonAudioListener.cs\" t=\"Include\" />\r\n              <e p=\"ButtonChooseScenes\" t=\"Include\">\r\n                <e p=\"ChooseButtonNextScene.cs\" t=\"Include\" />\r\n                <e p=\"ChooseButtonPreviousScene.cs\" t=\"Include\" />\r\n                <e p=\"ChoosedButtonScene.cs\" t=\"Include\" />\r\n                <e p=\"ChooseScenes.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"ButtonContinueGame.cs\" t=\"Include\" />\r\n              <e p=\"ButtonPanel\" t=\"Include\">\r\n                <e p=\"ButtonClosePanel.cs\" t=\"Include\" />\r\n                <e p=\"ButtonOpenLeaderBoard.cs\" t=\"Include\" />\r\n                <e p=\"ButtonOpenPanel.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"ButtonScene\" t=\"Include\">\r\n                <e p=\"ButtonScene.cs\" t=\"Include\" />\r\n              </e>\r\n              <e p=\"ScoreCoins.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"CanvasStatic.cs\" t=\"Include\" />\r\n            <e p=\"Panels\" t=\"Include\">\r\n              <e p=\"AbstrapctPanel.cs\" t=\"Include\" />\r\n              <e p=\"LeaderBoardPanel.cs\" t=\"Include\" />\r\n              <e p=\"PanelLoss.cs\" t=\"Include\" />\r\n              <e p=\"PanelMenu.cs\" t=\"Include\" />\r\n              <e p=\"PanelShop.cs\" t=\"Include\" />\r\n              <e p=\"PanelWin.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"Scenes\" t=\"Include\">\r\n              <e p=\"SceneView.cs\" t=\"Include\" />\r\n            </e>\r\n            <e p=\"Timer\" t=\"Include\">\r\n              <e p=\"Timer.cs\" t=\"Include\" />\r\n              <e p=\"TimerView.cs\" t=\"Include\" />\r\n            </e>\r\n          </e>\r\n        </e>\r\n        <e p=\"TextMesh Pro\" t=\"Include\">\r\n          <e p=\"Fonts\" t=\"Include\">\r\n            <e p=\"LiberationSans - OFL.txt\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Resources\" t=\"Include\">\r\n            <e p=\"LineBreaking Following Characters.txt\" t=\"Include\" />\r\n            <e p=\"LineBreaking Leading Characters.txt\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Shaders\" t=\"Include\">\r\n            <e p=\"TMP_Bitmap-Custom-Atlas.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Bitmap-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Bitmap.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF Overlay.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF SSD.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile Masking.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile Overlay.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile SSD.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Surface-Mobile.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF-Surface.shader\" t=\"Include\" />\r\n            <e p=\"TMP_SDF.shader\" t=\"Include\" />\r\n            <e p=\"TMP_Sprite.shader\" t=\"Include\" />\r\n            <e p=\"TMPro.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Mobile.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Properties.cginc\" t=\"Include\" />\r\n            <e p=\"TMPro_Surface.cginc\" t=\"Include\" />\r\n          </e>\r\n          <e p=\"Sprites\" t=\"Include\">\r\n            <e p=\"EmojiOne Attribution.txt\" t=\"Include\" />\r\n            <e p=\"EmojiOne.json\" t=\"Include\" />\r\n          </e>\r\n        </e>\r\n      </e>\r\n      <e p=\"FindAWay.sln\" t=\"IncludeFlat\" />\r\n      <e p=\"obj\" t=\"ExcludeRecursive\" />\r\n      <e p=\"Packages\" t=\"ExcludeRecursive\" />\r\n      <e p=\"SimpleInput.Editor.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"SimpleInput.Runtime.csproj\" t=\"IncludeRecursive\" />\r\n      <e p=\"Temp\\Bin\" t=\"ExcludeRecursive\" />\r\n    </e>\r\n    <e p=\"C:\\Users\\Антон\\AppData\\Local\\JetBrains\\Rider2020.2\\extResources\" t=\"IncludeRecursive\" />\r\n    <e p=\"C:\\Users\\Антон\\AppData\\Local\\JetBrains\\Rider2020.2\\resharper-host\\Local\\Transient\\Rider\\v202\\SolutionCaches\\_FindAWay.-2122498858.00\" t=\"ExcludeRecursive\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.idea.FindAWay/.idea/contentModel.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ .idea/.idea.FindAWay/.idea/contentModel.xml	(date 1704524988185)
+@@ -161,6 +161,7 @@
+             <e p="SDKInitializator.cs" t="Include" />
+             <e p="SDKMenu.cs" t="Include" />
+             <e p="SDKPromotionalVideo.cs" t="Include" />
++            <e p="StaticCoins.cs" t="Include" />
+           </e>
+           <e p="UI" t="Include">
+             <e p="Buttons" t="Include">
+Index: .idea/.idea.FindAWay/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.idea.FindAWay/.idea/misc.xml	(date 1703252431842)
++++ .idea/.idea.FindAWay/.idea/misc.xml	(date 1703252431842)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="com.jetbrains.rider.android.RiderAndroidMiscFileCreationComponent">
++    <option name="ENSURE_MISC_FILE_EXISTS" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.FindAWay/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.idea.FindAWay/.idea/vcs.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ .idea/.idea.FindAWay/.idea/vcs.xml	(date 1703252447739)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/.idea.FindAWay/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"be26df19-1257-4cff-afa5-f65b36a7a4c2\" name=\"Default Changelist\" comment=\"Создал новую сцену. Исправил некоторые ошибки в коде.\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/misc.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"CHANGED_PATHS\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2ZrCmDfTt4cvpwfSRm4G3gnJycq\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"Discover.Launch.Via.Unity\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <set />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"selectedOptions\">\r\n        <set />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"be26df19-1257-4cff-afa5-f65b36a7a4c2\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1703170970082</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1703170970082</updated>\r\n      <workItem from=\"1703170977291\" duration=\"590000\" />\r\n      <workItem from=\"1703187515891\" duration=\"112000\" />\r\n      <workItem from=\"1703187870946\" duration=\"606000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Создал новую сцену. Исправил некоторые ошибки в коде.\">\r\n      <created>1703171371840</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703171371840</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"EditMode\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Создал новую сцену. Исправил некоторые ошибки в коде.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Создал новую сцену. Исправил некоторые ошибки в коде.\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"640\" y=\"256\" key=\"#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog\" timestamp=\"1703187880233\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"640\" y=\"256\" key=\"#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1703187880233\" />\r\n    <state x=\"552\" y=\"253\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1703171454365\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"552\" y=\"253\" key=\"Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1703171454365\" />\r\n    <state x=\"623\" y=\"225\" key=\"search.everywhere.popup\" timestamp=\"1703187597946\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"623\" y=\"225\" key=\"search.everywhere.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1703187597946\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.idea.FindAWay/.idea/workspace.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ .idea/.idea.FindAWay/.idea/workspace.xml	(date 1703329166400)
+@@ -16,11 +16,23 @@
+         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+       </path>
+     </expand>
+-    <select />
++    <select>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </select>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="Создал новую сцену. Исправил некоторые ошибки в коде.">
++    <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
+       <change afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/encodings.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/indexLayout.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/vcs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -29,11 +41,22 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="HighlightingSettingsPerFile">
++    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/StaticCoins.cs" root0="FORCE_HIGHLIGHTING" />
+   </component>
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs" />
++        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.15/Rider/Editor/Discovery.cs" />
++        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/StaticCoins.cs" />
++        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerWallet.cs" />
++        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ScoreCoins.cs" />
++        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" />
++        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
++        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKMenu.cs" />
+       </list>
+     </option>
+   </component>
+@@ -46,6 +69,12 @@
+     <property name="Discover.Launch.Via.Unity" value="true" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="node.js.detected.package.eslint" value="true" />
++    <property name="node.js.detected.package.tslint" value="true" />
++    <property name="node.js.path.for.package.eslint" value="project" />
++    <property name="node.js.path.for.package.tslint" value="project" />
++    <property name="node.js.selected.package.eslint" value="(autodetect)" />
++    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+@@ -79,6 +108,9 @@
+       <workItem from="1703170977291" duration="590000" />
+       <workItem from="1703187515891" duration="112000" />
+       <workItem from="1703187870946" duration="606000" />
++      <workItem from="1703250691575" duration="1704000" />
++      <workItem from="1703252427769" duration="6344000" />
++      <workItem from="1703318444183" duration="5514000" />
+     </task>
+     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
+       <created>1703171371840</created>
+@@ -87,7 +119,35 @@
+       <option name="project" value="LOCAL" />
+       <updated>1703171371840</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Отправляю комит через Rider">
++      <created>1703250765127</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1703250765127</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Работа с сохранениями">
++      <created>1703329043823</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1703329043823</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Работа с сохранениями">
++      <created>1703329115069</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1703329115069</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Работа с сохранениями">
++      <created>1703329128845</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1703329128845</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -110,17 +170,19 @@
+   <component name="VcsManagerConfiguration">
+     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+     <MESSAGE value="Создал новую сцену. Исправил некоторые ошибки в коде." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Создал новую сцену. Исправил некоторые ошибки в коде." />
++    <MESSAGE value="Отправляю комит через Rider" />
++    <MESSAGE value="Работа с сохранениями" />
++    <option name="LAST_COMMIT_MESSAGE" value="Работа с сохранениями" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1703187880233" />
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1703171454365">
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1703329158116">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1703171454365" />
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1703329158116" />
+     <state x="623" y="225" key="search.everywhere.popup" timestamp="1703187597946">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+Index: .idea/.idea.FindAWay/.idea/indexLayout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ContentModelUserStore\">\r\n    <attachedFolders />\r\n    <explicitIncludes>\r\n      <Path>Library/PackageCache/com.agava.webutility@32d39130ea</Path>\r\n      <Path>Library/PackageCache/com.agava.yandexgames@faf20595c0</Path>\r\n      <Path>Library/PackageCache/com.unity.cinemachine@2.8.9</Path>\r\n      <Path>Library/PackageCache/com.unity.collab-proxy@1.17.2</Path>\r\n      <Path>Library/PackageCache/com.unity.editorcoroutines@1.0.0</Path>\r\n      <Path>Library/PackageCache/com.unity.ext.nunit@1.0.6</Path>\r\n      <Path>Library/PackageCache/com.unity.ide.rider@3.0.15</Path>\r\n      <Path>Library/PackageCache/com.unity.ide.visualstudio@2.0.22</Path>\r\n      <Path>Library/PackageCache/com.unity.ide.vscode@1.2.5</Path>\r\n      <Path>Library/PackageCache/com.unity.inputsystem@1.4.4</Path>\r\n      <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2</Path>\r\n      <Path>Library/PackageCache/com.unity.performance.profile-analyzer@1.1.1</Path>\r\n      <Path>Library/PackageCache/com.unity.services.core@1.4.2</Path>\r\n      <Path>Library/PackageCache/com.unity.settings-manager@1.0.3</Path>\r\n      <Path>Library/PackageCache/com.unity.sysroot.linux-x86_64@2.0.6</Path>\r\n      <Path>Library/PackageCache/com.unity.sysroot@2.0.7</Path>\r\n      <Path>Library/PackageCache/com.unity.test-framework@1.1.31</Path>\r\n      <Path>Library/PackageCache/com.unity.testtools.codecoverage@1.0.1</Path>\r\n      <Path>Library/PackageCache/com.unity.textmeshpro@3.0.6</Path>\r\n      <Path>Library/PackageCache/com.unity.timeline@1.6.4</Path>\r\n      <Path>Library/PackageCache/com.unity.toolchain.win-x86_64-linux-x86_64@2.0.6</Path>\r\n      <Path>Library/PackageCache/com.unity.visualscripting@1.7.8</Path>\r\n      <Path>Packages</Path>\r\n      <Path>ProjectSettings</Path>\r\n    </explicitIncludes>\r\n    <explicitExcludes>\r\n      <Path>.git</Path>\r\n      <Path>.idea</Path>\r\n      <Path>.vs</Path>\r\n      <Path>.vscode</Path>\r\n      <Path>Library</Path>\r\n      <Path>Logs</Path>\r\n      <Path>Temp</Path>\r\n      <Path>UserSettings</Path>\r\n      <Path>obj</Path>\r\n    </explicitExcludes>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.idea.FindAWay/.idea/indexLayout.xml	(revision 9891546bd3d6af39b640e0a943401583cfa54d97)
++++ .idea/.idea.FindAWay/.idea/indexLayout.xml	(date 1704524988189)
+@@ -3,13 +3,14 @@
+   <component name="ContentModelUserStore">
+     <attachedFolders />
+     <explicitIncludes>
++      <Path>Assets</Path>
+       <Path>Library/PackageCache/com.agava.webutility@32d39130ea</Path>
+       <Path>Library/PackageCache/com.agava.yandexgames@faf20595c0</Path>
+       <Path>Library/PackageCache/com.unity.cinemachine@2.8.9</Path>
+       <Path>Library/PackageCache/com.unity.collab-proxy@1.17.2</Path>
+       <Path>Library/PackageCache/com.unity.editorcoroutines@1.0.0</Path>
+       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.6</Path>
+-      <Path>Library/PackageCache/com.unity.ide.rider@3.0.15</Path>
++      <Path>Library/PackageCache/com.unity.ide.rider@3.0.27</Path>
+       <Path>Library/PackageCache/com.unity.ide.visualstudio@2.0.22</Path>
+       <Path>Library/PackageCache/com.unity.ide.vscode@1.2.5</Path>
+       <Path>Library/PackageCache/com.unity.inputsystem@1.4.4</Path>
+@@ -32,7 +33,6 @@
+       <Path>.git</Path>
+       <Path>.idea</Path>
+       <Path>.vs</Path>
+-      <Path>.vscode</Path>
+       <Path>Library</Path>
+       <Path>Logs</Path>
+       <Path>Temp</Path>
