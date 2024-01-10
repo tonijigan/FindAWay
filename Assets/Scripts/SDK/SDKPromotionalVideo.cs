@@ -1,19 +1,35 @@
+using Agava.YandexGames;
 using UnityEngine;
 
 public class SDKPromotionalVideo : MonoBehaviour
 {
-    private int _money;
-    private int _minValue = 0;
-    private int _maxValue = 1;
+    [SerializeField] private LeaderBoard _leaderBoard;
 
-    public void Show() =>
-        Agava.YandexGames.VideoAd.Show(OnOpenCallBack, OnRewardCallBack, OnCloseCallBack);
+    private int _rewardCoin = 10;
 
-    private void OnOpenCallBack() => SateGame(_minValue);
+    public void ShowRewardAd() =>
+        VideoAd.Show(OnOpenCallBack, OnRewardedCallback, OnCloseCallBack);
 
-    private void OnRewardCallBack() => _money++;
 
-    private void OnCloseCallBack() => SateGame(_maxValue);
+    public void ShowInterstitialAd() =>
+        InterstitialAd.Show(OnOpenCallBack);
 
-    private void SateGame(int stateValue) => AudioListener.volume = stateValue;
+
+    private void OnOpenCallBack() => AudioListener.volume = 0;
+
+
+    private void OnRewardedCallback()
+    {
+        ProgressCoins.RewardCoin(_rewardCoin);
+        _leaderBoard.SetPlayer(ProgressCoins.PlayerInfo.Coins);
+        PlayerAccount.SetCloudSaveData(ProgressCoins.JSONString());
+    }
+
+    private void OnCloseCallBack() => AudioListener.volume = 1;
+
+    // private void OnCloseCallBack(bool wasShown)
+    // {
+    //    if (wasShown == true)
+    //        AudioListener.volume = 1;
+    // }
 }

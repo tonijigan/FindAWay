@@ -16,6 +16,7 @@ public class ChooseScenes : MonoBehaviour
 
     private void OnEnable()
     {
+        ProgressCoins.ReceivedData += InitSave;
         _nextScene.NextScene += ShowNextScene;
         _previousScene.PreviousScene += ShowPreviousScene;
         _choosedButtonScene.OnClick += ChoosedScene;
@@ -23,10 +24,13 @@ public class ChooseScenes : MonoBehaviour
 
     private void OnDisable()
     {
+        ProgressCoins.ReceivedData -= InitSave;
         _nextScene.NextScene -= ShowNextScene;
         _previousScene.PreviousScene -= ShowPreviousScene;
         _choosedButtonScene.OnClick -= ChoosedScene;
     }
+
+    private void InitSave() => ProgressCoins.Init(_scenesViews);
 
     private void ChoosedScene() => SceneManager.LoadScene
         (_scenesViews[_currentImageIndex].SceneIndex);
@@ -53,7 +57,6 @@ public class ChooseScenes : MonoBehaviour
 
     private void ShowCurrentScene()
     {
-        ProgressCoins.UpdateStateInGlobaleScenes(_scenesViews);
         _currentImage.sprite = _scenesViews[_currentImageIndex].SpriteScene;
         _choosedButtonScene.AccessButton(_scenesViews[_currentImageIndex].IsAccess);
         _choosedButtonScene.ShowAccessScene(_scenesViews[_currentImageIndex].IsAccess);

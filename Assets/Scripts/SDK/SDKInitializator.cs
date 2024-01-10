@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SDKInitializator : MonoBehaviour
 {
     private void Awake() => YandexGamesSdk.CallbackLogging = true;
+    
 
     private IEnumerator Start()
     {

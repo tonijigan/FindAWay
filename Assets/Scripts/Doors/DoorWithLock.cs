@@ -9,7 +9,7 @@ public class DoorWithLock : AbstractDoor
     [SerializeField] private PlayerWallet _wallet;
     [SerializeField] private AudioClip _audioOpenLook;
     [SerializeField] private float _speedRotate = 1;
-    [SerializeField] private TMP_Text _text;
+    [SerializeField] private Timer _timer;
 
     public event UnityAction Opened;
 
@@ -32,7 +32,8 @@ public class DoorWithLock : AbstractDoor
 
     private void UseKey(Key key)
     {
-        ProgressCoins.SetCoins(_wallet.CountCoins);
+        _timer.gameObject.SetActive(false);
+        SaveProgress();
 #if UNITY_WEBGL && !UNITY_EDITOR
         PlayerAccount.SetCloudSaveData(ProgressCoins.JSONString());
 #endif
@@ -40,6 +41,12 @@ public class DoorWithLock : AbstractDoor
         WorkDoor();
         Opened?.Invoke();
         _isClose = false;
+    }
+
+    private void SaveProgress()
+    {
+        ProgressCoins.SetCoins(_wallet.CountCoins);
+        ProgressCoins.OpenAccessNewScene();
     }
 
     private void PlayAudioClip(AudioClip audioClip)
@@ -59,7 +66,7 @@ public class DoorWithLock : AbstractDoor
         while (_typeDoor.localRotation != Quaternion.Euler(newTarget))
         {
             _typeDoor.localRotation = Quaternion.Lerp(_typeDoor.localRotation,
-                  Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
+                Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
             yield return null;
         }
 

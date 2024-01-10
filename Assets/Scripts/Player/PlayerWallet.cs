@@ -14,15 +14,9 @@ public class PlayerWallet : MonoBehaviour
 
     public int CountCoins => _countCoin.Count;
 
-    private void Awake()
-    {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        PlayerAccount.GetCloudSaveData(ProgressCoins.GetPlayerInfo);
-#endif
-        InitSaveCoin();
-    }
+    private void Awake() => InitSaveCoin();
 
-    public void AddCoin(Coin coin)
+        public void AddCoin(Coin coin)
     {
         _countCoin.Add(coin);
         AddedCoin?.Invoke(_countCoin.Count);

@@ -158,6 +158,7 @@
               <e p="LeaderBoardPlayer.cs" t="Include" />
               <e p="LeaderBoardView.cs" t="Include" />
             </e>
+            <e p="ProgressCoins.cs" t="Include" />
             <e p="SDKInitializator.cs" t="Include" />
             <e p="SDKMenu.cs" t="Include" />
             <e p="SDKPromotionalVideo.cs" t="Include" />
@@ -178,6 +179,7 @@
                 <e p="ButtonOpenLeaderBoard.cs" t="Include" />
                 <e p="ButtonOpenPanel.cs" t="Include" />
               </e>
+              <e p="ButtonRewardAd.cs" t="Include" />
               <e p="ButtonScene" t="Include">
                 <e p="ButtonScene.cs" t="Include" />
               </e>
@@ -186,11 +188,11 @@
             <e p="CanvasStatic.cs" t="Include" />
             <e p="Panels" t="Include">
               <e p="AbstrapctPanel.cs" t="Include" />
-              <e p="LeaderBoardPanel.cs" t="Include" />
               <e p="PanelLoss.cs" t="Include" />
               <e p="PanelMenu.cs" t="Include" />
               <e p="PanelShop.cs" t="Include" />
               <e p="PanelWin.cs" t="Include" />
+              <e p="TransitLeaderBoardData.cs" t="Include" />
             </e>
             <e p="Scenes" t="Include">
               <e p="SceneView.cs" t="Include" />

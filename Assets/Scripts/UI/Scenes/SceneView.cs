@@ -10,15 +10,10 @@ public class SceneView : MonoBehaviour
     public int SceneIndex => _sceneObject.SceneIndex;
     public string SceneName => _sceneObject.SceneName;
 
-    private void Start() => HaveAccess();
+    //private void Start() => HaveAccess();
 
-    private void HaveAccess()
+    public void HaveAccess()
     {
-        int _accessStatusFalse = 0;
-
-        if (PlayerPrefs.GetInt(_sceneObject.name) == _accessStatusFalse && _isAccess != true)
-            _isAccess = false;
-        else
-            _isAccess = true;
+        _isAccess = true;
     }
 }

@@ -1,26 +1,29 @@
+using System;
+using Agava.YandexGames;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PanelWin : AbstrapctPanel
 {
     [SerializeField] private Transform _pathImageStars;
-    [SerializeField] private SceneObject _sceneObject;
     [SerializeField] private ButtonObject[] _buttons;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
-    [SerializeField] private SDKPromotionalVideo _promotionalVideo;
+    [SerializeField] private LeaderBoard _leaderboard;
 
     private Transform[] _imageStars;
-    private int _countButtonIsClick = 0;
+
+    public int CountButtonIsClick { get; private set; } = 0;
 
     private void Start()
     {
 #if UNITY_WEBGL && !UNITY_EDITOR
-        _promotionalVideo.Show();
+        PlayerAccount.SetCloudSaveData(ProgressCoins.JSONString());
 #endif
         Initialization();
-        OpenAccessNextScene();
         Show();
         PlaySound();
+        _leaderboard.SetPlayer(ProgressCoins.PlayerInfo.Coins);
     }
 
     private void Initialization()
@@ -34,14 +37,6 @@ public class PanelWin : AbstrapctPanel
             _imageStars[i].gameObject.SetActive(false);
     }
 
-    private void OpenAccessNextScene()
-    {
-        //int accessStatusTrue = 1;
-
-        //if (_sceneObject != null && PlayerPrefs.GetInt(_sceneObject.name) != accessStatusTrue)
-        //    PlayerPrefs.SetInt(_sceneObject.name, accessStatusTrue);
-    }
-
     private void Show()
     {
         int minCountButtonIsClick = 0;
@@ -49,12 +44,12 @@ public class PanelWin : AbstrapctPanel
 
         for (int i = 0; i < _buttons.Length; i++)
             if (_buttons[i].IsClick)
-                _countButtonIsClick++;
+                CountButtonIsClick++;
 
-        if (_countButtonIsClick == minCountButtonIsClick)
+        if (CountButtonIsClick == minCountButtonIsClick)
             return;
 
-        _imageStars[_countButtonIsClick - element].gameObject.SetActive(true);
+        _imageStars[CountButtonIsClick - element].gameObject.SetActive(true);
     }
 
     private void PlaySound()

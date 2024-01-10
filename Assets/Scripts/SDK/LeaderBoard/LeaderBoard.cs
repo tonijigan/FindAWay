@@ -6,10 +6,8 @@ public class LeaderBoard : MonoBehaviour
 {
     private const string AnonymousName = "Anonymous";
     private const string LeaderBoardName = "LeaderBoardsFindAWay";
-    private readonly List<LeaderBoardPlayer> _leaderBoardPlayers = new();
-
-    [SerializeField] private LeaderBoardView _leaderBoardView;
-
+    private readonly List<LeaderBoardPlayer> _leaderBoardPlayers = new List<LeaderBoardPlayer>();
+    
     public void SetPlayer(int score)
     {
         if (PlayerAccount.IsAuthorized == false)
@@ -42,8 +40,6 @@ public class LeaderBoard : MonoBehaviour
 
                 _leaderBoardPlayers.Add(new LeaderBoardPlayer(score, name));
             }
-
-            _leaderBoardView.ConstructLeaderBoard(_leaderBoardPlayers);
         });
     }
 }

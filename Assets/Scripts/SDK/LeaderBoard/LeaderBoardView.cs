@@ -6,7 +6,7 @@ public class LeaderBoardView : MonoBehaviour
     [SerializeField] private Transform _container;
     [SerializeField] private LeaderBoardElement _leaderBoardElementPrefab;
 
-    private List<LeaderBoardElement> _spawnedElements = new();
+    private List<LeaderBoardElement> _spawnedElements = new List<LeaderBoardElement>();
 
     public void ConstructLeaderBoard(List<LeaderBoardPlayer> leaderBoardPlayers)
     {

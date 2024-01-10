@@ -1,17 +1,17 @@
 using System;
+using Agava.YandexGames;
 using TMPro;
 using UnityEngine;
-using Agava.YandexGames;
 
 public class CoinViewMenu : MonoBehaviour
 {
     [SerializeField] private TMP_Text _text;
 
-#if UNITY_WEBGL && !UNITY_EDITOR
-    private void Start()
-    {
-        PlayerAccount.GetCloudSaveData(ProgressCoins.GetPlayerInfo);
-        _text.text = ProgressCoins.PlayerInfo.Coins.ToString();
-    }
-#endif
+    private void OnEnable() => ProgressCoins.ReceivedData += GetDate;
+
+    private void OnDisable() => ProgressCoins.ReceivedData -= GetDate;
+    
+    private void Awake() => PlayerAccount.GetCloudSaveData(ProgressCoins.GetPlayerInfo);
+    
+    private void GetDate() => _text.text = ProgressCoins.PlayerInfo.Coins.ToString();
 }

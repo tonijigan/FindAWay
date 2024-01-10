@@ -1,37 +1,45 @@
-using System.Collections.Generic;
+using System;
+using Agava.YandexGames;
 using UnityEngine;
 
-public class PlayerInfo { public int Coins; public SceneView[] sceneViews; }
+public class PlayerInfo { public int Coins; public int ScenesAccess = 1; }
 
 public static class ProgressCoins
 {
-    public static PlayerInfo PlayerInfo = new PlayerInfo();
+    public static  PlayerInfo PlayerInfo = new PlayerInfo();
+    public static event Action ReceivedData;
+
+    public static int MaxCountScenes { get; private set; } = 3;
 
     public static string JSONString()
     {
         return JsonUtility.ToJson(PlayerInfo);
     }
 
-    public static void GetPlayerInfo(string value) =>
+    public static void GetPlayerInfo(string value)
+    {
         PlayerInfo = JsonUtility.FromJson<PlayerInfo>(value);
+        ReceivedData?.Invoke();
+    }
+        
 
     public static void SetCoins(int coins) => PlayerInfo.Coins = coins;
 
-    public static void UpdateStateInGlobaleScenes(SceneView[] sceneViews)
+    public static void RewardCoin(int coins)
     {
-        PlayerInfo.sceneViews = new SceneView[sceneViews.Length];
+        PlayerInfo.Coins += coins;
+    }
 
-        for (int i = 0; i < PlayerInfo.sceneViews.Length; i++)
+    public static void Init(SceneView[] sceneViews)
+    {
+        for (int i = 0; i < PlayerInfo.ScenesAccess; i++)
         {
-            PlayerInfo.sceneViews[i] = sceneViews[i];
+            sceneViews[i].HaveAccess();
         }
     }
 
-    public static void UpdateStateInLocalScenes(SceneView[] sceneViews)
+    public static void OpenAccessNewScene()
     {
-        for (int i = 0; i < sceneViews.Length; i++)
-        {
-            sceneViews[i] = PlayerInfo.sceneViews[i];
-        }
+        if (PlayerInfo.ScenesAccess < MaxCountScenes) PlayerInfo.ScenesAccess++;
     }
 }

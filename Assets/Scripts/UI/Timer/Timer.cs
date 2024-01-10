@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     {
         int minDolySecunds = 0;
         int maxDolySecunds = 1;
-        int secundInMonuts = 60;
+        int secundInMinuts = 60;
         _newTime -= Time.deltaTime;
 
         if (_newTime <= minDolySecunds && _isUpTime == false)
@@ -26,8 +26,9 @@ public class Timer : MonoBehaviour
             _newTime = maxDolySecunds;
             _seconds -= maxDolySecunds;
         }
-        var newTimeMinuts = (int)_seconds / secundInMonuts;
-        var newTimeSecunds = _seconds - (newTimeMinuts * secundInMonuts);
+
+        var newTimeMinuts = (int) _seconds / secundInMinuts;
+        var newTimeSecunds = _seconds - (newTimeMinuts * secundInMinuts);
         CurrentTime?.Invoke(newTimeMinuts, newTimeSecunds);
 
         if (_seconds == 0 && _isUpTime == false)

@@ -12,6 +12,7 @@ public class HaveGround : MonoBehaviour
     private float _currentTimeFall = 0;
     private float _maxTime = 2f;
     private float _minTime = 0;
+    
     public bool Have()
     {
         bool isGround = Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask);
