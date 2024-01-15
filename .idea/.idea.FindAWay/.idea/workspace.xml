@@ -26,69 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2024_10_09_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/shelf/Uncommitted_changes_before_Update_at_06_01_2024_10_09__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/LaserSecurity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/LaserSecurity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/Coin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/Editor/MeshCombinerEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/Editor/MeshCombinerEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/Scripts/MeshCombiner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/Scripts/MeshCombiner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/readme.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/readme.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerWallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerWallet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressCoins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressCoins.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ScoreCoins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ScoreCoins.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/TransitLeaderBoardData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/TransitLeaderBoardData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Alarm.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/Alarm.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard2.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard3.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Button.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Button.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/DoorLook.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/DoorLook.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Evaporation/ButtonEvaporation1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Evaporation/ButtonEvaporation1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser6.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser6.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser7.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser7.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Looks/Look2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Looks/Look2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TurnUpAndTurnDown/TakeItem.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TurnUpAndTurnDown/TakeItem.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Win/Win1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win2.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win3.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win4.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +76,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/LaserSecurity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ScoreCoins.cs" />
@@ -144,6 +83,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/LaserSecurity.cs" />
       </list>
     </option>
   </component>
@@ -208,6 +148,8 @@
       <workItem from="1704868441694" duration="1870000" />
       <workItem from="1704870685452" duration="11436000" />
       <workItem from="1705324695692" duration="3263000" />
+      <workItem from="1705327999684" duration="97000" />
+      <workItem from="1705334192157" duration="345000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -258,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704872933602</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Оптимизация">
+      <created>1705328048126</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705328048126</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +233,8 @@
     <MESSAGE value="Отправляю комит через Rider" />
     <MESSAGE value="Работа с сохранениями" />
     <MESSAGE value="Настройка межстраничной рекламмы, добавление кнопки с запуском рекламмы с вознаграждением" />
-    <option name="LAST_COMMIT_MESSAGE" value="Настройка межстраничной рекламмы, добавление кнопки с запуском рекламмы с вознаграждением" />
+    <MESSAGE value="Оптимизация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизация" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
@@ -295,10 +245,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1704872941428">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1705328057762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1704872941428" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1705328057762" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1704525139670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

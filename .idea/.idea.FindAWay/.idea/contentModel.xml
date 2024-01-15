@@ -4,7 +4,6 @@
     <e p="C:\Repos\FindAWay" t="IncludeRecursive">
       <e p="Agava.WebUtility.Samples.Playtesting.csproj" t="IncludeRecursive" />
       <e p="Agava.YandexGames.Samples.Playtesting.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="NewTestAssets" t="Include">
@@ -125,14 +124,6 @@
             </e>
             <e p="InteractionObject.cs" t="Include" />
             <e p="Key.cs" t="Include" />
-          </e>
-          <e p="MeshCombiner" t="Include">
-            <e p="Editor" t="Include">
-              <e p="MeshCombinerEditor.cs" t="Include" />
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="MeshCombiner.cs" t="Include" />
-            </e>
           </e>
           <e p="Player" t="Include">
             <e p="HaveGround.cs" t="Include" />
