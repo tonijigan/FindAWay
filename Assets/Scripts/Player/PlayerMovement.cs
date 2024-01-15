@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private LayerMask _layerMask;
 
+    private Transform _transform;
     private Vector3 _normal;
     private Rigidbody _rigidbody;
     private HaveGround _haveGround;
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _input = new PlayerInput();
         _input.Enable();
+        _transform = transform;
     }
 
     private void Start()
@@ -91,9 +93,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (direction != Vector3.zero)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation,
-                                 Quaternion.LookRotation(direction),
-                                 _rotateSpeed * Time.deltaTime);
+            _transform.rotation = Quaternion.Lerp(_transform.rotation,
+                Quaternion.LookRotation(direction),
+                _rotateSpeed * Time.deltaTime);
         }
     }
 }

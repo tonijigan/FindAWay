@@ -1,29 +1,26 @@
-using System;
 using Agava.YandexGames;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 public class PanelWin : AbstrapctPanel
 {
     [SerializeField] private Transform _pathImageStars;
-    [SerializeField] private ButtonObject[] _buttons;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
     [SerializeField] private LeaderBoard _leaderboard;
+    [SerializeField] private ButtonsActive _buttonsActive;
 
     private Transform[] _imageStars;
-
-    public int CountButtonIsClick { get; private set; } = 0;
 
     private void Start()
     {
 #if UNITY_WEBGL && !UNITY_EDITOR
-        PlayerAccount.SetCloudSaveData(ProgressCoins.JSONString());
+        PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
 #endif
         Initialization();
         Show();
         PlaySound();
-        _leaderboard.SetPlayer(ProgressCoins.PlayerInfo.Coins);
+        _leaderboard.SetPlayer(ProgressInfo.PlayerInfo.Coins);
     }
 
     private void Initialization()
@@ -39,17 +36,8 @@ public class PanelWin : AbstrapctPanel
 
     private void Show()
     {
-        int minCountButtonIsClick = 0;
         int element = 1;
-
-        for (int i = 0; i < _buttons.Length; i++)
-            if (_buttons[i].IsClick)
-                CountButtonIsClick++;
-
-        if (CountButtonIsClick == minCountButtonIsClick)
-            return;
-
-        _imageStars[CountButtonIsClick - element].gameObject.SetActive(true);
+        _imageStars[_buttonsActive.CountActiveButtons - element].gameObject.SetActive(true);
     }
 
     private void PlaySound()

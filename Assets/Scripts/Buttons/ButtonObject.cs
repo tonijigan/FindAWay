@@ -10,6 +10,7 @@ public class ButtonObject : MonoBehaviour
 
     public event UnityAction<bool> ButtonClick;
 
+    private Transform _transform;
     private Coroutine _coroutine;
     private Vector3 _startButtonPosition;
     private WaitForSeconds _waitForSeconds;
@@ -20,7 +21,8 @@ public class ButtonObject : MonoBehaviour
 
     private void Awake()
     {
-        _startButtonPosition = transform.localPosition;
+        _transform = transform;
+        _startButtonPosition = _transform.localPosition;
         _waitForSeconds = new WaitForSeconds(_waitTime);
     }
     private void OnTriggerEnter(Collider other)
@@ -38,7 +40,7 @@ public class ButtonObject : MonoBehaviour
     private Vector3 GetPosition()
     {
         float positionZero = 0, newPositionY = -1f;
-        var newPosition = transform.localPosition + new Vector3(positionZero, newPositionY, positionZero);
+        var newPosition = _transform.localPosition + new Vector3(positionZero, newPositionY, positionZero);
 
         if (IsClick == true)
             return newPosition;
@@ -60,9 +62,9 @@ public class ButtonObject : MonoBehaviour
         float duration = 2f;
         _audioSource.Play();
 
-        while (transform.localPosition != newPosition)
+        while (_transform.localPosition != newPosition)
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition,
+            _transform.localPosition = Vector3.MoveTowards(_transform.localPosition,
                                       newPosition, duration * Time.deltaTime);
             yield return null;
         }

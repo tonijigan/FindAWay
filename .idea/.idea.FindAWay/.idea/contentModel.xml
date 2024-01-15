@@ -105,6 +105,7 @@
           </e>
           <e p="Buttons" t="Include">
             <e p="ButtonObject.cs" t="Include" />
+            <e p="ButtonsActive.cs" t="Include" />
           </e>
           <e p="Doors" t="Include">
             <e p="AbstractDoor.cs" t="Include" />
@@ -158,7 +159,7 @@
               <e p="LeaderBoardPlayer.cs" t="Include" />
               <e p="LeaderBoardView.cs" t="Include" />
             </e>
-            <e p="ProgressCoins.cs" t="Include" />
+            <e p="ProgressInfo.cs" t="Include" />
             <e p="SDKInitializator.cs" t="Include" />
             <e p="SDKMenu.cs" t="Include" />
             <e p="SDKPromotionalVideo.cs" t="Include" />

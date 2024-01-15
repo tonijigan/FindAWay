@@ -2,12 +2,16 @@ using System;
 using Agava.YandexGames;
 using UnityEngine;
 
-public class PlayerInfo { public int Coins; public int ScenesAccess = 1; }
-
-public static class ProgressCoins
+public class PlayerInfo
 {
-    public static  PlayerInfo PlayerInfo = new PlayerInfo();
-    public static event Action ReceivedData;
+    public int Coins;
+    public int ScenesAccess = 1;
+}
+
+public static class ProgressInfo
+{
+    public static PlayerInfo PlayerInfo = new PlayerInfo();
+    public static event Action ReceivedData, Rewarded;
 
     public static int MaxCountScenes { get; private set; } = 3;
 
@@ -21,13 +25,14 @@ public static class ProgressCoins
         PlayerInfo = JsonUtility.FromJson<PlayerInfo>(value);
         ReceivedData?.Invoke();
     }
-        
+
 
     public static void SetCoins(int coins) => PlayerInfo.Coins = coins;
 
     public static void RewardCoin(int coins)
     {
         PlayerInfo.Coins += coins;
+        Rewarded?.Invoke();
     }
 
     public static void Init(SceneView[] sceneViews)

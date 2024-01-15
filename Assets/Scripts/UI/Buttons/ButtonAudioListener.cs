@@ -4,7 +4,6 @@ using UnityEngine;
 [RequireComponent(typeof(Image))]
 public class ButtonAudioListener : AbstractButton
 {
-    [SerializeField] private AudioListener _audioListener;
     [SerializeField] private Sprite _spriteTurnOffAudio, _spriteTurnOnAudio;
 
     private Image _image;

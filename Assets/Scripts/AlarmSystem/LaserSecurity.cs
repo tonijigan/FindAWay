@@ -8,19 +8,12 @@ public class LaserSecurity : MonoBehaviour
 
     public event UnityAction<bool> IsTrigger;
 
-    private bool _isTrigger = false;
-
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider != null && _isTrigger == false)
+        if (_doorLaserSecurity.IsOpen == false)
         {
-            _isTrigger = true;
-
-            if (_doorLaserSecurity.IsOpen == false)
-            {
-                _timer.SetNewTime();
-                IsTrigger?.Invoke(_doorLaserSecurity.IsOpen);
-            }
+            _timer.SetNewTime();
+            IsTrigger?.Invoke(_doorLaserSecurity.IsOpen);
         }
     }
 }

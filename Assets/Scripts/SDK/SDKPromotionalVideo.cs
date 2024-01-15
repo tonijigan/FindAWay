@@ -1,35 +1,52 @@
 using Agava.YandexGames;
 using UnityEngine;
+using System;
 
 public class SDKPromotionalVideo : MonoBehaviour
 {
     [SerializeField] private LeaderBoard _leaderBoard;
+    [SerializeField] private AudioSource[] _audioSources;
 
     private int _rewardCoin = 10;
+    private int _minValue = 0;
+    private int _maxValue = 1;
 
     public void ShowRewardAd() =>
         VideoAd.Show(OnOpenCallBack, OnRewardedCallback, OnCloseCallBack);
 
 
     public void ShowInterstitialAd() =>
-        InterstitialAd.Show(OnOpenCallBack);
+        InterstitialAd.Show(OnOpenCallBack, OnCloseCallBack);
 
 
-    private void OnOpenCallBack() => AudioListener.volume = 0;
+    private void OnOpenCallBack() =>
+        ChangeValueAudioSources(_minValue);
 
 
     private void OnRewardedCallback()
     {
-        ProgressCoins.RewardCoin(_rewardCoin);
-        _leaderBoard.SetPlayer(ProgressCoins.PlayerInfo.Coins);
-        PlayerAccount.SetCloudSaveData(ProgressCoins.JSONString());
+        ProgressInfo.RewardCoin(_rewardCoin);
+        _leaderBoard.SetPlayer(ProgressInfo.PlayerInfo.Coins);
+        PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
     }
 
-    private void OnCloseCallBack() => AudioListener.volume = 1;
+    private void OnCloseCallBack()
+    {
+        ChangeValueAudioSources(_maxValue);
+        Time.timeScale = _minValue;
+    }
 
-    // private void OnCloseCallBack(bool wasShown)
-    // {
-    //    if (wasShown == true)
-    //        AudioListener.volume = 1;
-    // }
+    private void OnCloseCallBack(bool wasShown)
+    {
+        if (wasShown == true)
+            ChangeValueAudioSources(_maxValue);
+
+        Time.timeScale = _minValue;
+    }
+
+    private void ChangeValueAudioSources(int value)
+    {
+        foreach (var audioSource in _audioSources)
+            audioSource.volume = value;
+    }
 }

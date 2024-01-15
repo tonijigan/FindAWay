@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonRewardAd : AbstractButton
 {
     [SerializeField] private TMP_Text _rewardCoins;
-    [SerializeField] private PanelWin _panelWin;
+    [SerializeField] private ButtonsActive _buttonsActive;
 
     private SDKPromotionalVideo _promotionalVideo;
     private int _countCoins = 10;
@@ -20,5 +20,5 @@ public class ButtonRewardAd : AbstractButton
         _promotionalVideo.ShowRewardAd();
     }
 
-    private void SetValueForReward() => _rewardCoins.text = $"+{_countCoins *= _panelWin.CountButtonIsClick}";
+    private void SetValueForReward() => _rewardCoins.text = $"+{_countCoins *= _buttonsActive.CountActiveButtons}";
 }

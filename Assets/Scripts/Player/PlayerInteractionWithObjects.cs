@@ -6,29 +6,29 @@ public class PlayerInteractionWithObjects : MonoBehaviour
     [SerializeField] private Transform _currentTemplate;
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
+    [SerializeField] private float _timeDelay = 0.5f;
 
     private PlayerInteractionObjectSound _playerInteractionObjectSound;
     private InteractionObject _dragableObject;
     private bool _isDragging;
+    private float _timer = 0;
 
     public InteractionObject DragableObject => _dragableObject;
     public bool IsDragging => _isDragging;
 
     private void Start() => _playerInteractionObjectSound =
-               GetComponent<PlayerInteractionObjectSound>();
+        GetComponent<PlayerInteractionObjectSound>();
 
     public void OnFixedUpdate() => DragAndDropObject();
-
-    public void ChangeIsDragging() => _isDragging = false;
 
     public void TryPickUp(InteractionObject interactionObject)
     {
         _dragableObject = interactionObject;
         _playerInteractionObjectSound.PlaySound(_dragableObject.AudioClip);
         _dragableObject.FollowInstructions();
-        _dragableObject.transform.parent = default;
-        _dragableObject.transform.position = default;
-        _dragableObject.transform.SetParent(_currentTemplate.transform, false);
+        _dragableObject.TransformObject.parent = default;
+        _dragableObject.TransformObject.position = default;
+        _dragableObject.TransformObject.SetParent(_currentTemplate.transform, false);
         _isDragging = true;
     }
 
@@ -38,8 +38,8 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         {
             _playerInteractionObjectSound.PlaySound(_dragableObject.AudioClip);
             _dragableObject.FollowInstructions();
-            _dragableObject.transform.parent = default;
-            _dragableObject.transform.position = boxPoint.position;
+            _dragableObject.TransformObject.parent = default;
+            _dragableObject.TransformObject.position = boxPoint.position;
             _isDragging = false;
             _dragableObject = null;
         }
@@ -58,8 +58,15 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
     private void DragAndDropObject()
     {
-        if (TryGetObject(out GameObject currentObject))
-            HaveDragging(currentObject);
+        _timer += Time.deltaTime;
+
+        if (_timer > _timeDelay)
+        {
+            _timer = 0;
+
+            if (TryGetObject(out GameObject currentObject))
+                HaveDragging(currentObject);
+        }
     }
 
     private void HaveDragging(GameObject currentObject)

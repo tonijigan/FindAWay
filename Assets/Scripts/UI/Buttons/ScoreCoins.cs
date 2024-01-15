@@ -6,17 +6,21 @@ public class ScoreCoins : MonoBehaviour
     [SerializeField] private TMP_Text _countCoin;
     [SerializeField] private PlayerWallet _playerWallet;
 
-    private void OnEnable() => _playerWallet.AddedCoin += AddCoin;
-
-    private void OnDisable() => _playerWallet.AddedCoin -= AddCoin;
-
-    private void Awake()
+    private void OnEnable()
     {
-        _countCoin.text = ProgressCoins.PlayerInfo.Coins.ToString();
+        _playerWallet.AddedCoin += AddCoin;
+        ProgressInfo.Rewarded += Rewarded;
     }
 
-    private void AddCoin(int coin)
+    private void OnDisable()
     {
-        _countCoin.text = coin.ToString();
+        _playerWallet.AddedCoin -= AddCoin;
+        ProgressInfo.Rewarded -= Rewarded;
     }
+
+    private void Awake() => _countCoin.text = ProgressInfo.PlayerInfo.Coins.ToString();
+
+    private void AddCoin(int coin) => _countCoin.text = coin.ToString();
+
+    private void Rewarded() => _countCoin.text = ProgressInfo.PlayerInfo.Coins.ToString();
 }

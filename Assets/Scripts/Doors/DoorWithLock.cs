@@ -1,6 +1,5 @@
 using System.Collections;
 using Agava.YandexGames;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -32,10 +31,10 @@ public class DoorWithLock : AbstractDoor
 
     private void UseKey(Key key)
     {
-        _timer.gameObject.SetActive(false);
+        Destroy(_timer.gameObject);
         SaveProgress();
 #if UNITY_WEBGL && !UNITY_EDITOR
-        PlayerAccount.SetCloudSaveData(ProgressCoins.JSONString());
+        PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
 #endif
         key.Enable();
         WorkDoor();
@@ -45,8 +44,8 @@ public class DoorWithLock : AbstractDoor
 
     private void SaveProgress()
     {
-        ProgressCoins.SetCoins(_wallet.CountCoins);
-        ProgressCoins.OpenAccessNewScene();
+        ProgressInfo.SetCoins(_wallet.CountCoins);
+        ProgressInfo.OpenAccessNewScene();
     }
 
     private void PlayAudioClip(AudioClip audioClip)

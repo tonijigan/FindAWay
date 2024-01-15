@@ -7,11 +7,11 @@ public class CoinViewMenu : MonoBehaviour
 {
     [SerializeField] private TMP_Text _text;
 
-    private void OnEnable() => ProgressCoins.ReceivedData += GetDate;
+    private void OnEnable() => ProgressInfo.ReceivedData += GetDate;
 
-    private void OnDisable() => ProgressCoins.ReceivedData -= GetDate;
+    private void OnDisable() => ProgressInfo.ReceivedData -= GetDate;
     
-    private void Awake() => PlayerAccount.GetCloudSaveData(ProgressCoins.GetPlayerInfo);
+    private void Awake() => PlayerAccount.GetCloudSaveData(ProgressInfo.GetPlayerInfo);
     
-    private void GetDate() => _text.text = ProgressCoins.PlayerInfo.Coins.ToString();
+    private void GetDate() => _text.text = ProgressInfo.PlayerInfo.Coins.ToString();
 }

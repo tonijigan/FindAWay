@@ -16,7 +16,7 @@ public class PlayerWallet : MonoBehaviour
 
     private void Awake() => InitSaveCoin();
 
-        public void AddCoin(Coin coin)
+    public void AddCoin(Coin coin)
     {
         _countCoin.Add(coin);
         AddedCoin?.Invoke(_countCoin.Count);
@@ -24,7 +24,7 @@ public class PlayerWallet : MonoBehaviour
 
     private void InitSaveCoin()
     {
-        for (int i = 0; i < ProgressCoins.PlayerInfo.Coins; i++)
+        for (int i = 0; i < ProgressInfo.PlayerInfo.Coins; i++)
             _countCoin.Add(_coin);
     }
 }
