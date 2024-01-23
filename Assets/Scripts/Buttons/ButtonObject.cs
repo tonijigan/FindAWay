@@ -7,9 +7,9 @@ public class ButtonObject : MonoBehaviour
     [SerializeField] private AbstractDoor _door;
     [SerializeField] private Transform _boxPoint;
     [SerializeField] private AudioSource _audioSource;
+    public event UnityAction<int> ButtonActive;
 
-    public event UnityAction<bool> ButtonClick;
-
+    private int _rewardPerClick = 1;
     private Transform _transform;
     private Coroutine _coroutine;
     private Vector3 _startButtonPosition;
@@ -25,16 +25,24 @@ public class ButtonObject : MonoBehaviour
         _startButtonPosition = _transform.localPosition;
         _waitForSeconds = new WaitForSeconds(_waitTime);
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.TryGetComponent(out Box box))
+        {
+            ButtonActive?.Invoke(_rewardPerClick);
             PlayCoroutine();
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.TryGetComponent(out Box box))
+        {
+            ButtonActive?.Invoke(-_rewardPerClick);
+            box.ActiveObject();
             PlayCoroutine();
+        }
     }
 
     private Vector3 GetPosition()
@@ -65,11 +73,10 @@ public class ButtonObject : MonoBehaviour
         while (_transform.localPosition != newPosition)
         {
             _transform.localPosition = Vector3.MoveTowards(_transform.localPosition,
-                                      newPosition, duration * Time.deltaTime);
+                newPosition, duration * Time.deltaTime);
             yield return null;
         }
 
-        ButtonClick?.Invoke(IsClick);
         _door.WorkDoor();
         yield return _waitForSeconds;
         _audioSource.Stop();

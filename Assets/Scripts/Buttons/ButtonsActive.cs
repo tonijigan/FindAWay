@@ -1,23 +1,23 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class ButtonsActive : MonoBehaviour
 {
-    [SerializeField] private ButtonObject[] _buttonObjects;
+    [SerializeField] private List<ButtonObject> _buttonObjects;
 
     public int CountActiveButtons { get; private set; } = 0;
 
     private void OnEnable()
     {
-        for (int i = 0; i < _buttonObjects.Length; i++)
-            _buttonObjects[i].ButtonClick += SetCountActiveButton;
+        for (int i = 0; i < _buttonObjects.Count; i++)
+            _buttonObjects[i].ButtonActive += SetCountActiveButton;
     }
 
     private void OnDisable()
     {
-        for (int i = 0; i < _buttonObjects.Length; i++)
-            _buttonObjects[i].ButtonClick -= SetCountActiveButton;
+        for (int i = 0; i < _buttonObjects.Count; i++)
+            _buttonObjects[i].ButtonActive -= SetCountActiveButton;
     }
 
-    private void SetCountActiveButton(bool active) => CountActiveButtons++;
+    private void SetCountActiveButton(int rewardPerClick) => CountActiveButtons += rewardPerClick;
 }
