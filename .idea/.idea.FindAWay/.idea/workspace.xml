@@ -24,15 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Box.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Box.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +168,7 @@
       <workItem from="1705908472288" duration="15944000" />
       <workItem from="1705989172627" duration="2314000" />
       <workItem from="1705998695813" duration="103000" />
-      <workItem from="1706005993233" duration="5310000" />
+      <workItem from="1706005993233" duration="5675000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -248,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705998769091</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Изменил логику ящиков.">
+      <created>1706011702699</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706011702699</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +276,8 @@
     <MESSAGE value="Оптимизация" />
     <MESSAGE value="Исправил ошибку" />
     <MESSAGE value="Добавил музыку в новую сцену, исправил баги" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил музыку в новую сцену, исправил баги" />
+    <MESSAGE value="Изменил логику ящиков." />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменил логику ящиков." />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
