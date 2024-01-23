@@ -6,7 +6,7 @@ public class Alarm : MonoBehaviour
     [SerializeField] private LaserSecurity _security;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
-    [SerializeField] private Light _light;
+    [SerializeField] private ParticleSystem _alarmEffect;
 
     private Animator _animator;
 
@@ -18,15 +18,14 @@ public class Alarm : MonoBehaviour
 
     private void Toggle(bool isOpen)
     {
-        if (isOpen == false)
-            TurnOn();
+        if (isOpen == false) TurnOn();
     }
 
     private void TurnOn()
     {
         _audioSource.clip = _audioClip;
         _animator.SetBool(HashNames.Alarm, true);
-        _light.gameObject.SetActive(true);
+        _alarmEffect.Play();
         _audioSource.Play();
     }
 }

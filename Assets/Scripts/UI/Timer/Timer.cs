@@ -31,11 +31,10 @@ public class Timer : MonoBehaviour
         var newTimeSecunds = _seconds - (newTimeMinuts * secundInMinuts);
         CurrentTime?.Invoke(newTimeMinuts, newTimeSecunds);
 
-        if (_seconds == 0 && _isUpTime == false)
-        {
-            TimeIsUp?.Invoke();
-            _isUpTime = true;
-            this.enabled = false;
-        }
+        if (_seconds != minDolySecunds || _isUpTime != false) return;
+        
+        TimeIsUp?.Invoke();
+        _isUpTime = true;
+        this.enabled = false;
     }
 }

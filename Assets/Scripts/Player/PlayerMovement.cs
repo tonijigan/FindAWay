@@ -49,15 +49,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) => HaveTriggerCoin(other);
 
-    private void HaveTriggerCoin(Collider collider)
+    private void HaveTriggerCoin(Collider interactionObject)
     {
-        if (collider.TryGetComponent(out Coin coin))
-        {
-            collider.enabled = false;
-            _playerWallet.AddCoin(coin);
-            _playerInteractionSound.PlaySound(coin.AudioClip);
-            coin.Did();
-        }
+        if (!interactionObject.TryGetComponent(out Coin coin)) return;
+
+        interactionObject.enabled = false;
+        _playerWallet.AddCoin(coin);
+        _playerInteractionSound.PlaySound(coin.AudioClip);
+        coin.Move();
     }
 
     private Vector3 Project(Vector3 direction)
@@ -67,15 +66,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move(Vector3 direction)
     {
-        Vector3 directionAlongSurface = Project(direction.normalized);
-        Vector3 offSet = _speed * Time.deltaTime * directionAlongSurface;
+        var directionAlongSurface = Project(direction.normalized);
+        var offSet = _speed * Time.fixedDeltaTime * directionAlongSurface;
         _rigidbody.MovePosition(_rigidbody.position + offSet);
         _playerAnimations.Move(direction, _isGround);
     }
 
     private Vector3 GetDirection()
     {
-        int minPositionY = 0;
+        var minPositionY = 0;
         var newPosition = _input.Player.Move.ReadValue<Vector2>();
 
         if (_isGround == true)
@@ -95,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _transform.rotation = Quaternion.Lerp(_transform.rotation,
                 Quaternion.LookRotation(direction),
-                _rotateSpeed * Time.deltaTime);
+                _rotateSpeed * Time.fixedDeltaTime);
         }
     }
 }

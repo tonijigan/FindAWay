@@ -1,12 +1,10 @@
-using System;
 using System.Collections.Generic;
-using Agava.YandexGames;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerWallet : MonoBehaviour
 {
-    private List<Coin> _countCoin = new List<Coin>();
+    private readonly List<Coin> _countCoin = new List<Coin>();
 
     public event UnityAction<int> AddedCoin;
 
@@ -24,7 +22,7 @@ public class PlayerWallet : MonoBehaviour
 
     private void InitSaveCoin()
     {
-        for (int i = 0; i < ProgressInfo.PlayerInfo.Coins; i++)
+        for (var i = 0; i < ProgressInfo.PlayerInfo.Coins; i++)
             _countCoin.Add(_coin);
     }
 }

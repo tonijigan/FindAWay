@@ -3,6 +3,11 @@ using Agava.WebUtility;
 
 public class FocusTracking : MonoBehaviour
 {
+    [SerializeField] private ButtonAudioListener _buttonAudioListener;
+
+    private int _minValue = 0;
+    private int _maxValue = 1;
+
     private void OnEnable()
     {
         Application.focusChanged += OnInBackgroundChangeApp;
@@ -27,9 +32,12 @@ public class FocusTracking : MonoBehaviour
         PauseGame(inBackground);
     }
 
-    private void MuteAudio(bool value) =>
-        AudioListener.volume = value ? 0 : 1;
+    private void MuteAudio(bool value)
+    {
+        if (_buttonAudioListener.IsTurnOn == false)
+            AudioListener.volume = value ? _minValue : _maxValue;
+    }
 
     private void PauseGame(bool value) =>
-        Time.timeScale = value ? 0 : 1;
+        Time.timeScale = value ? _minValue : _maxValue;
 }

@@ -585,7 +585,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5971946454907850762
 Transform:
@@ -902,8 +902,8 @@ MonoBehaviour:
   _doorClip: {fileID: 0}
   _wallet: {fileID: 0}
   _audioOpenLook: {fileID: 8300000, guid: dfeba2ec0d9037f46b82e3132b9c8bc7, type: 3}
-  _audioOpenDoor: {fileID: 8300000, guid: 7465589227e03c54f8a8d386a7e84bbf, type: 3}
   _speedRotate: 1
+  _timer: {fileID: 0}
 --- !u!1 &7631434906170441996
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,6 @@
 using Agava.YandexGames;
 using UnityEngine;
 
-
 public class PanelWin : AbstrapctPanel
 {
     [SerializeField] private Transform _pathImageStars;
@@ -27,16 +26,16 @@ public class PanelWin : AbstrapctPanel
     {
         _imageStars = new Transform[_pathImageStars.childCount];
 
-        for (int i = 0; i < _pathImageStars.childCount; i++)
+        for (var i = 0; i < _pathImageStars.childCount; i++)
             _imageStars[i] = _pathImageStars.GetChild(i);
 
-        for (int i = 0; i < _imageStars.Length; i++)
-            _imageStars[i].gameObject.SetActive(false);
+        foreach (var star in _imageStars)
+            star.gameObject.SetActive(false);
     }
 
     private void Show()
     {
-        int element = 1;
+        var element = 1;
         _imageStars[_buttonsActive.CountActiveButtons - element].gameObject.SetActive(true);
     }
 

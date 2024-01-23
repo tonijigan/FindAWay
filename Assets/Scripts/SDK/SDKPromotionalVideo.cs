@@ -1,6 +1,5 @@
 using Agava.YandexGames;
 using UnityEngine;
-using System;
 
 public class SDKPromotionalVideo : MonoBehaviour
 {
@@ -18,6 +17,7 @@ public class SDKPromotionalVideo : MonoBehaviour
     public void ShowInterstitialAd() =>
         InterstitialAd.Show(OnOpenCallBack, OnCloseCallBack);
 
+    public void InitReward(int reward) => _rewardCoin = reward;
 
     private void OnOpenCallBack() =>
         ChangeValueAudioSources(_minValue);

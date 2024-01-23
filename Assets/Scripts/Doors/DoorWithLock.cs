@@ -54,7 +54,7 @@ public class DoorWithLock : AbstractDoor
         AudioDoor.Play();
     }
 
-    public override IEnumerator MoveDoor(Vector3 newTarget)
+    protected override IEnumerator MoveDoor(Vector3 newTarget)
     {
         IsOpenDoor = !IsOpenDoor;
         PlayAudioClip(_audioOpenLook);

@@ -8,7 +8,7 @@ public class ChoosedButtonScene : AbstractButton
 
     public event UnityAction OnClick;
 
-    public override void Click() => OnClick?.Invoke();
+    protected override void Click() => OnClick?.Invoke();
 
     public void ShowAccessScene(bool isAccess)
     {

@@ -7,7 +7,7 @@ public class HaveGround : MonoBehaviour
     [SerializeField] private float _radiusTriggerGround;
     [SerializeField] private LayerMask _layerMask;
 
-    public event UnityAction OnFall;
+    public event UnityAction Fall;
 
     private float _currentTimeFall = 0;
     private float _maxTime = 2f;
@@ -30,7 +30,7 @@ public class HaveGround : MonoBehaviour
         if (_currentTimeFall > _maxTime)
         {
             _currentTimeFall = _minTime;
-            OnFall?.Invoke();
+            Fall?.Invoke();
         }
 
         _currentTimeFall += Time.deltaTime;

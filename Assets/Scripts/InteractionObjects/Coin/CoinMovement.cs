@@ -4,8 +4,13 @@ using UnityEngine;
 public class CoinMovement : MonoBehaviour
 {
     private Transform _transform;
+    private GameObject _gameObject;
 
-    private void Awake() => _transform = transform;
+    private void Awake()
+    {
+        _gameObject = gameObject;
+        _transform = transform;
+    }
 
     public void Move(Transform target) => StartCoroutine(Moving(target));
 
@@ -20,7 +25,7 @@ public class CoinMovement : MonoBehaviour
             yield return null;
         }
 
-        Destroy(gameObject);
+        _gameObject.SetActive(false);
         StopCoroutine(Moving(target));
     }
 }

@@ -1,5 +1,4 @@
 using System;
-using Agava.YandexGames;
 using UnityEngine;
 
 public class PlayerInfo
@@ -11,6 +10,7 @@ public class PlayerInfo
 public static class ProgressInfo
 {
     public static PlayerInfo PlayerInfo = new PlayerInfo();
+
     public static event Action ReceivedData, Rewarded;
 
     public static int MaxCountScenes { get; private set; } = 3;
@@ -37,7 +37,7 @@ public static class ProgressInfo
 
     public static void Init(SceneView[] sceneViews)
     {
-        for (int i = 0; i < PlayerInfo.ScenesAccess; i++)
+        for (var i = 0; i < PlayerInfo.ScenesAccess; i++)
         {
             sceneViews[i].HaveAccess();
         }

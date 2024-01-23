@@ -14,8 +14,9 @@ public abstract class AbstractDoor : MonoBehaviour
     protected Coroutine Coroutine;
     protected WaitForSeconds WaitForSeconds;
     protected bool IsOpenDoor;
-    public AudioSource AudioDoor => _doorAudioSource;
-    public AudioClip AudioClip => _doorClip;
+
+    protected AudioSource AudioDoor => _doorAudioSource;
+    protected AudioClip AudioClip => _doorClip;
 
     public bool IsOpen => IsOpenDoor;
 
@@ -37,15 +38,7 @@ public abstract class AbstractDoor : MonoBehaviour
         Coroutine = StartCoroutine(MoveDoor(GetNextTargetPosition()));
     }
 
-    private Vector3 GetNextTargetPosition()
-    {
-        if (IsOpenDoor)
-            return StartPositionDoor;
-        else
-            return NewPositionDoor;
-    }
-
-    public virtual IEnumerator MoveDoor(Vector3 newTarget)
+    protected virtual IEnumerator MoveDoor(Vector3 newTarget)
     {
         IsOpenDoor = !IsOpenDoor;
         _playableDirector.Play();
@@ -56,11 +49,16 @@ public abstract class AbstractDoor : MonoBehaviour
         while (_typeDoor.localPosition != newTarget)
         {
             _typeDoor.localPosition = Vector3.MoveTowards(_typeDoor.localPosition,
-                                      newTarget, _speedOpenDoor * Time.deltaTime);
+                newTarget, _speedOpenDoor * Time.deltaTime);
             yield return null;
         }
 
         _doorAudioSource.Stop();
         StopCoroutine(MoveDoor(newTarget));
+    }
+
+    private Vector3 GetNextTargetPosition()
+    {
+        return IsOpenDoor ? StartPositionDoor : NewPositionDoor;
     }
 }

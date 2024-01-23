@@ -98,7 +98,6 @@
             <e p="Alarm.cs" t="Include" />
             <e p="LaserSecurity.cs" t="Include" />
           </e>
-          <e p="AllUpdate.cs" t="Include" />
           <e p="Animations" t="Include">
             <e p="HashNames.cs" t="Include" />
           </e>
@@ -106,11 +105,11 @@
             <e p="ButtonObject.cs" t="Include" />
             <e p="ButtonsActive.cs" t="Include" />
           </e>
+          <e p="CompositRoot.cs" t="Include" />
           <e p="Doors" t="Include">
             <e p="AbstractDoor.cs" t="Include" />
             <e p="Bollard.cs" t="Include" />
             <e p="DoorPanel.cs" t="Include" />
-            <e p="DoorWay.cs" t="Include" />
             <e p="DoorWithLock.cs" t="Include" />
             <e p="LaserSecurityDoor.cs" t="Include" />
           </e>
@@ -132,10 +131,8 @@
             <e p="PlayerInteractionObjectSound.cs" t="Include" />
             <e p="PlayerInteractionWithObjects.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
-            <e p="PlayerSounds" t="Include">
-              <e p="WalkSound.cs" t="Include" />
-            </e>
             <e p="PlayerWallet.cs" t="Include" />
+            <e p="WalkSound.cs" t="Include" />
           </e>
           <e p="ScriptableObject" t="Include">
             <e p="SceneObjects" t="Include">
@@ -146,9 +143,7 @@
             <e p="LeaderBoard" t="Include">
               <e p="FocusTracking.cs" t="Include" />
               <e p="LeaderBoard.cs" t="Include" />
-              <e p="LeaderBoardElement.cs" t="Include" />
               <e p="LeaderBoardPlayer.cs" t="Include" />
-              <e p="LeaderBoardView.cs" t="Include" />
             </e>
             <e p="ProgressInfo.cs" t="Include" />
             <e p="SDKInitializator.cs" t="Include" />
@@ -182,7 +177,6 @@
               <e p="AbstrapctPanel.cs" t="Include" />
               <e p="PanelLoss.cs" t="Include" />
               <e p="PanelMenu.cs" t="Include" />
-              <e p="PanelShop.cs" t="Include" />
               <e p="PanelWin.cs" t="Include" />
               <e p="TransitLeaderBoardData.cs" t="Include" />
             </e>

@@ -4,7 +4,8 @@ using UnityEngine;
 public class ButtonOpenLeaderBoard : AbstractButton
 {
     [SerializeField] private AbstrapctPanel _leaderBoardPanel;
-    public override void Click()
+
+    protected override void Click()
     {
         _leaderBoardPanel.gameObject.SetActive(true);
 #if UNITY_WEBGL && !UNITY_EDITOR

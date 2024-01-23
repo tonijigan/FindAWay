@@ -16,14 +16,14 @@ public class CanvasStatic : MonoBehaviour
     private void OnEnable()
     {
         _doorWithLock.Opened += OpenPanelWin;
-        _haveGround.OnFall += OpenPanelLoss;
+        _haveGround.Fall += OpenPanelLoss;
         _timer.TimeIsUp += OpenPanelLoss;
     }
 
     private void OnDisable()
     {
         _doorWithLock.Opened -= OpenPanelWin;
-        _haveGround.OnFall -= OpenPanelLoss;
+        _haveGround.Fall -= OpenPanelLoss;
         _timer.TimeIsUp -= OpenPanelLoss;
     }
 
@@ -35,8 +35,7 @@ public class CanvasStatic : MonoBehaviour
 
     private void HaveMobilePlatform()
     {
-        if (Application.isMobilePlatform) _joystick.gameObject.SetActive(true);
-        else _joystick.gameObject.SetActive(false);
+        _joystick.gameObject.SetActive(Application.isMobilePlatform);
     }
 
     private void PlayCoroutine(AbstrapctPanel abstrapctPanel, bool isLoss = false)
@@ -52,7 +51,7 @@ public class CanvasStatic : MonoBehaviour
         if (isLoss == false)
             yield return new WaitForSeconds(_waitForOpenPanelWin);
 
-        int timeScale = 0;
+        var timeScale = 0;
         _haveGround.gameObject.SetActive(false);
         abstrapctPanel.gameObject.SetActive(true);
         _joystick.gameObject.SetActive(false);

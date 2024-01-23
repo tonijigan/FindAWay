@@ -13,7 +13,7 @@ public class LeaderBoard : MonoBehaviour
         if (PlayerAccount.IsAuthorized == false)
             return;
 
-        Agava.YandexGames.Leaderboard.GetPlayerEntry(LeaderBoardName, onSuccessCallback_ =>
+        Agava.YandexGames.Leaderboard.GetPlayerEntry(LeaderBoardName, onSuccessCallback =>
         {
             Agava.YandexGames.Leaderboard.SetScore(LeaderBoardName, score);
         });

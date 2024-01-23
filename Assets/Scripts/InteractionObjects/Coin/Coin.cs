@@ -8,9 +8,11 @@ public class Coin : InteractionObject
 
     private void Start() => _coinMovement = GetComponent<CoinMovement>();
 
-    public void SetTarget(Transform transform) => _target = transform;
+    public void SetTarget(Transform target) => _target = target;
 
-    public void Did() => _coinMovement.Move(_target);
+    public void Move() => _coinMovement.Move(_target);
 
-    public override void FollowInstructions(){}
+    public override void FollowInstructions()
+    {
+    }
 }

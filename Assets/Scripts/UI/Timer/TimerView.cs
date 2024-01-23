@@ -30,10 +30,9 @@ public class TimerView : MonoBehaviour
 
     private void ChangeColor(bool isTrigger)
     {
-        if (isTrigger == false)
-        {
-            _textMinuts.color = _textColor;
-            _image.color = _timerColor;
-        }
+        if (isTrigger != false) return;
+
+        _textMinuts.color = _textColor;
+        _image.color = _timerColor;
     }
 }

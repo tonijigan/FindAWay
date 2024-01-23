@@ -37,8 +37,8 @@ public class ChooseScenes : MonoBehaviour
 
     private void ShowNextScene()
     {
-        int element = 1;
-        int minCount = 0;
+        var element = 1;
+        var minCount = 0;
 
         if (_currentImageIndex < _scenesViews.Length - element) _currentImageIndex++;
         else _currentImageIndex = minCount;
@@ -47,8 +47,8 @@ public class ChooseScenes : MonoBehaviour
 
     private void ShowPreviousScene()
     {
-        int element = 1;
-        int minCount = 0;
+        var element = 1;
+        var minCount = 0;
 
         if (_currentImageIndex > minCount) _currentImageIndex--;
         else _currentImageIndex = _scenesViews.Length - element;

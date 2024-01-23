@@ -10,15 +10,20 @@ public class ButtonRewardAd : AbstractButton
     private SDKPromotionalVideo _promotionalVideo;
     private int _countCoins = 10;
 
-    private void Awake() =>  _promotionalVideo = GetComponent<SDKPromotionalVideo>();
+    private void Awake() => _promotionalVideo = GetComponent<SDKPromotionalVideo>();
 
     private void Start() => SetValueForReward();
 
-    public override void Click()
+    protected override void Click()
     {
         gameObject.SetActive(false);
         _promotionalVideo.ShowRewardAd();
     }
 
-    private void SetValueForReward() => _rewardCoins.text = $"+{_countCoins *= _buttonsActive.CountActiveButtons}";
+    private void SetValueForReward()
+    {
+        var result = _countCoins *= _buttonsActive.CountActiveButtons;
+        _promotionalVideo.InitReward(result);
+        _rewardCoins.text = $"+{result}";
+    }
 }

@@ -21,7 +21,7 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
     public void OnFixedUpdate() => DragAndDropObject();
 
-    public void TryPickUp(InteractionObject interactionObject)
+    private void TryPickUp(InteractionObject interactionObject)
     {
         _dragableObject = interactionObject;
         _playerInteractionObjectSound.PlaySound(_dragableObject.AudioClip);
@@ -32,7 +32,7 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         _isDragging = true;
     }
 
-    public void PutDown(Transform boxPoint)
+    private void PutDown(Transform boxPoint)
     {
         if (_dragableObject.IsUse == true)
         {

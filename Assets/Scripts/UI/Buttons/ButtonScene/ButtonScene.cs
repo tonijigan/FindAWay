@@ -1,5 +1,4 @@
 using UnityEngine.SceneManagement;
-using System.Collections;
 using UnityEngine;
 
 public class ButtonScene : AbstractButton
@@ -8,11 +7,11 @@ public class ButtonScene : AbstractButton
 
     private float _wait = 0.1f;
 
-    public override void Click() => WorkScene();
+    protected override void Click() => WorkScene();
 
-    public void WorkScene()
+    private void WorkScene()
     {
-        float timeScale = 1.0f;
+        var timeScale = 1.0f;
         Time.timeScale = timeScale;
         Invoke(HashNames.Load, _wait);
     }

@@ -6,38 +6,31 @@ public class ButtonAudioListener : AbstractButton
 {
     [SerializeField] private Sprite _spriteTurnOffAudio, _spriteTurnOnAudio;
 
+    private static bool s_isTurnOn = false;
+
     private Image _image;
+    private int _stateTurnOffAudio = 0;
     private int _stateTurnOnAudio = 1;
-    private bool _isTurnOn;
+
+    public bool IsTurnOn => s_isTurnOn;
 
     private void Awake()
     {
-        _isTurnOn = PlayerPrefs.GetInt(HashNames.AudioListenerState)
-                                               == _stateTurnOnAudio;
         _image = GetComponent<Image>();
-        _image.sprite = _spriteTurnOnAudio;
-        ChangeState();
+        StateImage();
     }
-    public override void Click() => ChangeState();
+
+    protected override void Click() => ChangeState();
 
     private void ChangeState()
     {
-        _isTurnOn = !_isTurnOn;
-        AudioListener.pause = _isTurnOn;
-
-        if (_isTurnOn == true) _image.sprite = _spriteTurnOffAudio;
-        else _image.sprite = _spriteTurnOnAudio;
-
-        SaveCurrentState();
+        s_isTurnOn = !s_isTurnOn;
+        AudioListener.volume = s_isTurnOn ? _stateTurnOffAudio : _stateTurnOnAudio;
+        StateImage();
     }
 
-    private void SaveCurrentState()
+    private void StateImage()
     {
-        int stateTurnOffAudio = 0;
-
-        if (_isTurnOn == true)
-            PlayerPrefs.SetInt(HashNames.AudioListenerState, stateTurnOffAudio);
-        else
-            PlayerPrefs.SetInt(HashNames.AudioListenerState, _stateTurnOnAudio);
+        _image.sprite = s_isTurnOn ? _spriteTurnOffAudio : _spriteTurnOnAudio;
     }
 }
