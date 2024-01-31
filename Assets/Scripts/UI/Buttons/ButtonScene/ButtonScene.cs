@@ -16,5 +16,5 @@ public class ButtonScene : AbstractButton
         Invoke(HashNames.Load, _wait);
     }
 
-    private void Load() => SceneManager.LoadScene(_sceneNumber);
+    public void Load() => SceneManager.LoadScene(_sceneNumber);
 }

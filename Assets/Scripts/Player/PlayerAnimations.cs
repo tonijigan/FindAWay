@@ -9,6 +9,7 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Awake() => _animator = GetComponent<Animator>();
 
+
     public void OnUpdate(InteractionObject interactionObject, bool isDragging)
     {
         _interactionObject = interactionObject;
@@ -22,7 +23,13 @@ public class PlayerAnimations : MonoBehaviour
         Falling(haveGround);
     }
 
-    private void Falling(bool haveGround) => _animator.SetBool(HashNames.Falling, haveGround);
+    private void Falling(bool haveGround)
+    {
+        var duration = 0.1f;
+
+        if (haveGround == false)
+            _animator.CrossFade(HashNames.Falling, duration);
+    }
 
     private void Idle()
     {

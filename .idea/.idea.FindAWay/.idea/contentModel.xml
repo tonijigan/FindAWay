@@ -168,15 +168,18 @@
               </e>
               <e p="ButtonRewardAd.cs" t="Include" />
               <e p="ButtonScene" t="Include">
+                <e p="ButtonRestartScene.cs" t="Include" />
                 <e p="ButtonScene.cs" t="Include" />
               </e>
               <e p="ScoreCoins.cs" t="Include" />
             </e>
             <e p="CanvasStatic.cs" t="Include" />
+            <e p="InterstitialAdPlay.cs" t="Include" />
             <e p="Panels" t="Include">
               <e p="AbstrapctPanel.cs" t="Include" />
               <e p="PanelLoss.cs" t="Include" />
               <e p="PanelMenu.cs" t="Include" />
+              <e p="PanelPlayGame.cs" t="Include" />
               <e p="PanelWin.cs" t="Include" />
               <e p="TransitLeaderBoardData.cs" t="Include" />
             </e>

@@ -17,20 +17,16 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody _rigidbody;
     private HaveGround _haveGround;
     private PlayerInput _input;
-    private bool _isGround;
+    private bool _isGround = true;
 
 
     private void Awake()
     {
+        _haveGround = GetComponent<HaveGround>();
+        _rigidbody = GetComponent<Rigidbody>();
         _input = new PlayerInput();
         _input.Enable();
         _transform = transform;
-    }
-
-    private void Start()
-    {
-        _haveGround = GetComponent<HaveGround>();
-        _rigidbody = GetComponent<Rigidbody>();
     }
 
     public void OnFixedUpdate()
