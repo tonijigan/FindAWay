@@ -12,6 +12,7 @@ public static class HashNames
     private const string CIdleWhitBox = "IdleWhitBox";
     private const string CIdleWhitKey = "IdleWhitKey";
     private const string CLoad = "Load";
+    private const string CLeaderBoardName = "LeaderBoardsFindAWay";
 
     public static int Idle => Animator.StringToHash(CIdle);
     public static int Alarm => Animator.StringToHash(CAlarm);
@@ -22,4 +23,5 @@ public static class HashNames
     public static int IdleWhitBox => Animator.StringToHash(CIdleWhitBox);
     public static int IdleWhitKey => Animator.StringToHash(CIdleWhitKey);
     public static string Load => CLoad;
+    public static string LeaderBoardName => CLeaderBoardName;
 }

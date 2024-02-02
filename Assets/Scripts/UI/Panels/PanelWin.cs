@@ -19,7 +19,7 @@ public class PanelWin : AbstrapctPanel
         Initialization();
         Show();
         PlaySound();
-        _leaderboard.SetPlayer(ProgressInfo.PlayerInfo.Coins);
+        _leaderboard.SetScore(ProgressInfo.PlayerInfo.Coins);
     }
 
     private void Initialization()

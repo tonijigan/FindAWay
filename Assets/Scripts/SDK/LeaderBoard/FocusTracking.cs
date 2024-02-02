@@ -25,12 +25,23 @@ public class FocusTracking : MonoBehaviour
     {
         MuteAudio(!inApp);
         PauseGame(!inApp);
+        ActivePanel(inApp);
     }
 
     private void OnInBackgroundChangeWeb(bool inBackground)
     {
         MuteAudio(inBackground);
         PauseGame(inBackground);
+        ActivePanel(inBackground);
+    }
+
+    private void ActivePanel(bool isActive)
+    {
+        if (_panelPlayGame == null)
+            return;
+
+        if (isActive == false)
+            _panelPlayGame.gameObject.SetActive(true);
     }
 
     private void MuteAudio(bool value)

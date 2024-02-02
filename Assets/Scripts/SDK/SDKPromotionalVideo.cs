@@ -30,7 +30,7 @@ public class SDKPromotionalVideo : MonoBehaviour
     private void OnRewardedCallback()
     {
         ProgressInfo.RewardCoin(_rewardCoin);
-        _leaderBoard.SetPlayer(ProgressInfo.PlayerInfo.Coins);
+        _leaderBoard.SetScore(ProgressInfo.PlayerInfo.Coins);
         PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
     }
 
