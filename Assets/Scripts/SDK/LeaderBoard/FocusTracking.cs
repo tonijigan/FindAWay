@@ -1,10 +1,11 @@
 using UnityEngine;
 using Agava.WebUtility;
+using UnityEngine.Serialization;
 
 public class FocusTracking : MonoBehaviour
 {
     [SerializeField] private ButtonAudioListener _buttonAudioListener;
-    [SerializeField] private PanelPlayGame _panelPlayGame;
+    [SerializeField] private PanelMenu _panelMenu;
 
     private int _minValue = 0;
     private int _maxValue = 1;
@@ -37,11 +38,11 @@ public class FocusTracking : MonoBehaviour
 
     private void ActivePanel(bool isActive)
     {
-        if (_panelPlayGame == null)
+        if (_panelMenu == null)
             return;
 
         if (isActive == false)
-            _panelPlayGame.gameObject.SetActive(true);
+            _panelMenu.gameObject.SetActive(true);
     }
 
     private void MuteAudio(bool value)
@@ -52,7 +53,7 @@ public class FocusTracking : MonoBehaviour
 
     private void PauseGame(bool value)
     {
-        if (_panelPlayGame != null && _panelPlayGame.isActiveAndEnabled == false)
+        if (_panelMenu != null && _panelMenu.isActiveAndEnabled == false)
             Time.timeScale = value ? _minValue : _maxValue;
     }
 }

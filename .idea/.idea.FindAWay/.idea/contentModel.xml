@@ -106,6 +106,7 @@
             <e p="ButtonsActive.cs" t="Include" />
           </e>
           <e p="CompositRoot.cs" t="Include" />
+          <e p="CustomEventSystem.cs" t="Include" />
           <e p="Doors" t="Include">
             <e p="AbstractDoor.cs" t="Include" />
             <e p="Bollard.cs" t="Include" />
@@ -143,7 +144,6 @@
             <e p="LeaderBoard" t="Include">
               <e p="FocusTracking.cs" t="Include" />
               <e p="LeaderBoard.cs" t="Include" />
-              <e p="LeaderBoardPlayer.cs" t="Include" />
             </e>
             <e p="ProgressInfo.cs" t="Include" />
             <e p="SDKInitializator.cs" t="Include" />
@@ -179,9 +179,7 @@
               <e p="AbstrapctPanel.cs" t="Include" />
               <e p="PanelLoss.cs" t="Include" />
               <e p="PanelMenu.cs" t="Include" />
-              <e p="PanelPlayGame.cs" t="Include" />
               <e p="PanelWin.cs" t="Include" />
-              <e p="TransitLeaderBoardData.cs" t="Include" />
             </e>
             <e p="Scenes" t="Include">
               <e p="SceneView.cs" t="Include" />

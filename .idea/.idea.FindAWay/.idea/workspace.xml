@@ -26,51 +26,62 @@
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshs/SceneSprites/1x/Монтажная область 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshs/SceneSprites/1x/Монтажная область 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/05_Vault_01_Chest_Bottom#1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/05_Vault_01_Chest_Bottom#1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Environment_RoadSide.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Environment_RoadSide.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Fence_Wall_01b.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Fence_Wall_01b.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Items_House_Firewood_01a.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Items_House_Firewood_01a.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Nature_Tree_05a.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Nature_Tree_05a.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01a.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01a.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01c.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01c.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Building_Administrative _01a.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Building_Administrative _01a.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01a.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01a.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01b.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01b.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_01c.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_01c.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01C.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01C.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01a.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01a.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01b.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01b.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01c.001.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01c.001.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01d.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01d.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_02a.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_02a.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_OutBuilding_Cubby_01d.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_OutBuilding_Cubby_01d.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building/EA03_Town_House_Comp_02a_PRE.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building/EA03_Town_House_Comp_02a_PRE.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_01a.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_01a.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_02a.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_02a.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA_Artefact_PRE.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA_Artefact_PRE.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SDK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SDK.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/HaveGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/HaveGround.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelLoss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelLoss.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Alarm.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/Alarm.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/DoorLook.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/DoorLook.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Evaporation/ButtonEvaporation1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Evaporation/ButtonEvaporation1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser7.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser7.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Looks/Look2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Looks/Look2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/128561__herbertboland__pianomoodmelancholy2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/128561__herbertboland__pianomoodmelancholy2.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/150879__nenadsimic__jazzy-chords.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/150879__nenadsimic__jazzy-chords.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/171672__leszek_szary__failure-2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/171672__leszek_szary__failure-2.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/171673__leszek_szary__failure-1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/171673__leszek_szary__failure-1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/394899__funwithsound__failure-2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/394899__funwithsound__failure-2.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/394900__funwithsound__failure-1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/394900__funwithsound__failure-1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/469424__sergequadrado__misery-loop.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/469424__sergequadrado__misery-loop.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/685244__michaelp800__michael-stutz-damnum.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/685244__michaelp800__michael-stutz-damnum.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music5.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music5.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music7.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music7.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music8.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music8.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TurnUpAndTurnDown/TakeItem.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TurnUpAndTurnDown/TakeItem.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Win/Win1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,17 +99,16 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.27/Rider/Editor/Discovery.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkSound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewEventSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/AllUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/LaserSecurity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/LaserSecurityDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Scenes/SceneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/AbstractDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
@@ -134,7 +144,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInterstitialAd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ad.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialPlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" />
@@ -143,8 +152,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NewEventSystem.cs" />
       </list>
     </option>
   </component>
@@ -226,6 +238,9 @@
       <workItem from="1706283836108" duration="6364000" />
       <workItem from="1706299948856" duration="6548000" />
       <workItem from="1706605153496" duration="4189000" />
+      <workItem from="1706707690907" duration="52000" />
+      <workItem from="1707642668314" duration="47000" />
+      <workItem from="1707643905808" duration="3108000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -311,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706021595885</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Рефакторинг кода">
+      <created>1706707726550</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706707726550</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +364,8 @@
     <MESSAGE value="Добавил музыку в новую сцену, исправил баги" />
     <MESSAGE value="Изменил логику ящиков." />
     <MESSAGE value="Добавил изображение на фон" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил изображение на фон" />
+    <MESSAGE value="Рефакторинг кода" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг кода" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
@@ -357,10 +380,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1706021602360">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1706707730988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1706021602360" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1706707730988" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705908107151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
