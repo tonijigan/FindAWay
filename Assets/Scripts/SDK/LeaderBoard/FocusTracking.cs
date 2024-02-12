@@ -1,6 +1,5 @@
 using UnityEngine;
 using Agava.WebUtility;
-using UnityEngine.Serialization;
 
 public class FocusTracking : MonoBehaviour
 {
@@ -9,6 +8,8 @@ public class FocusTracking : MonoBehaviour
 
     private int _minValue = 0;
     private int _maxValue = 1;
+
+    private void Awake() => Time.timeScale = _maxValue;
 
     private void OnEnable()
     {

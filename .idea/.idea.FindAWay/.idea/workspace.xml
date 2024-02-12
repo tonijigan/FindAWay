@@ -26,62 +26,16 @@
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/05_Vault_01_Chest_Bottom#1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/05_Vault_01_Chest_Bottom#1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Environment_RoadSide.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Environment_RoadSide.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Fence_Wall_01b.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Fence_Wall_01b.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Items_House_Firewood_01a.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Items_House_Firewood_01a.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Nature_Tree_05a.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Nature_Tree_05a.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01a.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01a.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01c.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD3/EA03_Prop_House_Shelf_01c.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Building_Administrative _01a.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Building_Administrative _01a.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01a.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01a.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01b.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Town_Ill_Roof_01b.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_01c.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_01c.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01C.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01C.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01a.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01a.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01b.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01b.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01c.001.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01c.001.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01d.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_01d.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_02a.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_Hut_Roof_Cut_02a.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_OutBuilding_Cubby_01d.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/ItemEnvironment/Resources/LOD4/EA03_Village_OutBuilding_Cubby_01d.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building/EA03_Town_House_Comp_02a_PRE.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Building/EA03_Town_House_Comp_02a_PRE.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_01a.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_01a.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_02a.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA03_Prop_Composter_02a.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA_Artefact_PRE.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prop/EA_Artefact_PRE.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonContinueGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonContinueGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +53,12 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.27/Rider/Editor/Discovery.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkSound.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewEventSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/LaserSecurity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/LaserSecurityDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Scenes/SceneView.cs" />
@@ -121,9 +73,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInitializator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonOpenPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonContinueGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer/TimerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs" />
@@ -144,7 +94,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInterstitialAd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ad.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialPlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" />
@@ -155,8 +104,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NewEventSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomEventSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonContinueGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
       </list>
     </option>
   </component>
@@ -178,6 +131,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -240,7 +194,8 @@
       <workItem from="1706605153496" duration="4189000" />
       <workItem from="1706707690907" duration="52000" />
       <workItem from="1707642668314" duration="47000" />
-      <workItem from="1707643905808" duration="3108000" />
+      <workItem from="1707643905808" duration="3339000" />
+      <workItem from="1707737817504" duration="7682000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -333,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706707726550</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Убрал лишние к нопки">
+      <created>1707649845181</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707649845181</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +327,8 @@
     <MESSAGE value="Изменил логику ящиков." />
     <MESSAGE value="Добавил изображение на фон" />
     <MESSAGE value="Рефакторинг кода" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг кода" />
+    <MESSAGE value="Убрал лишние к нопки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Убрал лишние к нопки" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
@@ -380,14 +343,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1706707730988">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1707649848004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1706707730988" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1707649848004" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705908107151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1705908107151" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1707743601361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1707743601361" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1705932381888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
