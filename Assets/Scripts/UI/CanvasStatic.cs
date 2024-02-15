@@ -38,24 +38,24 @@ public class CanvasStatic : MonoBehaviour
         _joystick.gameObject.SetActive(Application.isMobilePlatform);
     }
 
-    private void PlayCoroutine(AbstrapctPanel abstrapctPanel, bool isLoss = false)
+    private void PlayCoroutine(AbstrapctPanel abstractPanel, bool isLoss = false)
     {
         if (_coroutine != null)
             StopCoroutine(_coroutine);
 
-        _coroutine = StartCoroutine(TurnOnPanel(abstrapctPanel, isLoss));
+        _coroutine = StartCoroutine(TurnOnPanel(abstractPanel, isLoss));
     }
 
-    private IEnumerator TurnOnPanel(AbstrapctPanel abstrapctPanel, bool isLoss)
+    private IEnumerator TurnOnPanel(AbstrapctPanel abstractPanel, bool isLoss)
     {
         if (isLoss == false)
             yield return new WaitForSeconds(_waitForOpenPanelWin);
 
         var timeScale = 0;
         _haveGround.gameObject.SetActive(false);
-        abstrapctPanel.gameObject.SetActive(true);
+        abstractPanel.gameObject.SetActive(true);
         _joystick.gameObject.SetActive(false);
         Time.timeScale = timeScale;
-        StopCoroutine(TurnOnPanel(abstrapctPanel, isLoss));
+        StopCoroutine(TurnOnPanel(abstractPanel, isLoss));
     }
 }

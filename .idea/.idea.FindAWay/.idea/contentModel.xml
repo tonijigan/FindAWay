@@ -178,7 +178,6 @@
               <e p="ButtonContinueGame.cs" t="Include" />
               <e p="ButtonPanel" t="Include">
                 <e p="ButtonClosePanel.cs" t="Include" />
-                <e p="ButtonOpenLeaderBoard.cs" t="Include" />
                 <e p="ButtonOpenPanel.cs" t="Include" />
               </e>
               <e p="ButtonRewardAd.cs" t="Include" />

@@ -9,21 +9,21 @@ public class InterstitialAdPlay : MonoBehaviour
 
     private void OnEnable()
     {
-        for (int i = 0; i < _buttonRestartScene.Length; i++)
-            _buttonRestartScene[i].Clicked += PlayPromotionAd;
+        foreach (var buttonRestart in _buttonRestartScene)
+            buttonRestart.Clicked += PlayPromotionAd;
 
-        _promotionalVideo.ClosedCallBack += loadScene;
+        _promotionalVideo.ClosedCallBack += LoadScene;
     }
 
     private void OnDisable()
     {
-        for (int i = 0; i < _buttonRestartScene.Length; i++)
-            _buttonRestartScene[i].Clicked -= PlayPromotionAd;
+        foreach (var buttonRestart in _buttonRestartScene)
+            buttonRestart.Clicked -= PlayPromotionAd;
 
-        _promotionalVideo.ClosedCallBack -= loadScene;
+        _promotionalVideo.ClosedCallBack -= LoadScene;
     }
 
     private void PlayPromotionAd() => _promotionalVideo.ShowInterstitialAd();
 
-    private void loadScene() => SceneManager.LoadScene(_sceneNumber);
+    private void LoadScene() => SceneManager.LoadScene(_sceneNumber);
 }

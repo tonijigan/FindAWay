@@ -75,10 +75,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (_isGround == true)
         {
-            if (Application.isMobilePlatform == true)
-                return new Vector3(_joystick.xAxis.value, minPositionY, _joystick.yAxis.value);
-            else
-                return new Vector3(newPosition.x, minPositionY, newPosition.y);
+            return Application.isMobilePlatform == true
+                ? new Vector3(_joystick.xAxis.value, minPositionY, _joystick.yAxis.value)
+                : new Vector3(newPosition.x, minPositionY, newPosition.y);
         }
         else
             return Vector3.zero;

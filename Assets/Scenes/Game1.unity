@@ -16856,6 +16856,10 @@ PrefabInstance:
       propertyPath: _security
       value: 
       objectReference: {fileID: 1017244569}
+    - target: {fileID: 4213907839640993024, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _textMinutes
+      value: 
+      objectReference: {fileID: 1668475758}
     - target: {fileID: 4213907839640993027, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _secondsPerViolation
       value: 35
@@ -17092,6 +17096,14 @@ PrefabInstance:
       propertyPath: _buttonsActive
       value: 
       objectReference: {fileID: 910013890}
+    - target: {fileID: 5325511057161073531, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 456483709}
+    - target: {fileID: 5325511057161073531, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _buttonsActive
+      value: 
+      objectReference: {fileID: 910013890}
     - target: {fileID: 5903977494301835861, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _audioSource
       value: 
@@ -17181,6 +17193,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+--- !u!114 &1668475758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4213907840243842432, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+  m_PrefabInstance: {fileID: 1668475757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1668475759 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4213907840110832496, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}

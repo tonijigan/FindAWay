@@ -17,13 +17,13 @@ public class CellForCoins : MonoBehaviour
     {
         _coins = new Coin[_cell.childCount];
 
-        for (int i = 0; i < _coins.Length; i++)
+        for (var i = 0; i < _coins.Length; i++)
             _coins[i] = _cell.GetChild(i).gameObject.GetComponent<Coin>();
     }
 
     private void SetCoinsTarget()
     {
-        for (int i = 0; i < _coins.Length; i++)
-            _coins[i].SetTarget(_target);
+        foreach (var coin in _coins)
+            coin.SetTarget(_target);
     }
 }

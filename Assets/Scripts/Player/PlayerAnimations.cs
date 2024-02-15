@@ -51,15 +51,13 @@ public class PlayerAnimations : MonoBehaviour
     {
         _animator.SetFloat(HashNames.Walk, direction.magnitude);
 
-        float magnitude = direction.magnitude;
+        var magnitude = direction.magnitude;
 
-        if (_interactionObject != null && _isDragging)
-        {
-            if (_interactionObject.TryGetComponent(out Box box))
-                _animator.SetFloat(HashNames.WalkWhitBox, magnitude);
+        if (_interactionObject == null || !_isDragging) return;
+        if (_interactionObject.TryGetComponent(out Box box))
+            _animator.SetFloat(HashNames.WalkWhitBox, magnitude);
 
-            if (_interactionObject.TryGetComponent(out Key key))
-                _animator.SetFloat(HashNames.WalkWhitKey, magnitude);
-        }
+        if (_interactionObject.TryGetComponent(out Key key))
+            _animator.SetFloat(HashNames.WalkWhitKey, magnitude);
     }
 }

@@ -13,7 +13,7 @@ public static class ProgressInfo
 
     public static event Action ReceivedData, Rewarded;
 
-    public static int MaxCountScenes { get; private set; } = 3;
+    private static int _maxCountScenes = 3;
 
     public static string JSONString()
     {
@@ -25,8 +25,7 @@ public static class ProgressInfo
         PlayerInfo = JsonUtility.FromJson<PlayerInfo>(value);
         ReceivedData?.Invoke();
     }
-
-
+    
     public static void SetCoins(int coins) => PlayerInfo.Coins = coins;
 
     public static void RewardCoin(int coins)
@@ -38,13 +37,11 @@ public static class ProgressInfo
     public static void Init(SceneView[] sceneViews)
     {
         for (var i = 0; i < PlayerInfo.ScenesAccess; i++)
-        {
             sceneViews[i].HaveAccess();
-        }
     }
 
     public static void OpenAccessNewScene()
     {
-        if (PlayerInfo.ScenesAccess < MaxCountScenes) PlayerInfo.ScenesAccess++;
+        if (PlayerInfo.ScenesAccess < _maxCountScenes) PlayerInfo.ScenesAccess++;
     }
 }

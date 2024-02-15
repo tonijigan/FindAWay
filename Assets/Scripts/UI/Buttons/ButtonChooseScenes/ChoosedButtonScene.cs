@@ -10,8 +10,5 @@ public class ChoosedButtonScene : AbstractButton
 
     protected override void Click() => OnClick?.Invoke();
 
-    public void ShowAccessScene(bool isAccess)
-    {
-        _imageClosedAccess.gameObject.SetActive(isAccess = !isAccess);
-    }
+    public void ShowAccessScene(bool isAccess) => _imageClosedAccess.gameObject.SetActive(isAccess = !isAccess);
 }

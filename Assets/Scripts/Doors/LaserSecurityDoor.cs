@@ -14,8 +14,7 @@ public class LaserSecurityDoor : AbstractDoor
         AudioDoor.clip = AudioClip;
         AudioDoor.Play();
 
-        if (IsOpenDoor == true) _laserSecurity.gameObject.SetActive(false);
-        else _laserSecurity.gameObject.SetActive(true);
+        _laserSecurity.gameObject.SetActive(IsOpenDoor != true);
 
         yield return WaitForSeconds;
         AudioDoor.Stop();

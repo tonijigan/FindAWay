@@ -16,23 +16,23 @@ public class Timer : MonoBehaviour
 
     public void CountDownTime()
     {
-        int minDolySecunds = 0;
-        int maxDolySecunds = 1;
-        int secundInMinuts = 60;
+        var minFractionsSeconds = 0;
+        var maxFractionsSeconds = 1;
+        var secondsInMinutes = 60;
         _newTime -= Time.deltaTime;
 
-        if (_newTime <= minDolySecunds && _isUpTime == false)
+        if (_newTime <= minFractionsSeconds && _isUpTime == false)
         {
-            _newTime = maxDolySecunds;
-            _seconds -= maxDolySecunds;
+            _newTime = maxFractionsSeconds;
+            _seconds -= maxFractionsSeconds;
         }
 
-        var newTimeMinuts = (int) _seconds / secundInMinuts;
-        var newTimeSecunds = _seconds - (newTimeMinuts * secundInMinuts);
-        CurrentTime?.Invoke(newTimeMinuts, newTimeSecunds);
+        var newTimeMinutes = (int) _seconds / secondsInMinutes;
+        var newTimeSeconds = _seconds - (newTimeMinutes * secondsInMinutes);
+        CurrentTime?.Invoke(newTimeMinutes, newTimeSeconds);
 
-        if (_seconds != minDolySecunds || _isUpTime != false) return;
-        
+        if (_seconds != minFractionsSeconds || _isUpTime != false) return;
+
         TimeIsUp?.Invoke();
         _isUpTime = true;
         this.enabled = false;

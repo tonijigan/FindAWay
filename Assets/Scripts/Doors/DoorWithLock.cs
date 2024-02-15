@@ -1,5 +1,4 @@
 using System.Collections;
-using Agava.YandexGames;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -34,7 +33,7 @@ public class DoorWithLock : AbstractDoor
         Destroy(_timer.gameObject);
         SaveProgress();
 #if UNITY_WEBGL && !UNITY_EDITOR
-        PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
+        Agava.YandexGames.PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
 #endif
         key.Enable();
         WorkDoor();

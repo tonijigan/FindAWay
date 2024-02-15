@@ -29,8 +29,5 @@ public class ButtonAudioListener : AbstractButton
         StateImage();
     }
 
-    private void StateImage()
-    {
-        _image.sprite = s_isTurnOn ? _spriteTurnOffAudio : _spriteTurnOnAudio;
-    }
+    private void StateImage() => _image.sprite = s_isTurnOn ? _spriteTurnOffAudio : _spriteTurnOnAudio;
 }

@@ -28,21 +28,17 @@ public class ButtonObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.TryGetComponent(out Box box))
-        {
-            ButtonActive?.Invoke(_rewardPerClick);
-            PlayCoroutine();
-        }
+        if (!other.gameObject.TryGetComponent(out Box box)) return;
+        ButtonActive?.Invoke(_rewardPerClick);
+        PlayCoroutine();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.TryGetComponent(out Box box))
-        {
-            ButtonActive?.Invoke(-_rewardPerClick);
-            box.ActiveObject();
-            PlayCoroutine();
-        }
+        if (!other.gameObject.TryGetComponent(out Box box)) return;
+        ButtonActive?.Invoke(-_rewardPerClick);
+        box.ActiveObject();
+        PlayCoroutine();
     }
 
     private Vector3 GetPosition()
@@ -50,10 +46,7 @@ public class ButtonObject : MonoBehaviour
         float positionZero = 0, newPositionY = -1f;
         var newPosition = _transform.localPosition + new Vector3(positionZero, newPositionY, positionZero);
 
-        if (IsClick == true)
-            return newPosition;
-        else
-            return _startButtonPosition;
+        return IsClick == true ? newPosition : _startButtonPosition;
     }
 
     private void PlayCoroutine()
@@ -67,7 +60,7 @@ public class ButtonObject : MonoBehaviour
 
     private IEnumerator ChangePosition(Vector3 newPosition)
     {
-        float duration = 2f;
+        var duration = 2f;
         _audioSource.Play();
 
         while (_transform.localPosition != newPosition)

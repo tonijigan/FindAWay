@@ -34,15 +34,13 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
     private void PutDown(Transform boxPoint)
     {
-        if (_dragableObject.IsUse == true)
-        {
-            _playerInteractionObjectSound.PlaySound(_dragableObject.AudioClip);
-            _dragableObject.FollowInstructions();
-            _dragableObject.TransformObject.parent = default;
-            _dragableObject.TransformObject.position = boxPoint.position;
-            _isDragging = false;
-            _dragableObject = null;
-        }
+        if (_dragableObject.IsUse != true) return;
+        _playerInteractionObjectSound.PlaySound(_dragableObject.AudioClip);
+        _dragableObject.FollowInstructions();
+        _dragableObject.TransformObject.parent = default;
+        _dragableObject.TransformObject.position = boxPoint.position;
+        _isDragging = false;
+        _dragableObject = null;
     }
 
     private bool TryGetObject(out GameObject currentObject)
@@ -50,7 +48,7 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         currentObject = null;
         var ray = new Ray(_rayPoint.position, _rayPoint.forward);
 
-        if (Physics.Raycast(ray, out RaycastHit hitInfo) && hitInfo.distance < _hitDistance)
+        if (Physics.Raycast(ray, out var hitInfo) && hitInfo.distance < _hitDistance)
             currentObject = hitInfo.collider.gameObject;
 
         return currentObject != null;
@@ -60,13 +58,11 @@ public class PlayerInteractionWithObjects : MonoBehaviour
     {
         _timer += Time.deltaTime;
 
-        if (_timer > _timeDelay)
-        {
-            _timer = 0;
+        if (!(_timer > _timeDelay)) return;
+        _timer = 0;
 
-            if (TryGetObject(out GameObject currentObject))
-                HaveDragging(currentObject);
-        }
+        if (TryGetObject(out var currentObject))
+            HaveDragging(currentObject);
     }
 
     private void HaveDragging(GameObject currentObject)

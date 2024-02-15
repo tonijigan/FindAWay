@@ -1,4 +1,3 @@
-using Agava.YandexGames;
 using UnityEngine;
 
 public class PanelWin : AbstrapctPanel
@@ -14,7 +13,7 @@ public class PanelWin : AbstrapctPanel
     private void Start()
     {
 #if UNITY_WEBGL && !UNITY_EDITOR
-        PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
+        Agava.YandexGames.PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
 #endif
         Initialization();
         Show();
