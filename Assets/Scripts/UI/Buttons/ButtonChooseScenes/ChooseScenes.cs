@@ -1,6 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class ChooseScenes : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ChooseScenes : MonoBehaviour
     [SerializeField] private ChoosedButtonScene _choosedButtonScene;
     [SerializeField] private Image _currentImage;
     [SerializeField] private SceneView[] _scenesViews;
+    [SerializeField] private TMP_Text _textNumberScene;
 
     private int _currentImageIndex = 0;
 
@@ -57,8 +59,10 @@ public class ChooseScenes : MonoBehaviour
 
     private void ShowCurrentScene()
     {
+        var element = 1;
         _currentImage.sprite = _scenesViews[_currentImageIndex].SpriteScene;
         _choosedButtonScene.AccessButton(_scenesViews[_currentImageIndex].IsAccess);
         _choosedButtonScene.ShowAccessScene(_scenesViews[_currentImageIndex].IsAccess);
+        _textNumberScene.text = (_currentImageIndex + element).ToString();
     }
 }

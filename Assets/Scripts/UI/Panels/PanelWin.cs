@@ -5,7 +5,7 @@ public class PanelWin : AbstrapctPanel
     [SerializeField] private Transform _pathImageStars;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
-    [SerializeField] private LeaderBoard _leaderboard;
+    [SerializeField] private YandexLeaderBoard _leaderboard;
     [SerializeField] private ButtonsActive _buttonsActive;
 
     private Transform[] _imageStars;

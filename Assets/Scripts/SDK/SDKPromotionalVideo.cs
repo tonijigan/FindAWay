@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class SDKPromotionalVideo : MonoBehaviour
 {
-    [SerializeField] private LeaderBoard _leaderBoard;
+    [SerializeField] private YandexLeaderBoard _leaderBoard;
     [SerializeField] private FocusTracking _focusTracking;
     public event UnityAction ClosedCallBack;
 
