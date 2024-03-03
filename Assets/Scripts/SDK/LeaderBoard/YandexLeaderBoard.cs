@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class YandexLeaderBoard : MonoBehaviour
 {
-    private const string LeaderBoardName = "LeaderBoardsFindAWay";
-    private const string AnonymoysName = "Anonymoys";
+    private readonly List<LeaderBoardPlayer> _leaderBoardPlayers = new List<LeaderBoardPlayer>();
 
-    private readonly List<LeaderBoardPlayer> _leaderBoardPlayers = new();
+    [SerializeField] private LeaderBoaedView _leaderBoaredView;
+    [SerializeField] private Localisation _localisation;
 
-    [SerializeField] private LeaderBoaedView _leaderBoaedView;
+    private void Awake() => Fill();
 
     public void SetScore(int score)
     {
@@ -21,8 +21,6 @@ public class YandexLeaderBoard : MonoBehaviour
             if (result.score < score)
                 Leaderboard.SetScore(HashNames.LeaderBoardName, score);
         });
-
-        Fill();
     }
 
     private void Fill()
@@ -31,20 +29,21 @@ public class YandexLeaderBoard : MonoBehaviour
 
         _leaderBoardPlayers.Clear();
 
-        Leaderboard.GetEntries(LeaderBoardName, result =>
+        Leaderboard.GetEntries(HashNames.LeaderBoardName, result =>
         {
             foreach (var entry in result.entries)
             {
-                int score = entry.score;
-                string name = entry.player.publicName;
+                var score = entry.score;
+                var playerPublicName = entry.player.publicName;
 
-                if (string.IsNullOrEmpty(name))
-                    name = AnonymoysName;
+                if (string.IsNullOrEmpty(playerPublicName))
+                    playerPublicName = _localisation.ChangeLanguage(HashNames.AnonymousNameTr,
+                                        HashNames.AnonymousNameRu, HashNames.AnonymousNameEn);
 
-                _leaderBoardPlayers.Add(new LeaderBoardPlayer(name, score));
+                _leaderBoardPlayers.Add(new LeaderBoardPlayer(playerPublicName, score));
             }
 
-            _leaderBoaedView.ConstructLeaderBoard(_leaderBoardPlayers);
+            _leaderBoaredView.ConstructLeaderBoard(_leaderBoardPlayers);
         });
     }
 }

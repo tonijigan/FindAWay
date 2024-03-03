@@ -27,345 +27,26 @@
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_1.2s.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_1.2s.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_1.2s.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_1.2s.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_4s.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_4s.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_4s.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Animations/SwitchFX_4s.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Circles_AB.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Circles_AB.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Circles_Additive.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Circles_Additive.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Drop_AB.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Drop_AB.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Square.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Materials/Square.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Models/Area_vertical.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Models/Area_vertical.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Models/Confetti.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Models/Confetti.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_circles_blue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_circles_blue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_fire_red.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_fire_red.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_heal_green.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_heal_green.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_magic_multicolor.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_magic_multicolor.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_star_ellow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Area/Area_star_ellow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Confetti.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Confetti/Confetti_blast_multicolor.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Confetti/Confetti_blast_multicolor.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Confetti/Confetti_directional_multicolor.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Confetti/Confetti_directional_multicolor.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Dust.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Dust/Dust_permanently_blue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Dust/Dust_permanently_blue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_blue_purple.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_blue_purple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_ellow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_ellow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_ellow_pink.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_ellow_pink.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_magic_blue_pink.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_magic_blue_pink.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_magic_ellow_blue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_magic_ellow_blue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_round_ellow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_round_ellow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_green.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_green.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_purple.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_purple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Shine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Shine/Shine_blue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Shine/Shine_blue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Shine/Shine_ellow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Shine/Shine_ellow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Shine/Shine_pink.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Shine/Shine_pink.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Sparkle.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Sparkle/Sparkle_ellow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Sparkle/Sparkle_ellow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Water.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Water/Water_blast_blue.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Water/Water_blast_blue.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Water/Water_blast_green.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Prefabs/Water/Water_blast_green.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Blast_directional.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Blast_directional.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Blast_spiky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Blast_spiky.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle04.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle05.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Circle06.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Dust01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Dust01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Flare01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Flare01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Flare02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Flare02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Flare03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Flare03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Gradient01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Gradient01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Plus01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Plus01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Ray01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Ray01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Shockwave_spiky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Shockwave_spiky.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Square01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Square01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Square02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Square02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Star01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Star01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Star02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/Star02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/confetti_large.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/confetti_large.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/drop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/drop.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/drop_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/drop_blue.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/drop_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/drop_green.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/spark01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lana Studio/Hyper Casual FX/Textures/spark01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Doors/Bollard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Doors/Bollard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Doors/LaserSecurityDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Doors/LaserSecurityDoor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CellForCoins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CellForCoins.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CompositRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CompositRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/ButtonLeaderBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/ButtonLeaderBoard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaredElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedElement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaredElement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoardPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoardPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/YandexLeaderBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/YandexLeaderBoard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChoosedButtonScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChoosedButtonScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonOpenLeaderBoard.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonOpenLeaderBoard.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Timer/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Timer/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Timer/TimerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Timer/TimerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Avatar_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Avatar_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Avatar_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Avatar_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Backpack_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Backpack_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Backpack_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Backpack_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Close_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Close_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Close_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Close_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Empty_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Empty_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Empty_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Empty_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Empty_btn_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Empty_btn_red.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Exclamation_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Exclamation_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Exclamation_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Exclamation_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Info_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Info_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Info_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Info_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Interrogation_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Interrogation_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Interrogation_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Interrogation_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Map_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Map_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Map_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Map_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Message_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Message_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Message_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Message_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Minus_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Minus_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Minus_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Minus_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Music_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Music_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Music_btn_muted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Music_btn_muted.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Music_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Music_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/OK_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/OK_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/OK_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/OK_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Pause_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Pause_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Pause_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Pause_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_left_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_left_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_left_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Play_left_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Plus_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Plus_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Plus_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Plus_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Podium_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Podium_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Podium_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Podium_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Return_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Return_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Return_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Return_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Settings_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Settings_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Settings_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Settings_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/ShoppingCart_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/ShoppingCart_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/ShoppingCart_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/ShoppingCart_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Sound_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Sound_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Sound_btn_muted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Sound_btn_muted.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Sound_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Sound_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Teapot_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Teapot_btn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Teapot_btn_pressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Buttons/Teapot_btn_pressed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_Bege_00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_Bege_00.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_Green_00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_Green_00.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_Green_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_Green_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_White_00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_White_00.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_White_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_White_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_flat_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Panels/Panel_flat_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Back.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Back/btn_apart_back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Back/btn_apart_back.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Back/btn_apart_front_presetColor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Back/btn_apart_front_presetColor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Back/btn_apart_front_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Back/btn_apart_front_white.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Avatar_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Avatar_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Backpack_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Backpack_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Close_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Close_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Exclamation_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Exclamation_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Hífen2_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Hífen2_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Hífen_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Hífen_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Info_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Info_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Interrogation_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Interrogation_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/LeftArrow_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/LeftArrow_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Map_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Map_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Message_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Message_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Minus_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Minus_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/MusicOff_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/MusicOff_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Music_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Music_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/OK_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/OK_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Pause_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Pause_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Play_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Play_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Plus_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Plus_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Podium_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Podium_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Return_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Return_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Settings_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Settings_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/ShoppingCart_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/ShoppingCart_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/SoundOff_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/SoundOff_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/SoundPressed_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/SoundPressed_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Sound_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Sound_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Teapot_icon_apart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/Teapot_icon_apart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/pngegg (36).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/pngegg (36).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/pngegg (37).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Icons/Front/pngegg (37).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/Panel_apart_back_00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/Panel_apart_back_00.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/Panel_flat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/Panel_flat.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/panel_apart_back_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/panel_apart_back_01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/panel_apart_front_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UIResource/Separeted Panels/panel_apart_front_white.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonClosePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonClosePanel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,70 +57,71 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/Advertising/InterstitialAd.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.27/Rider/Editor/Discovery.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkSound.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/Advertising/InterstitialAd.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.27/Rider/Editor/Discovery.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkSound.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoardPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInitializator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonOpenPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CompositRoot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerWallet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ScoreCoins.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/TransitLeaderBoardData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Box.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelLoss.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelInterstitial.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInterstitialAd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ad.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/HaveGround.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NewEventSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomEventSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonContinueGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/Alarm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/LaserSecurityDoor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/Bollard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CellForCoins.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChoosedButtonScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer/TimerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoardPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaredElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/ButtonLeaderBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localization/AnonymosNameLocalizatipon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localization/AnonymousNameLocalizatipon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localization/AbstractLocalisation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localization/Localisation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/YandexLeaderBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonClosePanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/AuthorizationPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localisation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonContinueGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
       </list>
     </option>
   </component>
@@ -528,6 +210,14 @@
       <workItem from="1707737817504" duration="7682000" />
       <workItem from="1707986416769" duration="367000" />
       <workItem from="1707986803743" duration="2242000" />
+      <workItem from="1707990202811" duration="197000" />
+      <workItem from="1708412372761" duration="44000" />
+      <workItem from="1709306949163" duration="32000" />
+      <workItem from="1709366573370" duration="9600000" />
+      <workItem from="1709389088519" duration="1489000" />
+      <workItem from="1709400506866" duration="2436000" />
+      <workItem from="1709451901450" duration="2664000" />
+      <workItem from="1709457377569" duration="9993000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -627,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707649845181</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Переделал кнопку Reward, сделал небольшой рефакторинг кода">
+      <created>1707990304475</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707990304475</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,25 +357,26 @@
     <MESSAGE value="Добавил изображение на фон" />
     <MESSAGE value="Рефакторинг кода" />
     <MESSAGE value="Убрал лишние к нопки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал лишние к нопки" />
+    <MESSAGE value="Переделал кнопку Reward, сделал небольшой рефакторинг кода" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переделал кнопку Reward, сделал небольшой рефакторинг кода" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1703187880233" />
-    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1706288389047">
+    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1709463110298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1706288389047" />
+    <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709463110298" />
     <state x="807" y="433" key="VCS.ChangelistChooser" timestamp="1704640765779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1707649848004">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1707990329187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1707649848004" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1707990329187" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705908107151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

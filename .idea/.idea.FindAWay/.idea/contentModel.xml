@@ -157,9 +157,14 @@
           </e>
           <e p="SDK" t="Include">
             <e p="LeaderBoard" t="Include">
+              <e p="ButtonLeaderBoard.cs" t="Include" />
               <e p="FocusTracking.cs" t="Include" />
-              <e p="LeaderBoard.cs" t="Include" />
+              <e p="LeaderBoaedView.cs" t="Include" />
+              <e p="LeaderBoardPlayer.cs" t="Include" />
+              <e p="LeaderBoaredElement.cs" t="Include" />
+              <e p="YandexLeaderBoard.cs" t="Include" />
             </e>
+            <e p="Localisation.cs" t="Include" />
             <e p="ProgressInfo.cs" t="Include" />
             <e p="SDKInitializator.cs" t="Include" />
             <e p="SDKMenu.cs" t="Include" />
@@ -169,6 +174,7 @@
             <e p="Buttons" t="Include">
               <e p="AbstractButton.cs" t="Include" />
               <e p="ButtonAudioListener.cs" t="Include" />
+              <e p="ButtonAuthorizationPlayer.cs" t="Include" />
               <e p="ButtonChooseScenes" t="Include">
                 <e p="ChooseButtonNextScene.cs" t="Include" />
                 <e p="ChooseButtonPreviousScene.cs" t="Include" />
@@ -191,6 +197,8 @@
             <e p="InterstitialAdPlay.cs" t="Include" />
             <e p="Panels" t="Include">
               <e p="AbstrapctPanel.cs" t="Include" />
+              <e p="AuthorizationPanel.cs" t="Include" />
+              <e p="LeaderBoardPanel.cs" t="Include" />
               <e p="PanelLoss.cs" t="Include" />
               <e p="PanelMenu.cs" t="Include" />
               <e p="PanelWin.cs" t="Include" />

@@ -4,9 +4,9 @@ using UnityEngine;
 public class LeaderBoaedView : MonoBehaviour
 {
     [SerializeField] private Transform _container;
-    [SerializeField] private LeaderBoaedElement _leaderBoaedElementPrefab;
+    [SerializeField] private LeaderBoaredElement _leaderBoardElementPrefab;
 
-    private List<LeaderBoaedElement> _spawnedElements = new();
+    private List<LeaderBoaredElement> _spawnedElements = new List<LeaderBoaredElement>();
 
     public void ConstructLeaderBoard(List<LeaderBoardPlayer> leaderBoardPlayers)
     {
@@ -14,10 +14,9 @@ public class LeaderBoaedView : MonoBehaviour
 
         foreach (var player in leaderBoardPlayers)
         {
-            LeaderBoaedElement leaderBoaedElementInstance = Instantiate(_leaderBoaedElementPrefab, _container);
-            leaderBoaedElementInstance.Initialize(player.Name, player.Score);
-
-            _spawnedElements.Add(leaderBoaedElementInstance);
+            LeaderBoaredElement leaderBoaredElementInstance = Instantiate(_leaderBoardElementPrefab, _container);
+            leaderBoaredElementInstance.Initialize(player.Name, player.Score);
+            _spawnedElements.Add(leaderBoaredElementInstance);
         }
     }
 
@@ -26,6 +25,6 @@ public class LeaderBoaedView : MonoBehaviour
         foreach (var element in _spawnedElements)
             Destroy(element);
 
-        _spawnedElements = new List<LeaderBoaedElement>();
+        _spawnedElements = new List<LeaderBoaredElement>();
     }
 }

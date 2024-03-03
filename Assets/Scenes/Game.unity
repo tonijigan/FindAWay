@@ -580,7 +580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2719662183788184775, guid: 7a691609764b793478f22a3571c47587, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.23
+      value: 21.817
       objectReference: {fileID: 0}
     - target: {fileID: 2719662183788184775, guid: 7a691609764b793478f22a3571c47587, type: 3}
       propertyPath: m_LocalPosition.y
@@ -588,7 +588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2719662183788184775, guid: 7a691609764b793478f22a3571c47587, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.31
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 2719662183788184775, guid: 7a691609764b793478f22a3571c47587, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1377,7 +1377,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8761452724293963403, guid: eebc188693339a649bdbea76bffbb972, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12248,9 +12249,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 2079433525}
+    - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: _colliderInteractionObject
+      value: 
+      objectReference: {fileID: 2079433525}
     - target: {fileID: 4465445272730395721, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _radiusTriggerGround
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679258508702633238, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5533374482392657832, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _audioSource
@@ -12260,6 +12273,10 @@ PrefabInstance:
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 73166278}
+    - target: {fileID: 6326399533249762461, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6667994745014809021, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _joystick
       value: 
@@ -12365,6 +12382,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 145a874f159aecc4590364ce63604e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &2079433525 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 6326399533249762461, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+  m_PrefabInstance: {fileID: 2079433504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2080625877
 GameObject:
   m_ObjectHideFlags: 0
@@ -15884,6 +15906,10 @@ PrefabInstance:
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 122670048}
+    - target: {fileID: 4213907840072706771, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _buttonAudioListener
+      value: 
+      objectReference: {fileID: 4213907840761277651}
     - target: {fileID: 4213907840110832496, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _audioSource
       value: 

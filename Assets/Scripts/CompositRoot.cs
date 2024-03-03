@@ -12,6 +12,6 @@ public class CompositRoot : MonoBehaviour
         _timer.CountDownTime();
         _playerMovement.OnFixedUpdate();
         _interactionWithObjects.OnFixedUpdate();
-        _playerAnimations.OnUpdate(_interactionWithObjects.DragableObject, _interactionWithObjects.IsDragging);
+        _playerAnimations.OnUpdate(_interactionWithObjects.DraggableObject, _interactionWithObjects.IsDragging);
     }
 }

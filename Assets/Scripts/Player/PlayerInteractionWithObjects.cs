@@ -7,13 +7,14 @@ public class PlayerInteractionWithObjects : MonoBehaviour
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
     [SerializeField] private float _timeDelay = 0.5f;
+    [SerializeField] private Collider _colliderInteractionObject;
 
     private PlayerInteractionObjectSound _playerInteractionObjectSound;
-    private InteractionObject _dragableObject;
+    private InteractionObject _draggableObject;
     private bool _isDragging;
     private float _timer = 0;
 
-    public InteractionObject DragableObject => _dragableObject;
+    public InteractionObject DraggableObject => _draggableObject;
     public bool IsDragging => _isDragging;
 
     private void Start() => _playerInteractionObjectSound =
@@ -23,24 +24,26 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
     private void TryPickUp(InteractionObject interactionObject)
     {
-        _dragableObject = interactionObject;
-        _playerInteractionObjectSound.PlaySound(_dragableObject.AudioClip);
-        _dragableObject.FollowInstructions();
-        _dragableObject.TransformObject.parent = default;
-        _dragableObject.TransformObject.position = default;
-        _dragableObject.TransformObject.SetParent(_currentTemplate.transform, false);
+        _draggableObject = interactionObject;
+        _playerInteractionObjectSound.PlaySound(_draggableObject.AudioClip);
+        _draggableObject.FollowInstructions();
+        _draggableObject.TransformObject.parent = default;
+        _draggableObject.TransformObject.position = default;
+        _draggableObject.TransformObject.SetParent(_currentTemplate.transform, false);
         _isDragging = true;
+        _colliderInteractionObject.enabled = true;
     }
 
     private void PutDown(Transform boxPoint)
     {
-        if (_dragableObject.IsUse != true) return;
-        _playerInteractionObjectSound.PlaySound(_dragableObject.AudioClip);
-        _dragableObject.FollowInstructions();
-        _dragableObject.TransformObject.parent = default;
-        _dragableObject.TransformObject.position = boxPoint.position;
+        if (_draggableObject.IsUse != true) return;
+        _playerInteractionObjectSound.PlaySound(_draggableObject.AudioClip);
+        _draggableObject.FollowInstructions();
+        _draggableObject.TransformObject.parent = default;
+        _draggableObject.TransformObject.position = boxPoint.position;
         _isDragging = false;
-        _dragableObject = null;
+        _draggableObject = null;
+        _colliderInteractionObject.enabled = false;
     }
 
     private bool TryGetObject(out GameObject currentObject)
@@ -80,8 +83,9 @@ public class PlayerInteractionWithObjects : MonoBehaviour
             if (currentObject.TryGetComponent(out ButtonObject button) && button.IsClick == false)
                 PutDown(button.BoxPoint);
 
-            if (currentObject.TryGetComponent(out DoorWithLock doorWithLock))
-                _isDragging = doorWithLock.TryOpenDoor(_dragableObject);
+            if (!currentObject.TryGetComponent(out DoorWithLock doorWithLock)) return;
+            _isDragging = doorWithLock.TryOpenDoor(_draggableObject);
+            _colliderInteractionObject.enabled = false;
         }
     }
 }

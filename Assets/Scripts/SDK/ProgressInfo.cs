@@ -25,7 +25,7 @@ public static class ProgressInfo
         PlayerInfo = JsonUtility.FromJson<PlayerInfo>(value);
         ReceivedData?.Invoke();
     }
-    
+
     public static void SetCoins(int coins) => PlayerInfo.Coins = coins;
 
     public static void RewardCoin(int coins)

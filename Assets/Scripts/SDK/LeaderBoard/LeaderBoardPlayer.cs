@@ -1,6 +1,4 @@
-using UnityEngine;
-
-public class LeaderBoardPlayer : MonoBehaviour
+public class LeaderBoardPlayer
 {
     private string _name;
     private int _score;
