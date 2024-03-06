@@ -26,22 +26,17 @@
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshs/abstract-blue-landscape-with-misty-fog-horizon-mountain-slopes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshs/abstract-blue-landscape-with-misty-fog-horizon-mountain-slopes/9994624454567.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshs/abstract-blue-landscape-with-misty-fog-horizon-mountain-slopes/9994624454567.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Element.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Element.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Key.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Box.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Box.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/Coin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Key.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Key.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Separeted Icons/Front/Podium_icon_apart.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Separeted Icons/Front/Podium_icon_apart.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NewEventSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomEventSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/Alarm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" />
@@ -114,9 +102,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/ColliderInteractionObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/InteractionObjectColliderAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/HaveGround.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test/PlaterDraggobleObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test/DragObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Key.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Box.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
       </list>
     </option>
   </component>
@@ -216,6 +211,7 @@
       <workItem from="1709491516394" duration="4491000" />
       <workItem from="1709532066601" duration="4031000" />
       <workItem from="1709615442973" duration="1102000" />
+      <workItem from="1709707760347" duration="22963000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -329,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709477270391</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Переделал лидерборд, поднастроил сцены">
+      <created>1709707868940</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709707868940</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +367,8 @@
     <MESSAGE value="Убрал лишние к нопки" />
     <MESSAGE value="Переделал кнопку Reward, сделал небольшой рефакторинг кода" />
     <MESSAGE value="Настройка лидерборда" />
-    <option name="LAST_COMMIT_MESSAGE" value="Настройка лидерборда" />
+    <MESSAGE value="Переделал лидерборд, поднастроил сцены" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переделал лидерборд, поднастроил сцены" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
@@ -379,18 +383,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1709477312854">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1709707874875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1709477312854" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1709707874875" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705908107151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1705908107151" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1707986866990">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1709719244835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1707986866990" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1709719244835" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1705932381888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

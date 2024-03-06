@@ -1449,7 +1449,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6667994745014809023}
   serializedVersion: 4
-  m_Mass: 10
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1503,8 +1503,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentTemplate: {fileID: 7263845318704605437}
   _rayPoint: {fileID: 8552251604217555331}
-  _hitDistance: 1.5
+  _hitDistance: 2
   _timeDelay: 0.2
+  _speedPassingDistance: 6
+  _maxDistanceFromDraggableObject: 0
 --- !u!114 &5756182264317034123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,7 +1915,7 @@ Transform:
   m_GameObject: {fileID: 9120592163205368180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.0000000018626449, z: -0.000000013271344, w: 1}
-  m_LocalPosition: {x: -0.02, y: 1.8, z: 0.7}
+  m_LocalPosition: {x: 0, y: 2, z: 1.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

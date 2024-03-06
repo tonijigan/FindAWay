@@ -8,11 +8,15 @@ public class PlayerInteractionWithObjects : MonoBehaviour
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
     [SerializeField] private float _timeDelay = 0.5f;
+    [SerializeField] private float _speedPassingDistance;
+    [SerializeField] private float _maxDistanceFromDraggableObject;
 
-    public event UnityAction<bool> Dragged;
+    //public event UnityAction<bool> Dragged;
 
     private PlayerInteractionObjectSound _playerInteractionObjectSound;
+
     private InteractionObject _draggableObject;
+    private Rigidbody _rigidbodyDraggableObject;
     private bool _isDragging;
     private float _timer = 0;
 
@@ -28,24 +32,24 @@ public class PlayerInteractionWithObjects : MonoBehaviour
     {
         _draggableObject = interactionObject;
         _playerInteractionObjectSound.PlaySound(_draggableObject.AudioClip);
-        _draggableObject.FollowInstructions();
-        _draggableObject.TransformObject.parent = default;
-        _draggableObject.TransformObject.position = default;
-        _draggableObject.TransformObject.SetParent(_currentTemplate.transform, false);
+        _rigidbodyDraggableObject = _draggableObject.RigidbodyObject;
+        _draggableObject.TryPickUp();
         _isDragging = true;
-        Dragged?.Invoke(_isDragging);
+        //Dragged?.Invoke(_isDragging);
     }
 
-    private void PutDown(Transform boxPoint)
+    private void PutDown(Transform BoxPointPosition)
     {
         if (_draggableObject.IsUse != true) return;
         _playerInteractionObjectSound.PlaySound(_draggableObject.AudioClip);
-        _draggableObject.FollowInstructions();
-        _draggableObject.TransformObject.parent = default;
-        _draggableObject.TransformObject.position = boxPoint.position;
-        _isDragging = false;
-        Dragged?.Invoke(_isDragging);
+        var position = BoxPointPosition.position;
+        var direction = position - _draggableObject.transform.position;
+        _rigidbodyDraggableObject.velocity = direction;
+        _draggableObject.PutDown();
+        _draggableObject.TransformObject.position = position;
         _draggableObject = null;
+        _isDragging = false;
+        //Dragged?.Invoke(_isDragging);
     }
 
     private bool TryGetObject(out GameObject currentObject)
@@ -64,10 +68,33 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         _timer += Time.deltaTime;
 
         if (!(_timer > _timeDelay)) return;
+
         _timer = 0;
 
-        if (TryGetObject(out var currentObject))
-            HaveDragging(currentObject);
+        if (TryGetObject(out var currentObject)) HaveDragging(currentObject);
+
+        if (!_draggableObject && _isDragging == false) return;
+
+        TransferringObject();
+        HaveDistance();
+    }
+
+    private void HaveDistance()
+    {
+        var currentDistance = Vector3.Distance(_currentTemplate.position, _draggableObject.transform.position);
+
+        if (currentDistance < _maxDistanceFromDraggableObject) return;
+
+        _draggableObject.ActiveObject();
+        _draggableObject.PutDown();
+        _isDragging = false;
+        _draggableObject = null;
+    }
+
+    private void TransferringObject()
+    {
+        var direction = _currentTemplate.position - _draggableObject.transform.position;
+        _rigidbodyDraggableObject.velocity = direction * _speedPassingDistance;
     }
 
     private void HaveDragging(GameObject currentObject)

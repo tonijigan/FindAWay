@@ -11,8 +11,4 @@ public class Coin : InteractionObject
     public void SetTarget(Transform target) => _target = target;
 
     public void Move() => _coinMovement.Move(_target);
-
-    public override void FollowInstructions()
-    {
-    }
 }

@@ -12342,8 +12342,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: _speedPassingDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _colliderInteractionObject
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: _maxDistanceFromDraggableObject
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4465445272730395721, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _radiusTriggerGround
@@ -12422,8 +12430,12 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7263845318704605437, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263845318704605437, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.649
+      value: 1.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
