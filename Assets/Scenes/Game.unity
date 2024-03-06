@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 60564425}
   - component: {fileID: 60564427}
   - component: {fileID: 60564426}
+  - component: {fileID: 60564428}
   m_Layer: 0
   m_Name: Rook2
   m_TagString: Untagged
@@ -414,6 +415,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60564424}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &60564428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60564424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &73166276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,6 +1847,7 @@ GameObject:
   - component: {fileID: 316958592}
   - component: {fileID: 316958594}
   - component: {fileID: 316958593}
+  - component: {fileID: 316958595}
   m_Layer: 0
   m_Name: Rook2 (2)
   m_TagString: Untagged
@@ -1897,6 +1920,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316958591}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &316958595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316958591}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1001 &332334309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6938,7 +6982,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 1.7, z: 5}
+  m_Size: {x: 0.2, y: 1.6, z: 5}
   m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!23 &1269710058
 MeshRenderer:
@@ -8355,7 +8399,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 2, z: 14}
+  m_Size: {x: 0.2, y: 1.6, z: 14}
   m_Center: {x: 0, y: 0.8, z: 4}
 --- !u!23 &1488418279
 MeshRenderer:
@@ -8732,6 +8776,7 @@ GameObject:
   - component: {fileID: 1527110652}
   - component: {fileID: 1527110654}
   - component: {fileID: 1527110653}
+  - component: {fileID: 1527110655}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Untagged
@@ -8804,6 +8849,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527110651}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &1527110655
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527110651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!114 &1536304875 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4318052348331156389, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
@@ -10711,6 +10777,7 @@ GameObject:
   - component: {fileID: 1848744328}
   - component: {fileID: 1848744330}
   - component: {fileID: 1848744329}
+  - component: {fileID: 1848744331}
   m_Layer: 0
   m_Name: Rook2 (1)
   m_TagString: Untagged
@@ -10783,6 +10850,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848744327}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &1848744331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848744327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &1852676394
 GameObject:
   m_ObjectHideFlags: 0
@@ -12252,14 +12340,18 @@ PrefabInstance:
     - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _collider
       value: 
-      objectReference: {fileID: 2079433525}
+      objectReference: {fileID: 0}
     - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _colliderInteractionObject
       value: 
-      objectReference: {fileID: 2079433525}
+      objectReference: {fileID: 0}
     - target: {fileID: 4465445272730395721, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _radiusTriggerGround
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465445272730395721, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
+      propertyPath: _interactionObjectCollider
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4679258508702633238, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: m_Enabled
@@ -12382,11 +12474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 145a874f159aecc4590364ce63604e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &2079433525 stripped
-CapsuleCollider:
-  m_CorrespondingSourceObject: {fileID: 6326399533249762461, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
-  m_PrefabInstance: {fileID: 2079433504}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2080625877
 GameObject:
   m_ObjectHideFlags: 0
@@ -17424,7 +17511,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 1.7, z: 5}
+  m_Size: {x: 0.2, y: 1.6, z: 5}
   m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &7225705503295270350
 GameObject:
@@ -17945,6 +18032,7 @@ GameObject:
   - component: {fileID: 8797168037727243070}
   - component: {fileID: 8823622086877585244}
   - component: {fileID: 8815580821540852564}
+  - component: {fileID: 8823622086877585245}
   m_Layer: 0
   m_Name: EA03_Environment_Road_Cobble_01a_LOD0
   m_TagString: Untagged
@@ -18049,6 +18137,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8791891768680347214}
   m_Mesh: {fileID: 4300004, guid: 784b4593ae6c56942a99223a33dcc169, type: 3}
+--- !u!65 &8823622086877585245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791891768680347214}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 1.7419404, z: 0.5}
+  m_Center: {x: 0, y: -0.07, z: -0.02}
 --- !u!1 &8949970246584100725
 GameObject:
   m_ObjectHideFlags: 0

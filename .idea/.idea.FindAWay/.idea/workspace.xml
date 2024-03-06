@@ -25,28 +25,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshs/abstract-blue-landscape-with-misty-fog-horizon-mountain-slopes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshs/abstract-blue-landscape-with-misty-fog-horizon-mountain-slopes/9994624454567.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshs/abstract-blue-landscape-with-misty-fog-horizon-mountain-slopes/9994624454567.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvases.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Element.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Element.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CompositRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CompositRoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/ButtonLeaderBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/ButtonLeaderBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaredElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedElement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaredElement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoardPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoardPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/YandexLeaderBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/YandexLeaderBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonClosePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonClosePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Separeted Icons/Front/Podium_icon_apart.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Separeted Icons/Front/Podium_icon_apart.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,25 +52,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/Advertising/InterstitialAd.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.27/Rider/Editor/Discovery.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkSound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ad.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialPlay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/HaveGround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPlayGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelMenu.cs" />
@@ -103,7 +94,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaedView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoardPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/LeaderBoaredElement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/ButtonLeaderBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localization/AnonymosNameLocalizatipon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localization/AnonymousNameLocalizatipon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localization/AbstractLocalisation.cs" />
@@ -113,15 +103,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/AuthorizationPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Localisation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonContinueGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/ButtonLeaderBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ColliderInteractionObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/InteractionObjectColliderAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/HaveGround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animations/HashNames.cs" />
       </list>
     </option>
   </component>
@@ -217,7 +212,10 @@
       <workItem from="1709389088519" duration="1489000" />
       <workItem from="1709400506866" duration="2436000" />
       <workItem from="1709451901450" duration="2664000" />
-      <workItem from="1709457377569" duration="9993000" />
+      <workItem from="1709457377569" duration="10102000" />
+      <workItem from="1709491516394" duration="4491000" />
+      <workItem from="1709532066601" duration="4031000" />
+      <workItem from="1709615442973" duration="1102000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -324,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707990304475</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Настройка лидерборда">
+      <created>1709477270391</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709477270391</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +363,8 @@
     <MESSAGE value="Рефакторинг кода" />
     <MESSAGE value="Убрал лишние к нопки" />
     <MESSAGE value="Переделал кнопку Reward, сделал небольшой рефакторинг кода" />
-    <option name="LAST_COMMIT_MESSAGE" value="Переделал кнопку Reward, сделал небольшой рефакторинг кода" />
+    <MESSAGE value="Настройка лидерборда" />
+    <option name="LAST_COMMIT_MESSAGE" value="Настройка лидерборда" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
@@ -373,10 +379,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1707990329187">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1709477312854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1707990329187" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1709477312854" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705908107151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

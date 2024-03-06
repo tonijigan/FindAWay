@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(PlayerInteractionObjectSound))]
 public class PlayerInteractionWithObjects : MonoBehaviour
@@ -7,7 +8,8 @@ public class PlayerInteractionWithObjects : MonoBehaviour
     [SerializeField] private Transform _rayPoint;
     [SerializeField] private float _hitDistance;
     [SerializeField] private float _timeDelay = 0.5f;
-    [SerializeField] private Collider _colliderInteractionObject;
+
+    public event UnityAction<bool> Dragged;
 
     private PlayerInteractionObjectSound _playerInteractionObjectSound;
     private InteractionObject _draggableObject;
@@ -31,7 +33,7 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         _draggableObject.TransformObject.position = default;
         _draggableObject.TransformObject.SetParent(_currentTemplate.transform, false);
         _isDragging = true;
-        _colliderInteractionObject.enabled = true;
+        Dragged?.Invoke(_isDragging);
     }
 
     private void PutDown(Transform boxPoint)
@@ -42,8 +44,8 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         _draggableObject.TransformObject.parent = default;
         _draggableObject.TransformObject.position = boxPoint.position;
         _isDragging = false;
+        Dragged?.Invoke(_isDragging);
         _draggableObject = null;
-        _colliderInteractionObject.enabled = false;
     }
 
     private bool TryGetObject(out GameObject currentObject)
@@ -85,7 +87,6 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
             if (!currentObject.TryGetComponent(out DoorWithLock doorWithLock)) return;
             _isDragging = doorWithLock.TryOpenDoor(_draggableObject);
-            _colliderInteractionObject.enabled = false;
         }
     }
 }

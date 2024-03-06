@@ -466,6 +466,7 @@ GameObject:
   - component: {fileID: 60564425}
   - component: {fileID: 60564427}
   - component: {fileID: 60564426}
+  - component: {fileID: 60564428}
   m_Layer: 0
   m_Name: Rook2
   m_TagString: Untagged
@@ -538,6 +539,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60564424}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &60564428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60564424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &73166276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1156,7 @@ GameObject:
   - component: {fileID: 131257503}
   - component: {fileID: 131257505}
   - component: {fileID: 131257504}
+  - component: {fileID: 131257506}
   m_Layer: 0
   m_Name: Rook2 (6)
   m_TagString: Untagged
@@ -1206,6 +1229,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131257502}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &131257506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131257502}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!224 &133854889 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4213907840734419579, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
@@ -1862,6 +1906,7 @@ GameObject:
   - component: {fileID: 244329029}
   - component: {fileID: 244329031}
   - component: {fileID: 244329030}
+  - component: {fileID: 244329032}
   m_Layer: 0
   m_Name: Rook2 (7)
   m_TagString: Untagged
@@ -1934,6 +1979,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244329028}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &244329032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244329028}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &245870375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,6 +2943,7 @@ GameObject:
   - component: {fileID: 316958592}
   - component: {fileID: 316958594}
   - component: {fileID: 316958593}
+  - component: {fileID: 316958595}
   m_Layer: 0
   m_Name: Rook2 (2)
   m_TagString: Untagged
@@ -2949,6 +3016,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316958591}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &316958595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316958591}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1001 &332334309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2991,19 +3079,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9719806
+      value: 0.9719805
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1398467
+      value: 0.13984671
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.18701
+      value: -0.18700995
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.026906628
+      value: 0.026906632
       objectReference: {fileID: 0}
     - target: {fileID: 1668663833, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_Priority
@@ -3668,8 +3756,8 @@ Transform:
   m_GameObject: {fileID: 450642132}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.056844726, z: -0, w: 0.99838305}
-  m_LocalPosition: {x: 1.42, y: -2.2259998, z: -2.06}
-  m_LocalScale: {x: 1, y: 5.395464, z: 1}
+  m_LocalPosition: {x: 1.42, y: -2.4686, z: -2.06}
+  m_LocalScale: {x: 1, y: 5.592398, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 843935448}
@@ -4788,6 +4876,7 @@ GameObject:
   - component: {fileID: 580492972}
   - component: {fileID: 580492974}
   - component: {fileID: 580492973}
+  - component: {fileID: 580492975}
   m_Layer: 0
   m_Name: Rook2 (3)
   m_TagString: Untagged
@@ -4860,6 +4949,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580492971}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &580492975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580492971}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &586851828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5785,6 +5895,7 @@ GameObject:
   - component: {fileID: 704241585}
   - component: {fileID: 704241587}
   - component: {fileID: 704241586}
+  - component: {fileID: 704241588}
   m_Layer: 0
   m_Name: Rook2 (8)
   m_TagString: Untagged
@@ -5857,6 +5968,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704241584}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &704241588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704241584}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -6593,6 +6725,7 @@ GameObject:
   - component: {fileID: 820016458}
   - component: {fileID: 820016460}
   - component: {fileID: 820016459}
+  - component: {fileID: 820016461}
   m_Layer: 0
   m_Name: Rook2 (4)
   m_TagString: Untagged
@@ -6665,6 +6798,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820016457}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &820016461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820016457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1001 &823415451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8413,8 +8567,8 @@ Transform:
   m_GameObject: {fileID: 1001111856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.056844726, z: -0, w: 0.99838305}
-  m_LocalPosition: {x: -5.8179345, y: -2.2266002, z: -1.4711957}
-  m_LocalScale: {x: 1, y: 5.0686655, z: 1}
+  m_LocalPosition: {x: -5.8179345, y: -2.4692, z: -1.4711957}
+  m_LocalScale: {x: 1, y: 5.2536716, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 843935448}
@@ -9696,6 +9850,7 @@ GameObject:
   - component: {fileID: 1176143761}
   - component: {fileID: 1176143763}
   - component: {fileID: 1176143762}
+  - component: {fileID: 1176143764}
   m_Layer: 0
   m_Name: Rook2 (5)
   m_TagString: Untagged
@@ -9768,6 +9923,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176143760}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &1176143764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176143760}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &1177886524
 GameObject:
   m_ObjectHideFlags: 0
@@ -12102,8 +12278,8 @@ Transform:
   m_GameObject: {fileID: 1497040757}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.07524874, z: -0, w: 0.99716485}
-  m_LocalPosition: {x: -5.5619397, y: -2.0729003, z: 0.7128038}
-  m_LocalScale: {x: 1, y: 4.9440236, z: 1}
+  m_LocalPosition: {x: -5.5619397, y: -2.3491, z: 0.7128038}
+  m_LocalScale: {x: 1, y: 5.154145, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 843935448}
@@ -12335,6 +12511,7 @@ GameObject:
   - component: {fileID: 1527110652}
   - component: {fileID: 1527110654}
   - component: {fileID: 1527110653}
+  - component: {fileID: 1527110655}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Untagged
@@ -12407,6 +12584,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527110651}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &1527110655
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527110651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1001 &1530153211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14507,8 +14705,8 @@ Transform:
   m_GameObject: {fileID: 1804757542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.07524873, z: -0, w: 0.9971648}
-  m_LocalPosition: {x: 1.6400807, y: -2.0625, z: -0.08978313}
-  m_LocalScale: {x: 1, y: 5.2627854, z: 1}
+  m_LocalPosition: {x: 1.6400807, y: -2.3383, z: -0.08978313}
+  m_LocalScale: {x: 1, y: 5.486454, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 843935448}
@@ -15039,6 +15237,7 @@ GameObject:
   - component: {fileID: 1848744328}
   - component: {fileID: 1848744330}
   - component: {fileID: 1848744329}
+  - component: {fileID: 1848744331}
   m_Layer: 0
   m_Name: Rook2 (1)
   m_TagString: Untagged
@@ -15111,6 +15310,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848744327}
   m_Mesh: {fileID: 4300004, guid: 75d05aceb1aabe94b8c7d358857e604b, type: 3}
+--- !u!65 &1848744331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848744327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!1 &1852676394
 GameObject:
   m_ObjectHideFlags: 0
@@ -16771,7 +16991,7 @@ PrefabInstance:
     - target: {fileID: -7849620341651181390, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _colliderInteractionObject
       value: 
-      objectReference: {fileID: 2079433505}
+      objectReference: {fileID: 0}
     - target: {fileID: 5533374482392657832, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
       propertyPath: _audioSource
       value: 
@@ -16845,11 +17065,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
---- !u!136 &2079433505 stripped
-CapsuleCollider:
-  m_CorrespondingSourceObject: {fileID: 6326399533249762461, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
-  m_PrefabInstance: {fileID: 2079433504}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2079433511 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3985664116561322347, guid: 0e52782aa4827d34398c8591c51a8512, type: 3}
@@ -20510,6 +20725,7 @@ GameObject:
   - component: {fileID: 4483284010987839608}
   - component: {fileID: 4494221041772613606}
   - component: {fileID: 4499782172167951088}
+  - component: {fileID: 4499782172167951089}
   m_Layer: 0
   m_Name: EA03_Environment_Road_Cobble_01b_LOD0
   m_TagString: Untagged
@@ -20614,6 +20830,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4499782172167951089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4477189156487141248}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.57, z: 0.5}
+  m_Center: {x: 0.06, y: -0.08, z: 0.02}
 --- !u!23 &4884517866358397200
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21544,6 +21781,7 @@ GameObject:
   - component: {fileID: 8797168037727243070}
   - component: {fileID: 8823622086877585244}
   - component: {fileID: 8815580821540852564}
+  - component: {fileID: 8823622086877585245}
   m_Layer: 0
   m_Name: EA03_Environment_Road_Cobble_01a_LOD0
   m_TagString: Untagged
@@ -21648,6 +21886,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8791891768680347214}
   m_Mesh: {fileID: 4300004, guid: 784b4593ae6c56942a99223a33dcc169, type: 3}
+--- !u!65 &8823622086877585245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791891768680347214}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.23, y: 1.57, z: 0.5}
+  m_Center: {x: -0.03, y: -0.08, z: 0.02}
 --- !u!1 &8949970246584100725
 GameObject:
   m_ObjectHideFlags: 0

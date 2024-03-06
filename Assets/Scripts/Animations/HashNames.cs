@@ -21,10 +21,6 @@ public static class HashNames
     private const string CCancelNameTr = "İptal et";
     private const string CCancelNameRu = "Отменить";
     private const string CCancelNameEn = "Cancel";
-    private const string CLanguageTr = "tr";
-    private const string CLanguageRu = "ru";
-    private const string CLanguageEn = "en";
-
 
     public static int Idle => Animator.StringToHash(CIdle);
     public static int Alarm => Animator.StringToHash(CAlarm);

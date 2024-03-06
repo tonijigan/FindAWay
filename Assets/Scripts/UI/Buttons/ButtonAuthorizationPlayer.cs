@@ -1,25 +1,18 @@
 using Agava.YandexGames;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class ButtonAuthorizationPlayer : AbstractButton
 {
     [SerializeField] private LeaderBoardPanel _leaderBoardPanel;
 
-    public event UnityAction<bool> Authorized;
-
     protected override void Click() => Authorization();
 
-    private void Authorization()
+    private void Authorization() => PlayerAccount.Authorize(OnSuccessCallback);
+
+    private void OnSuccessCallback()
     {
-        PlayerAccount.Authorize();
-
-        if (PlayerAccount.IsAuthorized)
-            PlayerAccount.RequestPersonalProfileDataPermission();
-
-        if (PlayerAccount.IsAuthorized == false) return;
-
-        Authorized?.Invoke(PlayerAccount.IsAuthorized);
+        PlayerAccount.RequestPersonalProfileDataPermission();
+        PlayerAccount.GetCloudSaveData(ProgressInfo.GetPlayerInfo);
         _leaderBoardPanel.gameObject.SetActive(false);
     }
 }
