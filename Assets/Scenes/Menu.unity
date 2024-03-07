@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _authorizationPanel: {fileID: 188972691}
   _leaderBoardPanelView: {fileID: 1306712655}
+  _buttonAuthorizationPlayer: {fileID: 38278977}
 --- !u!114 &36357087
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,12 +6,11 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 {
     [SerializeField] private Transform _currentTemplate;
     [SerializeField] private Transform _rayPoint;
+    [SerializeField] private ParticleSystem _effect;
     [SerializeField] private float _hitDistance;
     [SerializeField] private float _timeDelay = 0.5f;
     [SerializeField] private float _speedPassingDistance;
     [SerializeField] private float _maxDistanceFromDraggableObject;
-
-    //public event UnityAction<bool> Dragged;
 
     private PlayerInteractionObjectSound _playerInteractionObjectSound;
 
@@ -35,7 +34,7 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         _rigidbodyDraggableObject = _draggableObject.RigidbodyObject;
         _draggableObject.TryPickUp();
         _isDragging = true;
-        //Dragged?.Invoke(_isDragging);
+        WorkEffect(_isDragging);
     }
 
     private void PutDown(Transform BoxPointPosition)
@@ -49,7 +48,7 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         _draggableObject.TransformObject.position = position;
         _draggableObject = null;
         _isDragging = false;
-        //Dragged?.Invoke(_isDragging);
+        WorkEffect(_isDragging);
     }
 
     private bool TryGetObject(out GameObject currentObject)
@@ -88,7 +87,16 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         _draggableObject.ActiveObject();
         _draggableObject.PutDown();
         _isDragging = false;
+        WorkEffect(_isDragging);
         _draggableObject = null;
+    }
+
+    private void WorkEffect(bool isWork)
+    {
+        if (isWork)
+            _effect.Play();
+        else
+            _effect.Stop();
     }
 
     private void TransferringObject()
@@ -114,6 +122,8 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
             if (!currentObject.TryGetComponent(out DoorWithLock doorWithLock)) return;
             _isDragging = doorWithLock.TryOpenDoor(_draggableObject);
+            
+            WorkEffect(_isDragging);
         }
     }
 }

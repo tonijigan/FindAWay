@@ -50,13 +50,6 @@ public class FocusTracking : MonoBehaviour
     {
         if (_buttonAudioListener.IsTurnOn == false)
             AudioListener.pause = value;
-        //if (_panelMenu != null)
-        // {
-        //    if (_buttonAudioListener.IsTurnOn == false && _panelMenu.isActiveAndEnabled == false)
-        //        AudioListener.pause = value;
-        //}
-        // else
-        // AudioListener.pause = value;
     }
 
     private void PauseGame(bool value)

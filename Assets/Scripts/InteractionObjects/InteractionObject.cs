@@ -4,6 +4,7 @@ using UnityEngine;
 public abstract class InteractionObject : MonoBehaviour
 {
     [SerializeField] private AudioClip _audioClip;
+    [SerializeField] private ParticleSystem _effect;
 
     protected bool _isUse;
 
@@ -24,6 +25,10 @@ public abstract class InteractionObject : MonoBehaviour
     {
         _isUse = true;
         _rigidbody.useGravity = false;
+
+        if (_effect == null) return;
+
+        _effect.Play();
     }
 
     public void PutDown()
@@ -32,5 +37,9 @@ public abstract class InteractionObject : MonoBehaviour
         _rigidbody.useGravity = true;
         TransformObject.rotation = Quaternion.identity;
         _rigidbody.isKinematic = false;
+
+        if (_effect == null) return;
+
+        _effect.Stop();
     }
 }
