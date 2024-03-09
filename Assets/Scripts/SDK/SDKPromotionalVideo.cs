@@ -10,6 +10,7 @@ public class SDKPromotionalVideo : MonoBehaviour
 
     private int _rewardCoin = 10;
     private int _minValue = 0;
+    private int _maxValue = 1;
 
     public void ShowRewardAd() =>
         VideoAd.Show(OnOpenCallBack, OnRewardedCallback, OnCloseCallBack);
@@ -21,9 +22,9 @@ public class SDKPromotionalVideo : MonoBehaviour
 
     private void OnOpenCallBack()
     {
-        AudioListener.pause = true;
-        _focusTracking.enabled = false;
         Time.timeScale = _minValue;
+        _focusTracking.enabled = false;
+        AudioListener.volume = _minValue;
     }
 
 
@@ -36,18 +37,18 @@ public class SDKPromotionalVideo : MonoBehaviour
 
     private void OnCloseCallBack()
     {
-        AudioListener.pause = false;
-        _focusTracking.enabled = true;
         Time.timeScale = _minValue;
+        _focusTracking.enabled = true;
+        AudioListener.volume = _maxValue;
     }
 
     private void OnCloseCallBack(bool wasShown)
     {
-        if (wasShown == true)
-            AudioListener.pause = false;
-
-        _focusTracking.enabled = true;
         Time.timeScale = _minValue;
+        _focusTracking.enabled = true;
         ClosedCallBack?.Invoke();
+
+        if (wasShown == false) return;
+        AudioListener.volume = _maxValue;
     }
 }

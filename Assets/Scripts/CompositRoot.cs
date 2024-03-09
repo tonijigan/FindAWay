@@ -6,6 +6,9 @@ public class CompositRoot : MonoBehaviour
     [SerializeField] private PlayerInteractionWithObjects _interactionWithObjects;
     [SerializeField] private PlayerAnimations _playerAnimations;
     [SerializeField] private Timer _timer;
+    [SerializeField] private FocusTracking _focusTracking;
+
+    private void Awake() => _focusTracking.enabled = true;
 
     private void FixedUpdate()
     {
