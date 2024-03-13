@@ -16,6 +16,9 @@ public class LeaderBoardPanel : AbstrapctPanel
 
     private void HaveAuthorization(bool isAuthorized)
     {
+        _authorizationPanel.gameObject.SetActive(false);
+        _leaderBoardPanelView.gameObject.SetActive(false);
+
         if (isAuthorized == false) _authorizationPanel.gameObject.SetActive(true);
         else _leaderBoardPanelView.gameObject.SetActive(true);
     }

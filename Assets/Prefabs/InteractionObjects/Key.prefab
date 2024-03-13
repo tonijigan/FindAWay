@@ -9859,9 +9859,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8347567838293401355}
+  - component: {fileID: 3466197938587172628}
   - component: {fileID: 1007835698168426182}
   - component: {fileID: 3090047870027468901}
-  - component: {fileID: 3466197938587172628}
+  - component: {fileID: 8065658772705611902}
   - component: {fileID: 334403192921566792}
   m_Layer: 9
   m_Name: Key
@@ -9887,6 +9888,27 @@ Transform:
   - {fileID: 1995019586115722994}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3466197938587172628
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938410259046022328}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4149faa0c1b2a474baa4de4433b6b627, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1007835698168426182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9900,6 +9922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioClip: {fileID: 8300000, guid: 366e23680e5fd8a468900d9163e0578e, type: 3}
+  _effect: {fileID: 0}
 --- !u!136 &3090047870027468901
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9923,27 +9946,29 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: -0.15, z: -0.01}
---- !u!95 &3466197938587172628
-Animator:
-  serializedVersion: 5
+--- !u!136 &8065658772705611902
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6938410259046022328}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4149faa0c1b2a474baa4de4433b6b627, type: 2}
-  m_CullingMode: 2
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  serializedVersion: 2
+  m_Radius: 0.7493951
+  m_Height: 1.5023298
+  m_Direction: 1
+  m_Center: {x: -0.00021833181, y: -0.14352989, z: 0}
 --- !u!54 &334403192921566792
 Rigidbody:
   m_ObjectHideFlags: 0

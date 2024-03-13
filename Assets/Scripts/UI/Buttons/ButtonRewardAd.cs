@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ButtonRewardAd : AbstractButton
 {
@@ -7,12 +8,15 @@ public class ButtonRewardAd : AbstractButton
     [SerializeField] private ButtonsActive _buttonsActive;
     [SerializeField] private SDKPromotionalVideo _promotionalVideo;
 
+    public event UnityAction<bool> RewardClick;
+
     private int _countCoins = 10;
-    
+
     private void Start() => SetValueForReward();
 
     protected override void Click()
     {
+        RewardClick?.Invoke(false);
         gameObject.SetActive(false);
         _promotionalVideo.ShowRewardAd();
     }

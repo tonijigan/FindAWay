@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4003097333527455789}
   - component: {fileID: 541088161148974567}
   - component: {fileID: 4958761095354818433}
+  - component: {fileID: 5628945144316536239}
   m_Layer: 0
   m_Name: PanelWin
   m_TagString: Untagged
@@ -94,6 +95,25 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: bd00e0e3620f47e49a08dcf21bfae8d9, type: 3}
   _leaderboard: {fileID: 0}
   _buttonsActive: {fileID: 0}
+--- !u!114 &5628945144316536239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301871800092901026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1811af1ef4d3fde44937e8c9e631ed8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _abstractButtons:
+  - {fileID: 4213907841119264307}
+  - {fileID: 3873516175382774664}
+  - {fileID: 4213907840575504347}
+  _buttonRewardAd: {fileID: 5325511057161073531}
+  _buttonRestartScene: {fileID: 0}
+  _promotionalVideo: {fileID: 6949540079591502802}
 --- !u!1 &1561576475844340269
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +424,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 595649467
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &4213907839214587801
@@ -479,6 +499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leaderBoard: {fileID: 0}
   _focusTracking: {fileID: 0}
+  _buttonAudioListener: {fileID: 0}
 --- !u!114 &2017080584164018186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4213907839575969359}
   - component: {fileID: 4279367236083407357}
+  - component: {fileID: 1676850140061443087}
   m_Layer: 0
   m_Name: ButtonRestart
   m_TagString: Untagged
@@ -952,6 +974,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 4213907840164694985}
   _audioSource: {fileID: 0}
+--- !u!114 &1676850140061443087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4213907839575969358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1811af1ef4d3fde44937e8c9e631ed8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _abstractButtons:
+  - {fileID: 4213907840479590074}
+  _buttonRewardAd: {fileID: 0}
+  _buttonRestartScene: {fileID: 4279367236083407357}
+  _promotionalVideo: {fileID: 6949540079591502802}
 --- !u!1 &4213907839582190524
 GameObject:
   m_ObjectHideFlags: 0

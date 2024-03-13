@@ -9689,7 +9689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 8.088667e-15
+      value: -8.088667e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.y
@@ -9697,7 +9697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.3746333e-15
+      value: -1.3746333e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703871, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_Priority
@@ -12905,6 +12905,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325880026}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1327813084 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3873516175382774664, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+  m_PrefabInstance: {fileID: 1668475757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10cbfc68988ea04da30123db6839f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1328484422
 GameObject:
   m_ObjectHideFlags: 0
@@ -17380,6 +17391,10 @@ PrefabInstance:
       propertyPath: _buttonsActive
       value: 
       objectReference: {fileID: 910013890}
+    - target: {fileID: 5628945144316536239, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _buttonRestartScene
+      value: 
+      objectReference: {fileID: 1327813084}
     - target: {fileID: 5903977494301835861, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _audioSource
       value: 
@@ -17420,6 +17435,10 @@ PrefabInstance:
       propertyPath: _focusTracking
       value: 
       objectReference: {fileID: 955367688}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _buttonAudioListener
+      value: 
+      objectReference: {fileID: 1668475759}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _audioSources.Array.size
       value: 2

@@ -15,12 +15,15 @@ public static class HashNames
     private const string CAnonymousNameTr = "Anonim oyuncu";
     private const string CAnonymousNameRu = "Анонимный игрок";
     private const string CAnonymousNameEn = "Anonymous player";
-    private const string CAuthorizationNameTr = "Giriş yap";
-    private const string CAuthorizationNameRu = "Авторизоваться";
-    private const string CAuthorizationNameEn = "Log in";
+    private const string CAuthorizationNameTr = "Kabul";
+    private const string CAuthorizationNameRu = "Принять";
+    private const string CAuthorizationNameEn = "Accept";
     private const string CCancelNameTr = "İptal et";
     private const string CCancelNameRu = "Отменить";
     private const string CCancelNameEn = "Cancel";
+    private const string CAutorizationTextTr = "Lider tablosunu görüntülemek için giriş yapmanız gerekiyor!";
+    private const string CAutorizationTextRu = "Для отображения таблицы лидеров, необходимо авторизоваться!";
+    private const string CAutorizationTextEn = "To display the leaderboard, you need to log in!";
 
     public static int Idle => Animator.StringToHash(CIdle);
     public static int Alarm => Animator.StringToHash(CAlarm);
@@ -41,4 +44,7 @@ public static class HashNames
     public static string CancelNameTr => CCancelNameTr;
     public static string CancelNameRu => CCancelNameRu;
     public static string CancelNameEn => CCancelNameEn;
+    public static string AutorizationTextTr => CAutorizationTextTr;
+    public static string AutorizationTextRu => CAutorizationTextRu;
+    public static string AutorizationTextEn => CAutorizationTextEn;
 }

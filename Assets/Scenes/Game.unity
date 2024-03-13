@@ -6656,6 +6656,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b315f4c82bda64aaa8fe0778f71c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1188336811 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3873516175382774664, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+  m_PrefabInstance: {fileID: 4213907840761277650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10cbfc68988ea04da30123db6839f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1238185168
 GameObject:
   m_ObjectHideFlags: 0
@@ -15929,18 +15940,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
-    - target: {fileID: 4213907839214587806, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213907839214587806, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4213907839214587806, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 595649467
-      objectReference: {fileID: 0}
     - target: {fileID: 4213907839214587807, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _panelWin
       value: 
@@ -16194,6 +16193,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1294077551}
     - target: {fileID: 5325511057161073531, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _panelWin
+      value: 
+      objectReference: {fileID: 1880720355}
+    - target: {fileID: 5325511057161073531, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 122670048}
@@ -16201,6 +16204,10 @@ PrefabInstance:
       propertyPath: _buttonsActive
       value: 
       objectReference: {fileID: 1294077551}
+    - target: {fileID: 5628945144316536239, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _buttonRestartScene
+      value: 
+      objectReference: {fileID: 1188336811}
     - target: {fileID: 5903977494301835861, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _audioSource
       value: 
@@ -16253,6 +16260,10 @@ PrefabInstance:
       propertyPath: _focusTracking
       value: 
       objectReference: {fileID: 622825932}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _buttonAudioListener
+      value: 
+      objectReference: {fileID: 4213907840761277651}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _audioSources.Array.size
       value: 2

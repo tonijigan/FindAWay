@@ -23,7 +23,7 @@ public class InterstitialAdPlay : MonoBehaviour
         _promotionalVideo.ClosedCallBack -= LoadScene;
     }
 
-    private void PlayPromotionAd() => _promotionalVideo.ShowInterstitialAd();
+    private void PlayPromotionAd(bool isClick) => _promotionalVideo.ShowInterstitialAd();
 
-    private void LoadScene() => SceneManager.LoadScene(_sceneNumber);
+    private void LoadScene(bool rewardPlayed) => SceneManager.LoadScene(_sceneNumber);
 }
