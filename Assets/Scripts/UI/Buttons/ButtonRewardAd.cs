@@ -2,13 +2,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(ButtonsState))]
 public class ButtonRewardAd : AbstractButton
 {
     [SerializeField] private TMP_Text _rewardCoins;
     [SerializeField] private ButtonsActive _buttonsActive;
     [SerializeField] private SDKPromotionalVideo _promotionalVideo;
 
-    public event UnityAction<bool> RewardClick;
+    private ButtonsState _buttonsState;
 
     private int _countCoins = 10;
 
@@ -16,13 +17,14 @@ public class ButtonRewardAd : AbstractButton
 
     protected override void Click()
     {
-        RewardClick?.Invoke(false);
+        _buttonsState.DisableButtons(false);
         gameObject.SetActive(false);
         _promotionalVideo.ShowRewardAd();
     }
 
     private void SetValueForReward()
     {
+        _buttonsState = GetComponent<ButtonsState>();
         var result = _countCoins *= _buttonsActive.CountActiveButtons;
         _promotionalVideo.InitReward(result);
         _rewardCoins.text = $"+{result}";
