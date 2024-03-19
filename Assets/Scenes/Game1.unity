@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8744,7 +8744,6 @@ GameObject:
   m_Component:
   - component: {fileID: 955367686}
   - component: {fileID: 955367687}
-  - component: {fileID: 955367688}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -8863,20 +8862,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &955367688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955367685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9d72c1f7fa16c42892e30eb08c2237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _buttonAudioListener: {fileID: 1668475759}
-  _panelMenu: {fileID: 1668475762}
 --- !u!224 &976358709 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4213907840734419579, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
@@ -9673,7 +9658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.99999803
+      value: 0.999998
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9681,7 +9666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.8571448
+      value: -2.8571446
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9689,7 +9674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -8.088667e-15
+      value: 8.088667e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.y
@@ -9697,7 +9682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.3746333e-15
+      value: 1.3746333e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703871, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_Priority
@@ -17434,7 +17419,7 @@ PrefabInstance:
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 955367688}
+      objectReference: {fileID: 2105356025}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonAudioListener
       value: 
@@ -20673,7 +20658,7 @@ PrefabInstance:
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 955367688}
+      objectReference: {fileID: 2105356025}
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _playerMovement
       value: 
@@ -21144,6 +21129,52 @@ Transform:
   - {fileID: 641466149}
   - {fileID: 1901256144}
   m_Father: {fileID: 1731951668}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2105356024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105356026}
+  - component: {fileID: 2105356025}
+  m_Layer: 0
+  m_Name: FocusTracking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2105356025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105356024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9d72c1f7fa16c42892e30eb08c2237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonAudioListener: {fileID: 1668475759}
+  _panelMenu: {fileID: 1668475762}
+--- !u!4 &2105356026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105356024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.045721, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2108268784
 GameObject:
@@ -26127,7 +26158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3085718
+      value: 1.3085719
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26969,7 +27000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2857143
+      value: 1.2857144
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28240,6 +28271,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 2036799405}
   - {fileID: 819004151}
+  - {fileID: 2105356026}
   - {fileID: 1782366985}
   - {fileID: 796775139}
   - {fileID: 1001093912}

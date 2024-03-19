@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44404548, g: 0.4934522, b: 0.57289857, a: 1}
+  m_IndirectSpecularColor: {r: 0.44404584, g: 0.4934529, b: 0.5728995, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3071,7 +3071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1527939
+      value: 1.1527938
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3079,19 +3079,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9719805
+      value: 0.9719806
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13984671
+      value: 0.1398467
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.18700995
+      value: -0.18701
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.026906632
+      value: 0.026906628
       objectReference: {fileID: 0}
     - target: {fileID: 1668663833, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_Priority
@@ -5216,7 +5216,6 @@ GameObject:
   m_Component:
   - component: {fileID: 622825930}
   - component: {fileID: 622825931}
-  - component: {fileID: 622825932}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -5335,20 +5334,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &622825932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622825929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9d72c1f7fa16c42892e30eb08c2237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _buttonAudioListener: {fileID: 4213907840761277652}
-  _panelMenu: {fileID: 4213907840761277655}
 --- !u!1 &623943413
 GameObject:
   m_ObjectHideFlags: 0
@@ -9850,6 +9835,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162128852}
   m_Mesh: {fileID: 4300000, guid: 59e498c8b581e6941a0e1631a78dbe85, type: 3}
+--- !u!1 &1170128938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170128940}
+  - component: {fileID: 1170128939}
+  m_Layer: 0
+  m_Name: FocusTracking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1170128939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170128938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9d72c1f7fa16c42892e30eb08c2237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonAudioListener: {fileID: 4213907840761277652}
+  _panelMenu: {fileID: 4213907840761277655}
+--- !u!4 &1170128940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170128938}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.045721, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1176143760
 GameObject:
   m_ObjectHideFlags: 0
@@ -11323,7 +11354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.9071436
+      value: -2.9071434
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11331,7 +11362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 4.102012e-15
+      value: -4.1020095e-15
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.y
@@ -11339,7 +11370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 5.038639e-17
+      value: -5.038639e-17
       objectReference: {fileID: 0}
     - target: {fileID: 1251887163, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_Priority
@@ -15479,7 +15510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2857141
+      value: 1.2857143
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19434,7 +19465,7 @@ PrefabInstance:
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 622825932}
+      objectReference: {fileID: 1170128939}
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _playerMovement
       value: 
@@ -20621,7 +20652,7 @@ PrefabInstance:
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 622825932}
+      objectReference: {fileID: 1170128939}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonAudioListener
       value: 
@@ -21972,6 +22003,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1277420765076186789}
   - {fileID: 823415451}
+  - {fileID: 1170128940}
   - {fileID: 1406510716}
   - {fileID: 2079433504}
   - {fileID: 705507995}

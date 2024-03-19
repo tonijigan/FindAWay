@@ -191,6 +191,7 @@
                 <e p="ButtonRestartScene.cs" t="Include" />
                 <e p="ButtonScene.cs" t="Include" />
               </e>
+              <e p="ButtonsState.cs" t="Include" />
               <e p="ScoreCoins.cs" t="Include" />
             </e>
             <e p="CanvasStatic.cs" t="Include" />

@@ -25,57 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Falling.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Falling.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/IdleWhitBox.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/IdleWhitBox.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/IdleWhitKey.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/IdleWhitKey.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/WalkWhitBox.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/WalkWhitBox.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/WalkWhitKey.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1/WalkWhitKey.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/IdleWhitBox.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/IdleWhitBox.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractionObjects/Box.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/InteractionObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Alarm.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/Alarm.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/Bollard.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Doors/DoorLook.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Doors/DoorLook.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Evaporation/ButtonEvaporation1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Evaporation/ButtonEvaporation1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Landing/Landing1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser7.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Laser/Laser7.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Looks/Look2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Looks/Look2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/128561__herbertboland__pianomoodmelancholy2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/128561__herbertboland__pianomoodmelancholy2.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/150879__nenadsimic__jazzy-chords.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/150879__nenadsimic__jazzy-chords.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/171672__leszek_szary__failure-2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/171672__leszek_szary__failure-2.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/171673__leszek_szary__failure-1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/171673__leszek_szary__failure-1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/394899__funwithsound__failure-2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/394899__funwithsound__failure-2.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/394900__funwithsound__failure-1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/394900__funwithsound__failure-1.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/469424__sergequadrado__misery-loop.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/469424__sergequadrado__misery-loop.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Loss/685244__michaelp800__michael-stutz-damnum.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Loss/685244__michaelp800__michael-stutz-damnum.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music1.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music2.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music5.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music5.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music7.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music7.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Musics/Music8.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Musics/Music8.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/TurnUpAndTurnDown/TakeItem.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/TurnUpAndTurnDown/TakeItem.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Win/Win1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/Win/Win1.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,9 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/AlarmSystem/Alarm.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/LaserSecurityDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Doors/Bollard.cs" />
@@ -111,7 +63,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/AbstractButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChoosedButtonScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer/TimerView.cs" />
@@ -151,6 +102,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/FindDebug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
       </list>
     </option>
   </component>
@@ -252,6 +207,8 @@
       <workItem from="1709615442973" duration="1102000" />
       <workItem from="1709707760347" duration="27939000" />
       <workItem from="1709746977956" duration="229000" />
+      <workItem from="1709818294810" duration="103000" />
+      <workItem from="1710829023184" duration="3128000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -386,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709736433415</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Мелкие доработки, добавил партиклы к ящикам и к персонажу">
+      <created>1709818365663</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709818365663</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +387,8 @@
     <MESSAGE value="Настройка лидерборда" />
     <MESSAGE value="Переделал лидерборд, поднастроил сцены" />
     <MESSAGE value="Изменил логику перетаскивания ящиков" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменил логику перетаскивания ящиков" />
+    <MESSAGE value="Мелкие доработки, добавил партиклы к ящикам и к персонажу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Мелкие доработки, добавил партиклы к ящикам и к персонажу" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
@@ -438,10 +403,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1709736437603">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1709818395759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1709736437603" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1709818395759" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705908107151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

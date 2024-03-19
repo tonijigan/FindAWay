@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 [RequireComponent(typeof(ButtonsState))]
 public class ButtonRewardAd : AbstractButton
