@@ -25,5 +25,8 @@ public class InterstitialAdPlay : MonoBehaviour
 
     private void PlayPromotionAd() => _promotionalVideo.ShowInterstitialAd();
 
-    private void LoadScene(bool rewardPlayed) => SceneManager.LoadScene(_sceneNumber);
+    private void LoadScene(bool isClosed)
+    {
+        if (isClosed) SceneManager.LoadScene(_sceneNumber);
+    }
 }

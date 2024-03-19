@@ -1,5 +1,4 @@
 using Agava.YandexGames;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
