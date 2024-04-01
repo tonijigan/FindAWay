@@ -9674,7 +9674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -8.088667e-15
+      value: 8.088667e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.y
@@ -9682,7 +9682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.3746333e-15
+      value: 1.3746333e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703871, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_Priority
@@ -17060,6 +17060,10 @@ PrefabInstance:
       propertyPath: _audioSources.Array.data[1]
       value: 
       objectReference: {fileID: 1390594030}
+    - target: {fileID: 1337606922996185224, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100.29004
+      objectReference: {fileID: 0}
     - target: {fileID: 1561576475844340269, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -17469,7 +17473,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6070466103086923570, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+    - {fileID: 5937829948476523905, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}

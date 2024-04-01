@@ -15915,6 +15915,10 @@ PrefabInstance:
       propertyPath: _audioSources.Array.data[1]
       value: 
       objectReference: {fileID: 269660806}
+    - target: {fileID: 1337606922996185224, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100.29001
+      objectReference: {fileID: 0}
     - target: {fileID: 1526357122351015202, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _panelMenu
       value: 
@@ -16406,6 +16410,8 @@ PrefabInstance:
     - {fileID: 338311850339642917, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6707927620514577079, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+    - {fileID: 5937829948476523905, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+    - {fileID: 6070466103086923570, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
