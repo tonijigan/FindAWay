@@ -9,7 +9,15 @@ public class FocusTracking : MonoBehaviour
     private int _minValue = 0;
     private int _maxValue = 1;
 
-    private void Awake() => Time.timeScale = _maxValue;
+    private void Awake()
+    {
+        Time.timeScale = _maxValue;
+
+        if (_buttonAudioListener.IsTurnOn != false) return;
+
+        AudioListener.pause = false;
+        AudioListener.volume = _maxValue;
+    }
 
     private void OnEnable()
     {

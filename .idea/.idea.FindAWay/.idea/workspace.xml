@@ -26,6 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +40,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7FB03220-B555-43E7-993A-74EDA38A6452/62/506fdc37/AudioListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/Advertising/InterstitialAd.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/buttonTurnOnListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.27/Rider/Editor/Discovery.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buttons/ButtonsActive.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -94,7 +95,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/LeaderBoardPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonRewardAd.cs" />
         <option value="$PROJECT_DIR$/Assets/FindDebug.cs" />
         <option value="$PROJECT_DIR$/Assets/AudioSourcePlay.cs" />
@@ -102,6 +102,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterstitialAdPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAudioListener.cs" />
         <option value="$PROJECT_DIR$/Assets/buttonTurnOnListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/LeaderBoard/FocusTracking.cs" />
       </list>
     </option>
   </component>
@@ -206,6 +207,7 @@
       <workItem from="1709818294810" duration="103000" />
       <workItem from="1710829023184" duration="11603000" />
       <workItem from="1711041702724" duration="25000" />
+      <workItem from="1711995575301" duration="1599000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -368,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710857544964</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Удалил тестовые кнопки">
+      <created>1711995640286</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1711995640286</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,25 +416,26 @@
     <MESSAGE value="Изменил логику перетаскивания ящиков" />
     <MESSAGE value="Мелкие доработки, добавил партиклы к ящикам и к персонажу" />
     <MESSAGE value="Провожу тест со звуком" />
-    <option name="LAST_COMMIT_MESSAGE" value="Провожу тест со звуком" />
+    <MESSAGE value="Удалил тестовые кнопки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Удалил тестовые кнопки" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1703187880233">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1703187880233" />
     <state x="727" y="244" key="RiderGenerateDialog" timestamp="1709463110298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1709463110298" />
+    <state x="793" y="230" key="RollbackChangesDialog" timestamp="1711995599644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="793" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1711995599644" />
     <state x="807" y="433" key="VCS.ChangelistChooser" timestamp="1704640765779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1704640765779" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1710857548436">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1711995651124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1710857548436" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1711995651124" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705908107151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
