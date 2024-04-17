@@ -2,19 +2,19 @@ using System;
 using Agava.YandexGames;
 using UnityEngine;
 
-public class LeaderBoardPanel : AbstrapctPanel
+public class LeaderBoardPanel : Panel
 {
     [SerializeField] private AuthorizationPanel _authorizationPanel;
     [SerializeField] private GameObject _leaderBoardPanelView;
     [SerializeField] private ButtonAuthorizationPlayer _buttonAuthorizationPlayer;
 
-    private void Awake() => HaveAuthorization(PlayerAccount.IsAuthorized);
+    private void Awake() => OnActionPanels(PlayerAccount.IsAuthorized);
 
-    private void OnEnable() => _buttonAuthorizationPlayer.Authorized += HaveAuthorization;
+    private void OnEnable() => _buttonAuthorizationPlayer.Authorized += OnActionPanels;
 
-    private void OnDisable() => _buttonAuthorizationPlayer.Authorized -= HaveAuthorization;
+    private void OnDisable() => _buttonAuthorizationPlayer.Authorized -= OnActionPanels;
 
-    private void HaveAuthorization(bool isAuthorized)
+    private void OnActionPanels(bool isAuthorized)
     {
         _authorizationPanel.gameObject.SetActive(false);
         _leaderBoardPanelView.gameObject.SetActive(false);

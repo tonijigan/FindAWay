@@ -10,9 +10,9 @@ public class Alarm : MonoBehaviour
 
     private Animator _animator;
 
-    private void OnEnable() => _security.IsTrigger += Toggle;
+    private void OnEnable() => _security.IsTriggered += Toggle;
 
-    private void OnDisable() => _security.IsTrigger -= Toggle;
+    private void OnDisable() => _security.IsTriggered -= Toggle;
 
     private void Awake() => _animator = GetComponent<Animator>();
 
@@ -24,7 +24,7 @@ public class Alarm : MonoBehaviour
     private void TurnOn()
     {
         _audioSource.clip = _audioClip;
-        _animator.SetBool(HashNames.Alarm, true);
+        _animator.SetBool(HashedStrings.Alarm, true);
         _alarmEffect.Play();
         _audioSource.Play();
     }

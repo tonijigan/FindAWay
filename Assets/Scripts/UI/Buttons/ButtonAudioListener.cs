@@ -20,7 +20,7 @@ public class ButtonAudioListener : AbstractButton
         StateImage();
     }
 
-    protected override void Click() => ChangeState();
+    protected override void OnClick() => ChangeState();
 
     private void ChangeState()
     {

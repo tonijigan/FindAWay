@@ -1,15 +1,15 @@
+using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class DoorWithLock : AbstractDoor
+public class DoorWithLock : Door
 {
     [SerializeField] private PlayerWallet _wallet;
     [SerializeField] private AudioClip _audioOpenLook;
     [SerializeField] private float _speedRotate = 1;
     [SerializeField] private Timer _timer;
 
-    public event UnityAction Opened;
+    public event Action Opened;
 
     private bool _isClose = true;
 
@@ -36,7 +36,7 @@ public class DoorWithLock : AbstractDoor
         Agava.YandexGames.PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
 #endif
         key.Enable();
-        WorkDoor();
+        Work();
         Opened?.Invoke();
         _isClose = false;
     }
@@ -49,26 +49,26 @@ public class DoorWithLock : AbstractDoor
 
     private void PlayAudioClip(AudioClip audioClip)
     {
-        AudioDoor.clip = audioClip;
-        AudioDoor.Play();
+        AudioSource.clip = audioClip;
+        AudioSource.Play();
     }
 
-    protected override IEnumerator MoveDoor(Vector3 newTarget)
+    protected override IEnumerator Move(Vector3 newTarget)
     {
-        IsOpenDoor = !IsOpenDoor;
+        IsOpen = !IsOpen;
         PlayAudioClip(_audioOpenLook);
         yield return WaitForSeconds;
         PlayAudioClip(AudioClip);
         yield return WaitForSeconds;
 
-        while (_typeDoor.localRotation != Quaternion.Euler(newTarget))
+        while (_type.localRotation != Quaternion.Euler(newTarget))
         {
-            _typeDoor.localRotation = Quaternion.Lerp(_typeDoor.localRotation,
+            _type.localRotation = Quaternion.Lerp(_type.localRotation,
                 Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
             yield return null;
         }
 
-        AudioDoor.Stop();
+        AudioSource.Stop();
         StopCoroutine(Coroutine);
     }
 
@@ -76,7 +76,7 @@ public class DoorWithLock : AbstractDoor
     {
         float rotateInPositionZero = 0;
         float rotatePositionY = -90;
-        StartPositionDoor = _typeDoor.localPosition;
-        NewPositionDoor = new Vector3(rotateInPositionZero, rotatePositionY, rotateInPositionZero);
+        StartPosition = _type.localPosition;
+        NewPosition = new Vector3(rotateInPositionZero, rotatePositionY, rotateInPositionZero);
     }
 }

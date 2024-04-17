@@ -10,14 +10,14 @@ public class ButtonsActive : MonoBehaviour
     private void OnEnable()
     {
         foreach (var buttonObject in _buttonObjects)
-            buttonObject.ButtonActive += SetCountActiveButton;
+            buttonObject.ButtonActivated += OnSetCountActiveButton;
     }
 
     private void OnDisable()
     {
         foreach (var buttonObject in _buttonObjects)
-            buttonObject.ButtonActive -= SetCountActiveButton;
+            buttonObject.ButtonActivated -= OnSetCountActiveButton;
     }
 
-    private void SetCountActiveButton(int rewardPerClick) => CountActiveButtons += rewardPerClick;
+    private void OnSetCountActiveButton(int rewardPerClick) => CountActiveButtons += rewardPerClick;
 }

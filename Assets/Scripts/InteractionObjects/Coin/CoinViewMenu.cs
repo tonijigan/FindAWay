@@ -8,9 +8,9 @@ public class CoinViewMenu : MonoBehaviour
 
     private void Awake() => PlayerAccount.GetCloudSaveData(ProgressInfo.GetPlayerInfo);
 
-    private void OnEnable() => ProgressInfo.ReceivedData += GetDate;
+    private void OnEnable() => ProgressInfo.ReceivedData += OnAssignCoins;
 
-    private void OnDisable() => ProgressInfo.ReceivedData -= GetDate;
+    private void OnDisable() => ProgressInfo.ReceivedData -= OnAssignCoins;
 
-    private void GetDate() => _data.text = ProgressInfo.PlayerInfo.Coins.ToString();
+    private void OnAssignCoins() => _data.text = ProgressInfo.PlayerInfo.Coins.ToString();
 }

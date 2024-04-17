@@ -1,12 +1,12 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PlayerWallet : MonoBehaviour
 {
     private readonly List<Coin> _countCoin = new List<Coin>();
 
-    public event UnityAction<int> AddedCoin;
+    public event Action<int> AddedCoin;
 
     private Coin _coin;
 

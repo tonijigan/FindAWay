@@ -19,7 +19,7 @@ public class ButtonContinueGame : AbstractButton
         sequence.SetUpdate(true);
     }
 
-    protected override void Click() => Continue();
+    protected override void OnClick() => Continue();
 
     private void Continue()
     {

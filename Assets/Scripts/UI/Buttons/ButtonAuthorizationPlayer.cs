@@ -1,15 +1,14 @@
 using Agava.YandexGames;
+using System;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class ButtonAuthorizationPlayer : AbstractButton
 {
     [SerializeField] private LeaderBoardPanel _leaderBoardPanel;
 
-    public event UnityAction<bool> Authorized;
+    public event Action<bool> Authorized;
 
-    protected override void Click() => Authorization();
+    protected override void OnClick() => Authorization();
 
     private void Authorization() => PlayerAccount.Authorize(OnSuccessCallback);
 

@@ -1,5 +1,5 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class HaveGround : MonoBehaviour
 {
@@ -7,15 +7,15 @@ public class HaveGround : MonoBehaviour
     [SerializeField] private float _radiusTriggerGround;
     [SerializeField] private LayerMask _layerMask;
 
-    public event UnityAction Fall;
+    public event Action PlayerFalling;
 
     private float _currentTimeFall = 0;
     private float _maxTime = 2f;
     private float _minTime = 0;
 
-    public bool Have()
+    public bool IsGround()
     {
-        var isGround = Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask);
+        bool isGround = Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask);
 
         if (isGround == false)
             Falling();
@@ -30,7 +30,7 @@ public class HaveGround : MonoBehaviour
         if (_currentTimeFall > _maxTime)
         {
             _currentTimeFall = _minTime;
-            Fall?.Invoke();
+            PlayerFalling?.Invoke();
         }
 
         _currentTimeFall += Time.deltaTime;

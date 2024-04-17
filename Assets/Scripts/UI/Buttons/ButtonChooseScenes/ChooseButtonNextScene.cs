@@ -1,10 +1,10 @@
-using UnityEngine.Events;
+using System;
 
 public class ChooseButtonNextScene : AbstractButton
 {
-    public event UnityAction NextScene;
+    public event Action Clicked;
 
-    protected override void Click() => ShowNextScene();
+    protected override void OnClick() => ShowNextScene();
 
-    private void ShowNextScene() => NextScene?.Invoke();
+    private void ShowNextScene() => Clicked?.Invoke();
 }

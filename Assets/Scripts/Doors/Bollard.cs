@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class Bollard : AbstractDoor
+public class Bollard : Door
 {
     protected override void SetPosition()
     {
-        var newPositionY = 1.9f;
-        StartPositionDoor = _typeDoor.localPosition;
-        NewPositionDoor = Vector3.down * newPositionY;
+        float newPositionY = 1.9f;
+        StartPosition = _type.localPosition;
+        NewPosition = Vector3.down * newPositionY;
     }
 }

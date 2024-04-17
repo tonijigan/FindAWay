@@ -13,56 +13,51 @@ public class ChooseScenes : MonoBehaviour
     [SerializeField] private TMP_Text _textNumberScene;
 
     private int _currentImageIndex = 0;
+    private int _element = 1;
+    private int _minCount = 0;
 
     private void Awake() => ShowCurrentScene();
 
     private void OnEnable()
     {
-        ProgressInfo.ReceivedData += InitSave;
-        _nextScene.NextScene += ShowNextScene;
-        _previousScene.PreviousScene += ShowPreviousScene;
-        _choosedButtonScene.OnClick += ChoosedScene;
+        ProgressInfo.ReceivedData += OnInitSave;
+        _nextScene.Clicked += OnShowNextScene;
+        _previousScene.Clicked += OnShowPreviousScene;
+        _choosedButtonScene.Clicked += OnLoadScene;
     }
 
     private void OnDisable()
     {
-        ProgressInfo.ReceivedData -= InitSave;
-        _nextScene.NextScene -= ShowNextScene;
-        _previousScene.PreviousScene -= ShowPreviousScene;
-        _choosedButtonScene.OnClick -= ChoosedScene;
+        ProgressInfo.ReceivedData -= OnInitSave;
+        _nextScene.Clicked -= OnShowNextScene;
+        _previousScene.Clicked -= OnShowPreviousScene;
+        _choosedButtonScene.Clicked -= OnLoadScene;
     }
 
-    private void InitSave() => ProgressInfo.Init(_scenesViews);
+    private void OnInitSave() => ProgressInfo.Init(_scenesViews);
 
-    private void ChoosedScene() => SceneManager.LoadScene
+    private void OnLoadScene() => SceneManager.LoadScene
         (_scenesViews[_currentImageIndex].SceneIndex);
 
-    private void ShowNextScene()
+    private void OnShowNextScene()
     {
-        var element = 1;
-        var minCount = 0;
-
-        if (_currentImageIndex < _scenesViews.Length - element) _currentImageIndex++;
-        else _currentImageIndex = minCount;
+        if (_currentImageIndex < _scenesViews.Length - _element) _currentImageIndex++;
+        else _currentImageIndex = _minCount;
         ShowCurrentScene();
     }
 
-    private void ShowPreviousScene()
+    private void OnShowPreviousScene()
     {
-        var element = 1;
-        var minCount = 0;
-
-        if (_currentImageIndex > minCount) _currentImageIndex--;
-        else _currentImageIndex = _scenesViews.Length - element;
+        if (_currentImageIndex > _minCount) _currentImageIndex--;
+        else _currentImageIndex = _scenesViews.Length - _element;
         ShowCurrentScene();
     }
 
     private void ShowCurrentScene()
     {
-        var element = 1;
         _currentImage.sprite = _scenesViews[_currentImageIndex].SpriteScene;
         _choosedButtonScene.AccessButton(_scenesViews[_currentImageIndex].IsAccess);
         _choosedButtonScene.ShowAccessScene(_scenesViews[_currentImageIndex].IsAccess);
-        _textNumberScene.text = (_currentImageIndex + element).ToString();
+        _textNumberScene.text = (_currentImageIndex + _element).ToString();
     }
 }

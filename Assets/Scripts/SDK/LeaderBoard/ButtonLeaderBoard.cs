@@ -4,5 +4,5 @@ public class ButtonLeaderBoard : AbstractButton
 {
     [SerializeField] private LeaderBoardPanel _leaderBoardPanel;
 
-    protected override void Click() => _leaderBoardPanel.gameObject.SetActive(true);
+    protected override void OnClick() => _leaderBoardPanel.gameObject.SetActive(true);
 }

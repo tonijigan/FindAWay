@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PanelWin : AbstrapctPanel
+public class PanelWin : Panel
 {
     [SerializeField] private Transform _pathImageStars;
     [SerializeField] private AudioSource _audioSource;

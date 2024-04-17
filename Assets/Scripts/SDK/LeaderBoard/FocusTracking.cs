@@ -4,7 +4,7 @@ using Agava.WebUtility;
 public class FocusTracking : MonoBehaviour
 {
     [SerializeField] private ButtonAudioListener _buttonAudioListener;
-    [SerializeField] private PanelMenu _panelMenu;
+    [SerializeField] private PanelPause _panelMenu;
 
     private int _minValue = 0;
     private int _maxValue = 1;

@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnFixedUpdate()
     {
-        _isGround = _haveGround.Have();
+        _isGround = _haveGround.IsGround();
         var newDirection = GetDirection();
         Move(newDirection);
         MoveRotate(newDirection);
@@ -43,9 +43,9 @@ public class PlayerMovement : MonoBehaviour
             _normal = collision.contacts[0].normal;
     }
 
-    private void OnTriggerEnter(Collider other) => HaveTriggerCoin(other);
+    private void OnTriggerEnter(Collider other) => CollisionWithCoin(other);
 
-    private void HaveTriggerCoin(Collider interactionObject)
+    private void CollisionWithCoin(Collider interactionObject)
     {
         if (!interactionObject.TryGetComponent(out Coin coin)) return;
 
@@ -55,14 +55,14 @@ public class PlayerMovement : MonoBehaviour
         coin.Move();
     }
 
-    private Vector3 Project(Vector3 direction)
+    private Vector3 DirectionAlongSurface(Vector3 direction)
     {
         return direction - Vector3.Dot(direction, _normal) * _normal;
     }
 
     private void Move(Vector3 direction)
     {
-        var directionAlongSurface = Project(direction.normalized);
+        var directionAlongSurface = DirectionAlongSurface(direction.normalized);
         var offSet = _speed * Time.fixedDeltaTime * directionAlongSurface;
         _rigidbody.MovePosition(_rigidbody.position + offSet);
         _playerAnimations.Move(direction, _isGround);

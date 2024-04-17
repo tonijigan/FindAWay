@@ -1,21 +1,21 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class LaserSecurity : MonoBehaviour
 {
-    [SerializeField] private LaserSecurityDoor _doorLaserSecurity;
+    [SerializeField] private DoorLaserSecurity _doorLaserSecurity;
     [SerializeField] private Timer _timer;
 
-    public event UnityAction<bool> IsTrigger;
+    public event Action<bool> IsTriggered;
 
     private bool _isTrigger;
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (!_isTrigger && _doorLaserSecurity.IsOpen == false)
+        if (!_isTrigger && _doorLaserSecurity.IsOpened == false)
         {
             _timer.SetNewTime();
-            IsTrigger?.Invoke(_doorLaserSecurity.IsOpen);
+            IsTriggered?.Invoke(_doorLaserSecurity.IsOpened);
         }
 
         _isTrigger = true;

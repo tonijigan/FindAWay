@@ -1,3 +1,3 @@
-public class PanelLoss : AbstrapctPanel
+public class PanelLoss : Panel
 {
 }

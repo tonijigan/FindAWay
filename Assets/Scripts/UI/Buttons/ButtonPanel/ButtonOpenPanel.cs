@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class ButtonOpenPanel : AbstractButton
 {
-    [SerializeField] private AbstrapctPanel _panel;
+    [SerializeField] private Panel _panel;
     [SerializeField] private Joystick _joystick;
 
-    protected override void Click() => OpenPanel();
+    protected override void OnClick() => OpenPanel();
 
     private void OpenPanel()
     {

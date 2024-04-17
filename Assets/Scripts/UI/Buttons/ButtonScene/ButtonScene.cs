@@ -7,13 +7,13 @@ public class ButtonScene : AbstractButton
 
     private float _wait = 0.1f;
 
-    protected override void Click() => WorkScene();
+    protected override void OnClick() => WorkScene();
 
     private void WorkScene()
     {
         var timeScale = 1.0f;
         Time.timeScale = timeScale;
-        Invoke(HashNames.Load, _wait);
+        Invoke(HashedStrings.Load, _wait);
     }
 
     public void Load() => SceneManager.LoadScene(_sceneNumber);

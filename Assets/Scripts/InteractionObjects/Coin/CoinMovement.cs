@@ -16,7 +16,7 @@ public class CoinMovement : MonoBehaviour
 
     private IEnumerator Moving(Transform target)
     {
-        var duration = 100f;
+        float duration = 100f;
 
         while (_transform.localPosition != target.localPosition)
         {

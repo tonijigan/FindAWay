@@ -7,22 +7,19 @@ public class ButtonsState : MonoBehaviour
 
     private void OnEnable()
     {
-        _promotionalVideo.RewardPlayed += DisableButtons;
-        _promotionalVideo.ClosedCallBack += DisableButtons;
+        _promotionalVideo.RewardPlayed += OnDisableButtons;
+        _promotionalVideo.ClosedCallBack += OnDisableButtons;
     }
 
     private void OnDisable()
     {
-        _promotionalVideo.RewardPlayed -= DisableButtons;
-        _promotionalVideo.ClosedCallBack -= DisableButtons;
+        _promotionalVideo.RewardPlayed -= OnDisableButtons;
+        _promotionalVideo.ClosedCallBack -= OnDisableButtons;
     }
 
-    public void DisableButtons(bool isReward)
+    public void OnDisableButtons(bool isReward)
     {
         foreach (var button in _abstractButtons)
             button.enabled = isReward;
-
-        foreach (var button in _abstractButtons)
-            Debug.Log(button.enabled);
     }
 }

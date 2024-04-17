@@ -14,21 +14,21 @@ public class TimerView : MonoBehaviour
 
     private void OnEnable()
     {
-        _timer.CurrentTime += ShowTime;
-        _security.IsTrigger += ChangeColor;
+        _timer.TimeRunning += OnShowTime;
+        _security.IsTriggered += OnChangeColor;
     }
 
     private void OnDisable()
     {
-        _timer.CurrentTime -= ShowTime;
-        _security.IsTrigger -= ChangeColor;
+        _timer.TimeRunning -= OnShowTime;
+        _security.IsTriggered -= OnChangeColor;
     }
 
     private void Awake() => _image = GetComponent<Image>();
 
-    private void ShowTime(float minutes, float seconds) => _textMinutes.text = $"{minutes}:{seconds}";
+    private void OnShowTime(float minutes, float seconds) => _textMinutes.text = $"{minutes}:{seconds}";
 
-    private void ChangeColor(bool isTrigger)
+    private void OnChangeColor(bool isTrigger)
     {
         if (isTrigger != false) return;
 

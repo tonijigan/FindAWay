@@ -1,6 +1,6 @@
 using Agava.YandexGames;
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class SDKPromotionalVideo : MonoBehaviour
 {
@@ -8,7 +8,7 @@ public class SDKPromotionalVideo : MonoBehaviour
     [SerializeField] private FocusTracking _focusTracking;
     [SerializeField] private ButtonAudioListener _buttonAudioListener;
 
-    public event UnityAction<bool> ClosedCallBack, RewardPlayed;
+    public event Action<bool> ClosedCallBack, RewardPlayed;
 
     private int _rewardCoin = 10;
     private int _minValue = 0;
@@ -37,21 +37,15 @@ public class SDKPromotionalVideo : MonoBehaviour
         PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
     }
 
-    private void OnCloseCallBack()
+    private void OnCloseCallBack() => CloseCallBack(RewardPlayed);
+
+    private void OnCloseCallBack(bool wasShown) => CloseCallBack(ClosedCallBack);
+
+    private void CloseCallBack(Action<bool> action)
     {
         Time.timeScale = _minValue;
         _focusTracking.enabled = true;
-        RewardPlayed?.Invoke(true);
-
-        if (_buttonAudioListener.IsTurnOn == false)
-            AudioListener.volume = _maxValue;
-    }
-
-    private void OnCloseCallBack(bool wasShown)
-    {
-        Time.timeScale = _minValue;
-        _focusTracking.enabled = true;
-        ClosedCallBack?.Invoke(true);
+        action?.Invoke(true);
 
         if (_buttonAudioListener.IsTurnOn == false)
             AudioListener.volume = _maxValue;

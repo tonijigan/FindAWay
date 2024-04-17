@@ -1,10 +1,10 @@
-using UnityEngine.Events;
+using System;
 
 public class ChooseButtonPreviousScene : AbstractButton
 {
-    public event UnityAction PreviousScene;
+    public event Action Clicked;
 
-    protected override void Click() => ShowPreviousScene();
+    protected override void OnClick() => ShowPreviousScene();
 
-    private void ShowPreviousScene() => PreviousScene?.Invoke();
+    private void ShowPreviousScene() => Clicked?.Invoke();
 }

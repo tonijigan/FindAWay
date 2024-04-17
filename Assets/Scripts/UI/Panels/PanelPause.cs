@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PanelMenu : AbstrapctPanel
+public class PanelPause : Panel
 {
     private void Awake() => Time.timeScale = 0;
 }

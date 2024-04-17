@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 
 [RequireComponent(typeof(PlayerInteractionObjectSound))]
 public class PlayerInteractionWithObjects : MonoBehaviour
@@ -27,12 +26,12 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
     public void OnFixedUpdate() => DragAndDropObject();
 
-    private void TryPickUp(InteractionObject interactionObject)
+    private void PickUp(InteractionObject interactionObject)
     {
         _draggableObject = interactionObject;
         _playerInteractionObjectSound.PlaySound(_draggableObject.AudioClip);
         _rigidbodyDraggableObject = _draggableObject.RigidbodyObject;
-        _draggableObject.TryPickUp();
+        _draggableObject.PickUp();
         _isDragging = true;
         WorkEffect(_isDragging);
     }
@@ -110,10 +109,10 @@ public class PlayerInteractionWithObjects : MonoBehaviour
         if (_isDragging == false)
         {
             if (currentObject.TryGetComponent(out Box box) && box.IsUse == false)
-                TryPickUp(box);
+                PickUp(box);
 
             if (currentObject.TryGetComponent(out Key key))
-                TryPickUp(key);
+                PickUp(key);
         }
         else
         {
@@ -122,7 +121,7 @@ public class PlayerInteractionWithObjects : MonoBehaviour
 
             if (!currentObject.TryGetComponent(out DoorWithLock doorWithLock)) return;
             _isDragging = doorWithLock.TryOpenDoor(_draggableObject);
-            
+
             WorkEffect(_isDragging);
         }
     }

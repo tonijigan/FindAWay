@@ -37,7 +37,7 @@ public static class ProgressInfo
     public static void Init(SceneView[] sceneViews)
     {
         for (var i = 0; i < PlayerInfo.ScenesAccess; i++)
-            sceneViews[i].HaveAccess();
+            sceneViews[i].OpenAccess();
     }
 
     public static void OpenAccessNewScene()

@@ -25,39 +25,39 @@ public class PlayerAnimations : MonoBehaviour
 
     private void Falling(bool haveGround)
     {
-        var duration = 0.1f;
+        float duration = 0.1f;
 
         if (haveGround == false)
-            _animator.CrossFade(HashNames.Falling, duration);
+            _animator.CrossFade(HashedStrings.Falling, duration);
     }
 
     private void Idle()
     {
         if (_interactionObject == null)
         {
-            _animator.SetBool(HashNames.IdleWhitBox, _isDragging);
-            _animator.SetBool(HashNames.IdleWhitKey, _isDragging);
+            _animator.SetBool(HashedStrings.IdleWhitBox, _isDragging);
+            _animator.SetBool(HashedStrings.IdleWhitKey, _isDragging);
             return;
         }
 
         if (_interactionObject.TryGetComponent(out Box box))
-            _animator.SetBool(HashNames.IdleWhitBox, _isDragging);
+            _animator.SetBool(HashedStrings.IdleWhitBox, _isDragging);
 
         if (_interactionObject.TryGetComponent(out Key key))
-            _animator.SetBool(HashNames.IdleWhitKey, _isDragging);
+            _animator.SetBool(HashedStrings.IdleWhitKey, _isDragging);
     }
 
     private void Walk(Vector3 direction)
     {
-        _animator.SetFloat(HashNames.Walk, direction.magnitude);
+        _animator.SetFloat(HashedStrings.Walk, direction.magnitude);
 
-        var magnitude = direction.magnitude;
+        float magnitude = direction.magnitude;
 
         if (_interactionObject == null || !_isDragging) return;
         if (_interactionObject.TryGetComponent(out Box box))
-            _animator.SetFloat(HashNames.WalkWhitBox, magnitude);
+            _animator.SetFloat(HashedStrings.WalkWhitBox, magnitude);
 
         if (_interactionObject.TryGetComponent(out Key key))
-            _animator.SetFloat(HashNames.WalkWhitKey, magnitude);
+            _animator.SetFloat(HashedStrings.WalkWhitKey, magnitude);
     }
 }

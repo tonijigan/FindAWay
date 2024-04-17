@@ -16,10 +16,10 @@ public class YandexLeaderBoard : MonoBehaviour
         if (PlayerAccount.IsAuthorized == false)
             return;
 
-        Leaderboard.GetPlayerEntry(HashNames.LeaderBoardName, (result) =>
+        Leaderboard.GetPlayerEntry(HashedStrings.LeaderBoardName, (result) =>
         {
             if (result.score < score)
-                Leaderboard.SetScore(HashNames.LeaderBoardName, score);
+                Leaderboard.SetScore(HashedStrings.LeaderBoardName, score);
         });
     }
 
@@ -29,7 +29,7 @@ public class YandexLeaderBoard : MonoBehaviour
 
         _leaderBoardPlayers.Clear();
 
-        Leaderboard.GetEntries(HashNames.LeaderBoardName, result =>
+        Leaderboard.GetEntries(HashedStrings.LeaderBoardName, result =>
         {
             foreach (var entry in result.entries)
             {
@@ -37,8 +37,8 @@ public class YandexLeaderBoard : MonoBehaviour
                 var playerPublicName = entry.player.publicName;
 
                 if (string.IsNullOrEmpty(playerPublicName))
-                    playerPublicName = _localisation.ChangeLanguage(HashNames.AnonymousNameTr,
-                                        HashNames.AnonymousNameRu, HashNames.AnonymousNameEn);
+                    playerPublicName = _localisation.ChangeLanguage(HashedStrings.AnonymousNameTr,
+                                        HashedStrings.AnonymousNameRu, HashedStrings.AnonymousNameEn);
 
                 _leaderBoardPlayers.Add(new LeaderBoardPlayer(playerPublicName, score));
             }

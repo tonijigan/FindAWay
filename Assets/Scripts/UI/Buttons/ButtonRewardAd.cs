@@ -14,9 +14,9 @@ public class ButtonRewardAd : AbstractButton
 
     private void Start() => SetValueForReward();
 
-    protected override void Click()
+    protected override void OnClick()
     {
-        _buttonsState.DisableButtons(false);
+        _buttonsState.OnDisableButtons(false);
         gameObject.SetActive(false);
         _promotionalVideo.ShowRewardAd();
     }

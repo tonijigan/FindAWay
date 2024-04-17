@@ -1,13 +1,14 @@
 using System.Collections;
-using UnityEngine.Events;
 using UnityEngine;
+using System;
 
 public class ButtonObject : MonoBehaviour
 {
-    [SerializeField] private AbstractDoor _door;
+    [SerializeField] private Door _door;
     [SerializeField] private Transform _boxPoint;
     [SerializeField] private AudioSource _audioSource;
-    public event UnityAction<int> ButtonActive;
+
+    public event Action<int> ButtonActivated;
 
     private int _rewardPerClick = 1;
     private Transform _transform;
@@ -29,14 +30,14 @@ public class ButtonObject : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!other.gameObject.TryGetComponent(out Box box)) return;
-        ButtonActive?.Invoke(_rewardPerClick);
+        ButtonActivated?.Invoke(_rewardPerClick);
         PlayCoroutine();
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (!other.gameObject.TryGetComponent(out Box box)) return;
-        ButtonActive?.Invoke(-_rewardPerClick);
+        ButtonActivated?.Invoke(-_rewardPerClick);
         box.ActiveObject();
         PlayCoroutine();
     }
@@ -70,7 +71,7 @@ public class ButtonObject : MonoBehaviour
             yield return null;
         }
 
-        _door.WorkDoor();
+        _door.Work();
         yield return _waitForSeconds;
         _audioSource.Stop();
         StopCoroutine(ChangePosition(newPosition));

@@ -7,23 +7,16 @@ public class CellForCoins : MonoBehaviour
 
     private Coin[] _coins;
 
-    private void Start()
-    {
-        Initialization();
-        SetCoinsTarget();
-    }
+    private void Start() => Initialization();
 
     private void Initialization()
     {
         _coins = new Coin[_cell.childCount];
 
         for (var i = 0; i < _coins.Length; i++)
+        {
             _coins[i] = _cell.GetChild(i).gameObject.GetComponent<Coin>();
-    }
-
-    private void SetCoinsTarget()
-    {
-        foreach (var coin in _coins)
-            coin.SetTarget(_target);
+            _coins[i].SetTarget(_target);
+        }
     }
 }

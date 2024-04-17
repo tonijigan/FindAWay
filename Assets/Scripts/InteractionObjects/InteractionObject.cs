@@ -21,7 +21,7 @@ public abstract class InteractionObject : MonoBehaviour
 
     public void ActiveObject() => _isUse = false;
 
-    public void TryPickUp()
+    public void PickUp()
     {
         _isUse = true;
         _rigidbody.useGravity = false;

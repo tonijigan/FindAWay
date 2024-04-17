@@ -12,7 +12,7 @@ public abstract class AbstractButton : MonoBehaviour
 
     private void OnDisable() => _button.onClick.RemoveListener(ButtonClick);
 
-    protected abstract void Click();
+    protected abstract void OnClick();
 
     public void AccessButton(bool isAccess) => _button.interactable = isAccess;
 
@@ -21,6 +21,6 @@ public abstract class AbstractButton : MonoBehaviour
     private void ButtonClick()
     {
         PlaySound();
-        Click();
+        OnClick();
     }
 }
