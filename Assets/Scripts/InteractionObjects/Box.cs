@@ -1,3 +1,6 @@
-public class Box : InteractionObject
+namespace InteractionObjects
 {
+    public class Box : InteractionObject
+    {
+    }
 }

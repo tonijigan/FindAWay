@@ -1,14 +1,17 @@
-public class LeaderBoardPlayer
+namespace SDK.LeaderBoard
 {
-    private string _name;
-    private int _score;
-
-    public LeaderBoardPlayer(string name, int score)
+    public class LeaderBoardPlayer
     {
-        _name = name;
-        _score = score;
-    }
+        private string _name;
+        private int _score;
 
-    public string Name => _name;
-    public int Score => _score;
+        public LeaderBoardPlayer(string name, int score)
+        {
+            _name = name;
+            _score = score;
+        }
+
+        public string Name => _name;
+        public int Score => _score;
+    }
 }

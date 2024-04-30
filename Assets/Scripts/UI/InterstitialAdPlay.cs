@@ -1,32 +1,37 @@
+using SDK;
+using UI.Buttons.ButtonScene;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InterstitialAdPlay : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private ButtonRestartScene[] _buttonRestartScene;
-    [SerializeField] private SDKPromotionalVideo _promotionalVideo;
-    [SerializeField] protected int _sceneNumber;
-
-    private void OnEnable()
+    public class InterstitialAdPlay : MonoBehaviour
     {
-        foreach (var buttonRestart in _buttonRestartScene)
-            buttonRestart.Clicked += OnPlayPromotionAd;
+        [SerializeField] private ButtonRestartScene[] _buttonRestartScene;
+        [SerializeField] private SDKPromotionalVideo _promotionalVideo;
+        [SerializeField] protected int _sceneNumber;
 
-        _promotionalVideo.ClosedCallBack += OnLoadScene;
-    }
+        private void OnEnable()
+        {
+            foreach (var buttonRestart in _buttonRestartScene)
+                buttonRestart.Clicked += OnPlayPromotionAd;
 
-    private void OnDisable()
-    {
-        foreach (var buttonRestart in _buttonRestartScene)
-            buttonRestart.Clicked -= OnPlayPromotionAd;
+            _promotionalVideo.ClosedCallBack += OnLoadScene;
+        }
 
-        _promotionalVideo.ClosedCallBack -= OnLoadScene;
-    }
+        private void OnDisable()
+        {
+            foreach (var buttonRestart in _buttonRestartScene)
+                buttonRestart.Clicked -= OnPlayPromotionAd;
 
-    private void OnPlayPromotionAd() => _promotionalVideo.ShowInterstitialAd();
+            _promotionalVideo.ClosedCallBack -= OnLoadScene;
+        }
 
-    private void OnLoadScene(bool isClosed)
-    {
-        if (isClosed) SceneManager.LoadScene(_sceneNumber);
+        private void OnPlayPromotionAd() => _promotionalVideo.ShowInterstitialAd();
+
+        private void OnLoadScene(bool isClosed)
+        {
+            if (isClosed) SceneManager.LoadScene(_sceneNumber);
+        }
     }
 }

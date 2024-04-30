@@ -1,14 +1,17 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CoinMovement))]
-public class Coin : InteractionObject
+namespace InteractionObjects.Coin
 {
-    private CoinMovement _coinMovement;
-    private Transform _target;
+    [RequireComponent(typeof(CoinMovement))]
+    public class Coin : InteractionObject
+    {
+        private CoinMovement _coinMovement;
+        private Transform _target;
 
-    private void Start() => _coinMovement = GetComponent<CoinMovement>();
+        private void Start() => _coinMovement = GetComponent<CoinMovement>();
 
-    public void SetTarget(Transform target) => _target = target;
+        public void SetTarget(Transform target) => _target = target;
 
-    public void Move() => _coinMovement.Move(_target);
+        public void Move() => _coinMovement.Move(_target);
+    }
 }

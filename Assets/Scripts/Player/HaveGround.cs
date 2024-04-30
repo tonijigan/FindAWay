@@ -1,38 +1,41 @@
 using System;
 using UnityEngine;
 
-public class HaveGround : MonoBehaviour
+namespace Player
 {
-    [SerializeField] private Transform _haveGroundPoint;
-    [SerializeField] private float _radiusTriggerGround;
-    [SerializeField] private LayerMask _layerMask;
-
-    public event Action PlayerFalling;
-
-    private float _currentTimeFall = 0;
-    private float _maxTime = 2f;
-    private float _minTime = 0;
-
-    public bool IsGround()
+    public class HaveGround : MonoBehaviour
     {
-        bool isGround = Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask);
+        [SerializeField] private Transform _haveGroundPoint;
+        [SerializeField] private float _radiusTriggerGround;
+        [SerializeField] private LayerMask _layerMask;
 
-        if (isGround == false)
-            Falling();
-        else
-            _currentTimeFall = _minTime;
+        public event Action PlayerFalling;
 
-        return isGround;
-    }
+        private float _currentTimeFall = 0;
+        private float _maxTime = 2f;
+        private float _minTime = 0;
 
-    private void Falling()
-    {
-        if (_currentTimeFall > _maxTime)
+        public bool IsGround()
         {
-            _currentTimeFall = _minTime;
-            PlayerFalling?.Invoke();
+            bool isGround = Physics.CheckSphere(_haveGroundPoint.position, _radiusTriggerGround, _layerMask);
+
+            if (isGround == false)
+                Falling();
+            else
+                _currentTimeFall = _minTime;
+
+            return isGround;
         }
 
-        _currentTimeFall += Time.deltaTime;
+        private void Falling()
+        {
+            if (_currentTimeFall > _maxTime)
+            {
+                _currentTimeFall = _minTime;
+                PlayerFalling?.Invoke();
+            }
+
+            _currentTimeFall += Time.deltaTime;
+        }
     }
 }

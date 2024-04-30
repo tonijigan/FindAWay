@@ -114,21 +114,19 @@
             <e p="Alarm.cs" t="Include" />
             <e p="LaserSecurity.cs" t="Include" />
           </e>
-          <e p="Animations" t="Include">
-            <e p="HashNames.cs" t="Include" />
-          </e>
-          <e p="Buttons" t="Include">
+          <e p="ButtonGameObject" t="Include">
             <e p="ButtonObject.cs" t="Include" />
             <e p="ButtonsActive.cs" t="Include" />
           </e>
-          <e p="CompositRoot.cs" t="Include" />
+          <e p="CompositeRoot.cs" t="Include" />
           <e p="Doors" t="Include">
-            <e p="AbstractDoor.cs" t="Include" />
             <e p="Bollard.cs" t="Include" />
-            <e p="DoorPanel.cs" t="Include" />
+            <e p="Door.cs" t="Include" />
+            <e p="DoorLaserSecurity.cs" t="Include" />
             <e p="DoorWithLock.cs" t="Include" />
-            <e p="LaserSecurityDoor.cs" t="Include" />
           </e>
+          <e p="FocusTracking.cs" t="Include" />
+          <e p="HashedStrings.cs" t="Include" />
           <e p="InteractionObjects" t="Include">
             <e p="Box.cs" t="Include" />
             <e p="Coin" t="Include">
@@ -151,14 +149,10 @@
             <e p="WalkSound.cs" t="Include" />
           </e>
           <e p="ScriptableObject" t="Include">
-            <e p="SceneObjects" t="Include">
-              <e p="SceneObject.cs" t="Include" />
-            </e>
+            <e p="SceneObject.cs" t="Include" />
           </e>
           <e p="SDK" t="Include">
             <e p="LeaderBoard" t="Include">
-              <e p="ButtonLeaderBoard.cs" t="Include" />
-              <e p="FocusTracking.cs" t="Include" />
               <e p="LeaderBoaedView.cs" t="Include" />
               <e p="LeaderBoardPlayer.cs" t="Include" />
               <e p="LeaderBoaredElement.cs" t="Include" />
@@ -166,8 +160,8 @@
             </e>
             <e p="Localisation.cs" t="Include" />
             <e p="ProgressInfo.cs" t="Include" />
+            <e p="SDKGameReadyInitialization.cs" t="Include" />
             <e p="SDKInitializator.cs" t="Include" />
-            <e p="SDKMenu.cs" t="Include" />
             <e p="SDKPromotionalVideo.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
@@ -182,6 +176,7 @@
                 <e p="ChooseScenes.cs" t="Include" />
               </e>
               <e p="ButtonContinueGame.cs" t="Include" />
+              <e p="ButtonLeaderBoard.cs" t="Include" />
               <e p="ButtonPanel" t="Include">
                 <e p="ButtonClosePanel.cs" t="Include" />
                 <e p="ButtonOpenPanel.cs" t="Include" />
@@ -192,21 +187,21 @@
                 <e p="ButtonScene.cs" t="Include" />
               </e>
               <e p="ButtonsState.cs" t="Include" />
-              <e p="ScoreCoins.cs" t="Include" />
             </e>
             <e p="CanvasStatic.cs" t="Include" />
             <e p="InterstitialAdPlay.cs" t="Include" />
             <e p="Panels" t="Include">
-              <e p="AbstrapctPanel.cs" t="Include" />
               <e p="AuthorizationPanel.cs" t="Include" />
               <e p="LeaderBoardPanel.cs" t="Include" />
+              <e p="Panel.cs" t="Include" />
               <e p="PanelLoss.cs" t="Include" />
-              <e p="PanelMenu.cs" t="Include" />
+              <e p="PanelPause.cs" t="Include" />
               <e p="PanelWin.cs" t="Include" />
             </e>
             <e p="Scenes" t="Include">
               <e p="SceneView.cs" t="Include" />
             </e>
+            <e p="ScoreCoins.cs" t="Include" />
             <e p="Timer" t="Include">
               <e p="Timer.cs" t="Include" />
               <e p="TimerView.cs" t="Include" />

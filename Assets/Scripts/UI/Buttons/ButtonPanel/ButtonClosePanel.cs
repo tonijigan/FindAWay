@@ -1,10 +1,14 @@
+using UI.Panels;
 using UnityEngine;
 
-public class ButtonClosePanel : AbstractButton
+namespace UI.Buttons.ButtonPanel
 {
-    [SerializeField] private Panel _panel;
+    public class ButtonClosePanel : AbstractButton
+    {
+        [SerializeField] private Panel _panel;
     
-    protected override void OnClick() => ClosePanel();
+        protected override void OnClick() => ClosePanel();
 
-    private void ClosePanel() => _panel.gameObject.SetActive(false);
+        private void ClosePanel() => _panel.gameObject.SetActive(false);
+    }
 }

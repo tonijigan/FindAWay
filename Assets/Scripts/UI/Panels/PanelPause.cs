@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public class PanelPause : Panel
+namespace UI.Panels
 {
-    private void Awake() => Time.timeScale = 0;
+    public class PanelPause : Panel
+    {
+        private void Awake() => Time.timeScale = 0;
+    }
 }

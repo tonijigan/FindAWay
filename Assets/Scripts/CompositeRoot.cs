@@ -1,6 +1,8 @@
+using Player;
+using UI.Timer;
 using UnityEngine;
 
-public class CompositRoot : MonoBehaviour
+public class CompositeRoot : MonoBehaviour
 {
     [SerializeField] private PlayerMovement _playerMovement;
     [SerializeField] private PlayerInteractionWithObjects _interactionWithObjects;

@@ -1,13 +1,16 @@
 using TMPro;
 using UnityEngine;
 
-public class LeaderBoaredElement : MonoBehaviour
+namespace SDK.LeaderBoard
 {
-    [SerializeField] private TMP_Text _playerName, _playerScore;
-
-    public void Initialize(string name, int score)
+    public class LeaderBoaredElement : MonoBehaviour
     {
-        _playerName.text = name;
-        _playerScore.text = score.ToString();
+        [SerializeField] private TMP_Text _playerName, _playerScore;
+
+        public void Initialize(string name, int score)
+        {
+            _playerName.text = name;
+            _playerScore.text = score.ToString();
+        }
     }
 }

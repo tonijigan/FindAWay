@@ -1,5 +1,8 @@
 using UnityEngine;
 
-public abstract class Panel : MonoBehaviour
+namespace UI.Panels
 {
+    public abstract class Panel : MonoBehaviour
+    {
+    }
 }

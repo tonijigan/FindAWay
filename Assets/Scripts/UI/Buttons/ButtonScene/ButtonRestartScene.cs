@@ -1,22 +1,25 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(ButtonsState))]
-public class ButtonRestartScene : AbstractButton
+namespace UI.Buttons.ButtonScene
 {
-    public event Action Clicked;
-
-    private ButtonsState _buttonsState;
-
-    private void Start() => _buttonsState = GetComponent<ButtonsState>();
-
-    protected override void OnClick() => WorkScene();
-
-    private void WorkScene()
+    [RequireComponent(typeof(ButtonsState))]
+    public class ButtonRestartScene : AbstractButton
     {
-        Clicked?.Invoke();
-        _buttonsState.OnDisableButtons(false);
-        float timeScale = 1.0f;
-        Time.timeScale = timeScale;
+        public event Action Clicked;
+
+        private ButtonsState _buttonsState;
+
+        private void Start() => _buttonsState = GetComponent<ButtonsState>();
+
+        protected override void OnClick() => WorkScene();
+
+        private void WorkScene()
+        {
+            Clicked?.Invoke();
+            _buttonsState.OnDisableButtons(false);
+            float timeScale = 1.0f;
+            Time.timeScale = timeScale;
+        }
     }
 }

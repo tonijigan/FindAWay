@@ -1,23 +1,26 @@
-using UnityEngine;
 using Agava.YandexGames;
+using UnityEngine;
 
-public class Localisation : MonoBehaviour
+namespace SDK
 {
-    private const string LanguageTr = "tr";
-    private const string LanguageRu = "ru";
-    private const string LanguageEn = "en";
-
-    public string ChangeLanguage(string trLanguage, string ruLanguage, string enLanguage)
+    public class Localisation : MonoBehaviour
     {
-        var currentLanguage = YandexGamesSdk.Environment.i18n.lang;
-        var currentAnonymousName = currentLanguage switch
-        {
-            LanguageTr => trLanguage,
-            LanguageRu => ruLanguage,
-            LanguageEn => enLanguage,
-            _ => ""
-        };
+        private const string LanguageTr = "tr";
+        private const string LanguageRu = "ru";
+        private const string LanguageEn = "en";
 
-        return currentAnonymousName;
+        public string ChangeLanguage(string trLanguage, string ruLanguage, string enLanguage)
+        {
+            var currentLanguage = YandexGamesSdk.Environment.i18n.lang;
+            var currentAnonymousName = currentLanguage switch
+            {
+                LanguageTr => trLanguage,
+                LanguageRu => ruLanguage,
+                LanguageEn => enLanguage,
+                _ => ""
+            };
+
+            return currentAnonymousName;
+        }
     }
 }

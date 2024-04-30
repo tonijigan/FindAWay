@@ -1,3 +1,6 @@
-public class PanelLoss : Panel
+namespace UI.Panels
 {
+    public class PanelLoss : Panel
+    {
+    }
 }

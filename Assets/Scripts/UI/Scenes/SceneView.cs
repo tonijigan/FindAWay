@@ -1,14 +1,18 @@
+using ScriptableObject;
 using UnityEngine;
 
-public class SceneView : MonoBehaviour
+namespace UI.Scenes
 {
-    [SerializeField] private SceneObject _sceneObject;
-    [SerializeField] private bool _isAccess = false;
+    public class SceneView : MonoBehaviour
+    {
+        [SerializeField] private SceneObject _sceneObject;
+        [SerializeField] private bool _isAccess = false;
 
-    public Sprite SpriteScene => _sceneObject.SpriteScene;
-    public bool IsAccess => _isAccess;
-    public int SceneIndex => _sceneObject.SceneIndex;
-    public string SceneName => _sceneObject.SceneName;
+        public Sprite SpriteScene => _sceneObject.SpriteScene;
+        public bool IsAccess => _isAccess;
+        public int SceneIndex => _sceneObject.SceneIndex;
+        public string SceneName => _sceneObject.SceneName;
 
-    public void OpenAccess() => _isAccess = true;
+        public void OpenAccess() => _isAccess = true;
+    }
 }

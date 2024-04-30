@@ -3079,19 +3079,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9719806
+      value: 0.9719805
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1398467
+      value: 0.13984671
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.18701
+      value: -0.18700995
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.026906628
+      value: 0.026906632
       objectReference: {fileID: 0}
     - target: {fileID: 1668663833, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_Priority
@@ -3102,9 +3102,21 @@ PrefabInstance:
       value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _type
+      value: 
+      objectReference: {fileID: 720882943}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorClip
       value: 
       objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 311766047}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _playerPause
       value: 
@@ -3113,6 +3125,10 @@ PrefabInstance:
       propertyPath: _playerMovement
       value: 
       objectReference: {fileID: 2079433519}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _waitForSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorAudioSource
       value: 
@@ -4572,6 +4588,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2124827229904174606, guid: 0604ce9b58da7114aa77bfa1ef820aea, type: 3}
   m_PrefabInstance: {fileID: 536812700}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &537918152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6595507369361550910, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+  m_PrefabInstance: {fileID: 1865776640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &546851386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4580,6 +4601,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1557450255}
     m_Modifications:
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _type
+      value: 
+      objectReference: {fileID: 1362510257}
     - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: _timer
       value: 
@@ -4592,6 +4617,14 @@ PrefabInstance:
       propertyPath: _doorClip
       value: 
       objectReference: {fileID: 8300000, guid: 7465589227e03c54f8a8d386a7e84bbf, type: 3}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7465589227e03c54f8a8d386a7e84bbf, type: 3}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 311766047}
     - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: _doorAudioSource
       value: 
@@ -6068,6 +6101,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 57.077, y: 31.762, z: 26.775}
+--- !u!4 &720882943 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6595507369361550910, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+  m_PrefabInstance: {fileID: 332334309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &731152045
 GameObject:
   m_ObjectHideFlags: 0
@@ -9844,7 +9882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1170128940}
-  - component: {fileID: 1170128939}
+  - component: {fileID: 1170128941}
   m_Layer: 0
   m_Name: FocusTracking
   m_TagString: Untagged
@@ -9852,20 +9890,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1170128939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170128938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9d72c1f7fa16c42892e30eb08c2237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _buttonAudioListener: {fileID: 4213907840761277652}
-  _panelMenu: {fileID: 4213907840761277655}
 --- !u!4 &1170128940
 Transform:
   m_ObjectHideFlags: 0
@@ -9881,6 +9905,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170128941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170128938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6ff633a7e70b04ea01bf921aeeb400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonAudioListener: {fileID: 4213907840761277652}
+  _panelPause: {fileID: 4213907840761277655}
 --- !u!1 &1176143760
 GameObject:
   m_ObjectHideFlags: 0
@@ -11168,6 +11206,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1642783895}
   m_LocalEulerAnglesHint: {x: 0, y: 199.416, z: 0}
+--- !u!4 &1362510257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6828447971448708696, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+  m_PrefabInstance: {fileID: 546851386}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1364028644
 GameObject:
   m_ObjectHideFlags: 0
@@ -11362,7 +11405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 4.102012e-15
+      value: -4.1020095e-15
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.y
@@ -11370,7 +11413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 5.038639e-17
+      value: -5.038639e-17
       objectReference: {fileID: 0}
     - target: {fileID: 1251887163, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_Priority
@@ -11413,6 +11456,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e17bb95289e5c724da74694f2e43e81a, type: 3}
     - target: {fileID: 2086042002, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e17bb95289e5c724da74694f2e43e81a, type: 3}
+    - target: {fileID: 2086042002, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 311766047}
+    - target: {fileID: 2086042002, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: _playerPause
       value: 
       objectReference: {fileID: 0}
@@ -11424,6 +11475,10 @@ PrefabInstance:
       propertyPath: _playerMovement
       value: 
       objectReference: {fileID: 2079433519}
+    - target: {fileID: 2086042002, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
+      propertyPath: _waitForSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2086042002, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: _doorAudioSource
       value: 
@@ -15537,9 +15592,21 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _type
+      value: 
+      objectReference: {fileID: 537918152}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorClip
       value: 
       objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 311766047}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _playerPause
       value: 
@@ -15548,6 +15615,10 @@ PrefabInstance:
       propertyPath: _playerMovement
       value: 
       objectReference: {fileID: 2079433519}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _waitForSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorAudioSource
       value: 
@@ -19465,7 +19536,7 @@ PrefabInstance:
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 1170128939}
+      objectReference: {fileID: 1170128941}
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _playerMovement
       value: 
@@ -20656,7 +20727,7 @@ PrefabInstance:
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 1170128939}
+      objectReference: {fileID: 1170128941}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonAudioListener
       value: 
@@ -20696,6 +20767,10 @@ PrefabInstance:
     - target: {fileID: 8707161557668181474, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780438899843425219, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: m_Name
+      value: PanelPause
       objectReference: {fileID: 0}
     - target: {fileID: 8780438899843425219, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: m_IsActive

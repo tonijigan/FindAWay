@@ -1,10 +1,13 @@
 using System;
 
-public class ChooseButtonPreviousScene : AbstractButton
+namespace UI.Buttons.ButtonChooseScenes
 {
-    public event Action Clicked;
+    public class ChooseButtonPreviousScene : AbstractButton
+    {
+        public event Action Clicked;
 
-    protected override void OnClick() => ShowPreviousScene();
+        protected override void OnClick() => ShowPreviousScene();
 
-    private void ShowPreviousScene() => Clicked?.Invoke();
+        private void ShowPreviousScene() => Clicked?.Invoke();
+    }
 }

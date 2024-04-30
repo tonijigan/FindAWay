@@ -1,31 +1,36 @@
+using ButtonGameObject;
+using SDK;
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(ButtonsState))]
-public class ButtonRewardAd : AbstractButton
+namespace UI.Buttons
 {
-    [SerializeField] private TMP_Text _rewardCoins;
-    [SerializeField] private ButtonsActive _buttonsActive;
-    [SerializeField] private SDKPromotionalVideo _promotionalVideo;
-
-    private ButtonsState _buttonsState;
-
-    private int _countCoins = 10;
-
-    private void Start() => SetValueForReward();
-
-    protected override void OnClick()
+    [RequireComponent(typeof(ButtonsState))]
+    public class ButtonRewardAd : AbstractButton
     {
-        _buttonsState.OnDisableButtons(false);
-        gameObject.SetActive(false);
-        _promotionalVideo.ShowRewardAd();
-    }
+        [SerializeField] private TMP_Text _rewardCoins;
+        [SerializeField] private ButtonsActive _buttonsActive;
+        [SerializeField] private SDKPromotionalVideo _promotionalVideo;
 
-    private void SetValueForReward()
-    {
-        _buttonsState = GetComponent<ButtonsState>();
-        var result = _countCoins *= _buttonsActive.CountActiveButtons;
-        _promotionalVideo.InitReward(result);
-        _rewardCoins.text = $"+{result}";
+        private ButtonsState _buttonsState;
+
+        private int _countCoins = 10;
+
+        private void Start() => SetValueForReward();
+
+        protected override void OnClick()
+        {
+            _buttonsState.OnDisableButtons(false);
+            gameObject.SetActive(false);
+            _promotionalVideo.ShowRewardAd();
+        }
+
+        private void SetValueForReward()
+        {
+            _buttonsState = GetComponent<ButtonsState>();
+            var result = _countCoins *= _buttonsActive.CountActiveButtons;
+            _promotionalVideo.InitReward(result);
+            _rewardCoins.text = $"+{result}";
+        }
     }
 }

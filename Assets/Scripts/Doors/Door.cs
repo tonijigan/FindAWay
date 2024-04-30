@@ -2,63 +2,66 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public abstract class Door : MonoBehaviour
+namespace Doors
 {
-    [SerializeField] protected Transform _type;
-    [SerializeField] private PlayableDirector _playableDirector;
-    [SerializeField] private float _openingSpeed = 1f, _waitForSeconds;
-    [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private AudioClip _audioClip;
-
-    protected Vector3 StartPosition, NewPosition;
-    protected Coroutine Coroutine;
-    protected WaitForSeconds WaitForSeconds;
-    protected bool IsOpen;
-
-    protected AudioSource AudioSource => _audioSource;
-    protected AudioClip AudioClip => _audioClip;
-
-    public bool IsOpened => IsOpen;
-
-    protected PlayableDirector PlayableDirector => _playableDirector;
-
-    private void Start()
+    public abstract class Door : MonoBehaviour
     {
-        SetPosition();
-        WaitForSeconds = new WaitForSeconds(_waitForSeconds);
-    }
+        [SerializeField] protected Transform _type;
+        [SerializeField] private PlayableDirector _playableDirector;
+        [SerializeField] private float _openingSpeed = 1f, _waitForSeconds;
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private AudioClip _audioClip;
 
-    protected virtual void SetPosition() { }
+        protected Vector3 StartPosition, NewPosition;
+        protected Coroutine Coroutine;
+        protected WaitForSeconds WaitForSeconds;
+        protected bool IsOpen;
 
-    public void Work()
-    {
-        if (Coroutine != null)
-            StopCoroutine(Coroutine);
+        protected AudioSource AudioSource => _audioSource;
+        protected AudioClip AudioClip => _audioClip;
 
-        Coroutine = StartCoroutine(Move(GetNextTargetPosition()));
-    }
+        public bool IsOpened => IsOpen;
 
-    protected virtual IEnumerator Move(Vector3 newTarget)
-    {
-        IsOpen = !IsOpen;
-        _playableDirector.Play();
-        yield return WaitForSeconds;
-        _audioSource.clip = _audioClip;
-        _audioSource.Play();
+        protected PlayableDirector PlayableDirector => _playableDirector;
 
-        while (_type.localPosition != newTarget)
+        private void Start()
         {
-            _type.localPosition = Vector3.MoveTowards(_type.localPosition,
-                newTarget, _openingSpeed * Time.deltaTime);
-            yield return null;
+            SetPosition();
+            WaitForSeconds = new WaitForSeconds(_waitForSeconds);
         }
 
-        _audioSource.Stop();
-        StopCoroutine(Move(newTarget));
-    }
+        protected virtual void SetPosition() { }
 
-    private Vector3 GetNextTargetPosition()
-    {
-        return IsOpen ? StartPosition : NewPosition;
+        public void Work()
+        {
+            if (Coroutine != null)
+                StopCoroutine(Coroutine);
+
+            Coroutine = StartCoroutine(Move(GetNextTargetPosition()));
+        }
+
+        protected virtual IEnumerator Move(Vector3 newTarget)
+        {
+            IsOpen = !IsOpen;
+            _playableDirector.Play();
+            yield return WaitForSeconds;
+            _audioSource.clip = _audioClip;
+            _audioSource.Play();
+
+            while (_type.localPosition != newTarget)
+            {
+                _type.localPosition = Vector3.MoveTowards(_type.localPosition,
+                    newTarget, _openingSpeed * Time.deltaTime);
+                yield return null;
+            }
+
+            _audioSource.Stop();
+            StopCoroutine(Move(newTarget));
+        }
+
+        private Vector3 GetNextTargetPosition()
+        {
+            return IsOpen ? StartPosition : NewPosition;
+        }
     }
 }

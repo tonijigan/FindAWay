@@ -1,18 +1,22 @@
 using SimpleInputNamespace;
+using UI.Panels;
 using UnityEngine;
 
-public class ButtonOpenPanel : AbstractButton
+namespace UI.Buttons.ButtonPanel
 {
-    [SerializeField] private Panel _panel;
-    [SerializeField] private Joystick _joystick;
-
-    protected override void OnClick() => OpenPanel();
-
-    private void OpenPanel()
+    public class ButtonOpenPanel : AbstractButton
     {
-        var timeScale = 0f;
-        _panel.gameObject.SetActive(true);
-        _joystick.gameObject.SetActive(false);
-        Time.timeScale = timeScale;
+        [SerializeField] private Panel _panel;
+        [SerializeField] private Joystick _joystick;
+
+        protected override void OnClick() => OpenPanel();
+
+        private void OpenPanel()
+        {
+            var timeScale = 0f;
+            _panel.gameObject.SetActive(true);
+            _joystick.gameObject.SetActive(false);
+            Time.timeScale = timeScale;
+        }
     }
 }

@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class WalkSound : MonoBehaviour
+namespace Player
 {
-    [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private AudioClip _audioClip;
-
-    public void PlayWalkSound()
+    public class WalkSound : MonoBehaviour
     {
-        _audioSource.clip = _audioClip;
-        _audioSource.Play();
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private AudioClip _audioClip;
+
+        public void PlayWalkSound()
+        {
+            _audioSource.clip = _audioClip;
+            _audioSource.Play();
+        }
     }
 }

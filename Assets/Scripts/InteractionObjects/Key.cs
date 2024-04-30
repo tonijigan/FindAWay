@@ -1,4 +1,7 @@
-public class Key : InteractionObject
+namespace InteractionObjects
 {
-    public void Enable() => gameObject.SetActive(false);
+    public class Key : InteractionObject
+    {
+        public void Enable() => gameObject.SetActive(false);
+    }
 }

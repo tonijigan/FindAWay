@@ -1,31 +1,34 @@
 using System.Collections;
 using UnityEngine;
 
-public class CoinMovement : MonoBehaviour
+namespace InteractionObjects.Coin
 {
-    private Transform _transform;
-    private GameObject _gameObject;
-
-    private void Awake()
+    public class CoinMovement : MonoBehaviour
     {
-        _gameObject = gameObject;
-        _transform = transform;
-    }
+        private Transform _transform;
+        private GameObject _gameObject;
 
-    public void Move(Transform target) => StartCoroutine(Moving(target));
-
-    private IEnumerator Moving(Transform target)
-    {
-        float duration = 100f;
-
-        while (_transform.localPosition != target.localPosition)
+        private void Awake()
         {
-            _transform.localPosition = Vector3.MoveTowards(_transform.localPosition,
-                target.transform.localPosition, duration * Time.deltaTime);
-            yield return null;
+            _gameObject = gameObject;
+            _transform = transform;
         }
 
-        _gameObject.SetActive(false);
-        StopCoroutine(Moving(target));
+        public void Move(Transform target) => StartCoroutine(Moving(target));
+
+        private IEnumerator Moving(Transform target)
+        {
+            float duration = 100f;
+
+            while (_transform.localPosition != target.localPosition)
+            {
+                _transform.localPosition = Vector3.MoveTowards(_transform.localPosition,
+                    target.transform.localPosition, duration * Time.deltaTime);
+                yield return null;
+            }
+
+            _gameObject.SetActive(false);
+            StopCoroutine(Moving(target));
+        }
     }
 }

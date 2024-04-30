@@ -21,9 +21,9 @@ public static class HashedStrings
     private const string ConstCancelNameTr = "İptal et";
     private const string ConstCancelNameRu = "Отменить";
     private const string ConstCancelNameEn = "Cancel";
-    private const string ConstAutorizationTextTr = "Lider tablosunu görüntülemek için giriş yapmanız gerekiyor!";
-    private const string ConstAutorizationTextRu = "Для отображения таблицы лидеров, необходимо авторизоваться!";
-    private const string ConstAutorizationTextEn = "To display the leaderboard, you need to log in!";
+    private const string ConstAuthorizationTextTr = "Lider tablosunu görüntülemek için giriş yapmanız gerekiyor!";
+    private const string ConstAuthorizationTextRu = "Для отображения таблицы лидеров, необходимо авторизоваться!";
+    private const string ConstAuthorizationTextEn = "To display the leaderboard, you need to log in!";
 
     public static int Idle => Animator.StringToHash(ConstIdle);
     public static int Alarm => Animator.StringToHash(ConstAlarm);
@@ -44,7 +44,7 @@ public static class HashedStrings
     public static string CancelNameTr => ConstCancelNameTr;
     public static string CancelNameRu => ConstCancelNameRu;
     public static string CancelNameEn => ConstCancelNameEn;
-    public static string AutorizationTextTr => ConstAutorizationTextTr;
-    public static string AutorizationTextRu => ConstAutorizationTextRu;
-    public static string AutorizationTextEn => ConstAutorizationTextEn;
+    public static string AuthorizationTextTr => ConstAuthorizationTextTr;
+    public static string AuthorizationTextRu => ConstAuthorizationTextRu;
+    public static string AuthorizationTextEn => ConstAuthorizationTextEn;
 }

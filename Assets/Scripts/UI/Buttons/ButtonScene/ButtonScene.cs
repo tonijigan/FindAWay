@@ -1,20 +1,23 @@
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ButtonScene : AbstractButton
+namespace UI.Buttons.ButtonScene
 {
-    [SerializeField] protected int _sceneNumber;
-
-    private float _wait = 0.1f;
-
-    protected override void OnClick() => WorkScene();
-
-    private void WorkScene()
+    public class ButtonScene : AbstractButton
     {
-        var timeScale = 1.0f;
-        Time.timeScale = timeScale;
-        Invoke(HashedStrings.Load, _wait);
-    }
+        [SerializeField] protected int _sceneNumber;
 
-    public void Load() => SceneManager.LoadScene(_sceneNumber);
+        private float _wait = 0.1f;
+
+        protected override void OnClick() => WorkScene();
+
+        private void WorkScene()
+        {
+            var timeScale = 1.0f;
+            Time.timeScale = timeScale;
+            Invoke(HashedStrings.Load, _wait);
+        }
+
+        public void Load() => SceneManager.LoadScene(_sceneNumber);
+    }
 }

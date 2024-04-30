@@ -1,22 +1,25 @@
 using UnityEngine;
 
-public class CellForCoins : MonoBehaviour
+namespace InteractionObjects.Coin
 {
-    [SerializeField] private Transform _cell;
-    [SerializeField] private Transform _target;
-
-    private Coin[] _coins;
-
-    private void Start() => Initialization();
-
-    private void Initialization()
+    public class CellForCoins : MonoBehaviour
     {
-        _coins = new Coin[_cell.childCount];
+        [SerializeField] private Transform _cell;
+        [SerializeField] private Transform _target;
 
-        for (var i = 0; i < _coins.Length; i++)
+        private Coin[] _coins;
+
+        private void Start() => Initialization();
+
+        private void Initialization()
         {
-            _coins[i] = _cell.GetChild(i).gameObject.GetComponent<Coin>();
-            _coins[i].SetTarget(_target);
+            _coins = new Coin[_cell.childCount];
+
+            for (var i = 0; i < _coins.Length; i++)
+            {
+                _coins[i] = _cell.GetChild(i).gameObject.GetComponent<Coin>();
+                _coins[i].SetTarget(_target);
+            }
         }
     }
 }

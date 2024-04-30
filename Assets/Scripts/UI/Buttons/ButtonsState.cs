@@ -1,25 +1,29 @@
+using SDK;
 using UnityEngine;
 
-public class ButtonsState : MonoBehaviour
+namespace UI.Buttons
 {
-    [SerializeField] private AbstractButton[] _abstractButtons;
-    [SerializeField] private SDKPromotionalVideo _promotionalVideo;
-
-    private void OnEnable()
+    public class ButtonsState : MonoBehaviour
     {
-        _promotionalVideo.RewardPlayed += OnDisableButtons;
-        _promotionalVideo.ClosedCallBack += OnDisableButtons;
-    }
+        [SerializeField] private AbstractButton[] _abstractButtons;
+        [SerializeField] private SDKPromotionalVideo _promotionalVideo;
 
-    private void OnDisable()
-    {
-        _promotionalVideo.RewardPlayed -= OnDisableButtons;
-        _promotionalVideo.ClosedCallBack -= OnDisableButtons;
-    }
+        private void OnEnable()
+        {
+            _promotionalVideo.RewardPlayed += OnDisableButtons;
+            _promotionalVideo.ClosedCallBack += OnDisableButtons;
+        }
 
-    public void OnDisableButtons(bool isReward)
-    {
-        foreach (var button in _abstractButtons)
-            button.enabled = isReward;
+        private void OnDisable()
+        {
+            _promotionalVideo.RewardPlayed -= OnDisableButtons;
+            _promotionalVideo.ClosedCallBack -= OnDisableButtons;
+        }
+
+        public void OnDisableButtons(bool isReward)
+        {
+            foreach (var button in _abstractButtons)
+                button.enabled = isReward;
+        }
     }
 }

@@ -2294,6 +2294,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202604848}
   m_Mesh: {fileID: 7435814504646775297, guid: 54ccb70bd724031409b5de99828ad0b7, type: 3}
+--- !u!4 &207569582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6595507369361550910, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+  m_PrefabInstance: {fileID: 7381750068192445245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &212664154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6457,6 +6462,11 @@ Transform:
   - {fileID: 15182607}
   m_Father: {fileID: 2097406153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &695080732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6595507369361550910, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+  m_PrefabInstance: {fileID: 7381750069310330239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &701235392
 GameObject:
   m_ObjectHideFlags: 0
@@ -9717,6 +9727,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e17bb95289e5c724da74694f2e43e81a, type: 3}
     - target: {fileID: 302212075892096150, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e17bb95289e5c724da74694f2e43e81a, type: 3}
+    - target: {fileID: 302212075892096150, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 117280929}
+    - target: {fileID: 302212075892096150, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
+      propertyPath: _waitForSeconds
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 302212075892096150, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: _doorAudioSource
       value: 
       objectReference: {fileID: 117280929}
@@ -10639,6 +10661,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072260637}
   m_Mesh: {fileID: 4300004, guid: a147f4f3d76c88d438190a38b3eca73c, type: 3}
+--- !u!4 &1081973653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6828447971448708696, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+  m_PrefabInstance: {fileID: 1224564912}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1120666249
 GameObject:
   m_ObjectHideFlags: 0
@@ -11854,6 +11881,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 49739339}
     m_Modifications:
     - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _type
+      value: 
+      objectReference: {fileID: 1081973653}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: _timer
       value: 
       objectReference: {fileID: 11338080}
@@ -11865,6 +11896,14 @@ PrefabInstance:
       propertyPath: _doorClip
       value: 
       objectReference: {fileID: 8300000, guid: 7465589227e03c54f8a8d386a7e84bbf, type: 3}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7465589227e03c54f8a8d386a7e84bbf, type: 3}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 117280929}
     - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: _doorAudioSource
       value: 
@@ -17423,7 +17462,7 @@ PrefabInstance:
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 2105356025}
+      objectReference: {fileID: 2105356027}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonAudioListener
       value: 
@@ -17467,6 +17506,10 @@ PrefabInstance:
     - target: {fileID: 8707161557668181474, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780438899843425219, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: m_Name
+      value: PanelPause
       objectReference: {fileID: 0}
     - target: {fileID: 8780438899843425219, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: m_IsActive
@@ -20664,7 +20707,7 @@ PrefabInstance:
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _focusTracking
       value: 
-      objectReference: {fileID: 2105356025}
+      objectReference: {fileID: 2105356027}
     - target: {fileID: 1277420764301471390, guid: 1d0917fca48e9f04ab70a043b2e85daf, type: 3}
       propertyPath: _playerMovement
       value: 
@@ -21145,7 +21188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2105356026}
-  - component: {fileID: 2105356025}
+  - component: {fileID: 2105356027}
   m_Layer: 0
   m_Name: FocusTracking
   m_TagString: Untagged
@@ -21153,20 +21196,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2105356025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105356024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9d72c1f7fa16c42892e30eb08c2237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _buttonAudioListener: {fileID: 1668475759}
-  _panelMenu: {fileID: 1668475762}
 --- !u!4 &2105356026
 Transform:
   m_ObjectHideFlags: 0
@@ -21182,6 +21211,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2105356027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105356024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6ff633a7e70b04ea01bf921aeeb400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonAudioListener: {fileID: 1668475759}
+  _panelPause: {fileID: 1668475762}
 --- !u!1 &2108268784
 GameObject:
   m_ObjectHideFlags: 0
@@ -26203,9 +26246,25 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _type
+      value: 
+      objectReference: {fileID: 207569582}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorClip
       value: 
       objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 117280929}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _waitForSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorAudioSource
       value: 
@@ -27037,9 +27096,25 @@ PrefabInstance:
       value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _type
+      value: 
+      objectReference: {fileID: 695080732}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorClip
       value: 
       objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a95e207d8af8cc045a2379096bd7bcdb, type: 3}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 117280929}
+    - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
+      propertyPath: _waitForSeconds
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1865776643, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: _doorAudioSource
       value: 
