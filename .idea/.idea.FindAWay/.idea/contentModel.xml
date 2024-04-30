@@ -116,6 +116,7 @@
           </e>
           <e p="ButtonGameObject" t="Include">
             <e p="ButtonObject.cs" t="Include" />
+            <e p="ButtonObjectTrigger.cs" t="Include" />
             <e p="ButtonsActive.cs" t="Include" />
           </e>
           <e p="CompositeRoot.cs" t="Include" />
@@ -152,6 +153,10 @@
             <e p="SceneObject.cs" t="Include" />
           </e>
           <e p="SDK" t="Include">
+            <e p="InterstitialAdvertisement" t="Include">
+              <e p="InterstitialAdPlay.cs" t="Include" />
+              <e p="InterstitialAdStop.cs" t="Include" />
+            </e>
             <e p="LeaderBoard" t="Include">
               <e p="LeaderBoaedView.cs" t="Include" />
               <e p="LeaderBoardPlayer.cs" t="Include" />
@@ -189,7 +194,6 @@
               <e p="ButtonsState.cs" t="Include" />
             </e>
             <e p="CanvasStatic.cs" t="Include" />
-            <e p="InterstitialAdPlay.cs" t="Include" />
             <e p="Panels" t="Include">
               <e p="AuthorizationPanel.cs" t="Include" />
               <e p="LeaderBoardPanel.cs" t="Include" />

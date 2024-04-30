@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using Doors;
-using InteractionObjects;
 using UnityEngine;
 
 namespace ButtonGameObject
@@ -12,9 +10,6 @@ namespace ButtonGameObject
         [SerializeField] private Transform _boxPoint;
         [SerializeField] private AudioSource _audioSource;
 
-        public event Action<int> ButtonActivated;
-
-        private int _rewardPerClick = 1;
         private Transform _transform;
         private Coroutine _coroutine;
         private Vector3 _startButtonPosition;
@@ -31,21 +26,6 @@ namespace ButtonGameObject
             _waitForSeconds = new WaitForSeconds(_waitTime);
         }
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (!other.gameObject.TryGetComponent(out Box box)) return;
-            ButtonActivated?.Invoke(_rewardPerClick);
-            PlayCoroutine();
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            if (!other.gameObject.TryGetComponent(out Box box)) return;
-            ButtonActivated?.Invoke(-_rewardPerClick);
-            box.ActiveObject();
-            PlayCoroutine();
-        }
-
         private Vector3 GetPosition()
         {
             float positionZero = 0, newPositionY = -1f;
@@ -54,7 +34,7 @@ namespace ButtonGameObject
             return IsClick == true ? newPosition : _startButtonPosition;
         }
 
-        private void PlayCoroutine()
+        public void PlayCoroutine()
         {
             if (_coroutine != null)
                 StopCoroutine(_coroutine);
