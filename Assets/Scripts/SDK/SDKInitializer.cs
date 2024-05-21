@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace SDK
 {
-    public class SDKInitializator : MonoBehaviour
+    public class SDKInitializer : MonoBehaviour
     {
         private int _sceneIndex = 1;
 

@@ -36,9 +36,9 @@ namespace SDK
 
         private void OnRewardedCallback()
         {
-            ProgressInfo.RewardCoin(_rewardCoin);
+           // ProgressInfo.RewardCoin(_rewardCoin);
             _leaderBoard.SetScore(ProgressInfo.PlayerInfo.Coins);
-            PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
+           // PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
         }
 
         private void OnCloseCallBack() => CloseCallBack(RewardPlayed);

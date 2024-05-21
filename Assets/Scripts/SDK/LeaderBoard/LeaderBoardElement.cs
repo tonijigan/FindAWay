@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SDK.LeaderBoard
 {
-    public class LeaderBoaredElement : MonoBehaviour
+    public class LeaderBoardElement : MonoBehaviour
     {
         [SerializeField] private TMP_Text _playerName, _playerScore;
 

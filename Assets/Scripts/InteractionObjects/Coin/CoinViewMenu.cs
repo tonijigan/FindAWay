@@ -9,12 +9,18 @@ namespace InteractionObjects.Coin
     {
         [SerializeField] private TMP_Text _data;
 
-        private void Awake() => PlayerAccount.GetCloudSaveData(ProgressInfo.GetPlayerInfo);
+        public void Init(int coins)
+        {
+            Debug.Log($"CoinViewMenu {coins}");
+            _data.text = coins.ToString();
+        }
 
-        private void OnEnable() => ProgressInfo.ReceivedData += OnAssignCoins;
+        //private void Awake() => PlayerAccount.GetCloudSaveData(ProgressInfo.GetPlayerInfo);
 
-        private void OnDisable() => ProgressInfo.ReceivedData -= OnAssignCoins;
+        // private void OnEnable() => ProgressInfo.ReceivedData += OnAssignCoins;
 
-        private void OnAssignCoins() => _data.text = ProgressInfo.PlayerInfo.Coins.ToString();
+        // private void OnDisable() => ProgressInfo.ReceivedData -= OnAssignCoins;
+
+        // private void OnAssignCoins() => _data.text = ProgressInfo.PlayerInfo.Coins.ToString();
     }
 }

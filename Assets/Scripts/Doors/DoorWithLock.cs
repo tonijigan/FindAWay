@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using InteractionObjects;
 using Player;
+using Save;
 using SDK;
 using UI.Timer;
 using UnityEngine;
@@ -14,6 +15,7 @@ namespace Doors
         [SerializeField] private AudioClip _audioOpenLook;
         [SerializeField] private float _speedRotate = 1;
         [SerializeField] private Timer _timer;
+        [SerializeField] private PlayerSave _playerSave;
 
         public event Action Opened;
 
@@ -37,20 +39,11 @@ namespace Doors
         private void UseKey(Key key)
         {
             Destroy(_timer.gameObject);
-            SaveProgress();
-#if UNITY_WEBGL && !UNITY_EDITOR
-        Agava.YandexGames.PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
-#endif
+            _playerSave.Save(_wallet.CountCoins);
             key.Enable();
             Work();
             Opened?.Invoke();
             _isClose = false;
-        }
-
-        private void SaveProgress()
-        {
-            ProgressInfo.SetCoins(_wallet.CountCoins);
-            ProgressInfo.OpenAccessNewScene();
         }
 
         private void PlayAudioClip(AudioClip audioClip)

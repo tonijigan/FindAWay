@@ -17,9 +17,6 @@ namespace UI.Panels
 
         private void Start()
         {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        Agava.YandexGames.PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
-#endif
             Initialization();
             Show();
             PlaySound();

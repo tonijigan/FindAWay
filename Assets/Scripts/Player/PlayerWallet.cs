@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using InteractionObjects.Coin;
-using SDK;
 using UnityEngine;
 
 namespace Player
@@ -16,18 +15,17 @@ namespace Player
 
         public int CountCoins => _countCoin.Count;
 
-        private void Awake() => InitSaveCoin();
+        public void InitSaveCoin(int countCoins)
+        {
+            for (var i = 0; i < countCoins; i++)
+                _countCoin.Add(_coin);
+            AddedCoin?.Invoke(_countCoin.Count);
+        }
 
         public void AddCoin(Coin coin)
         {
             _countCoin.Add(coin);
             AddedCoin?.Invoke(_countCoin.Count);
-        }
-
-        private void InitSaveCoin()
-        {
-            for (var i = 0; i < ProgressInfo.PlayerInfo.Coins; i++)
-                _countCoin.Add(_coin);
         }
     }
 }

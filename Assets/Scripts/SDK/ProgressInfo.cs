@@ -4,12 +4,6 @@ using UnityEngine;
 
 namespace SDK
 {
-    public class PlayerInfo
-    {
-        public int Coins;
-        public int ScenesAccess = 1;
-    }
-
     public static class ProgressInfo
     {
         public static PlayerInfo PlayerInfo = new PlayerInfo();

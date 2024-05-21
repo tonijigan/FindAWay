@@ -6,9 +6,9 @@ namespace SDK.LeaderBoard
     public class LeaderBoaedView : MonoBehaviour
     {
         [SerializeField] private Transform _container;
-        [SerializeField] private LeaderBoaredElement _leaderBoardElementPrefab;
+        [SerializeField] private LeaderBoardElement _leaderBoardElementPrefab;
 
-        private List<LeaderBoaredElement> _spawnedElements = new List<LeaderBoaredElement>();
+        private List<LeaderBoardElement> _spawnedElements = new List<LeaderBoardElement>();
 
         public void ConstructLeaderBoard(List<LeaderBoardPlayer> leaderBoardPlayers)
         {
@@ -16,9 +16,9 @@ namespace SDK.LeaderBoard
 
             foreach (var player in leaderBoardPlayers)
             {
-                LeaderBoaredElement leaderBoaredElementInstance = Instantiate(_leaderBoardElementPrefab, _container);
-                leaderBoaredElementInstance.Initialize(player.Name, player.Score);
-                _spawnedElements.Add(leaderBoaredElementInstance);
+                LeaderBoardElement leaderBoardElementInstance = Instantiate(_leaderBoardElementPrefab, _container);
+                leaderBoardElementInstance.Initialize(player.Name, player.Score);
+                _spawnedElements.Add(leaderBoardElementInstance);
             }
         }
 
@@ -27,7 +27,7 @@ namespace SDK.LeaderBoard
             foreach (var element in _spawnedElements)
                 Destroy(element);
 
-            _spawnedElements = new List<LeaderBoaredElement>();
+            _spawnedElements = new List<LeaderBoardElement>();
         }
     }
 }
