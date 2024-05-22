@@ -851,7 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9047024d780e18d4a91974f55a4c81ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dataSaveWork: {fileID: 80415870}
+  _playerDataSaveWork: {fileID: 80415870}
   _initializedObjects:
   - {fileID: 1239270637}
   - {fileID: 2079433511}
@@ -4720,6 +4720,14 @@ PrefabInstance:
       propertyPath: _doorAudioSource
       value: 
       objectReference: {fileID: 311766047}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: playerDataSaveWork
+      value: 
+      objectReference: {fileID: 80415870}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 80415870}
     - target: {fileID: 2113103524603006761, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -4756,6 +4764,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _timer
+      value: 
+      objectReference: {fileID: 1187500497}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _wallet
+      value: 
+      objectReference: {fileID: 2079433511}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 80415870}
     - target: {fileID: 5977486784190868366, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -4841,6 +4861,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+--- !u!114 &546851387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+  m_PrefabInstance: {fileID: 546851386}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9654c8b03b224d4882fbe9f4c065257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &550341518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11507,7 +11538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 4.102012e-15
+      value: -4.1020095e-15
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.y
@@ -11515,7 +11546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1251887162, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 5.038639e-17
+      value: -5.038639e-17
       objectReference: {fileID: 0}
     - target: {fileID: 1251887163, guid: 1ddae14885feb5a47a73fef3645e7904, type: 3}
       propertyPath: m_Priority
@@ -20518,6 +20549,10 @@ PrefabInstance:
       value: 595649467
       objectReference: {fileID: 0}
     - target: {fileID: 4213907839214587807, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _doorLock
+      value: 
+      objectReference: {fileID: 546851387}
+    - target: {fileID: 4213907839214587807, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _panelWin
       value: 
       objectReference: {fileID: 4213907840761277653}
@@ -20857,6 +20892,14 @@ PrefabInstance:
       propertyPath: _focusTracking
       value: 
       objectReference: {fileID: 1170128941}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: playerDataSaveWork
+      value: 
+      objectReference: {fileID: 80415870}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 80415870}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonAudioListener
       value: 

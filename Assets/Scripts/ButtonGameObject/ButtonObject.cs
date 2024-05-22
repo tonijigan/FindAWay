@@ -1,5 +1,5 @@
-using System.Collections;
 using Doors;
+using System.Collections;
 using UnityEngine;
 
 namespace ButtonGameObject

@@ -3091,6 +3091,10 @@ PrefabInstance:
       propertyPath: _doorAudioSource
       value: 
       objectReference: {fileID: 311766047}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 2011191504}
     - target: {fileID: 2113103524603006761, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -3115,6 +3119,30 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5146609104548747554, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _timer
+      value: 
+      objectReference: {fileID: 1187500497}
+    - target: {fileID: 5146609104548747554, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _wallet
+      value: 
+      objectReference: {fileID: 2079433511}
+    - target: {fileID: 5146609104548747554, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 2011191504}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _timer
+      value: 
+      objectReference: {fileID: 1187500497}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _wallet
+      value: 
+      objectReference: {fileID: 2079433511}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 2011191504}
     - target: {fileID: 6320901226076591970, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -9780,6 +9808,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff07dbf0e8c27243929489c5be6bc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1677192433 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+  m_PrefabInstance: {fileID: 546851386}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9654c8b03b224d4882fbe9f4c065257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1701001475
 GameObject:
   m_ObjectHideFlags: 0
@@ -12241,7 +12280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9047024d780e18d4a91974f55a4c81ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dataSaveWork: {fileID: 2011191504}
+  _playerDataSaveWork: {fileID: 2011191504}
   _initializedObjects:
   - {fileID: 4213907840761277653}
   - {fileID: 2079433511}
@@ -16165,6 +16204,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4213907839214587807, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _doorLock
+      value: 
+      objectReference: {fileID: 1677192433}
+    - target: {fileID: 4213907839214587807, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _panelWin
       value: 
       objectReference: {fileID: 1880720355}
@@ -16508,6 +16551,10 @@ PrefabInstance:
       propertyPath: _focusTracking
       value: 
       objectReference: {fileID: 570554388}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 2011191504}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonAudioListener
       value: 

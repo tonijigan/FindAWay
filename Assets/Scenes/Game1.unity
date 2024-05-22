@@ -9706,7 +9706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 8.088667e-15
+      value: -8.088667e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.y
@@ -9714,7 +9714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703870, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.3746333e-15
+      value: -1.3746333e-15
       objectReference: {fileID: 0}
     - target: {fileID: 302212075527703871, guid: 34d55bfb1da94de4fa37ffe8abdd2193, type: 3}
       propertyPath: m_Priority
@@ -11938,6 +11938,10 @@ PrefabInstance:
       propertyPath: _doorAudioSource
       value: 
       objectReference: {fileID: 117280929}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 1533903863}
     - target: {fileID: 2113103524603006761, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -11954,6 +11958,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _timer
+      value: 
+      objectReference: {fileID: 11338080}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _wallet
+      value: 
+      objectReference: {fileID: 978157764}
+    - target: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 1533903863}
     - target: {fileID: 5977486784190868366, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -12043,6 +12059,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7421588523973464962, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
   m_PrefabInstance: {fileID: 1224564912}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1224564915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5684808817721613411, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+  m_PrefabInstance: {fileID: 1224564912}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9654c8b03b224d4882fbe9f4c065257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1240066372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15339,7 +15366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9047024d780e18d4a91974f55a4c81ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dataSaveWork: {fileID: 1533903863}
+  _playerDataSaveWork: {fileID: 1533903863}
   _initializedObjects:
   - {fileID: 938064369}
   - {fileID: 978157764}
@@ -17253,6 +17280,10 @@ PrefabInstance:
       value: 595649467
       objectReference: {fileID: 0}
     - target: {fileID: 4213907839214587807, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _doorLock
+      value: 
+      objectReference: {fileID: 1224564915}
+    - target: {fileID: 4213907839214587807, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _panelWin
       value: 
       objectReference: {fileID: 1668475760}
@@ -17592,6 +17623,10 @@ PrefabInstance:
       propertyPath: _focusTracking
       value: 
       objectReference: {fileID: 2105356027}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _playerDataSaveWork
+      value: 
+      objectReference: {fileID: 1533903863}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonAudioListener
       value: 

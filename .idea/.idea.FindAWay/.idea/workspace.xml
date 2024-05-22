@@ -27,15 +27,17 @@
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Doors_Bariers/DoorWithLock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Doors_Bariers/DoorWithLock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonGameObject/ButtonObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonGameObject/ButtonObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FocusTracking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerDataSaveWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerDataSaveWork.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/SceneObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/PlayerAccount/PlayerAccount.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Doors/DoorLock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/46/1f3f62cf/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonGameObject/ButtonObjectTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.agava.yandexgames@faf20595c0/Runtime/Advertising/InterstitialAd.cs" root0="SKIP_HIGHLIGHTING" />
@@ -64,9 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonClosePanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelPause.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelLoss.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Panels/Panel.cs" />
@@ -83,7 +83,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/InterstitialAdvertisement/InterstitialAdPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/InterstitialAdvertisement/InterstitialAdStop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonGameObject/ButtonObjectTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonGameObject/ButtonObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonGameObject/ButtonsActive.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Progress/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/Progress/PlayerInfo.cs" />
@@ -104,17 +103,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/AbstractDataInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/AbstractDataInit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Scenes/SceneView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FocusTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/PlayerDataSaveWork.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Canvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/LookDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorLock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionWithObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonGameObject/ButtonObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FocusTracking.cs" />
       </list>
     </option>
   </component>
@@ -222,7 +225,8 @@
       <workItem from="1711995575301" duration="1599000" />
       <workItem from="1716217307844" duration="16298000" />
       <workItem from="1716275722434" duration="15212000" />
-      <workItem from="1716364354503" duration="4421000" />
+      <workItem from="1716364354503" duration="8164000" />
+      <workItem from="1716382194022" duration="2623000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -413,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716367259218</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Работа с сохранениями">
+      <created>1716369314212</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716369314212</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,10 +477,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="793" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1714456915625" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1716367266610">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1716369320330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1716367266610" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1716369320330" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1709719244835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

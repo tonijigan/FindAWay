@@ -124,6 +124,7 @@
             <e p="Bollard.cs" t="Include" />
             <e p="Door.cs" t="Include" />
             <e p="DoorLaserSecurity.cs" t="Include" />
+            <e p="DoorLock.cs" t="Include" />
             <e p="DoorWithLock.cs" t="Include" />
           </e>
           <e p="FocusTracking.cs" t="Include" />

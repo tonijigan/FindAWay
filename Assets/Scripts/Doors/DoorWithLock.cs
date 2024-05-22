@@ -1,49 +1,14 @@
-using System;
 using System.Collections;
-using InteractionObjects;
-using Player;
-using Save;
-using UI.Timer;
 using UnityEngine;
 
 namespace Doors
 {
     public class DoorWithLock : Door
     {
-        [SerializeField] private PlayerWallet _wallet;
         [SerializeField] private AudioClip _audioOpenLook;
         [SerializeField] private float _speedRotate = 1;
-        [SerializeField] private Timer _timer;
-        [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
-
-        public event Action Opened;
-
-        private bool _isClose = true;
 
         private void Awake() => SetPosition();
-
-        public bool TryOpenDoor(InteractionObject interactionObject)
-        {
-            if (interactionObject == null)
-                return _isClose;
-            else
-            {
-                if (interactionObject.TryGetComponent(out Key key))
-                    UseKey(key);
-
-                return _isClose;
-            }
-        }
-
-        private void UseKey(Key key)
-        {
-            Destroy(_timer.gameObject);
-            _playerDataSaveWork.Save(_wallet.CountCoins);
-            key.Enable();
-            Work();
-            Opened?.Invoke();
-            _isClose = false;
-        }
 
         private void PlayAudioClip(AudioClip audioClip)
         {

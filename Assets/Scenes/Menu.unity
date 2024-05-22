@@ -366,7 +366,7 @@ MonoBehaviour:
   _button: {fileID: 38278974}
   _audioSource: {fileID: 1611262945}
   _leaderBoardPanel: {fileID: 36357086}
-  _dataSaveWork: {fileID: 980194578}
+  _playerDataSaveWork: {fileID: 980194578}
 --- !u!1 &54427003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,7 +2299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9047024d780e18d4a91974f55a4c81ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dataSaveWork: {fileID: 980194578}
+  _playerDataSaveWork: {fileID: 980194578}
   _initializedObjects:
   - {fileID: 210889544}
 --- !u!114 &980194578
@@ -2828,7 +2828,7 @@ MonoBehaviour:
   - {fileID: 1702952348}
   - {fileID: 1148834516}
   _textNumberScene: {fileID: 581643308}
-  _dataSaveWork: {fileID: 980194578}
+  _playerDataSaveWork: {fileID: 980194578}
 --- !u!1 &1306712655
 GameObject:
   m_ObjectHideFlags: 0

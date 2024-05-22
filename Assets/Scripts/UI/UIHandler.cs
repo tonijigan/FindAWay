@@ -8,7 +8,7 @@ namespace UI
 {
     public class UIHandler : MonoBehaviour
     {
-        [SerializeField] private DoorWithLock _doorWithLock;
+        [SerializeField] private DoorLock _doorLock;
         [SerializeField] private PanelWin _panelWin;
         [SerializeField] private PanelLoss _panelLoss;
         [SerializeField] private HaveGround _haveGround;
@@ -27,14 +27,14 @@ namespace UI
 
         private void OnEnable()
         {
-            _doorWithLock.Opened += OnOpenPanelWin;
+            _doorLock.Opened += OnOpenPanelWin;
             _haveGround.PlayerFalling += OnOpenPanelLoss;
             _timer.TimeIsUped += OnOpenPanelLoss;
         }
 
         private void OnDisable()
         {
-            _doorWithLock.Opened -= OnOpenPanelWin;
+            _doorLock.Opened -= OnOpenPanelWin;
             _haveGround.PlayerFalling -= OnOpenPanelLoss;
             _timer.TimeIsUped -= OnOpenPanelLoss;
         }

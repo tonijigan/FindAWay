@@ -124,8 +124,8 @@ namespace Player
                 if (currentObject.TryGetComponent(out ButtonObject button) && button.IsClick == false)
                     PutDown(button.BoxPoint);
 
-                if (!currentObject.TryGetComponent(out DoorWithLock doorWithLock)) return;
-                _isDragging = doorWithLock.TryOpenDoor(_draggableObject);
+                if (!currentObject.TryGetComponent(out DoorLock doorLock)) return;
+                _isDragging = doorLock.TryOpenDoor(_draggableObject);
 
                 WorkEffect(_isDragging);
             }
