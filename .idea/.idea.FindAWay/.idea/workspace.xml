@@ -25,32 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be26df19-1257-4cff-afa5-f65b36a7a4c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FindAWay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FocusTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FocusTracking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionObjects/Coin/CoinViewMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerWallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerWallet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerInfo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/ProgressInfo.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DistributeSavedData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DistributeSavedData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerSave.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerDataSaveWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Save/PlayerDataSaveWork.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Panels/PanelWin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Scenes/SceneView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Scenes/SceneView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreCoins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreCoins.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CanvasStatic.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChoosedButtonScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseButtonPreviousScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseButtonNextScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonOpenPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonPanel/ButtonClosePanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonScene/ButtonRestartScene.cs" />
@@ -121,15 +102,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/PlayerSave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/AbstractInitData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/AbstractDataInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/DataSaveWork.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Save/AbstractDataInit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonAuthorizationPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ButtonChooseScenes/ChooseScenes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Scenes/SceneView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FocusTracking.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Save/PlayerDataSaveWork.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Doors/DoorWithLock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Save/DataDistribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SDK/SDKPromotionalVideo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Canvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIHandler.cs" />
       </list>
     </option>
   </component>
@@ -237,7 +222,7 @@
       <workItem from="1711995575301" duration="1599000" />
       <workItem from="1716217307844" duration="16298000" />
       <workItem from="1716275722434" duration="15212000" />
-      <workItem from="1716364354503" duration="2379000" />
+      <workItem from="1716364354503" duration="4421000" />
     </task>
     <task id="LOCAL-00001" summary="Создал новую сцену. Исправил некоторые ошибки в коде.">
       <created>1703171371840</created>
@@ -421,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716280919228</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Работа с сохранениями">
+      <created>1716367259218</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716367259218</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +437,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Создал новую сцену. Исправил некоторые ошибки в коде." />
     <MESSAGE value="Отправляю комит через Rider" />
-    <MESSAGE value="Работа с сохранениями" />
     <MESSAGE value="Настройка межстраничной рекламмы, добавление кнопки с запуском рекламмы с вознаграждением" />
     <MESSAGE value="Оптимизация" />
     <MESSAGE value="Исправил ошибку" />
@@ -463,7 +454,8 @@
     <MESSAGE value="Удалил тестовые кнопки" />
     <MESSAGE value="Обернул классы в пространства имен" />
     <MESSAGE value="Делаю сохранения заново" />
-    <option name="LAST_COMMIT_MESSAGE" value="Делаю сохранения заново" />
+    <MESSAGE value="Работа с сохранениями" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с сохранениями" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="244" key="RiderGenerateDialog" timestamp="1709463110298">
@@ -474,10 +466,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="793" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1714456915625" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1716280925750">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1716367266610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1716280925750" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1716367266610" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1709719244835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -9,7 +9,7 @@ namespace UI.Buttons
     public class ButtonAuthorizationPlayer : AbstractButton
     {
         [SerializeField] private LeaderBoardPanel _leaderBoardPanel;
-        [SerializeField] private DataSaveWork _dataSaveWork;
+        [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
 
         public event Action<bool> Authorized;
 
@@ -20,7 +20,7 @@ namespace UI.Buttons
         private void OnSuccessCallback()
         {
             PlayerAccount.RequestPersonalProfileDataPermission();
-            _dataSaveWork.Load();
+            _playerDataSaveWork.Load();
             Authorized?.Invoke(PlayerAccount.IsAuthorized);
             _leaderBoardPanel.gameObject.SetActive(false);
         }

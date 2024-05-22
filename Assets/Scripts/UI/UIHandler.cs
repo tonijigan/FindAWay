@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace UI
 {
-    public class CanvasStatic : MonoBehaviour
+    public class UIHandler : MonoBehaviour
     {
         [SerializeField] private DoorWithLock _doorWithLock;
         [SerializeField] private PanelWin _panelWin;

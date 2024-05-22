@@ -14,7 +14,7 @@ namespace Doors
         [SerializeField] private AudioClip _audioOpenLook;
         [SerializeField] private float _speedRotate = 1;
         [SerializeField] private Timer _timer;
-        [SerializeField] private DataSaveWork _dataSaveWork;
+        [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
 
         public event Action Opened;
 
@@ -38,7 +38,7 @@ namespace Doors
         private void UseKey(Key key)
         {
             Destroy(_timer.gameObject);
-            _dataSaveWork.Save(_wallet.CountCoins);
+            _playerDataSaveWork.Save(_wallet.CountCoins);
             key.Enable();
             Work();
             Opened?.Invoke();

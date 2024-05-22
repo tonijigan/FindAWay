@@ -4,19 +4,19 @@ namespace Save
 {
     public class DataDistribute : MonoBehaviour
     {
-        [SerializeField] private DataSaveWork _dataSaveWork;
+        [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
         [SerializeField] private AbstractDataInit[] _initializedObjects;
 
-        private void Awake() => _dataSaveWork.Load();
+        private void Awake() => _playerDataSaveWork.Load();
 
-        private void OnEnable() => _dataSaveWork.Loaded += InitData;
+        private void OnEnable() => _playerDataSaveWork.Loaded += InitPlayerData;
 
-        private void OnDisable() => _dataSaveWork.Loaded -= InitData;
+        private void OnDisable() => _playerDataSaveWork.Loaded -= InitPlayerData;
 
-        private void InitData()
+        private void InitPlayerData()
         {
             foreach (var initializedObject in _initializedObjects)
-                initializedObject.Init(_dataSaveWork.Coins);
+                initializedObject.Init(_playerDataSaveWork.Coins);
         }
     }
 }

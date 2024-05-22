@@ -152,8 +152,8 @@
           <e p="Save" t="Include">
             <e p="AbstractDataInit.cs" t="Include" />
             <e p="DataDistribute.cs" t="Include" />
-            <e p="DataSaveWork.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
+            <e p="PlayerDataSaveWork.cs" t="Include" />
           </e>
           <e p="ScriptableObject" t="Include">
             <e p="SceneObject.cs" t="Include" />
@@ -198,7 +198,6 @@
               </e>
               <e p="ButtonsState.cs" t="Include" />
             </e>
-            <e p="CanvasStatic.cs" t="Include" />
             <e p="Panels" t="Include">
               <e p="AuthorizationPanel.cs" t="Include" />
               <e p="LeaderBoardPanel.cs" t="Include" />
@@ -215,6 +214,7 @@
               <e p="Timer.cs" t="Include" />
               <e p="TimerView.cs" t="Include" />
             </e>
+            <e p="UIHandler.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

@@ -15,7 +15,7 @@ namespace UI.Buttons.ButtonChooseScenes
         [SerializeField] private Image _currentImage;
         [SerializeField] private SceneView[] _scenesViews;
         [SerializeField] private TMP_Text _textNumberScene;
-        [SerializeField] private DataSaveWork _dataSaveWork;
+        [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
 
         private int _currentImageIndex = 0;
         private int _element = 1;
@@ -25,7 +25,7 @@ namespace UI.Buttons.ButtonChooseScenes
 
         private void OnEnable()
         {
-            _dataSaveWork.Loaded += OnOpenAccessScenes;
+            _playerDataSaveWork.Loaded += OnOpenAccessScenes;
             _nextScene.Clicked += OnShowNextScene;
             _previousScene.Clicked += OnShowPreviousScene;
             _choosedButtonScene.Clicked += OnLoadScene;
@@ -33,7 +33,7 @@ namespace UI.Buttons.ButtonChooseScenes
 
         private void OnDisable()
         {
-            _dataSaveWork.Loaded -= OnOpenAccessScenes;
+            _playerDataSaveWork.Loaded -= OnOpenAccessScenes;
             _nextScene.Clicked -= OnShowNextScene;
             _previousScene.Clicked -= OnShowPreviousScene;
             _choosedButtonScene.Clicked -= OnLoadScene;
@@ -41,7 +41,7 @@ namespace UI.Buttons.ButtonChooseScenes
 
         private void OnOpenAccessScenes()
         {
-            for (int i = 0; i < _dataSaveWork.ScenesAccess; i++)
+            for (int i = 0; i < _playerDataSaveWork.ScenesAccess; i++)
                 _scenesViews[i].OpenAccess();
         }
 

@@ -14,7 +14,7 @@ namespace SDK
         [SerializeField] private FocusTracking _focusTracking;
         [SerializeField] private ButtonAudioListener _buttonAudioListener;
         [SerializeField] private PlayerWallet _playerWallet;
-        [SerializeField] private DataSaveWork _dataSaveWork;
+        [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
 
         public event Action<bool> ClosedCallBack, RewardPlayed;
 
@@ -42,7 +42,7 @@ namespace SDK
         {
             _playerWallet.RewardCoins(_rewardCoin);
             _leaderBoard.SetScore(_playerWallet.CountCoins);
-            _dataSaveWork.Save(_playerWallet.CountCoins);
+            _playerDataSaveWork.Save(_playerWallet.CountCoins);
         }
 
         private void OnCloseCallBack() => CloseCallBack(RewardPlayed);

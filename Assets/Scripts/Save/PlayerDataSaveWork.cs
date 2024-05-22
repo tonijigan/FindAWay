@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace Save
 {
-    public class DataSaveWork : MonoBehaviour
+    public class PlayerDataSaveWork : MonoBehaviour
     {
         private PlayerData _playerData = new PlayerData();
 
