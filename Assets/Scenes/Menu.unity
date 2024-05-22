@@ -366,6 +366,7 @@ MonoBehaviour:
   _button: {fileID: 38278974}
   _audioSource: {fileID: 1611262945}
   _leaderBoardPanel: {fileID: 36357086}
+  _dataSaveWork: {fileID: 980194578}
 --- !u!1 &54427003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,6 +2254,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959514393}
   m_CullTransparentMesh: 1
+--- !u!1 &980194575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980194576}
+  - component: {fileID: 980194577}
+  - component: {fileID: 980194578}
+  m_Layer: 0
+  m_Name: SaveData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &980194576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980194575}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2997322, y: -3.8555145, z: 23.473423}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &980194577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980194575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9047024d780e18d4a91974f55a4c81ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSaveWork: {fileID: 980194578}
+  _initializedObjects:
+  - {fileID: 210889544}
+--- !u!114 &980194578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980194575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc4b83c5a3f4e14b96d26778d671203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1034304131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +2828,7 @@ MonoBehaviour:
   - {fileID: 1702952348}
   - {fileID: 1148834516}
   _textNumberScene: {fileID: 581643308}
+  _dataSaveWork: {fileID: 980194578}
 --- !u!1 &1306712655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3126,8 +3188,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1526728768}
   - component: {fileID: 1526728769}
-  - component: {fileID: 1526728770}
-  - component: {fileID: 1526728771}
   m_Layer: 0
   m_Name: FocusTracking
   m_TagString: Untagged
@@ -3164,34 +3224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buttonAudioListener: {fileID: 667306774}
   _panelPause: {fileID: 0}
---- !u!114 &1526728770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526728767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9047024d780e18d4a91974f55a4c81ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerWallet: {fileID: 0}
-  _coinViewMenu: {fileID: 210889544}
-  _scoreCoins: {fileID: 0}
-  _playerSave: {fileID: 1526728771}
---- !u!114 &1526728771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526728767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc4b83c5a3f4e14b96d26778d671203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1611262943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,9 +4280,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1617843673}
+  - {fileID: 1526728768}
   - {fileID: 2035413639}
   - {fileID: 1034304133}
   - {fileID: 1218508880}
   - {fileID: 496045461}
   - {fileID: 1057592185}
-  - {fileID: 1526728768}
+  - {fileID: 980194576}

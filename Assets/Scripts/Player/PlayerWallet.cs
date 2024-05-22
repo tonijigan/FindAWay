@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 using InteractionObjects.Coin;
-using UnityEngine;
 
 namespace Player
 {
-    public class PlayerWallet : MonoBehaviour
+    public class PlayerWallet : AbstractDataInit
     {
         private readonly List<Coin> _countCoin = new List<Coin>();
 
@@ -15,10 +14,19 @@ namespace Player
 
         public int CountCoins => _countCoin.Count;
 
-        public void InitSaveCoin(int countCoins)
+        public override void Init(int countCoins)
         {
             for (var i = 0; i < countCoins; i++)
                 _countCoin.Add(_coin);
+
+            AddedCoin?.Invoke(_countCoin.Count);
+        }
+
+        public void RewardCoins(int countRewardCoins)
+        {
+            for (int i = 0; i < countRewardCoins; i++)
+                _countCoin.Add(_coin);
+
             AddedCoin?.Invoke(_countCoin.Count);
         }
 

@@ -150,9 +150,10 @@
             <e p="WalkSound.cs" t="Include" />
           </e>
           <e p="Save" t="Include">
-            <e p="DistributeSavedData.cs" t="Include" />
+            <e p="AbstractDataInit.cs" t="Include" />
+            <e p="DataDistribute.cs" t="Include" />
+            <e p="DataSaveWork.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
-            <e p="PlayerSave.cs" t="Include" />
           </e>
           <e p="ScriptableObject" t="Include">
             <e p="SceneObject.cs" t="Include" />
@@ -169,8 +170,6 @@
               <e p="YandexLeaderBoard.cs" t="Include" />
             </e>
             <e p="Localisation.cs" t="Include" />
-            <e p="PlayerInfo.cs" t="Include" />
-            <e p="ProgressInfo.cs" t="Include" />
             <e p="SDKGameReadyInitialization.cs" t="Include" />
             <e p="SDKInitializer.cs" t="Include" />
             <e p="SDKPromotionalVideo.cs" t="Include" />

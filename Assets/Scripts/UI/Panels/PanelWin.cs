@@ -1,5 +1,5 @@
 using ButtonGameObject;
-using SDK;
+using Player;
 using SDK.LeaderBoard;
 using UnityEngine;
 
@@ -12,6 +12,7 @@ namespace UI.Panels
         [SerializeField] private AudioClip _audioClip;
         [SerializeField] private YandexLeaderBoard _leaderboard;
         [SerializeField] private ButtonsActive _buttonsActive;
+        [SerializeField] private PlayerWallet _playerWallet;
 
         private Transform[] _imageStars;
 
@@ -20,7 +21,7 @@ namespace UI.Panels
             Initialization();
             Show();
             PlaySound();
-            _leaderboard.SetScore(ProgressInfo.PlayerInfo.Coins);
+            _leaderboard.SetScore(_playerWallet.CountCoins);
         }
 
         private void Initialization()

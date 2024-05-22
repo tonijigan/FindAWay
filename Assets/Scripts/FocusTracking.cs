@@ -2,7 +2,6 @@ using UnityEngine;
 using Agava.WebUtility;
 using UI.Buttons;
 using UI.Panels;
-using UnityEngine.Serialization;
 
 public class FocusTracking : MonoBehaviour
 {

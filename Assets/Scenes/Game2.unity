@@ -809,6 +809,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8089541967763665055, guid: 3c82cee2f971cb44782b64c6edb0af49, type: 3}
   m_PrefabInstance: {fileID: 78437433}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &80415869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80415872}
+  - component: {fileID: 80415871}
+  - component: {fileID: 80415870}
+  m_Layer: 0
+  m_Name: SaveData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &80415870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80415869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc4b83c5a3f4e14b96d26778d671203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &80415871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80415869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9047024d780e18d4a91974f55a4c81ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSaveWork: {fileID: 80415870}
+  _initializedObjects:
+  - {fileID: 1239270637}
+  - {fileID: 2079433511}
+--- !u!4 &80415872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80415869}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2997322, y: -3.8555145, z: 23.473423}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &83176172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3101,19 +3162,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9719805
+      value: 0.9719806
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13984671
+      value: 0.1398467
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.18700995
+      value: -0.18701
       objectReference: {fileID: 0}
     - target: {fileID: 1668663831, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.026906632
+      value: 0.026906628
       objectReference: {fileID: 0}
     - target: {fileID: 1668663833, guid: 692b7d48df8e25944b3748402f0aad96, type: 3}
       propertyPath: m_Priority
@@ -4644,9 +4705,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 7465589227e03c54f8a8d386a7e84bbf, type: 3}
     - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _playerSave
+      value: 
+      objectReference: {fileID: 80415870}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: _audioSource
       value: 
       objectReference: {fileID: 311766047}
+    - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
+      propertyPath: _dataSaveWork
+      value: 
+      objectReference: {fileID: 80415870}
     - target: {fileID: 246923559, guid: 2ea2da67155189643b26e9c00eb8db37, type: 3}
       propertyPath: _doorAudioSource
       value: 
@@ -10282,6 +10351,17 @@ Transform:
   - {fileID: 1140402769}
   m_Father: {fileID: 296701547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1239270637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4213907839782397105, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+  m_PrefabInstance: {fileID: 4213907840761277650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4ee21f9890cd1458869c32ad85f2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1239837148
 GameObject:
   m_ObjectHideFlags: 0
@@ -20706,6 +20786,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 823415452}
     - target: {fileID: 4958761095354818433, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _playerWallet
+      value: 
+      objectReference: {fileID: 2079433511}
+    - target: {fileID: 4958761095354818433, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _buttonsActive
       value: 
       objectReference: {fileID: 1294077551}
@@ -20754,9 +20838,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 622825931}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _playerSave
+      value: 
+      objectReference: {fileID: 80415870}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _leaderBoard
       value: 
       objectReference: {fileID: 823415452}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _dataSaveWork
+      value: 
+      objectReference: {fileID: 80415870}
+    - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
+      propertyPath: _playerWallet
+      value: 
+      objectReference: {fileID: 2079433511}
     - target: {fileID: 6949540079591502802, guid: 570c40dc2a2133942a91599f4bf69bc1, type: 3}
       propertyPath: _focusTracking
       value: 
@@ -22128,3 +22224,4 @@ SceneRoots:
   - {fileID: 1267067043}
   - {fileID: 808893837}
   - {fileID: 1321741653}
+  - {fileID: 80415872}

@@ -3,7 +3,6 @@ using System.Collections;
 using InteractionObjects;
 using Player;
 using Save;
-using SDK;
 using UI.Timer;
 using UnityEngine;
 
@@ -15,7 +14,7 @@ namespace Doors
         [SerializeField] private AudioClip _audioOpenLook;
         [SerializeField] private float _speedRotate = 1;
         [SerializeField] private Timer _timer;
-        [SerializeField] private PlayerSave _playerSave;
+        [SerializeField] private DataSaveWork _dataSaveWork;
 
         public event Action Opened;
 
@@ -39,7 +38,7 @@ namespace Doors
         private void UseKey(Key key)
         {
             Destroy(_timer.gameObject);
-            _playerSave.Save(_wallet.CountCoins);
+            _dataSaveWork.Save(_wallet.CountCoins);
             key.Enable();
             Work();
             Opened?.Invoke();

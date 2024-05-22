@@ -1,5 +1,7 @@
 using System;
 using Agava.YandexGames;
+using Player;
+using Save;
 using SDK.LeaderBoard;
 using UI.Buttons;
 using UnityEngine;
@@ -11,6 +13,8 @@ namespace SDK
         [SerializeField] private YandexLeaderBoard _leaderBoard;
         [SerializeField] private FocusTracking _focusTracking;
         [SerializeField] private ButtonAudioListener _buttonAudioListener;
+        [SerializeField] private PlayerWallet _playerWallet;
+        [SerializeField] private DataSaveWork _dataSaveWork;
 
         public event Action<bool> ClosedCallBack, RewardPlayed;
 
@@ -36,9 +40,9 @@ namespace SDK
 
         private void OnRewardedCallback()
         {
-           // ProgressInfo.RewardCoin(_rewardCoin);
-            _leaderBoard.SetScore(ProgressInfo.PlayerInfo.Coins);
-           // PlayerAccount.SetCloudSaveData(ProgressInfo.JSONString());
+            _playerWallet.RewardCoins(_rewardCoin);
+            _leaderBoard.SetScore(_playerWallet.CountCoins);
+            _dataSaveWork.Save(_playerWallet.CountCoins);
         }
 
         private void OnCloseCallBack() => CloseCallBack(RewardPlayed);

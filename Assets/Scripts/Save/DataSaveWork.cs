@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 namespace Save
 {
-    public class PlayerSave : MonoBehaviour
+    public class DataSaveWork : MonoBehaviour
     {
-        private PlayerData _playerData { get; set; } = new PlayerData();
+        private PlayerData _playerData = new PlayerData();
 
         public event Action Loaded;
 
@@ -17,22 +17,26 @@ namespace Save
         public void Save(int coins)
         {
             _playerData.Coins = coins;
-
-            if (_playerData.ScenesAccess < SceneManager.GetActiveScene().buildIndex && _playerData.ScenesAccess <= 3)
-                _playerData.ScenesAccess = SceneManager.GetActiveScene().buildIndex - 1;
-
+            SetScenesAccess();
             var json = JsonUtility.ToJson(_playerData);
             PlayerAccount.SetCloudSaveData(json);
-            Debug.Log(json);
         }
 
         public void Load() => PlayerAccount.GetCloudSaveData(Load);
 
         private void Load(string value)
         {
-            Debug.Log("ValueData = " + value);
             _playerData = JsonUtility.FromJson<PlayerData>(value);
             Loaded?.Invoke();
+        }
+
+        private void SetScenesAccess()
+        {
+            int maxCountScenes = 3;
+
+            if (SceneManager.GetActiveScene().buildIndex >= maxCountScenes) return;
+
+            _playerData.ScenesAccess = SceneManager.GetActiveScene().buildIndex;
         }
     }
 }

@@ -1,4 +1,4 @@
-using SDK;
+using Save;
 using TMPro;
 using UI.Scenes;
 using UnityEngine;
@@ -15,6 +15,7 @@ namespace UI.Buttons.ButtonChooseScenes
         [SerializeField] private Image _currentImage;
         [SerializeField] private SceneView[] _scenesViews;
         [SerializeField] private TMP_Text _textNumberScene;
+        [SerializeField] private DataSaveWork _dataSaveWork;
 
         private int _currentImageIndex = 0;
         private int _element = 1;
@@ -24,7 +25,7 @@ namespace UI.Buttons.ButtonChooseScenes
 
         private void OnEnable()
         {
-            ProgressInfo.ReceivedData += OnInitSave;
+            _dataSaveWork.Loaded += OnOpenAccessScenes;
             _nextScene.Clicked += OnShowNextScene;
             _previousScene.Clicked += OnShowPreviousScene;
             _choosedButtonScene.Clicked += OnLoadScene;
@@ -32,13 +33,17 @@ namespace UI.Buttons.ButtonChooseScenes
 
         private void OnDisable()
         {
-            ProgressInfo.ReceivedData -= OnInitSave;
+            _dataSaveWork.Loaded -= OnOpenAccessScenes;
             _nextScene.Clicked -= OnShowNextScene;
             _previousScene.Clicked -= OnShowPreviousScene;
             _choosedButtonScene.Clicked -= OnLoadScene;
         }
 
-        private void OnInitSave() => ProgressInfo.Init(_scenesViews);
+        private void OnOpenAccessScenes()
+        {
+            for (int i = 0; i < _dataSaveWork.ScenesAccess; i++)
+                _scenesViews[i].OpenAccess();
+        }
 
         private void OnLoadScene() => SceneManager.LoadScene
             (_scenesViews[_currentImageIndex].SceneIndex);

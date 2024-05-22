@@ -1,6 +1,6 @@
 using System;
 using Agava.YandexGames;
-using SDK;
+using Save;
 using UI.Panels;
 using UnityEngine;
 
@@ -9,6 +9,7 @@ namespace UI.Buttons
     public class ButtonAuthorizationPlayer : AbstractButton
     {
         [SerializeField] private LeaderBoardPanel _leaderBoardPanel;
+        [SerializeField] private DataSaveWork _dataSaveWork;
 
         public event Action<bool> Authorized;
 
@@ -19,7 +20,7 @@ namespace UI.Buttons
         private void OnSuccessCallback()
         {
             PlayerAccount.RequestPersonalProfileDataPermission();
-            PlayerAccount.GetCloudSaveData(ProgressInfo.GetPlayerInfo);
+            _dataSaveWork.Load();
             Authorized?.Invoke(PlayerAccount.IsAuthorized);
             _leaderBoardPanel.gameObject.SetActive(false);
         }
