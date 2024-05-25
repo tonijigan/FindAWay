@@ -8,11 +8,11 @@ namespace UI.Timer
         [SerializeField] private float _seconds = 300;
         [SerializeField] private float _secondsPerViolation;
 
-        public event Action TimeIsUped;
-        public event Action<float, float> TimeRunning;
-
         private float _newTime = 1;
         private bool _isUpTime = false;
+
+        public event Action TimeIsUped;
+        public event Action<float, float> TimeRunning;
 
         public void SetNewTime() => _seconds = _secondsPerViolation;
 
@@ -29,7 +29,7 @@ namespace UI.Timer
                 _seconds -= maxFractionsSeconds;
             }
 
-            int newTimeMinutes = (int) _seconds / secondsInMinutes;
+            int newTimeMinutes = (int)_seconds / secondsInMinutes;
             float newTimeSeconds = _seconds - (newTimeMinutes * secondsInMinutes);
             TimeRunning?.Invoke(newTimeMinutes, newTimeSeconds);
 

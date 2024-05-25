@@ -9,9 +9,10 @@ namespace UI.Timer
     public class TimerView : MonoBehaviour
     {
         [SerializeField] private TMP_Text _textMinutes;
-        [SerializeField] protected LaserSecurity _security;
+        [SerializeField] private LaserSecurity _security;
         [SerializeField] private global::UI.Timer.Timer _timer;
-        [SerializeField] private Color _timerColor, _textColor;
+        [SerializeField] private Color _timerColor;
+        [SerializeField] private Color _textColor;
 
         private Image _image;
 

@@ -5,7 +5,8 @@ namespace SDK.LeaderBoard
 {
     public class LeaderBoardElement : MonoBehaviour
     {
-        [SerializeField] private TMP_Text _playerName, _playerScore;
+        [SerializeField] private TMP_Text _playerName;
+        [SerializeField] private TMP_Text _playerScore;
 
         public void Initialize(string name, int score)
         {

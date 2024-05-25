@@ -14,10 +14,10 @@ namespace Doors
         [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
         [SerializeField] private PlayerWallet _wallet;
 
-        public event Action Opened;
-
         private DoorWithLock _doorWithLock;
         private bool _isClose = true;
+
+        public event Action Opened;
 
         private void Awake() => _doorWithLock = GetComponent<DoorWithLock>();
 

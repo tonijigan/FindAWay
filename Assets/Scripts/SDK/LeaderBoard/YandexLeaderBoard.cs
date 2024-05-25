@@ -31,22 +31,23 @@ namespace SDK.LeaderBoard
 
             _leaderBoardPlayers.Clear();
 
-            Leaderboard.GetEntries(HashedStrings.LeaderBoardName, result =>
+            Leaderboard.GetEntries(HashedStrings.LeaderBoardName, OnSuccessCallBack);
+        }
+
+        private void OnSuccessCallBack(LeaderboardGetEntriesResponse leaderboardGetEntriesResponse)
+        {
+            foreach (var entry in leaderboardGetEntriesResponse.entries)
             {
-                foreach (var entry in result.entries)
-                {
-                    var score = entry.score;
-                    var playerPublicName = entry.player.publicName;
+                var score = entry.score;
+                var playerPublicName = entry.player.publicName;
 
-                    if (string.IsNullOrEmpty(playerPublicName))
-                        playerPublicName = _localisation.ChangeLanguage(HashedStrings.AnonymousNameTr,
-                            HashedStrings.AnonymousNameRu, HashedStrings.AnonymousNameEn);
+                if (string.IsNullOrEmpty(playerPublicName))
+                    playerPublicName = _localisation.ChangeLanguage(HashedStrings.AnonymousNameTr, HashedStrings.AnonymousNameRu, HashedStrings.AnonymousNameEn);
 
-                    _leaderBoardPlayers.Add(new LeaderBoardPlayer(playerPublicName, score));
-                }
+                _leaderBoardPlayers.Add(new LeaderBoardPlayer(playerPublicName, score));
+            }
 
-                _leaderBoaredView.ConstructLeaderBoard(_leaderBoardPlayers);
-            });
+            _leaderBoaredView.ConstructLeaderBoard(_leaderBoardPlayers);
         }
     }
 }

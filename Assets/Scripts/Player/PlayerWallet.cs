@@ -7,10 +7,9 @@ namespace Player
     public class PlayerWallet : AbstractDataInit
     {
         private readonly List<Coin> _countCoin = new List<Coin>();
+        private Coin _coin;
 
         public event Action<int> AddedCoin;
-
-        private Coin _coin;
 
         public int CountCoins => _countCoin.Count;
 

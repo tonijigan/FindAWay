@@ -22,7 +22,6 @@ namespace Player
         private PlayerInput _input;
         private bool _isGround = true;
 
-
         private void Awake()
         {
             _haveGround = GetComponent<HaveGround>();
@@ -60,7 +59,7 @@ namespace Player
 
         private Vector3 DirectionAlongSurface(Vector3 direction)
         {
-            return direction - Vector3.Dot(direction, _normal) * _normal;
+            return direction - (Vector3.Dot(direction, _normal) * _normal);
         }
 
         private void Move(Vector3 direction)
@@ -83,17 +82,15 @@ namespace Player
                     : new Vector3(newPosition.x, minPositionY, newPosition.y);
             }
             else
+            {
                 return Vector3.zero;
+            }
         }
 
         private void MoveRotate(Vector3 direction)
         {
             if (direction != Vector3.zero)
-            {
-                _transform.rotation = Quaternion.Lerp(_transform.rotation,
-                    Quaternion.LookRotation(direction),
-                    _rotateSpeed * Time.fixedDeltaTime);
-            }
+                _transform.rotation = Quaternion.Lerp(_transform.rotation, Quaternion.LookRotation(direction), _rotateSpeed * Time.fixedDeltaTime);
         }
     }
 }

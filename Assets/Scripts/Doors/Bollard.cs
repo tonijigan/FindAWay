@@ -7,8 +7,8 @@ namespace Doors
         protected override void SetPosition()
         {
             float newPositionY = 1.9f;
-            StartPosition = _type.localPosition;
-            NewPosition = Vector3.down * newPositionY;
+            var newPosition = Vector3.down * newPositionY;
+            SetPositions(Type.localPosition, newPosition);
         }
     }
 }

@@ -12,7 +12,6 @@ namespace Player
 
         private void Awake() => _animator = GetComponent<Animator>();
 
-
         public void OnUpdate(InteractionObject interactionObject, bool isDragging)
         {
             _interactionObject = interactionObject;

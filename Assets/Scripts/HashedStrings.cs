@@ -26,25 +26,46 @@ public static class HashedStrings
     private const string ConstAuthorizationTextEn = "To display the leaderboard, you need to log in!";
 
     public static int Idle => Animator.StringToHash(ConstIdle);
+
     public static int Alarm => Animator.StringToHash(ConstAlarm);
+
     public static int Walk => Animator.StringToHash(ConstWalk);
+
     public static int Falling => Animator.StringToHash(ConstFalling);
+
     public static int WalkWhitBox => Animator.StringToHash(ConstWalkWhitBox);
+
     public static int WalkWhitKey => Animator.StringToHash(ConstWalkWhitKey);
+
     public static int IdleWhitBox => Animator.StringToHash(ConstIdleWhitBox);
+
     public static int IdleWhitKey => Animator.StringToHash(ConstIdleWhitKey);
+
     public static string Load => ConstLoad;
+
     public static string LeaderBoardName => ConstLeaderBoardName;
+
     public static string AnonymousNameTr => ConstAnonymousNameTr;
+
     public static string AnonymousNameRu => ConstAnonymousNameRu;
+
     public static string AnonymousNameEn => ConstAnonymousNameEn;
+
     public static string AuthorizationNameTr => ConstAuthorizationNameTr;
+
     public static string AuthorizationNameRu => ConstAuthorizationNameRu;
+
     public static string AuthorizationNameEn => ConstAuthorizationNameEn;
+
     public static string CancelNameTr => ConstCancelNameTr;
+
     public static string CancelNameRu => ConstCancelNameRu;
+
     public static string CancelNameEn => ConstCancelNameEn;
+
     public static string AuthorizationTextTr => ConstAuthorizationTextTr;
+
     public static string AuthorizationTextRu => ConstAuthorizationTextRu;
+
     public static string AuthorizationTextEn => ConstAuthorizationTextEn;
 }

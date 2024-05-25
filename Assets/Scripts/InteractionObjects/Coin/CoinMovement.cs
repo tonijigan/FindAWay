@@ -22,8 +22,7 @@ namespace InteractionObjects.Coin
 
             while (_transform.localPosition != target.localPosition)
             {
-                _transform.localPosition = Vector3.MoveTowards(_transform.localPosition,
-                    target.transform.localPosition, duration * Time.deltaTime);
+                _transform.localPosition = Vector3.MoveTowards(_transform.localPosition, target.transform.localPosition, duration * Time.deltaTime);
                 yield return null;
             }
 

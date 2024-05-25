@@ -17,7 +17,7 @@ namespace SDK
                 LanguageTr => trLanguage,
                 LanguageRu => ruLanguage,
                 LanguageEn => enLanguage,
-                _ => ""
+                _ => string.Empty
             };
 
             return currentAnonymousName;

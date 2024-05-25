@@ -10,16 +10,16 @@ namespace AlarmSystem
         [SerializeField] private DoorLaserSecurity _doorLaserSecurity;
         [SerializeField] private Timer _timer;
 
-        public event Action<bool> IsTriggered;
-
         private bool _isTrigger;
+
+        public event Action<bool> IsTriggered;
 
         private void OnTriggerEnter(Collider collider)
         {
-            if (!_isTrigger && _doorLaserSecurity.IsOpened == false)
+            if (!_isTrigger && _doorLaserSecurity.IsOpen == false)
             {
                 _timer.SetNewTime();
-                IsTriggered?.Invoke(_doorLaserSecurity.IsOpened);
+                IsTriggered?.Invoke(_doorLaserSecurity.IsOpen);
             }
 
             _isTrigger = true;

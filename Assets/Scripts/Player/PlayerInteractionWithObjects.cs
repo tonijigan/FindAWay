@@ -41,11 +41,11 @@ namespace Player
             WorkEffect(_isDragging);
         }
 
-        private void PutDown(Transform BoxPointPosition)
+        private void PutDown(Transform boxPointPosition)
         {
             if (_draggableObject.IsUse != true) return;
             _playerInteractionObjectSound.PlaySound(_draggableObject.AudioClip);
-            var position = BoxPointPosition.position;
+            var position = boxPointPosition.position;
             var direction = position - _draggableObject.transform.position;
             _rigidbodyDraggableObject.velocity = direction;
             _draggableObject.PutDown();
@@ -125,6 +125,7 @@ namespace Player
                     PutDown(button.BoxPoint);
 
                 if (!currentObject.TryGetComponent(out DoorLock doorLock)) return;
+
                 _isDragging = doorLock.TryOpenDoor(_draggableObject);
 
                 WorkEffect(_isDragging);

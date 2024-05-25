@@ -18,16 +18,15 @@ namespace Doors
 
         protected override IEnumerator Move(Vector3 newTarget)
         {
-            IsOpen = !IsOpen;
+            ChangeState();
             PlayAudioClip(_audioOpenLook);
             yield return WaitForSeconds;
             PlayAudioClip(AudioClip);
             yield return WaitForSeconds;
 
-            while (_type.localRotation != Quaternion.Euler(newTarget))
+            while (Type.localRotation != Quaternion.Euler(newTarget))
             {
-                _type.localRotation = Quaternion.Lerp(_type.localRotation,
-                    Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
+                Type.localRotation = Quaternion.Lerp(Type.localRotation, Quaternion.Euler(newTarget), _speedRotate * Time.deltaTime);
                 yield return null;
             }
 
@@ -39,8 +38,8 @@ namespace Doors
         {
             float rotateInPositionZero = 0;
             float rotatePositionY = -90;
-            StartPosition = _type.localPosition;
-            NewPosition = new Vector3(rotateInPositionZero, rotatePositionY, rotateInPositionZero);
+            var newPosition = new Vector3(rotateInPositionZero, rotatePositionY, rotateInPositionZero);
+            SetPositions(Type.localPosition, newPosition);
         }
     }
 }

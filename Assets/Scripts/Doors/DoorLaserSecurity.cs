@@ -10,14 +10,12 @@ namespace Doors
 
         protected override IEnumerator Move(Vector3 newTarget)
         {
-            IsOpen = !IsOpen;
+            ChangeState();
             PlayableDirector.Play();
             yield return WaitForSeconds;
             AudioSource.clip = AudioClip;
             AudioSource.Play();
-
             _laserSecurity.gameObject.SetActive(IsOpen != true);
-
             yield return WaitForSeconds;
             AudioSource.Stop();
             StopCoroutine(Move(newTarget));

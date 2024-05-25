@@ -8,18 +8,16 @@ namespace InteractionObjects
         [SerializeField] private AudioClip _audioClip;
         [SerializeField] private ParticleSystem _effect;
 
-        protected bool _isUse;
+        private bool _isUse;
 
         private Rigidbody _rigidbody;
 
         public Transform TransformObject => transform;
         public Rigidbody RigidbodyObject => _rigidbody;
+        public AudioClip AudioClip => _audioClip;
+        public bool IsUse => _isUse;
 
         private void Awake() => _rigidbody = GetComponent<Rigidbody>();
-
-        public AudioClip AudioClip => _audioClip;
-
-        public bool IsUse => _isUse;
 
         public void ActiveObject() => _isUse = false;
 

@@ -16,11 +16,12 @@ namespace SDK
         [SerializeField] private PlayerWallet _playerWallet;
         [SerializeField] private PlayerDataSaveWork _playerDataSaveWork;
 
-        public event Action<bool> ClosedCallBack, RewardPlayed;
-
         private int _rewardCoin = 10;
         private int _minValue = 0;
         private int _maxValue = 1;
+
+        public event Action<bool> ClosedCallBack;
+        public event Action<bool> RewardPlayed;
 
         public void ShowRewardAd() =>
             VideoAd.Show(OnOpenCallBack, OnRewardedCallback, OnCloseCallBack);
@@ -36,7 +37,6 @@ namespace SDK
             _focusTracking.enabled = false;
             AudioListener.volume = _minValue;
         }
-
 
         private void OnRewardedCallback()
         {

@@ -6,9 +6,9 @@ namespace UI.Buttons.ButtonScene
     [RequireComponent(typeof(ButtonsState))]
     public class ButtonRestartScene : AbstractButton
     {
-        public event Action Clicked;
-
         private ButtonsState _buttonsState;
+
+        public event Action Clicked;
 
         private void Start() => _buttonsState = GetComponent<ButtonsState>();
 

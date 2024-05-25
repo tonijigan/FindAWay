@@ -1,5 +1,5 @@
-using Doors;
 using System.Collections;
+using Doors;
 using UnityEngine;
 
 namespace ButtonGameObject
@@ -17,6 +17,7 @@ namespace ButtonGameObject
         private float _waitTime = 1.0f;
 
         public Transform BoxPoint => _boxPoint;
+
         public bool IsClick { get; private set; } = false;
 
         private void Awake()
@@ -50,8 +51,7 @@ namespace ButtonGameObject
 
             while (_transform.localPosition != newPosition)
             {
-                _transform.localPosition = Vector3.MoveTowards(_transform.localPosition,
-                    newPosition, duration * Time.deltaTime);
+                _transform.localPosition = Vector3.MoveTowards(_transform.localPosition, newPosition, duration * Time.deltaTime);
                 yield return null;
             }
 

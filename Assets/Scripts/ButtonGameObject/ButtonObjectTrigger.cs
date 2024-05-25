@@ -7,15 +7,12 @@ namespace ButtonGameObject
     [RequireComponent(typeof(ButtonObject))]
     public class ButtonObjectTrigger : MonoBehaviour
     {
-        public event Action<int> ButtonActivated;
-
         private ButtonObject _buttonObject;
         private int _rewardPerClick = 1;
 
-        private void Awake()
-        {
-            _buttonObject = GetComponent<ButtonObject>();
-        }
+        public event Action<int> ButtonActivated;
+
+        private void Awake() => _buttonObject = GetComponent<ButtonObject>();
 
         private void OnTriggerEnter(Collider other)
         {

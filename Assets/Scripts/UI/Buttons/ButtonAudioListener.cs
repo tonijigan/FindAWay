@@ -6,15 +6,16 @@ namespace UI.Buttons
     [RequireComponent(typeof(Image))]
     public class ButtonAudioListener : AbstractButton
     {
-        [SerializeField] private Sprite _spriteTurnOffAudio, _spriteTurnOnAudio;
+        private static bool _isTurnOn = false;
 
-        private static bool s_isTurnOn = false;
+        [SerializeField] private Sprite _spriteTurnOffAudio;
+        [SerializeField] private Sprite _spriteTurnOnAudio;
 
         private Image _image;
         private int _stateTurnOffAudio = 0;
         private int _stateTurnOnAudio = 1;
 
-        public bool IsTurnOn => s_isTurnOn;
+        public bool IsTurnOn => _isTurnOn;
 
         private void Awake()
         {
@@ -26,11 +27,11 @@ namespace UI.Buttons
 
         private void ChangeState()
         {
-            s_isTurnOn = !s_isTurnOn;
-            AudioListener.volume = s_isTurnOn ? _stateTurnOffAudio : _stateTurnOnAudio;
+            _isTurnOn = !_isTurnOn;
+            AudioListener.volume = _isTurnOn ? _stateTurnOffAudio : _stateTurnOnAudio;
             StateImage();
         }
 
-        private void StateImage() => _image.sprite = s_isTurnOn ? _spriteTurnOffAudio : _spriteTurnOnAudio;
+        private void StateImage() => _image.sprite = _isTurnOn ? _spriteTurnOffAudio : _spriteTurnOnAudio;
     }
 }

@@ -9,11 +9,11 @@ namespace Player
         [SerializeField] private float _radiusTriggerGround;
         [SerializeField] private LayerMask _layerMask;
 
-        public event Action PlayerFalling;
-
         private float _currentTimeFall = 0;
         private float _maxTime = 2f;
         private float _minTime = 0;
+
+        public event Action PlayerFalling;
 
         public bool IsGround()
         {

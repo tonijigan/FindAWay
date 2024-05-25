@@ -5,11 +5,13 @@ namespace UI.Buttons.ButtonScene
 {
     public class ButtonScene : AbstractButton
     {
-        [SerializeField] protected int _sceneNumber;
+        [SerializeField] private int _sceneNumber;
 
         private float _wait = 0.1f;
 
         protected override void OnClick() => WorkScene();
+
+        public void Load() => SceneManager.LoadScene(_sceneNumber);
 
         private void WorkScene()
         {
@@ -17,7 +19,5 @@ namespace UI.Buttons.ButtonScene
             Time.timeScale = timeScale;
             Invoke(HashedStrings.Load, _wait);
         }
-
-        public void Load() => SceneManager.LoadScene(_sceneNumber);
     }
 }
