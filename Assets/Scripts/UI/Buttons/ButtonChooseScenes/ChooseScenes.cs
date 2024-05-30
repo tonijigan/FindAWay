@@ -45,8 +45,7 @@ namespace UI.Buttons.ButtonChooseScenes
                 _scenesViews[i].OpenAccess();
         }
 
-        private void OnLoadScene() => SceneManager.LoadScene
-            (_scenesViews[_currentImageIndex].SceneIndex);
+        private void OnLoadScene() => SceneManager.LoadScene(_scenesViews[_currentImageIndex].SceneIndex);
 
         private void OnShowNextScene()
         {

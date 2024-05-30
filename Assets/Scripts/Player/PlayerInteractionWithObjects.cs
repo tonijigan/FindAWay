@@ -24,6 +24,7 @@ namespace Player
         private float _timer = 0;
 
         public InteractionObject DraggableObject => _draggableObject;
+
         public bool IsDragging => _isDragging;
 
         private void Start() => _playerInteractionObjectSound =

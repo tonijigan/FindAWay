@@ -12,6 +12,7 @@ namespace UI.Timer
         private bool _isUpTime = false;
 
         public event Action TimeIsUped;
+
         public event Action<float, float> TimeRunning;
 
         public void SetNewTime() => _seconds = _secondsPerViolation;

@@ -10,10 +10,8 @@ namespace SDK.InterstitialAdvertisement
         private void OnEnable() =>
             _promotionalVideo.ClosedCallBack += OnLoadScene;
 
-
         private void OnDisable() =>
             _promotionalVideo.ClosedCallBack -= OnLoadScene;
-
 
         private void OnLoadScene(bool isClosed)
         {

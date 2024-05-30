@@ -9,9 +9,9 @@ namespace UI.Buttons.ButtonScene
 
         private float _wait = 0.1f;
 
-        protected override void OnClick() => WorkScene();
-
         public void Load() => SceneManager.LoadScene(_sceneNumber);
+
+        protected override void OnClick() => WorkScene();
 
         private void WorkScene()
         {

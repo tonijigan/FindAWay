@@ -13,8 +13,11 @@ namespace InteractionObjects
         private Rigidbody _rigidbody;
 
         public Transform TransformObject => transform;
+
         public Rigidbody RigidbodyObject => _rigidbody;
+
         public AudioClip AudioClip => _audioClip;
+
         public bool IsUse => _isUse;
 
         private void Awake() => _rigidbody = GetComponent<Rigidbody>();

@@ -12,6 +12,7 @@ namespace SDK.LeaderBoard
         }
 
         public string Name => _name;
+
         public int Score => _score;
     }
 }

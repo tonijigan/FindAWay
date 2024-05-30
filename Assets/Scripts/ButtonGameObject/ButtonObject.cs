@@ -27,14 +27,6 @@ namespace ButtonGameObject
             _waitForSeconds = new WaitForSeconds(_waitTime);
         }
 
-        private Vector3 GetPosition()
-        {
-            float positionZero = 0, newPositionY = -1f;
-            var newPosition = _transform.localPosition + new Vector3(positionZero, newPositionY, positionZero);
-
-            return IsClick == true ? newPosition : _startButtonPosition;
-        }
-
         public void PlayCoroutine()
         {
             if (_coroutine != null)
@@ -42,6 +34,14 @@ namespace ButtonGameObject
 
             IsClick = !IsClick;
             _coroutine = StartCoroutine(ChangePosition(GetPosition()));
+        }
+
+        private Vector3 GetPosition()
+        {
+            float positionZero = 0, newPositionY = -1f;
+            var newPosition = _transform.localPosition + new Vector3(positionZero, newPositionY, positionZero);
+
+            return IsClick == true ? newPosition : _startButtonPosition;
         }
 
         private IEnumerator ChangePosition(Vector3 newPosition)

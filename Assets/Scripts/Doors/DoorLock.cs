@@ -24,7 +24,9 @@ namespace Doors
         public bool TryOpenDoor(InteractionObject interactionObject)
         {
             if (interactionObject == null)
+            {
                 return _isClose;
+            }
             else
             {
                 if (!interactionObject.TryGetComponent(out Key key)) return _isClose;

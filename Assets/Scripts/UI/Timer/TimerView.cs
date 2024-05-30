@@ -16,6 +16,8 @@ namespace UI.Timer
 
         private Image _image;
 
+        private void Awake() => _image = GetComponent<Image>();
+
         private void OnEnable()
         {
             _timer.TimeRunning += OnShowTime;
@@ -27,8 +29,6 @@ namespace UI.Timer
             _timer.TimeRunning -= OnShowTime;
             _security.IsTriggered -= OnChangeColor;
         }
-
-        private void Awake() => _image = GetComponent<Image>();
 
         private void OnShowTime(float minutes, float seconds) => _textMinutes.text = $"{minutes}:{seconds}";
 

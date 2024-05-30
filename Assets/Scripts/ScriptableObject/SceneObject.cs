@@ -9,7 +9,9 @@ namespace ScriptableObject
         [SerializeField] private int _sceneIndex;
 
         public Sprite SpriteScene => _spriteScene;
+
         public int SceneIndex => _sceneIndex;
+
         public string SceneName => this.name;
     }
 }

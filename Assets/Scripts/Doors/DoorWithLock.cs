@@ -10,12 +10,6 @@ namespace Doors
 
         private void Awake() => SetPosition();
 
-        private void PlayAudioClip(AudioClip audioClip)
-        {
-            AudioSource.clip = audioClip;
-            AudioSource.Play();
-        }
-
         protected override IEnumerator Move(Vector3 newTarget)
         {
             ChangeState();
@@ -40,6 +34,12 @@ namespace Doors
             float rotatePositionY = -90;
             var newPosition = new Vector3(rotateInPositionZero, rotatePositionY, rotateInPositionZero);
             SetPositions(Type.localPosition, newPosition);
+        }
+
+        private void PlayAudioClip(AudioClip audioClip)
+        {
+            AudioSource.clip = audioClip;
+            AudioSource.Play();
         }
     }
 }

@@ -10,17 +10,17 @@ namespace UI.Buttons
 
         protected Button ButtonUI => _button;
 
-        private void OnEnable() => _button.onClick.AddListener(ButtonClick);
+        private void OnEnable() => _button.onClick.AddListener(OnButtonClick);
 
-        private void OnDisable() => _button.onClick.RemoveListener(ButtonClick);
-
-        protected abstract void OnClick();
+        private void OnDisable() => _button.onClick.RemoveListener(OnButtonClick);
 
         public void AccessButton(bool isAccess) => _button.interactable = isAccess;
 
+        protected abstract void OnClick();
+
         private void PlaySound() => _audioSource.Play();
 
-        private void ButtonClick()
+        private void OnButtonClick()
         {
             PlaySound();
             OnClick();

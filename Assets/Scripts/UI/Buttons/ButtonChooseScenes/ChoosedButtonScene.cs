@@ -10,8 +10,8 @@ namespace UI.Buttons.ButtonChooseScenes
 
         public event Action Clicked;
 
-        protected override void OnClick() => Clicked?.Invoke();
-
         public void ShowAccessScene(bool isAccess) => _imageClosedAccess.gameObject.SetActive(isAccess = !isAccess);
+
+        protected override void OnClick() => Clicked?.Invoke();
     }
 }

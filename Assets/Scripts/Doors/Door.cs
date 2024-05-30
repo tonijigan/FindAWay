@@ -16,13 +16,21 @@ namespace Doors
         private bool _isOpen;
 
         public bool IsOpen => _isOpen;
+
         protected WaitForSeconds WaitForSeconds { get; private set; }
+
         protected Coroutine Coroutine { get; private set; }
+
         protected Vector3 StartPosition { get; private set; }
+
         protected Vector3 NewPosition { get; private set; }
+
         protected Transform Type => _type;
+
         protected AudioSource AudioSource => _audioSource;
+
         protected AudioClip AudioClip => _audioClip;
+
         protected PlayableDirector PlayableDirector => _playableDirector;
 
         private void Start()
@@ -31,14 +39,17 @@ namespace Doors
             WaitForSeconds = new WaitForSeconds(_waitForSeconds);
         }
 
-        protected virtual void SetPosition() { }
-
         public void Work()
         {
             if (Coroutine != null)
                 StopCoroutine(Coroutine);
 
             Coroutine = StartCoroutine(Move(GetNextTargetPosition()));
+        }
+
+        protected virtual void SetPosition()
+        {
+
         }
 
         protected void SetPositions(Vector3 startPosition, Vector3 newPosition)

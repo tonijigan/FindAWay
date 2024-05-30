@@ -21,6 +21,7 @@ namespace SDK
         private int _maxValue = 1;
 
         public event Action<bool> ClosedCallBack;
+
         public event Action<bool> RewardPlayed;
 
         public void ShowRewardAd() =>

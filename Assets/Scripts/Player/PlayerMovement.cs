@@ -31,14 +31,6 @@ namespace Player
             _transform = transform;
         }
 
-        public void OnFixedUpdate()
-        {
-            _isGround = _haveGround.IsGround();
-            var newDirection = GetDirection();
-            Move(newDirection);
-            MoveRotate(newDirection);
-        }
-
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.layer == _layerMask)
@@ -46,6 +38,14 @@ namespace Player
         }
 
         private void OnTriggerEnter(Collider other) => CollisionWithCoin(other);
+
+        public void OnFixedUpdate()
+        {
+            _isGround = _haveGround.IsGround();
+            var newDirection = GetDirection();
+            Move(newDirection);
+            MoveRotate(newDirection);
+        }
 
         private void CollisionWithCoin(Collider interactionObject)
         {
@@ -57,14 +57,14 @@ namespace Player
             coin.Move();
         }
 
-        private Vector3 DirectionAlongSurface(Vector3 direction)
+        private Vector3 GetNormalSurface(Vector3 direction)
         {
             return direction - (Vector3.Dot(direction, _normal) * _normal);
         }
 
         private void Move(Vector3 direction)
         {
-            var directionAlongSurface = DirectionAlongSurface(direction.normalized);
+            var directionAlongSurface = GetNormalSurface(direction.normalized);
             var offSet = _speed * Time.fixedDeltaTime * directionAlongSurface;
             _rigidbody.MovePosition(_rigidbody.position + offSet);
             _playerAnimations.Move(direction, _isGround);

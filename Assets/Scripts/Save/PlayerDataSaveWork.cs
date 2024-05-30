@@ -12,6 +12,7 @@ namespace Save
         public event Action Loaded;
 
         public int Coins => _playerData.Coins;
+
         public int ScenesAccess => _playerData.ScenesAccess;
 
         public void Save(int coins)
